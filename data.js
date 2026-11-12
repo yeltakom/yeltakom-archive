@@ -5796,7 +5796,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.top-ev.de/online/spatial-narratives-of-commoning/",
 "kind": "listing",
-"about": "Spatial Narratives of Commoning",
+"about": "2502",
 "summary": "Announces the first public conversation of the programme, 17 October 2026, moderated by Melissa Harrison and Yelta Köm."
 },
 {
@@ -5806,7 +5806,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.yeniduzen.com/barajdan-sizanlar-25927yy.htm",
 "kind": "article",
-"about": "Breaking Through a Dam",
+"about": "2612",
 "summary": "Column on the exhibition naming Köm among the artists."
 },
 {
@@ -5816,7 +5816,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://istanbuletcetera.substack.com/p/whats-on-from-the-1950s-to-the-future",
 "kind": "review",
-"about": "hep seninleydim / I was always with you",
+"about": "2601",
 "summary": "Jennifer Hattam's roundup opens with Breaking Through a Dam and shows Köm's 'I was always with you' (2026)."
 },
 {
@@ -5826,7 +5826,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.artasiapacific.com/shows/there-is-a-crack-in-everything-breaking-through-a-dam-at-salt-beyoglu/",
 "kind": "review",
-"about": "2602",
+"about": "2601",
 "summary": "Review of the group show with a paragraph on his installation of twin structures holding old phones and copper coils, read as a media archaeology of surveillance in Pera."
 },
 {
@@ -5836,7 +5836,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://artdogistanbul.com/barajdan-sizanlar-uyariyor-birkac-gun-kaldi/",
 "kind": "article",
-"about": "Breaking Through a Dam",
+"about": "2612",
 "summary": "Closing-days feature listing Köm among the participating artists."
 },
 {
@@ -5846,7 +5846,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://feltouch.tr/breaking-through-a-dam/",
 "kind": "listing",
-"about": "2602",
+"about": "2601",
 "summary": "Visitor-guide listing that names Köm in the artist list."
 },
 {
@@ -5856,7 +5856,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://rotka.org/saltin-barajdan-sizanlar-sergisi-paralelinde-sanatci-konusmasi-ve-sergi-turlari/",
 "kind": "news",
-"about": "I was always with you (talk)",
+"about": "2602",
 "summary": "Announces Köm's artist talk on Friday 26 June at Salt Beyoğlu and the exhibition tours."
 },
 {
@@ -5866,7 +5866,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.gazetebirlik.com/kultur-sanat/salt-beyoglu-barajdan-sizanlar-sergisinde-yelta-kom-soylesisi-duzenlenecek/1023663",
 "kind": "news",
-"about": "I was always with you (talk)",
+"about": "2602",
 "summary": "Regional newspaper item announcing Köm's talk at Salt Beyoğlu."
 },
 {
@@ -5876,7 +5876,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://decollageartspace.com/blog-detay/salt-ta-barajdan-sizanlar",
 "kind": "review",
-"about": "hep seninleydim / I was always with you",
+"about": "2601",
 "summary": "Blog review placing Köm's 'hep seninleydim' (2026) on the same floor as Metincan Güzel's work on invisible telecommunication landscapes."
 },
 {
@@ -5886,7 +5886,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://artcolumn.com.tr/saltin-yeni-sergisi-barajdan-sizanlar",
 "kind": "news",
-"about": "Breaking Through a Dam",
+"about": "2612",
 "summary": "Exhibition announcement listing Köm among the artists."
 },
 {
@@ -5896,7 +5896,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://bianet.org/yazi/memory-leaking-through-a-dam-land-archive-and-being-with-place-319031",
 "kind": "article",
-"about": "2602",
+"about": "2601",
 "summary": "Article on the exhibition; Köm is named only in the list of 15 participating artists."
 },
 {
@@ -5906,7 +5906,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.guncelkadin.com.tr/barajdan-sizanlar-sergisi-salt-beyoglunda-acildi/",
 "kind": "news",
-"about": "Breaking Through a Dam",
+"about": "2612",
 "summary": "Opening news listing Köm among the 15 artists."
 },
 {
@@ -5916,7 +5916,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://saltonline.org/en/sergi-barajdan-sizanlar-3036",
 "kind": "listing",
-"about": "2602",
+"about": "2601",
 "summary": "Institutional page listing Köm among 15 artists and a Walk-in Cinema talk titled after his work \"I was always with you\"."
 },
 {
@@ -5926,7 +5926,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.koozarch.com/whats-on/breaking-through-a-dam",
 "kind": "listing",
-"about": "2602",
+"about": "2601",
 "summary": "What's-on entry for the exhibition naming Köm among the 15 artists."
 },
 {
@@ -5936,7 +5936,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.aa.com.tr/tr/kultur/barajdan-sizanlar-sergisi-salt-beyoglunda-sanatseverlerle-bulustu/3914098",
 "kind": "news",
-"about": "hep seninleydim / I was always with you",
+"about": "2601",
 "summary": "Press-preview report on the Salt Beyoğlu exhibition; Köm is among the participating artists."
 },
 {
@@ -5946,7 +5946,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://artdaily.com/news/195204/Salt-Beyo--287-lu-explores-the--untranslatable--landscapes-of-the-Middle-East",
 "kind": "news",
-"about": "2602",
+"about": "2601",
 "summary": "News item announcing the show; Köm appears only in the artist list."
 },
 {
@@ -5956,7 +5956,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.e-flux.com/announcements/6785450/breaking-through-a-dam",
 "kind": "listing",
-"about": "2602",
+"about": "2601",
 "summary": "Exhibition announcement that lists Yelta Köm among the participating artists."
 },
 {
@@ -5966,7 +5966,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://forecast-platform.com/forecast-festival-2026/",
 "kind": "listing",
-"about": "Forecast Festival: guided walk-throughs",
+"about": "2603",
 "summary": "Festival programme noting that Köm guides visitors through the installations on view."
 },
 {
@@ -5976,7 +5976,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": null,
 "kind": "review",
-"about": "2502",
+"about": "2501",
 "summary": "Feature on the exhibition Planetary Peasants; listed for verification in the CV."
 },
 {
@@ -5986,7 +5986,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://werkleitz.de/en/cracks-in-the-soil",
 "kind": "listing",
-"about": "2502",
+"about": "2501",
 "summary": "Festival page describing table-like landscape models of the Tigris and Euphrates, with archival material and field recordings from south-east Türkiye."
 },
 {
@@ -5996,7 +5996,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://planetarische-bauern.werkleitz.de/en/personen/yelta-koem",
 "kind": "listing",
-"about": "2502",
+"about": "2501",
 "summary": "Exhibition artist page describing the layered landscape models and the themes of counter-archiving, rural labour and spatial justice."
 },
 {
@@ -6006,7 +6006,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": null,
 "kind": "review",
-"about": "2502",
+"about": "2501",
 "summary": "Review of Planetarische Bauern by Nikolay Smirnov naming him among the participating artists."
 },
 {
@@ -6026,7 +6026,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "artreview.com",
 "kind": "review",
-"about": "Timeless Curiosities",
+"about": null,
 "summary": "Review of the Istanbul Modern exhibition; domain only in source."
 },
 {
@@ -6066,7 +6066,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.top-ev.de/exhibition/non-extractivist-practices-in-the-dispossessed-lands-arazi-assembly/",
 "kind": "listing",
-"about": "Non-Extractivist Practices in the Dispossessed Lands",
+"about": "2309",
 "summary": "Exhibition and public programme of 24 June 2023 with Arazi Assembly; Köm presents on solidarity around the Tigris."
 },
 {
@@ -6076,7 +6076,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "sanatdunyamiz.com",
 "kind": "review",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6086,7 +6086,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "themagger.com",
 "kind": "review",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6096,7 +6096,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "unlimitedrag.com",
 "kind": "article",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6106,7 +6106,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "sanatokur.com",
 "kind": "review",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6116,7 +6116,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "nouvart.net",
 "kind": "interview",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6126,7 +6126,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "artfulliving.com",
 "kind": "review",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6136,7 +6136,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "spotify.com",
 "kind": "podcast",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6146,7 +6146,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "callingmag.com",
 "kind": "interview",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
 },
 {
@@ -6156,7 +6156,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "gazeteoksijen.com",
 "kind": "review",
-"about": "all familiar, all foreign",
+"about": "2301",
 "summary": "Review; article URL not given, domain only."
 },
 {
@@ -6216,7 +6216,7 @@ const ARCHIVE = {
 "language": "DE",
 "url": "https://www.hkw.de/programme/cultures-d-avenir/cultures-d-avenir-2023",
 "kind": "listing",
-"about": "Silent University Meeting: Cultures d'avenir",
+"about": "2315",
 "summary": "HKW programme page naming contributions by Ahmet Öğüt and Yelta Köm."
 },
 {
@@ -6226,7 +6226,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.top-ev.de/exhibition/partial-weaves-unfinished-stories-of-displacement/",
 "kind": "listing",
-"about": "Partial Weaves: Unfinished Stories of Displacement",
+"about": null,
 "summary": "Exhibition page (11 to 21 March 2022) from the Topological Atlas research, credited to Nishat Awan, Yelta Köm and Zahra Hussain."
 },
 {
@@ -6236,7 +6236,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.top-ev.de/exhibition/urban-surveillance-bureau-a-sequence-of-work-in-process-by-yelta-kom/",
 "kind": "listing",
-"about": "Urban Surveillance Bureau: A Sequence of Work in Process",
+"about": "2201",
 "summary": "Exhibition page for the solo show on view 2 to 9 February 2022 with a pre-closing event on 5 February."
 },
 {
@@ -6246,7 +6246,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://bienal.iksv.org/en/17b-artists/arazi-assembly-topological-atlas",
 "kind": "listing",
-"about": "2211",
+"about": "2207",
 "summary": "Biennial artist page crediting Köm within the Arazi Assembly and Topological Atlas entries."
 },
 {
@@ -6256,7 +6256,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": null,
 "kind": "article",
-"about": "1717",
+"about": "1715",
 "summary": "Article on his Hong Kong and Pearl River Delta research."
 },
 {
@@ -6266,7 +6266,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://bienal.iksv.org/en/17b-artists/ahmet-ogut-the-silent-university-team",
 "kind": "listing",
-"about": "The Silent University Orientation Programme",
+"about": "1920",
 "summary": "Biennial artist page listing Köm as Program Coordinator of the Silent University Orientation Program."
 },
 {
@@ -6276,7 +6276,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://bienal.iksv.org/en/17-public-learning-programmes/saha-studio-talks",
 "kind": "listing",
-"about": "The Silent University Orientation Programme",
+"about": "1920",
 "summary": "Programme page for the talk where Öğüt, Köm, Nabhan and Jibril present the Silent University Orientation Program, and the SAHA Studio Open final presentations."
 },
 {
@@ -6286,7 +6286,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://avesis.cu.edu.tr/sanatsal-etkinlikler/773b6740-cd97-4ca5-b7ec-0a9eb314fb9f/state-of-displacement-entangled-topographies-17th-istanbul-bieannial",
 "kind": "listing",
-"about": "State of Displacement: Entangled Topographies",
+"about": "2207",
 "summary": "Academic records listing the biennial work under Awan N., Tan P., Köm Y. and Şanlıer Ö. İ., dated 1 September 2022."
 },
 {
@@ -6296,7 +6296,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/acik-mimarlik-500uncu-programini-kutladi/",
 "kind": "news",
-"about": "Açık Mimarlık (Açık Radyo programme)",
+"about": null,
 "summary": "Names Köm among past programmers of the Açık Radyo architecture programme who joined the 500th special broadcast."
 },
 {
@@ -6316,7 +6316,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/etkinlik/olcek/",
 "kind": "listing",
-"about": "Scale (Ölçek)",
+"about": "2007",
 "summary": "Listing of the group exhibition 'Ölçek' at Versus Art Project (until 28 November) including Köm."
 },
 {
@@ -6336,7 +6336,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://tr-cam.com/video/ppU5KT1hO-E/arkitera-seyahat-bursu-dijital-tema-tan-t-m-toplant-s-yelta-kom-at-l-aggunduz.html",
 "kind": "video",
-"about": "Arkitera Seyahat Bursu Dijital Tema Tanıtım Toplantısı",
+"about": "2014",
 "summary": "Video of the info meeting."
 },
 {
@@ -6346,7 +6346,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "arkitera.com/etkinlik/olcek/",
 "kind": "listing",
-"about": "Scale (Ölçek)",
+"about": "2007",
 "summary": "Event listing."
 },
 {
@@ -6356,7 +6356,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.seyahatbursu.com/2019/03/15/eski-bursiyerlerden-tavsiyeler/",
 "kind": "interview",
-"about": "Eski Bursiyerlerden Tavsiyeler",
+"about": "1917",
 "summary": "Advice from former grantees."
 },
 {
@@ -6366,7 +6366,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://xxi.com.tr/i/vardiya-esnasinda-ve-sonrasinda",
 "kind": "interview",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Opinion and interview piece on the pavilion during and after."
 },
 {
@@ -6376,7 +6376,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.vbenzeri.com/mimari/vardiya-sona-erdi",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6386,7 +6386,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://bi-ozet.com/2018/11/30/16-venedik-mimarlik-bienali-turkiye-pavyonunda-vardiya-sona-erdi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6396,7 +6396,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.hurriyet.com.tr/kitap-sanat/turkiye-pavyonunda-vardiya-sona-erdi-41035311",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6406,7 +6406,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.hurriyet.com.tr/kitap-sanat/bu-vardiyada-herkes-mutlu-40997388",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6416,7 +6416,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://bi-ozet.com/2018/07/19/16-uluslararasi-venedik-mimarlik-bienalinde-ilk-3/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6426,7 +6426,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://worldarchitecture.org/architecture-news/ehvcm/exclusive-curators-of-the-shift-in-conversation-with-suha-ozkan.html",
 "kind": "interview",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Interview with the curators of The Shift, including Köm, by Suha Özkan on world architecture, biennales and the Turkish pavilion."
 },
 {
@@ -6436,7 +6436,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://t24.com.tr/haber/hic-durmayan-bir-su-bulusma-karsilasma-uretme-ve-mimarlik-vardiya,657976",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6456,7 +6456,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.vbenzeri.com/mimari/turkiye-pavyonunda-vardiya",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6466,7 +6466,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.milliyet.com.tr/gundem/bienalin-kendisini-ulasilabilir-kilsak-2678069",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6476,7 +6476,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://t24.com.tr/haber/venedikte-vardiya-basladi-bir-fikir-sunduk-buralara-kadar-geldik,637431",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6486,7 +6486,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://bi-ozet.com/2018/05/24/venedik-bienali-16-uluslararasi-mimarlik-sergisi-turkiye-pavyonu-vardiya-acildi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6496,7 +6496,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.yenicikanlar.com.tr/turkiye-pavyonunda-vardiya-basliyor-6646/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6506,7 +6506,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://t24.com.tr/haber/venedikte-turkiye-pavyonu-acildi,636073",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6516,7 +6516,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.e-flux.com/announcements/169000/vardiya-the-shift/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6526,7 +6526,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/bienal-ne-icin-kimin-icin-var-ve-ne-ise-yarar/",
 "kind": "article",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Pre-opening piece on Vardiya; Köm named among the assistant curators."
 },
 {
@@ -6536,7 +6536,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.metalocus.es/en/news/vardiya-shift-pavilion-turkey-biennale-architettura-di-venezia-2018",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Opening-week feature on the pavilion with curator biographies including Köm's."
 },
 {
@@ -6546,7 +6546,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://nilayornek.com/15-maddede-venedik-mimarlik-bienali-vardiyasi-siz-de-izleyebilirsiniz/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6556,7 +6556,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/soylesi/bienali-mimarligin-genc-aktorleri-tarafindan-ulasilabilir-hale-getirmek-onemli/",
 "kind": "interview",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Interview with curator Kerem Piker on Vardiya; Köm named among the assistant curators."
 },
 {
@@ -6566,7 +6566,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.vbenzeri.com/mimari/geri-sayim-basladi",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6576,7 +6576,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/venedik-mimarlik-bienali-icin-geri-sayim-basladi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Countdown article naming Köm among Vardiya's assistant curators."
 },
 {
@@ -6586,7 +6586,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": null,
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6596,7 +6596,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.metalocus.es/en/news/pavilion-turkey-vardiya-shift-16th-biennale-architettura-di-venezia-2018",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Pavilion preview naming Köm as associate curator."
 },
 {
@@ -6606,7 +6606,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.star.com.tr/pazar/venedik-mimarlik-bienalinde-genc-turkler-haber-1334389/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6616,7 +6616,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://bi-ozet.com/2018/03/07/venedik-mimarlik-bienali-turkiye-pavyonu-vardiya-projesinin-ayrintilari-aciklandi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6626,7 +6626,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.sozcu.com.tr/hayatim/kultur-sanat-haberleri/vardiyanin-ayrintilari-aciklandi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6636,7 +6636,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/venedik-mimarlik-bienalinde-yer-alacak-vardiya-projesinin-detaylari-aciklandi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Details of the Vardiya programme; Köm credited as assistant curator."
 },
 {
@@ -6646,7 +6646,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.hurriyet.com.tr/kitap-sanat/vardiya-icin-100-mimarlik-ogrencisi-araniyor-40721480",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6656,7 +6656,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.iksv.org/en/news/the-pavilion-of-turkey-announces-the-project-to-be-exhibited-at-the-biennale-architettura-2018/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "IKSV press release naming Köm as assistant curator of Vardiya / The Shift."
 },
 {
@@ -6666,7 +6666,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://t24.com.tr/haber/ogrencileri-bienalin-takipcisi-degil-yaraticisi-yapacak-proje,536964",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6686,7 +6686,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/soylesi/vardiyanin-ardindan",
 "kind": "interview",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Conversation with three associate curators after the pavilion."
 },
 {
@@ -6696,7 +6696,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "e-architect.com/venice/venice-biennale-turkey-pavilion-2018",
 "kind": "article",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Feature; path as given in compiled archive."
 },
 {
@@ -6706,7 +6706,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.top-ev.de/commons-lab/urban-struggles-emergent-commoning-practices/",
 "kind": "listing",
-"about": "Urban Struggles and Emergent Commoning Practices",
+"about": "1813",
 "summary": "Commons Lab event page for a lecture by Köm on commoning and the #occupygezi architecture project (event dated 15 August 2018, 19:30; page also shows 2017 post date)."
 },
 {
@@ -6726,7 +6726,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.hurriyet.com.tr/kitap-sanat/mimarlik-ogrencilerine-venedik-bienali-daveti-40681886",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6736,7 +6736,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/venedik-mimarlik-turkiye-pavyonundan-mimarlik-ogrencilerine-cagri/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Open call to architecture students for Vardiya; Köm listed as assistant curator."
 },
 {
@@ -6746,7 +6746,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.archdaily.com/881961/turkish-pavilion-at-the-2018-venice-biennale-to-host-a-series-of-student-workshops",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6756,7 +6756,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://arsizsanat.com/venedik-bienali-16-uluslararasi-mimarlik-sergisi-turkiye-pavyonunda-yer-alacak-proje-belirlendi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6766,7 +6766,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://bi-ozet.com/2017/09/26/16-uluslararasi-mimarlik-sergisi-turkiye-pavyonunda-yer-alacak-proje-vardiya/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6776,7 +6776,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://www.sanatatak.com/view/venedik-bienali-16-uluslararasi-mimarlik-sergisine-vardiya-gidiyor",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6786,7 +6786,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.vbenzeri.com/mimari/vardiya",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
 },
 {
@@ -6796,7 +6796,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.metalocus.es/en/news/vardiya-shift-project-pavilion-turkey-biennale-architettura-2018",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Announces Vardiya with Köm among the assistant curators."
 },
 {
@@ -6806,7 +6806,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/venedik-mimarlik-bienali-turkiye-pavyonunda-yer-alacak-proje-belirlendi/",
 "kind": "news",
-"about": "Vardiya / The Shift",
+"about": "1802",
 "summary": "Announces the selection of Vardiya for the Pavilion of Turkey, naming Köm as assistant curator."
 },
 {
@@ -6816,7 +6816,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://studio-xistanbul.org/tr/events/turkey-design-chronology-12-November",
 "kind": "listing",
-"about": "Türkiye Tasarım Kronolojisi: Deneme",
+"about": "1602",
 "summary": "Event page."
 },
 {
@@ -6826,7 +6826,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://archinect.com/firms/release/9215461/autonomous-archiving-book-name-your-price-and-get-it/149956198",
 "kind": "news",
-"about": "Autonomous Archiving (book)",
+"about": "1610",
 "summary": "Release of the book."
 },
 {
@@ -6836,7 +6836,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/etkinlik/terk-etmeyecegiz/",
 "kind": "listing",
-"about": "We Won't Leave",
+"about": null,
 "summary": "Listing of the exhibition at Goethe-Institut Ankara, 19 April to 13 May 2016 (curator Pelin Tan), with Köm among the participants."
 },
 {
@@ -6866,7 +6866,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/soylesi/seyahat-bursuna-basvurum-bir-son-dakika-sansiydi/",
 "kind": "interview",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "Interview with former travel-grant holders including Köm on how they approached the application and route."
 },
 {
@@ -6876,7 +6876,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": null,
 "kind": "press release",
-"about": "Herkes İçin Mimarlık",
+"about": null,
 "summary": "Arkitera published the Herkes İçin Mimarlık fourth-anniversary press bulletin sent by Yelta Köm on 28 Dec 2015."
 },
 {
@@ -6886,7 +6886,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/arkitera-odulleri-2015-sahiplerini-buldu/",
 "kind": "news",
-"about": "Genç Mimar Teşvik Ödülü (Young Architect Encouragement Award)",
+"about": "1510",
 "summary": "Reports the awards ceremony at which Köm received the Selection Committee Encouragement Award."
 },
 {
@@ -6896,7 +6896,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.vbenzeri.com/vhaber/dikkat-kaygan-zemin-simdi-de-ankarada",
 "kind": "news",
-"about": "Caution! Slippery Ground (currently in excluded list)",
+"about": null,
 "summary": "News of the exhibition's Ankara showing."
 },
 {
@@ -6936,7 +6936,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://bi-ozet.com/2015/07/14/betonartin-simdi-temali-yaz-sayisi-cikti/",
 "kind": "news",
-"about": "Betonart, present+ issue",
+"about": "1501",
 "summary": "Announcement of the summer issue he guest-edited."
 },
 {
@@ -6956,7 +6956,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://www.radikal.com.tr/yazarlar/muge-akgun/dikkat-zemin-kaygan-1323349/",
 "kind": "article",
-"about": "Caution! Slippery Ground (currently in excluded list)",
+"about": null,
 "summary": "Column by Müge Akgün on the exhibition."
 },
 {
@@ -6966,7 +6966,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://www.mimarizm.com/haberler/bu-sistemde-tek-bir-mimarlik-yapma-biciminin-hayatta-kalma-sansi-yok_118002",
 "kind": "article",
-"about": "Caution! Slippery Ground (currently in excluded list)",
+"about": null,
 "summary": "News item listed with the exhibition press; whether it quotes him is not verified."
 },
 {
@@ -6976,7 +6976,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/etkinlik/vitra-cagdas-mimarlik-dizisi-sunar-dikkat-kaygan-zemin/",
 "kind": "listing",
-"about": "Caution! Slippery Ground",
+"about": "1515",
 "summary": "Listing of the Istanbul Modern exhibition on architectural culture, 26 March to 31 May 2015, crediting Yelta Köm as curator."
 },
 {
@@ -6996,7 +6996,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "arkitera.com/etiket/yelta-kom/",
 "kind": "article",
-"about": "Genç Mimar Teşvik Ödülü (Young Architect Encouragement Award)",
+"about": "1510",
 "summary": "Award coverage; tag page only."
 },
 {
@@ -7006,7 +7006,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.youtube.com/watch?v=RCMwar-_PBY",
 "kind": "video",
-"about": "2. İstanbul Tasarım Bienali: Kontraakt",
+"about": "1402",
 "summary": "Video of the Kontraakt talk."
 },
 {
@@ -7016,7 +7016,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://2tb.iksv.org/program_paneller.asp",
 "kind": "listing",
-"about": "Designers in Dialogue: The Future...?",
+"about": "1403",
 "summary": "Panel schedule listing Arctic Perspective with Kontraakt (Cenk Dereli and Yelta Köm) on 2 November, 14:00 to 16:00."
 },
 {
@@ -7026,7 +7026,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.youtube.com/watch?v=8Sn79WyAeoI",
 "kind": "video",
-"about": "Presentation: TSRRF Yelta Köm / KOTUstudio",
+"about": "1410",
 "summary": "Video of the talk."
 },
 {
@@ -7036,7 +7036,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://2tb.iksv.org/proje.asp?id=44",
 "kind": "listing",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "Biennial project page naming Köm as editor of the #occupygezi architecture collection of drawings shown at the 2nd Istanbul Design Biennial."
 },
 {
@@ -7046,7 +7046,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://2tb.iksv.org/proje.asp?id=53",
 "kind": "listing",
-"about": "KONTRAAKT",
+"about": "1805",
 "summary": "Biennial project page presenting Kontraakt (H. Cenk Dereli, Hayrettin Günç, Yelta Köm)."
 },
 {
@@ -7056,7 +7056,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.archdaily.com/394549/taksim-square-s-temporary-structures-rendered",
 "kind": "news",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "ArchDaily article on the renderings of Taksim Square's temporary structures, crediting Köm as editor and coordinator for Herkes İçin Mimarlık."
 },
 {
@@ -7066,7 +7066,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.inenart.eu/?p=10433",
 "kind": "news",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "Repost of the project presentation quoting Köm as co-founder of the organisation."
 },
 {
@@ -7076,7 +7076,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.metalocus.es/en/news/occupygezi-architecture",
 "kind": "news",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "Metalocus (José Juan Barba) on the architects documenting the structures dismantled by police in Gezi Park; the article text does not name Köm."
 },
 {
@@ -7086,7 +7086,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://archinect.com/news/article/75806811/occupygezi-architecture",
 "kind": "news",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "Archinect news item quoting Köm on the need for new definitions of architecture when it is 'removed from architects'."
 },
 {
@@ -7126,7 +7126,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://archiv.hkw.de/en/programm/projekte/2013/edward_said_konferenz/multimedia_edward_said/workshop.php",
 "kind": "listing",
-"about": "Al-mashaa' or the Space of the Common (workshop, A Journey of Ideas Across)",
+"about": null,
 "summary": "HKW programme page for the 30 October to 1 November 2013 workshop, listing Köm among participants (architect, independent writer, Herkes İçin Mimarlık)."
 },
 {
@@ -7136,7 +7136,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://www.artic.edu/artworks/240550/occupy-gezi-architecture",
 "kind": "listing",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "Museum collection record crediting Herkes Için Mimarlik and Yelta Köm (born 1986) for the 2013 paper work and describing the project."
 },
 {
@@ -7146,7 +7146,7 @@ const ARCHIVE = {
 "language": "EN",
 "url": "https://mascontext.com/news/mas-context-in-istanbul-design-biennial",
 "kind": "news",
-"about": "Ad-Hoc Library",
+"about": "1202",
 "summary": "News post noting that copies of MAS Context are part of the mobile library designed by Yelta Köm in the Adhocracy exhibition (curated by Joseph Grima et al.) at the 1st Istanbul Design Biennial."
 },
 {
@@ -7156,7 +7156,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/soylesi/herkes-icin-mimarlik-sosyal-mimarlik-platformu/",
 "kind": "interview",
-"about": "Herkes İçin Mimarlık / Architecture for All",
+"about": "1104",
 "summary": "Arkitera interview (Selin Biçer) with Köm and other members of Herkes için Mimarlık about how and when the platform was founded."
 },
 {
@@ -7166,7 +7166,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://acikmimarlik.blogspot.com/2012/05/herkes-icin-mimarlik.html?m=1",
 "kind": "podcast",
-"about": "Herkes İçin Mimarlık / Architecture for All",
+"about": "1104",
 "summary": "Podcast episode post on Herkes İçin Mimarlık."
 },
 {
@@ -7176,7 +7176,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/arkitera-gezgini-uretimin-pesinde-kosarken-kendini-uretimin-icinde-buldu/",
 "kind": "news",
-"about": "A story from an Arkitera traveler (In Search of Production)",
+"about": "1101",
 "summary": "Report on Köm's 4 October 2011 presentation of his 30-day trip at SALT Beyoğlu."
 },
 {
@@ -7186,7 +7186,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://saltonline.org/tr/124/sunum-yelta-kom",
 "kind": "listing",
-"about": "A story from an Arkitera traveler (In Search of Production)",
+"about": "1101",
 "summary": "Event page for the presentation at SALT Beyoğlu; video at vimeo.com/30065958."
 },
 {
@@ -7196,7 +7196,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/arkitera-gezgini-turunu-tamamladi/",
 "kind": "article",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "Reports that Köm completed nine cities in one month and publishes the notes he wrote in the final days."
 },
 {
@@ -7206,7 +7206,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/soylesi/yelta-kom-arkitera-seyahat-bursu-ile-uretimin-pesinde/",
 "kind": "interview",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "Interview with the 2011 Arkitera travel grantee about his production-focused journey."
 },
 {
@@ -7216,7 +7216,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/bursla-dunyayi-dolasiyor/",
 "kind": "article",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "Overview of Köm's nine-city 'Üretimin Peşinde' route with excerpts from his travel notes."
 },
 {
@@ -7226,7 +7226,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/arkitera-gezgini-mumbaide/",
 "kind": "article",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "First dispatch of Köm's travel-grant trip, from Mumbai, published by Arkitera."
 },
 {
@@ -7236,7 +7236,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/etkinlik/arkitera-on-seyahat-bursu-sunumu-arkitera-gezgininden-bir-yol-hikayesi/",
 "kind": "listing",
-"about": "A story from an Arkitera traveler (In Search of Production)",
+"about": "1101",
 "summary": "Event listing for Köm's travel-grant presentation at SALT Beyoğlu on 4 October 2011, 19:00."
 },
 {
@@ -7246,7 +7246,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/arkitera-seyahat-bursu-gezgini-yola-cikiyor-2/",
 "kind": "news",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "Announces that Yelta Köm starts his 30-day, nine-city 'Üretimin Peşinde' trip on 8 August."
 },
 {
@@ -7256,7 +7256,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.arkitera.com/haber/arkitera-seyahat-bursu-gezgini-belli-oldu/",
 "kind": "news",
-"about": "Arkitera Seyahat Bursu (Arkitera Travel Grant)",
+"about": "1103",
 "summary": "Arkitera announces Yelta Köm, with the theme 'Üretimin Peşinde' (In Search of Production), as the first winner of its Travel Grant after the final jury on 5 March."
 },
 {
@@ -7266,7 +7266,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://vimeo.com/30065958",
 "kind": "video",
-"about": "A story from an Arkitera traveler (In Search of Production)",
+"about": "1101",
 "summary": "Video of the 2011 presentation."
 },
 {
@@ -7296,7 +7296,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "http://2tb.iksv.org/proje.asp?id=44",
 "kind": "listing",
-"about": "#occupygezi architecture",
+"about": "1301",
 "summary": "Biennial project page."
 },
 {
@@ -7306,7 +7306,7 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.artfulliving.com.tr/sanat/is-uretmek-bir-hikye-anlatma-meselesi-i-25634",
 "kind": "interview",
-"about": "Undertow (Dip Dalga)",
+"about": "2203",
 "summary": "Conversation with Köm about his production, occasioned by the online video selection 'Dip Dalga' and his work 'İhtimaller İçin Bir Ağıt - Bölüm I'. Page shows no publication date."
 },
 {
