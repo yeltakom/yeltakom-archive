@@ -59,15 +59,16 @@
       b.className = 'type';
       t.appendChild(b);
     });
-    var f = $('for'), fc = {};
-    ENTRIES.forEach(function (e) { if (e['for']) fc[e['for']] = (fc[e['for']] || 0) + 1; });
-    Object.keys(fc).sort(function (a, b) { return fc[b] - fc[a] || a.localeCompare(b); }).forEach(function (k) {
-      f.appendChild(el('option', { value: k }, esc(k) + ' (' + fc[k] + ')'));
+    // type chips stay folded away until asked for: they are a second-order filter
+    var tt = $('typetoggle'), tbox = $('types');
+    tt.addEventListener('click', function () {
+      var open = tbox.hasAttribute('hidden');
+      if (open) { tbox.removeAttribute('hidden'); } else { tbox.setAttribute('hidden', ''); }
+      tt.setAttribute('aria-expanded', String(open));
     });
-    f.addEventListener('change', function () { state.forv = f.value; render(); });
     $('q').addEventListener('input', function (ev) { state.q = ev.target.value; render(); });
     $('reset').addEventListener('click', function () {
-      state.types.clear(); state.forv = ''; state.q = ''; $('q').value = ''; f.value = '';
+      state.types.clear(); state.q = ''; $('q').value = '';
       setSection('all', true); buildTypesPressed();
     });
     $('vlist').addEventListener('click', function () { setView('list'); });
@@ -96,7 +97,6 @@
     return ENTRIES.filter(function (e) {
       if (!sec.test(e)) return false;
       if (state.types.size && !(e.types || []).some(function (t) { return state.types.has(t); })) return false;
-      if (state.forv && e['for'] !== state.forv) return false;
       return words.every(function (w) { return e._hay.indexOf(w) > -1; });
     });
   }
@@ -162,6 +162,7 @@
     row('Links', lk.join('<br>'));
     h += '</dl>';
     if (e.text) h += '<p class="read"><a href="' + esc(e.text) + '">Read the text</a></p>';
+    if (e.page) h += '<p class="read"><a href="' + esc(e.page) + '">Open the full page</a></p>';
     h += '</div>';
     var imgs = images(e);
     if (imgs.length) {

@@ -97,7 +97,8 @@ const ARCHIVE = {
 ],
 "status": "realised",
 "description": "Installation and single-channel video with scale models that read the crack as both rupture and opening.",
-"section": "work"
+"section": "work",
+"page": "works/2611-yariktan-sizanlar.html"
 },
 {
 "no": "2610",
@@ -109,7 +110,8 @@ const ARCHIVE = {
 "place": "Savaştepe",
 "status": "ongoing",
 "description": "Research-based project on the Savaştepe Village Institute around spatial restoration, community co-production, digital archiving and speculative pedagogy.",
-"section": "work"
+"section": "work",
+"page": "works/2610-savastepe-koy-enstitusu.html"
 },
 {
 "no": "2609",
@@ -195,7 +197,8 @@ const ARCHIVE = {
 "curator": null
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2605-dicle-batman-cayi-uzerine-fragmanlar.html"
 },
 {
 "no": "2604",
@@ -283,7 +286,8 @@ const ARCHIVE = {
 "curator": "Gülce Özkara"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2601-hep-seninleydim-i-was-always-with-you.html"
 },
 {
 "no": "2511",
@@ -430,7 +434,8 @@ const ARCHIVE = {
 "place": "TOP Project Space / Zebrahaus, Berlin",
 "status": "realised",
 "description": "Open studios event programmed through TOP e.V.",
-"section": "work"
+"section": "work",
+"page": "works/2503-open-studios-tempelhof.html"
 },
 {
 "no": "2502",
@@ -511,7 +516,8 @@ const ARCHIVE = {
 "curator": "Övül Ö. Durmuşoğlu, Joanna Warsza (Kunstmuseum Moritzburg); Daniel Herrmann, Alexander Klose, Edit Molnár, Marcel Schwierin (Werkleitz)"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2501-cracks-in-the-soil.html"
 },
 {
 "no": "2414",
@@ -624,7 +630,8 @@ const ARCHIVE = {
 "curator": null
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2409-sen-de-mi-buradasin.html"
 },
 {
 "no": "2408",
@@ -640,7 +647,8 @@ const ARCHIVE = {
 "place": "Akademie der bildenden Künste Wien, Vienna",
 "status": "realised",
 "description": "Exhibition presentation with Arazi Assembly accompanying the conference Ecologies of Making Worlds.",
-"section": "work"
+"section": "work",
+"page": "works/2408-ecologies-of-making-worlds.html"
 },
 {
 "no": "2407",
@@ -712,7 +720,8 @@ const ARCHIVE = {
 "url": "https://kulturakademie-tarabya.de/en/artists/yelta-kom-ulya-soley/"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2404-sound-kitchen-nightlife-as-sustained-resistance.html"
 },
 {
 "no": "2403",
@@ -778,7 +787,8 @@ const ARCHIVE = {
 "place": "Istanbul",
 "status": "realised",
 "description": "Research and exhibition project on nightlife as sustained resistance, carried out during the Tandem Residency, with a CTM text and the event Sound Kitchen.",
-"section": "work"
+"section": "work",
+"page": "works/2320-nightlife-as-sustained-resistance-in-istanbul-research-proje.html"
 },
 {
 "no": "2319",
@@ -943,7 +953,8 @@ const ARCHIVE = {
 "place": "Silent Green, Berlin",
 "status": "realised",
 "description": "Participation in the vorspiel programme of transmediale at Silent Green.",
-"section": "work"
+"section": "work",
+"page": "works/2310-vorspiel-transmediale.html"
 },
 {
 "no": "2309",
@@ -959,7 +970,8 @@ const ARCHIVE = {
 "place": "TOP Project Space, Berlin",
 "status": "realised",
 "description": "Arazi Assembly exhibition at TOP Project Space.",
-"section": "work"
+"section": "work",
+"page": "works/2309-non-extractivist-practices-in-the-dispossessed-lands.html"
 },
 {
 "no": "2308",
@@ -990,7 +1002,8 @@ const ARCHIVE = {
 "url": "img/lines-of-displacement/01.jpg"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2308-lines-of-displacement-along-the-tigris.html"
 },
 {
 "no": "2307",
@@ -1011,7 +1024,8 @@ const ARCHIVE = {
 "role": "co-author within the collective",
 "status": "realised",
 "description": "Collective laser projection recorded on a seven-minute video and a poster magazine of eleven posters, starting from the Women's Library in Fener and Dolores Hayden's essay on the non-sexist city, supported by Kulturakademie Tarabya and Koç Museum.",
-"section": "work"
+"section": "work",
+"page": "works/2307-concept-text-lazer.html"
 },
 {
 "no": "2306",
@@ -1080,7 +1094,8 @@ const ARCHIVE = {
 ],
 "status": "realised",
 "description": "A6 artist book made for the exhibition her şey tanıdık, her şey yabancı, with text editing by Ulya Soley, reprinted in a new edition in 2026.",
-"section": "work"
+"section": "work",
+"page": "works/2302-kiyamet-eschatology.html"
 },
 {
 "no": "2301",
@@ -1172,7 +1187,8 @@ const ARCHIVE = {
 "curator": "Ulya Soley"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2301-all-familiar-all-foreign-her-sey-tanidik-her-sey-yabanci.html"
 },
 {
 "no": "2221",
@@ -1190,7 +1206,8 @@ const ARCHIVE = {
 "role": "spatial analysis and GIS mapping",
 "status": "realised",
 "description": "Interdisciplinary project reconstructing three decades of Berlin's migrant-community economies from directory data, with spatial analysis and GIS mapping by Köm.",
-"section": "work"
+"section": "work",
+"page": "works/2221-yellow-pages.html"
 },
 {
 "no": "2220",
@@ -1384,7 +1401,8 @@ const ARCHIVE = {
 "place": "Galerie UM, Prague",
 "status": "realised",
 "description": "Group exhibition curated by Imrich Vaško.",
-"section": "work"
+"section": "work",
+"page": "works/2210-coexist-coact-collaborate.html"
 },
 {
 "no": "2209",
@@ -1458,7 +1476,8 @@ const ARCHIVE = {
 "curator": "Ute Meta Bauer, Amar Kanwar, David Teh"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2207-state-of-displacement-entangled-topographies.html"
 },
 {
 "no": "2206",
@@ -1518,7 +1537,8 @@ const ARCHIVE = {
 "place": "Online",
 "status": "realised",
 "description": "Online video exhibition of Versus Art Project, 21 April to 30 June 2022.",
-"section": "work"
+"section": "work",
+"page": "works/2203-undertow-dip-dalga.html"
 },
 {
 "no": "2202",
@@ -1622,7 +1642,8 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"text": "texts/urban-surveillance-bureau-exhibition-text.html"
+"text": "texts/urban-surveillance-bureau-exhibition-text.html",
+"page": "works/2201-urban-surveillance-bureau-exhibition-text.html"
 },
 {
 "no": "2129",
@@ -1956,7 +1977,8 @@ const ARCHIVE = {
 "place": "TOP e.V., Berlin",
 "status": "realised",
 "description": "Group exhibition curated by Tuğçe Erel.",
-"section": "work"
+"section": "work",
+"page": "works/2110-listening-to-listening.html"
 },
 {
 "no": "2109",
@@ -1994,7 +2016,8 @@ const ARCHIVE = {
 "url": "img/eyes-on-eyes/03.jpg"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2109-eyes-on-eyes.html"
 },
 {
 "no": "2108",
@@ -2074,7 +2097,8 @@ const ARCHIVE = {
 "place": "Kerpe",
 "status": "ongoing",
 "description": "Video project on molybdomancy and the quarry cliffs of Kerpe, relocated from Tuz Gölü in 2021 and taken up again in 2025.",
-"section": "work"
+"section": "work",
+"page": "works/2105-it-is-an-elegy-for-all-possibilities.html"
 },
 {
 "no": "2104",
@@ -2188,7 +2212,8 @@ const ARCHIVE = {
 "curator": "Özge Yılmaz"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2102-possibilistic-grounds-olasiliksal-zeminler.html"
 },
 {
 "no": "2101",
@@ -2206,7 +2231,8 @@ const ARCHIVE = {
 "url": "https://www.yeltakom.info/blog/on-being-water-a-group-show-at-istanbul-apartment-gallery"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2101-on-being-water.html"
 },
 {
 "no": "2022",
@@ -2482,7 +2508,8 @@ const ARCHIVE = {
 "place": "Versus Art Project, Istanbul",
 "status": "realised",
 "description": "Group exhibition curated by Ezgi Bakçay.",
-"section": "work"
+"section": "work",
+"page": "works/2007-scale-olcek.html"
 },
 {
 "no": "2006",
@@ -2594,7 +2621,8 @@ const ARCHIVE = {
 "url": "img/hide-seek/19.jpg"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2006-hide-seek-latent-surveillance-map.html"
 },
 {
 "no": "2005",
@@ -2631,7 +2659,8 @@ const ARCHIVE = {
 "url": "img/fateful-serendipity/04.jpg"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/2005-fateful-serendipity.html"
 },
 {
 "no": "2004",
@@ -2734,7 +2763,8 @@ const ARCHIVE = {
 "role": "artist (per compiled archive)",
 "status": "realised",
 "description": "Group exhibition listed as Istanbul Modern / VitrA, 2019.",
-"section": "work"
+"section": "work",
+"page": "works/1922-dreams-to-realities.html"
 },
 {
 "no": "1921",
@@ -2752,7 +2782,8 @@ const ARCHIVE = {
 "role": "researcher",
 "status": "realised",
 "description": "Research and workshop in Vienna with Adam Hudec at SKuOR (Interdisciplinary Centre for Urban Culture and Public Space); project list tags: commons, climate crisis, dust, Dusts Institute.",
-"section": "work"
+"section": "work",
+"page": "works/1921-do-you-care-about-the-air.html"
 },
 {
 "no": "1920",
@@ -3026,7 +3057,8 @@ const ARCHIVE = {
 "place": "Matera",
 "status": "realised",
 "description": "Participation in the archive project of Matera European Capital of Culture 2019.",
-"section": "work"
+"section": "work",
+"page": "works/1907-i-dea-archive-of-archives-a-voyage-through-the-collections-o.html"
 },
 {
 "no": "1906",
@@ -3038,7 +3070,8 @@ const ARCHIVE = {
 "place": "Hasankeyf",
 "status": "realised",
 "description": "Series of analogue 35 mm photographs of submerged houses and villages in Hasankeyf, one of which illustrates an essay by Pelin Tan in A Bundle of Reeds: Contemporary Art after the Tigris (Office for Contemporary Art Norway and Archive Books, 2026).",
-"section": "work"
+"section": "work",
+"page": "works/1906-hasankeyf-35-mm-photographs.html"
 },
 {
 "no": "1905",
@@ -3103,7 +3136,8 @@ const ARCHIVE = {
 "curator": null
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1904-secret-ingredient.html"
 },
 {
 "no": "1903",
@@ -3188,7 +3222,8 @@ const ARCHIVE = {
 "role": "coordinator (per compiled archive)",
 "status": "realised",
 "description": "Workshop and newspaper project inside the Vardiya pavilion at the 16th Venice Architecture Biennale, with Sophie Rezepcsky.",
-"section": "work"
+"section": "work",
+"page": "works/1817-the-venice-times.html"
 },
 {
 "no": "1816",
@@ -3519,7 +3554,8 @@ const ARCHIVE = {
 "url": "https://www.metalocus.es/sites/default/files/styles/mopis_fullslider_desktop/public/lead-images/metalocus_pabellon_turco_vardiya_bienal_venecia_2018_01_p.jpg?itok=_impVnYV"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1802-vardiya-the-shift.html"
 },
 {
 "no": "1801",
@@ -3853,7 +3889,8 @@ const ARCHIVE = {
 "curator": null
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1704-state-of-territory.html"
 },
 {
 "no": "1703",
@@ -3969,7 +4006,8 @@ const ARCHIVE = {
 "url": "https://www.arkitera.com/etkinlik/terk-etmeyecegiz/"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1613-terk-etmeyecegiz-we-won-t-leave.html"
 },
 {
 "no": "1612",
@@ -4172,7 +4210,8 @@ const ARCHIVE = {
 "curator": "Pelin Tan"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1604-urban-blockade-atlas.html"
 },
 {
 "no": "1603",
@@ -4229,7 +4268,8 @@ const ARCHIVE = {
 "place": "Versus Art Project, Istanbul",
 "status": "realised",
 "description": "Group exhibition curated by Ezgi Bakçay and Selim Süme, 14 July to 13 August 2016.",
-"section": "work"
+"section": "work",
+"page": "works/1601-les-glaneurs-et-les-glaneuses-the-gleaners.html"
 },
 {
 "no": "1519",
@@ -4314,7 +4354,8 @@ const ARCHIVE = {
 "url": "https://www.arkitera.com/etkinlik/vitra-cagdas-mimarlik-dizisi-sunar-dikkat-kaygan-zemin/"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1515-dikkat-kaygan-zemin-caution-slippery-ground.html"
 },
 {
 "no": "1514",
@@ -4358,7 +4399,8 @@ const ARCHIVE = {
 "role": "director (per compiled archive)",
 "status": "realised",
 "description": "Video made at Städelschule Architecture Class (SAC), Frankfurt, 2015.",
-"section": "work"
+"section": "work",
+"page": "works/1513-de-coding-amsterdam.html"
 },
 {
 "no": "1512",
@@ -4515,7 +4557,8 @@ const ARCHIVE = {
 "place": "Antalya",
 "status": "realised",
 "description": "Project shown at the 3rd Antalya International Architecture Biennial.",
-"section": "work"
+"section": "work",
+"page": "works/1504-incremental-housing.html"
 },
 {
 "no": "1503",
@@ -4664,7 +4707,8 @@ const ARCHIVE = {
 "role": "researcher",
 "status": "realised",
 "description": "Research and publication project, Istanbul, with Cansu Cürgen and Elif Tan.",
-"section": "work"
+"section": "work",
+"page": "works/1416-recronomic-landscapes.html"
 },
 {
 "no": "1415",
@@ -4874,7 +4918,8 @@ const ARCHIVE = {
 "curator": "Zoë Ryan"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1404-twtrate.html"
 },
 {
 "no": "1403",
@@ -5110,7 +5155,8 @@ const ARCHIVE = {
 "curator": "Zoë Ryan"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1303-kontraakt.html"
 },
 {
 "no": "1302",
@@ -5250,7 +5296,8 @@ const ARCHIVE = {
 "curator": null
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1301-occupygezi-architecture.html"
 },
 {
 "no": "1213",
@@ -5311,7 +5358,8 @@ const ARCHIVE = {
 "role": "co-founder of the association; individual role in this series not stated",
 "status": "realised",
 "description": "Series of picnic-festival gatherings in Gezi Park, launched by Herkes İçin Mimarlık in March 2012 against the Taksim Square project; the first on 4 March 2012 followed a workshop 'Herkes İçin Taksim' on 26 February 2012 at Mimar Sinan Fine Arts University.",
-"section": "work"
+"section": "work",
+"page": "works/1210-geleneksel-gezi-parki-senlikleri-gezi-park-celebrations.html"
 },
 {
 "no": "1209",
@@ -5420,7 +5468,8 @@ const ARCHIVE = {
 "place": "Istanbul Modern, Istanbul",
 "status": "realised",
 "description": "Two projects in the Musibet section of the 1st Istanbul Design Biennial, Söz with Architecture for All and Bomba with kpm.",
-"section": "work"
+"section": "work",
+"page": "works/1203-soz-and-bomba-musibet.html"
 },
 {
 "no": "1202",
@@ -5456,7 +5505,8 @@ const ARCHIVE = {
 "curator": "Joseph Grima"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1202-ad-hoc-library.html"
 },
 {
 "no": "1201",
@@ -5499,7 +5549,8 @@ const ARCHIVE = {
 "url": "img/active-monument-to-urban-destruction/01.jpg"
 }
 ],
-"section": "work"
+"section": "work",
+"page": "works/1201-active-monument-to-urban-destruction.html"
 },
 {
 "no": "1106",
@@ -5694,7 +5745,8 @@ const ARCHIVE = {
 "role": "organiser; led a media workshop",
 "status": "realised",
 "description": "Second Kayıtdışı design week at YTÜ (February 2009), theme liminal; the CV records a media workshop led by him. The 2009 paper reports 22 workshops, 16 speakers and over two hundred participants.",
-"section": "work"
+"section": "work",
+"page": "works/0902-kayitdisi-02-liminal.html"
 },
 {
 "no": "0901",
@@ -5722,7 +5774,8 @@ const ARCHIVE = {
 "role": "member of the organising team (listed by name)",
 "status": "realised",
 "description": "First Kayıtdışı design week, 4 to 9 February 2008 at YTÜ Faculty of Architecture, with discussion sessions, workshops, an exhibition, night events and a closing party; theme Yer(siz)leşme.",
-"section": "work"
+"section": "work",
+"page": "works/0803-kayitdisi-01-yer-siz-lesme.html"
 },
 {
 "no": "0802",

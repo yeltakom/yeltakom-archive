@@ -174,23 +174,7 @@ header.site { gap: 0.6rem 1.2rem; flex-wrap: wrap; }
 }
 .sitesearch input::placeholder { color: var(--mute); }
 
-/* ------------------------------------------------------------ front page */
-.standfirst {
-  font-size: clamp(1.3rem, 2.6vw, 2.1rem); line-height: 1.18; letter-spacing: -0.015em;
-  max-width: 24em; margin: 2rem 0 2.6rem; text-wrap: pretty;
-}
-.lead {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  gap: 2.2rem 1.6rem; margin: 0 0 3.4rem;
-}
-.card { text-decoration: none; color: var(--ink); display: block; }
-.card .shot { display: block; background: var(--tint); overflow: hidden; }
-.card .shot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.card .cap { display: block; padding-top: 0.5rem; }
-.card .cap .t { display: block; font-weight: var(--em); line-height: 1.2; }
-.card .cap .m { display: block; color: var(--mute); font-size: 13px; padding-top: 0.15rem; }
-.card:hover .cap .t { color: var(--sig); }
-
+/* ------------------------------------------------------------ shared lists */
 h2.rule {
   font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 400;
   color: var(--mute); border-top: 1px solid var(--ink); margin: 0 0 0.2rem;
@@ -263,3 +247,11 @@ h2.rule {
   /* the header already draws a rule underneath, so the field does not need its own */
   .sitesearch input { width: 100%; max-width: none; border-bottom: 0; padding-bottom: 0; }
 }
+
+/* type chips stay folded until asked for.
+   [hidden] needs the override because .frow sets display: flex. */
+[hidden] { display: none !important; }
+.frow.types { padding-top: 0.35rem; }
+#typetoggle[aria-expanded="true"] { color: var(--sig); }
+#typetoggle::after { content: " \203A"; display: inline-block; }
+#typetoggle[aria-expanded="true"]::after { transform: rotate(90deg); }

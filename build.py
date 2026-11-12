@@ -144,9 +144,9 @@ def host(u):
 
 # ---------------------------------------------------------------- page chrome
 def nav(root, current=""):
-    items = [("Work", root + "index.html"), ("Texts", root + "texts.html"),
-             ("Talks", root + "talks.html"), ("Press", root + "press.html"),
-             ("About", root + "about.html"), ("Archive", root + "archive.html")]
+    items = [("Archive", root + "index.html"), ("Texts", root + "index.html#texts"),
+             ("Talks", root + "index.html#talks"), ("Press", root + "press.html"),
+             ("About", root + "about.html")]
     links = "".join('<a href="%s"%s>%s</a>' % (href, ' aria-current="page"' if label == current else "", label)
                     for label, href in items)
     return ('<header class="site"><a class="mark" href="%sindex.html">Yelta K&#246;m</a>'
@@ -236,11 +236,14 @@ def main():
 
     # data.js
     texts_for_no = {no: b for b, no in text_pages.items() if no}
+    work_slugs = {x["no"]: wslug(x) for x in entries if x["section"] == "work"}
     out = []
     for x in entries:
         y = {k: x.get(k) for k in KEEP if x.get(k) not in (None, [], "")}
         if x["no"] in texts_for_no:
             y["text"] = "texts/%s.html" % texts_for_no[x["no"]]
+        if x["no"] in work_slugs:
+            y["page"] = "works/%s.html" % work_slugs[x["no"]]
         out.append(y)
     names = {x["no"]: x["name"] for x in entries}
     press = sorted(data.get("press", []), key=lambda p: p.get("date") or "", reverse=True)
@@ -278,14 +281,6 @@ def main():
                        press_by_no.get(x["no"], []))
 
     write_index(entries, work_pages, text_pages_by_no)
-    write_archive()
-    write_section_page("texts.html", "Texts",
-                       "Everything he has written, with the full text where it is in the archive. "
-                       "Texts not originally in English carry an AI translation, marked as such.",
-                       entries, lambda e: e["section"] == "text", work_pages, text_pages_by_no, "Texts")
-    write_section_page("talks.html", "Talks",
-                       "Lectures, panels, conference papers and artist talks.",
-                       entries, lambda e: e["section"] == "talk", work_pages, text_pages_by_no, "Talks")
     write_search(entries, press, search_texts, work_pages, text_pages_by_no)
     write_press(press, names)
     write_about(entries)
@@ -362,7 +357,7 @@ def entry_href(no, root=""):
     archive row. Keeps every cross-link in one place."""
     if no in WORK_PAGES:
         return "%sworks/%s.html" % (root, WORK_PAGES[no])
-    return "%sarchive.html#e-%s" % (root, no)
+    return "%sindex.html#e-%s" % (root, no)
 
 
 def wslug(ent):
@@ -392,7 +387,7 @@ def href_for(ent, work_pages, text_pages_by_no, root=""):
         return root + "works/%s.html" % work_pages[ent["no"]]
     if ent["no"] in text_pages_by_no:
         return root + text_pages_by_no[ent["no"]]
-    return root + "archive.html#e-%s" % ent["no"]
+    return root + "index.html#e-%s" % ent["no"]
 
 
 def srow(href, year, name, kicker):
@@ -401,75 +396,32 @@ def srow(href, year, name, kicker):
 
 
 def write_index(entries, work_pages, text_pages_by_no):
-    lead = [e for e in entries if e["section"] == "work" and imgs(e)][:8]
-    lead_nos = {e["no"] for e in lead}
-    cards = []
-    for e in lead:
-        cards.append(
-            '<a class="card" href="%s"><span class="shot"><img src="%s" alt="" loading="lazy"></span>'
-            '<span class="cap"><span class="t">%s</span><span class="m">%s</span></span></a>'
-            % (E(href_for(e, work_pages, text_pages_by_no)), E(imgs(e)[0]), E(e["name"]), meta_line(e)))
-
-    stream = []
-    for e in entries:
-        if e["no"] in lead_nos or e["section"] in ("network", "residency-award"):
-            continue
-        stream.append(srow(href_for(e, work_pages, text_pages_by_no),
-                           (e.get("dates") or "")[:4], e["name"],
-                           E(", ".join(e.get("types") or []))))
-        if len(stream) >= 40:
-            break
-
-    body = (
-        '<p class="standfirst">Yelta K&#246;m is an artist working through spatial practices, '
-        'trained as an architect and based in Berlin. He works on water, territory and '
-        'displacement, much of it along the Tigris.</p>\n'
-        '<section class="lead" aria-label="Selected work">\n%s\n</section>\n'
-        '<section class="stream" aria-labelledby="latest">\n'
-        '<h2 id="latest" class="rule">Recent work, texts and talks</h2>\n'
-        '<ul class="slist">\n%s\n</ul>\n'
-        '<p class="more"><a href="archive.html">All %d entries in the archive &#8594;</a></p>\n'
-        '</section>' % ("\n".join(cards), "\n".join(stream), len(entries)))
+    intro = ('<p class="intro">Yelta K&#246;m is an artist working through spatial practices, trained as an '
+             'architect and based in Berlin. His work moves between counter-mapping, critical cartography, '
+             'installation and research, much of it on water and territory along the Tigris. '
+             'Exhibition design and scenography: <a href="https://noframe.studio">Studio No Frame &#8599;</a>. '
+             'Here is more <a href="about.html">about</a> his practice and his '
+             '<a href="press.html">press</a>, or look through the archive below, which can be '
+             'filtered, searched or seen in image view.</p>')
     open(os.path.join(HERE, "index.html"), "w", encoding="utf-8").write(
-        page("Yelta Köm", body, current="Work", cls="front"))
+        page("Yelta Köm · Archive", intro + ARCHIVE_CONTROLS, current="Archive", cls="home",
+             scripts='<script src="%s"></script>\n<script src="%s"></script>\n'
+                     % (ver("data.js"), ver("app.js"))))
 
 
 ARCHIVE_CONTROLS = """<section class="controls" aria-label="Filter the archive">
   <div class="frow" id="sections" role="group" aria-label="Section"></div>
-  <div class="frow" id="types" role="group" aria-label="Type/s"></div>
   <div class="frow tools">
     <label class="search"><span class="vh">Search</span><input id="q" type="search" placeholder="Search" autocomplete="off"></label>
-    <label class="forsel"><span class="vh">For</span><select id="for"><option value="">For: all</option></select></label>
+    <button type="button" id="typetoggle" class="plain" aria-expanded="false" aria-controls="types">Type/s</button>
     <button type="button" id="reset" class="plain">Clear</button>
     <span id="count" aria-live="polite"></span>
     <span class="view" role="group" aria-label="View"><button type="button" id="vlist" aria-pressed="true">List</button> / <button type="button" id="vimg" aria-pressed="false">Image</button></span>
   </div>
+  <div class="frow types" id="types" role="group" aria-label="Type/s" hidden></div>
 </section>
 <div id="archive"></div>
 <noscript><p>The archive table needs JavaScript. A full list is on the <a href="about.html">About</a> page.</p></noscript>"""
-
-
-def write_archive():
-    body = ('<h1 class="pagehead">Archive</h1>\n'
-            '<p class="lede">Everything, numbered and filterable. Each entry reads '
-            'No. &#183; Date/s &#183; Name &#183; Type/s &#183; For &#183; With.</p>\n' + ARCHIVE_CONTROLS)
-    open(os.path.join(HERE, "archive.html"), "w", encoding="utf-8").write(
-        page("Archive · Yelta Köm", body, current="Archive", cls="home",
-             scripts='<script src="%s"></script>\n<script src="%s"></script>\n' % (ver("data.js"), ver("app.js"))))
-
-
-def write_section_page(fname, title, lede, entries, keep, work_pages, text_pages_by_no, current):
-    rows = []
-    for e in entries:
-        if not keep(e):
-            continue
-        extra = " &#183; ".join(E(x) for x in (e.get("for"), e.get("place")) if x)
-        rows.append(srow(href_for(e, work_pages, text_pages_by_no),
-                         (e.get("dates") or "")[:4], e["name"], extra))
-    body = ('<h1 class="pagehead">%s</h1>\n<p class="lede">%s</p>\n'
-            '<ul class="slist big">\n%s\n</ul>' % (title, lede, "\n".join(rows)))
-    open(os.path.join(HERE, fname), "w", encoding="utf-8").write(
-        page("%s · Yelta Köm" % title, body, current=current))
 
 
 def write_work(ent, slug, text_href, press_for):
@@ -506,8 +458,8 @@ def write_work(ent, slug, text_href, press_for):
         pr = '<section class="pressfor"><h2 class="rule">Press</h2><ul class="slist">%s</ul></section>' % items
     body = ('<article class="work">\n<p class="eyebrow">%s</p>\n<h1 class="worktitle">%s</h1>\n'
             '%s%s\n<dl class="detail">%s</dl>\n%s\n%s\n'
-            '<p class="more"><a href="../archive.html">Back to the archive &#8594;</a></p>\n</article>'
-            % (meta_line(ent), E(ent["name"]), desc, read, "".join(rows), figs, pr))
+            '<p class="more"><a href="../index.html#e-%s">Back to the archive &#8594;</a></p>\n</article>'
+            % (meta_line(ent), E(ent["name"]), desc, read, "".join(rows), figs, pr, ent["no"]))
     open(os.path.join(HERE, "works", "%s.html" % slug), "w", encoding="utf-8").write(
         page("%s · Yelta Köm" % ent["name"], body, root="../", current="Work", cls="workpage"))
 
