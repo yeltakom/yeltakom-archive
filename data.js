@@ -27,7 +27,8 @@ const ARCHIVE = {
 },
 {
 "label": "image",
-"url": "https://www.top-ev.de/wp-content/uploads/2026/10/snoc_cover.jpg"
+"url": "https://www.top-ev.de/wp-content/uploads/2026/10/snoc_cover.jpg",
+"caption": "Cover image of the Spatial Narratives of Commoning programme page"
 }
 ],
 "section": "talk"
@@ -44,6 +45,13 @@ const ARCHIVE = {
 "role": "presenter",
 "status": "accepted",
 "description": "Paper accepted for the MESAAS Graduate Conference 2026; acceptance confirmed by the organisers on 7 April 2026.",
+"links": [
+{
+"label": "image",
+"url": "https://mesaas.columbia.edu/wp-content/uploads/sites/6/2026/01/re_tracing_land.jpg",
+"caption": "Poster: (Re)Tracing Land, MESAAS Graduate Student Conference, 23-24 April 2026"
+}
+],
 "section": "talk"
 },
 {
@@ -72,6 +80,13 @@ const ARCHIVE = {
 "place": "Online (Columbia University, New York)",
 "status": "realised",
 "description": "Conference paper at (Re)Tracing Land, the MESAAS graduate conference, 23-24 April 2026, online.",
+"links": [
+{
+"label": "image",
+"url": "https://mesaas.columbia.edu/wp-content/uploads/sites/6/2026/01/re_tracing_land.jpg",
+"caption": "Poster of the conference the paper was presented at: (Re)Tracing Land, MESAAS 2026 (reused)"
+}
+],
 "section": "talk"
 },
 {
@@ -253,6 +268,12 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://saltonline.org/en/sergi-barajdan-sizanlar-3036"
+},
+{
+"label": "image",
+"url": "https://saltonline.org/assets/a4ebc1c2-a511-4238-a443-8073078b293d?fit=contain&width=1920&quality=75&format=webp",
+"credit": "Metean Bars",
+"caption": "Installation view of Yelta Köm, I was always with you (2026), Breaking Through a Dam, Salt Beyoğlu; image shown on the talk page"
 }
 ],
 "section": "talk"
@@ -399,16 +420,19 @@ const ARCHIVE = {
 {
 "label": "image",
 "url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/5793994b05-1756206156/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-h0a4262-1000x-q72.jpg",
-"credit": "Michel Klehm"
+"credit": "Michel Klehm",
+"caption": "Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
 },
 {
 "label": "image",
 "url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/a111da8f74-1756206156/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-dsf6746-1-kopie-944x-q72.jpg",
-"credit": "Michel Klehm"
+"credit": "Michel Klehm",
+"caption": "Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
 },
 {
 "label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/d1f5c32227-1756206156/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg"
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/d1f5c32227-1756206156/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg",
+"caption": "Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
 }
 ],
 "section": "talk"
@@ -658,7 +682,8 @@ const ARCHIVE = {
 },
 {
 "label": "image",
-"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2024/11/Ecologies_of_Making_Worlds_Poster_Final4-scaled.jpg"
+"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2024/11/Ecologies_of_Making_Worlds_Poster_Final4-scaled.jpg",
+"caption": "Poster of the Ecologies of Making Worlds symposium, Vienna"
 }
 ],
 "section": "talk",
@@ -844,7 +869,8 @@ const ARCHIVE = {
 },
 {
 "label": "image",
-"url": "https://kulturakademie-tarabya.de/wp-content/uploads/2024/10/Foto-Website_Tandem-Ulya-und-Yelta-2048x681-1.jpg"
+"url": "https://kulturakademie-tarabya.de/wp-content/uploads/2024/10/Foto-Website_Tandem-Ulya-und-Yelta-2048x681-1.jpg",
+"caption": "Portraits of Yelta Köm (left, video still) and Ulya Soley (right) on the Tarabya fellows page"
 }
 ],
 "section": "residency-award"
@@ -1585,6 +1611,13 @@ const ARCHIVE = {
 "place": "SAHA Studio, Istanbul",
 "status": "realised",
 "description": "Studio residency with The Silent University team linked to the Orientation Programme at the 17th Istanbul Biennial.",
+"links": [
+{
+"label": "image",
+"url": "https://bienal.iksv.org/i/content/22394_1_saha-1366x550.jpg",
+"caption": "SAHA Studio space with timeline wall; header image of the SAHA Studio Talks page (Silent University)"
+}
+],
 "section": "residency-award"
 },
 {
@@ -1915,6 +1948,11 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/blog/cw15-i-discussion-with-seil-yersel-amp-yelta-km-witnessing-the-modes-of-inhabiting-city-space"
+},
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/60851b9207caec3ca316a011/1619336208841/177907727_4279071675438195_7276734277130653904_n.jpeg?format=1500w",
+"caption": "Poster: Chromatic Wednesdays #15, Witnessing the Modes of Inhabiting City Space, 28 April 2021 (Apartment Project)"
 }
 ],
 "section": "talk"
@@ -1947,6 +1985,13 @@ const ARCHIVE = {
 "place": "Online",
 "status": "realised",
 "description": "Online seminar and guest lecture at Yaşar University, Izmir.",
+"links": [
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/60851d1ccf065f6346061ee8/1619337061573/maxresdefault.jpeg?format=1500w",
+"caption": "Poster / video title card: Yelta Köm, Spatial Investigations in Blurry Lines, Yaşar University Faculty of Architecture, interior architecture department (title card carries the English title of this talk)"
+}
+],
 "section": "talk"
 },
 {
@@ -2157,6 +2202,16 @@ const ARCHIVE = {
 {
 "label": "blog",
 "url": "https://www.yeltakom.info/blog/zlgb7da9lhx2op10josfy3s8cknjwf"
+},
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/61a3571a065082544031f6fd/1638095014233/Screenshot+2021-11-28+at+11.18.54.png?format=1500w",
+"caption": "Photograph of the panel on stage at Oyoun, THE PATH, 18 Sept 2021; image from the artist's own event post"
+},
+{
+"label": "image",
+"url": "https://oyoun.de/files/2021/09/moods-of-living-experiences-challenges.jpg",
+"caption": "Event visual of the Oyoun panel with portraits of the four panelists (Yelta Köm moderating)"
 }
 ],
 "section": "talk"
@@ -2173,6 +2228,18 @@ const ARCHIVE = {
 "place": "The Circle, Istanbul",
 "status": "realised",
 "description": "Selection among thirteen emerging practices, announced on 4 October 2021.",
+"links": [
+{
+"label": "image",
+"url": "https://images.squarespace-cdn.com/content/v1/5eb26d6a69f2264eca994856/d4f5fafb-010b-4160-865e-f74965331213/GEMSS+Sergisi+Uzatildi_Yatay+Gorsel+Large.jpeg",
+"caption": "Poster: GEMSS'21 exhibition extended to 29 April 2022"
+},
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5eb26d6a69f2264eca994856/t/615ac664b5dd2a3f172692e3/1754381485548/Secki+Ilan-09.jpg?format=1500w",
+"caption": "Announcement graphic: GEMSS'21 results, listing the 13 selected practices including Yelta Köm"
+}
+],
 "section": "residency-award"
 },
 {
@@ -2414,6 +2481,14 @@ const ARCHIVE = {
 "role": "selected nominee",
 "status": "realised",
 "description": "Selected nominee of Forecast Platform for Hide & Seek / Urban Surveillance Bureau, with Evgeny Morozov as mentor.",
+"links": [
+{
+"label": "image",
+"url": "https://forecast-platform.com/wp-content/uploads/2020/10/Image-2-Snapshot-from-Desktop-Yelta-Ko%CC%88m-2020-1237x720.png",
+"credit": "©Yelta Köm",
+"caption": "Desktop snapshot of Yelta Köm's Forecast project, Hide & Seek (2020)"
+}
+],
 "section": "residency-award"
 },
 {
@@ -4220,17 +4295,20 @@ const ARCHIVE = {
 {
 "label": "image",
 "url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3157-1600x1200.jpg",
-"credit": "Arazi Collective, Ecologies of Making Worlds"
+"credit": "Arazi Collective",
+"caption": "Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
 },
 {
 "label": "image",
 "url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3158.jpg",
-"credit": "Arazi Collective, Ecologies of Making Worlds"
+"credit": "Arazi Collective",
+"caption": "Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
 },
 {
 "label": "image",
 "url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3162.jpg",
-"credit": "Arazi Collective, Ecologies of Making Worlds"
+"credit": "Arazi Collective",
+"caption": "Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
 }
 ],
 "section": "network"
@@ -4618,6 +4696,11 @@ const ARCHIVE = {
 {
 "label": "recording",
 "url": "https://www.youtube.com/watch?v=WdFnoCGRAoA&list=PLnfwDVFztYEA5O5-5ET2opoVq_eVIkjMj&ab_channel=TEDxTalks"
+},
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/5fedabeee293bc1fe203d0a3/1609411806241/Ekran+Al%C4%B1nt%C4%B1s%C4%B12.JPG?format=1500w",
+"caption": "Video still of Yelta Köm on the TEDxReset Salon stage; image from the artist's own event post"
 }
 ],
 "section": "talk"
@@ -4970,6 +5053,11 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/blog/is7r1tbfs3af6nta8z18n969oroaki"
+},
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/5ff4c01777573b3e67cf3c68/1609875788355/Ekran+Al%C4%B1nt%C4%B1s%C4%B13.JPG?format=1500w",
+"caption": "Video still of Yelta Köm presenting at the TSRRF Hackathon; image from the artist's own event post"
 }
 ],
 "section": "talk"
@@ -4988,6 +5076,13 @@ const ARCHIVE = {
 "place": "bi'bak, Berlin",
 "status": "realised",
 "description": "Presentation and conversation on #occupygezi architecture.",
+"links": [
+{
+"label": "image",
+"url": "https://bi-bak.de/storage/veranstaltung/2019/05/279/conversions/titelbild__rvPAnv-frontend.jpg",
+"caption": "Halftone title graphic of the bi'bak Gezi Park anniversary evening, 30 May 2014"
+}
+],
 "section": "talk"
 },
 {
@@ -5167,6 +5262,11 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "https://www.arkitera.com/haber/taksim-panelini-canli-olarak-izleyin/"
+},
+{
+"label": "image",
+"url": "https://www.arkitera.com/wp-content/uploads/2013/03/Taksim.jpg.jpeg",
+"caption": "Poster: Taksim Paneli, 26 March 2013, Eyüp (Kalebodur / Emre Arolat)"
 }
 ],
 "section": "talk"
@@ -5230,6 +5330,11 @@ const ARCHIVE = {
 {
 "label": "Blog post on the show with Herkes İçin Mimarlık (17 May 2012)",
 "url": "http://acikmimarlik.blogspot.com/2012/05/herkes-icin-mimarlik.html?m=1"
+},
+{
+"label": "image",
+"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/5fecaf865e7522035e609a80/1609347123426/640x640bb-75.jpg?format=1500w",
+"caption": "Programme cover art of Açık Mimarlık (Açık Radyo 94.9)"
 }
 ],
 "section": "talk"
@@ -5796,7 +5901,7 @@ const ARCHIVE = {
 {
 "label": "image",
 "url": "https://saltonline.org/assets/5c8988fe-70b2-425e-b65e-df9c7553f554?fit=contain&width=1200&quality=75&format=webp",
-"caption": "From the travel grant journey"
+"caption": "Same travel photograph strips as on the SALT presentation page (Arkitera travel grant journey), reused for the grant entry"
 }
 ],
 "section": "residency-award"
@@ -5852,7 +5957,7 @@ const ARCHIVE = {
 {
 "label": "image",
 "url": "https://saltonline.org/assets/5c8988fe-70b2-425e-b65e-df9c7553f554?fit=contain&width=1200&quality=75&format=webp",
-"caption": "From the travel grant journey"
+"caption": "Strips of travel photographs from the Arkitera travel grant journey, shown on the SALT event page"
 }
 ],
 "section": "talk"
