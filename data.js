@@ -6024,7 +6024,7 @@ const ARCHIVE = {
 "outlet": "Art Review",
 "title": "A New History of Imagination (Timeless Curiosities)",
 "language": "EN",
-"url": "artreview.com",
+"url": "https://artreview.com",
 "kind": "review",
 "about": null,
 "summary": "Review of the Istanbul Modern exhibition; domain only in source."
@@ -6074,7 +6074,7 @@ const ARCHIVE = {
 "outlet": "Sanat Dünyamız",
 "title": "Burcu Çimen review",
 "language": "TR",
-"url": "sanatdunyamiz.com",
+"url": "https://sanatdunyamiz.com",
 "kind": "review",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6084,7 +6084,7 @@ const ARCHIVE = {
 "outlet": "TheMagger",
 "title": "Burcu Dimili review",
 "language": "TR",
-"url": "themagger.com",
+"url": "https://themagger.com",
 "kind": "review",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6094,7 +6094,7 @@ const ARCHIVE = {
 "outlet": "Unlimited Magazine",
 "title": "Oğuz Karayemiş essay",
 "language": "TR",
-"url": "unlimitedrag.com",
+"url": "https://unlimitedrag.com",
 "kind": "article",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6104,7 +6104,7 @@ const ARCHIVE = {
 "outlet": "Sanat Okur",
 "title": "Nil Has review",
 "language": "TR",
-"url": "sanatokur.com",
+"url": "https://sanatokur.com",
 "kind": "review",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6114,7 +6114,7 @@ const ARCHIVE = {
 "outlet": "Nouvart",
 "title": "Elif Hopyar interview",
 "language": "TR",
-"url": "nouvart.net",
+"url": "https://nouvart.net",
 "kind": "interview",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6124,7 +6124,7 @@ const ARCHIVE = {
 "outlet": "Artful Living",
 "title": "Işıl Aydemir review",
 "language": "TR",
-"url": "artfulliving.com",
+"url": "https://artfulliving.com",
 "kind": "review",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6134,7 +6134,7 @@ const ARCHIVE = {
 "outlet": "Sinan Eren Erk (podcast)",
 "title": "Sanat Dedikleri Tuhaf Şey podcast",
 "language": "TR",
-"url": "spotify.com",
+"url": "https://spotify.com",
 "kind": "podcast",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6144,7 +6144,7 @@ const ARCHIVE = {
 "outlet": "Calling Mag",
 "title": "Ceren Kahveci interview",
 "language": "TR",
-"url": "callingmag.com",
+"url": "https://callingmag.com",
 "kind": "interview",
 "about": "2301",
 "summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
@@ -6154,7 +6154,7 @@ const ARCHIVE = {
 "outlet": "Gazete Oksijen",
 "title": "all familiar, all foreign (exhibition review)",
 "language": "TR",
-"url": "gazeteoksijen.com",
+"url": "https://gazeteoksijen.com",
 "kind": "review",
 "about": "2301",
 "summary": "Review; article URL not given, domain only."
@@ -6344,7 +6344,7 @@ const ARCHIVE = {
 "outlet": "Arkitera",
 "title": "Ölçek (Scale) exhibition listing",
 "language": "TR",
-"url": "arkitera.com/etkinlik/olcek/",
+"url": "https://arkitera.com/etkinlik/olcek/",
 "kind": "listing",
 "about": "2007",
 "summary": "Event listing."
@@ -6694,7 +6694,7 @@ const ARCHIVE = {
 "outlet": "e-architect",
 "title": "Venice Biennale Turkey Pavilion 2018",
 "language": "EN",
-"url": "e-architect.com/venice/venice-biennale-turkey-pavilion-2018",
+"url": "https://e-architect.com/venice/venice-biennale-turkey-pavilion-2018",
 "kind": "article",
 "about": "1802",
 "summary": "Feature; path as given in compiled archive."
@@ -6994,7 +6994,7 @@ const ARCHIVE = {
 "outlet": "Arkitera",
 "title": "10th Arkitera Awards: Young Architect Encouragement Award",
 "language": "TR",
-"url": "arkitera.com/etiket/yelta-kom/",
+"url": "https://arkitera.com/etiket/yelta-kom/",
 "kind": "article",
 "about": "1510",
 "summary": "Award coverage; tag page only."

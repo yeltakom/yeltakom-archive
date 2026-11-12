@@ -163,3 +163,103 @@ sup.fn a { text-decoration: none; padding: 0 0.1em; }
 }
 @media (max-width: 899px) { .langswitch .both { display: none; } }
 @media print { .controls, header.site nav { display: none; } .detail[hidden] { display: block; } }
+
+/* ------------------------------------------------------------ site search bar */
+header.site { gap: 0.6rem 1.2rem; flex-wrap: wrap; }
+.sitesearch { margin-left: auto; display: flex; }
+.sitesearch input {
+  font: inherit; color: var(--ink); width: 9rem; max-width: 40vw;
+  border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
+  background: transparent; padding: 0.1rem 0;
+}
+.sitesearch input::placeholder { color: var(--mute); }
+
+/* ------------------------------------------------------------ front page */
+.standfirst {
+  font-size: clamp(1.3rem, 2.6vw, 2.1rem); line-height: 1.18; letter-spacing: -0.015em;
+  max-width: 24em; margin: 2rem 0 2.6rem; text-wrap: pretty;
+}
+.lead {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 2.2rem 1.6rem; margin: 0 0 3.4rem;
+}
+.card { text-decoration: none; color: var(--ink); display: block; }
+.card .shot { display: block; background: var(--tint); overflow: hidden; }
+.card .shot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card .cap { display: block; padding-top: 0.5rem; }
+.card .cap .t { display: block; font-weight: var(--em); line-height: 1.2; }
+.card .cap .m { display: block; color: var(--mute); font-size: 13px; padding-top: 0.15rem; }
+.card:hover .cap .t { color: var(--sig); }
+
+h2.rule {
+  font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 400;
+  color: var(--mute); border-top: 1px solid var(--ink); margin: 0 0 0.2rem;
+  padding: 0.35rem 0 0;
+}
+
+/* shared row list: year, name, kicker */
+.slist { list-style: none; margin: 0; padding: 0; }
+.slist li { border-bottom: 1px solid var(--hair); }
+.slist li > a, .slist li > span.y {
+  display: grid; grid-template-columns: 4.2rem minmax(0, 3fr) minmax(0, 2fr);
+  gap: 0 1.5rem; padding: 0.42rem 0; text-decoration: none; color: var(--ink);
+  align-items: baseline;
+}
+.slist li > a:hover .n { color: var(--sig); }
+.slist .y { color: var(--sig); font-size: 13.5px; }
+.slist .n { font-weight: var(--em); line-height: 1.25; }
+.slist .k { color: var(--mute); font-size: 13.5px; }
+.slist.big li > a { padding: 0.6rem 0; }
+.slist.big .n { font-size: 1.05rem; }
+.pressfor .slist li { display: grid; grid-template-columns: 6rem minmax(0, 3fr) minmax(0, 1.4fr);
+  gap: 0 1.5rem; padding: 0.42rem 0; align-items: baseline; }
+.pressfor .slist li .y { color: var(--mute); }
+.more { margin: 1.2rem 0 0; font-weight: var(--em); }
+.more a { color: var(--sig); text-decoration: none; }
+.more a:hover { text-decoration: underline; }
+
+/* ------------------------------------------------------------ one work */
+.work { max-width: 54rem; }
+.eyebrow { color: var(--mute); font-size: 13px; margin: 1.6rem 0 0.3rem; }
+.worktitle {
+  font-size: clamp(1.7rem, 3.6vw, 2.9rem); line-height: 1.06; letter-spacing: -0.022em;
+  font-weight: var(--em); margin: 0 0 0.9rem; max-width: 20em;
+}
+.worktext { font-size: 1.15rem; line-height: 1.4; max-width: 40em; margin: 0 0 1.4rem; }
+.workpage .detail {
+  display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0.1rem 1.2rem;
+  margin: 1.4rem 0 2rem; border-top: 1px solid var(--ink); padding-top: 0.6rem;
+}
+.workpage .detail dt {
+  color: var(--mute); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  padding-top: 0.2rem;
+}
+.workpage .detail dd { margin: 0; padding: 0.1rem 0; }
+.work figure.shot { margin: 0 0 1.4rem; }
+.work figure.shot img { display: block; width: 100%; height: auto; }
+.pressfor { margin-top: 2.4rem; }
+
+/* ------------------------------------------------------------ search page */
+.bigsearch { margin: 1.4rem 0 0.6rem; }
+.bigsearch input {
+  font: inherit; font-size: clamp(1.3rem, 2.6vw, 2rem); color: var(--ink);
+  width: 100%; border: 0; border-bottom: 2px solid var(--ink); border-radius: 0;
+  background: transparent; padding: 0.2rem 0;
+}
+.bigsearch input::placeholder { color: var(--hair); }
+.results .n { font-weight: var(--em); }
+.results .sn {
+  display: block; font-weight: 400; color: var(--mute); font-size: 13.5px;
+  line-height: 1.35; padding-top: 0.2rem; max-width: 52em;
+}
+.results mark { background: var(--tint); color: var(--ink); }
+
+@media (max-width: 640px) {
+  .slist li > a, .pressfor .slist li { grid-template-columns: 3.4rem minmax(0, 1fr); }
+  .slist .k { grid-column: 2; }
+  .workpage .detail { grid-template-columns: 1fr; gap: 0 0; }
+  .workpage .detail dd { padding-bottom: 0.45rem; }
+  .sitesearch { margin-left: 0; width: 100%; }
+  /* the header already draws a rule underneath, so the field does not need its own */
+  .sitesearch input { width: 100%; max-width: none; border-bottom: 0; padding-bottom: 0; }
+}
