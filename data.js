@@ -24,6 +24,10 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "https://www.top-ev.de/online/spatial-narratives-of-commoning/"
+},
+{
+"label": "image",
+"url": "https://www.top-ev.de/wp-content/uploads/2026/10/snoc_cover.jpg"
 }
 ],
 "section": "talk"
@@ -90,7 +94,7 @@ const ARCHIVE = {
 {
 "no": "2611",
 "dates": "2026",
-"name": "Yarıktan Sızanlar",
+"name": "Yarıktan Sızanlar / What Seeps Through the Crack",
 "types": [
 "Installation",
 "Video"
@@ -98,12 +102,12 @@ const ARCHIVE = {
 "status": "realised",
 "description": "Installation and single-channel video with scale models that read the crack as both rupture and opening.",
 "section": "work",
-"page": "works/2611-yariktan-sizanlar.html"
+"page": "works/2611-yariktan-sizanlar-what-seeps-through-the-crack.html"
 },
 {
 "no": "2610",
 "dates": "2026—",
-"name": "Savaştepe Köy Enstitüsü",
+"name": "Savaştepe Köy Enstitüsü / Savaştepe Village Institute",
 "types": [
 "Research"
 ],
@@ -111,7 +115,7 @@ const ARCHIVE = {
 "status": "ongoing",
 "description": "Research-based project on the Savaştepe Village Institute around spatial restoration, community co-production, digital archiving and speculative pedagogy.",
 "section": "work",
-"page": "works/2610-savastepe-koy-enstitusu.html"
+"page": "works/2610-savastepe-koy-enstitusu-savastepe-village-institute.html"
 },
 {
 "no": "2609",
@@ -175,7 +179,7 @@ const ARCHIVE = {
 {
 "no": "2605",
 "dates": "2026",
-"name": "Dicle Batman Çayı Üzerine Fragmanlar",
+"name": "Dicle Batman Çayı Üzerine Fragmanlar / Fragments on the Dicle Batman Stream",
 "types": [
 "Video",
 "Research"
@@ -198,7 +202,7 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2605-dicle-batman-cayi-uzerine-fragmanlar.html"
+"page": "works/2605-dicle-batman-cayi-uzerine-fragmanlar-fragments-on-the-dicle.html"
 },
 {
 "no": "2604",
@@ -275,6 +279,18 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://saltonline.org/en/sergi-barajdan-sizanlar-3036"
+},
+{
+"label": "image",
+"url": "https://saltonline.org/assets/a4ebc1c2-a511-4238-a443-8073078b293d?fit=contain&width=1920&quality=75&format=webp",
+"credit": "Metean Bars",
+"caption": "Installation view, SALT Beyoğlu"
+},
+{
+"label": "image",
+"url": "https://saltonline.org/assets/61d0c769-306a-4799-8bdf-dbb26afbc57e?fit=contain&width=1920&quality=75&format=webp",
+"credit": "Metean Bars",
+"caption": "Installation view, SALT Beyoğlu"
 }
 ],
 "shown": [
@@ -379,6 +395,20 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://planetarische-bauern.werkleitz.de/en/cracks-in-the-soil-talk"
+},
+{
+"label": "image",
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/5793994b05-1756206156/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-h0a4262-1000x-q72.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/a111da8f74-1756206156/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-dsf6746-1-kopie-944x-q72.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/d1f5c32227-1756206156/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg"
 }
 ],
 "section": "talk"
@@ -411,7 +441,7 @@ const ARCHIVE = {
 {
 "no": "2504",
 "dates": "2025",
-"name": "Kapıların Eşiğinde Bir Adalet Arayışı",
+"name": "Kapıların Eşiğinde Bir Adalet Arayışı / A Search for Justice on the Threshold of Doors",
 "types": [
 "Text"
 ],
@@ -496,15 +526,58 @@ const ARCHIVE = {
 },
 {
 "label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/c871940bc6-1752821873/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-dsf6746-1-kopie-944x-q72.jpg"
+"url": "img/cracks-in-the-soil/01.jpg",
+"credit": "Michel Klehm"
 },
 {
 "label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/ada5862608-1752821881/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg"
+"url": "img/cracks-in-the-soil/02.jpg",
+"credit": "Michel Klehm"
 },
 {
 "label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/planetarische-bauern-ausstellung/9ec8277fd0-1762604195/pb-25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-13b-1000x-q72.jpg"
+"url": "img/cracks-in-the-soil/03.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "img/cracks-in-the-soil/04.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "img/cracks-in-the-soil/05.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "img/cracks-in-the-soil/06.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "img/cracks-in-the-soil/07.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "img/cracks-in-the-soil/08.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/c871940bc6-1752821873/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-dsf6746-1-kopie-944x-q72.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/ada5862608-1752821881/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg",
+"credit": "Michel Klehm"
+},
+{
+"label": "image",
+"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/planetarische-bauern-ausstellung/9ec8277fd0-1762604195/pb-25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-13b-1000x-q72.jpg",
+"credit": "Michel Klehm"
 }
 ],
 "shown": [
@@ -522,7 +595,7 @@ const ARCHIVE = {
 {
 "no": "2414",
 "dates": "2024",
-"name": "Kurmacalar, Şiirler, Gelecek ve Kurşun Dökmek",
+"name": "Kurmacalar, Şiirler, Gelecek ve Kurşun Dökmek / Fictions, Poems, the Future and Pouring Lead",
 "types": [
 "Text"
 ],
@@ -538,7 +611,7 @@ const ARCHIVE = {
 {
 "no": "2413",
 "dates": "2024",
-"name": "Gülsün Karamustafa'nın Sanatında Biriken",
+"name": "Gülsün Karamustafa'nın Sanatında Biriken / What Accumulates in Gülsün Karamustafa's Art",
 "types": [
 "Text"
 ],
@@ -582,6 +655,10 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://kkp.uni-ak.ac.at/?p=2864"
+},
+{
+"label": "image",
+"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2024/11/Ecologies_of_Making_Worlds_Poster_Final4-scaled.jpg"
 }
 ],
 "section": "talk",
@@ -614,13 +691,21 @@ const ARCHIVE = {
 {
 "no": "2409",
 "dates": "2024",
-"name": "Sen de mi buradasın?",
+"name": "Sen de mi buradasın? / Are You Here Too?",
 "types": [
 "Installation"
 ],
 "place": "Istanbul Modern, Istanbul",
 "status": "realised",
 "description": "Resin work on a single tripod, first shown at Istanbul Modern.",
+"links": [
+{
+"label": "image",
+"url": "https://backend.artreview.com/wp-content/uploads/2024/07/Yelta_Kom_are_you_also_here-1365x2048.jpg",
+"credit": "Courtesy Istanbul Modern",
+"caption": "Sen de mi buradasın? (2023), found object, resin, metal"
+}
+],
 "shown": [
 {
 "dates": "2024",
@@ -631,7 +716,7 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2409-sen-de-mi-buradasin.html"
+"page": "works/2409-sen-de-mi-buradasin-are-you-here-too.html"
 },
 {
 "no": "2408",
@@ -670,7 +755,7 @@ const ARCHIVE = {
 {
 "no": "2406",
 "dates": "2024",
-"name": "Berlin Notları #38: Nefesle Dans, Güneşli Ama Soğuk",
+"name": "Berlin Notları #38: Nefesle Dans, Güneşli Ama Soğuk / Berlin Notes #38: Dancing with the Breath, Sunny but Cold",
 "types": [
 "Text"
 ],
@@ -683,7 +768,7 @@ const ARCHIVE = {
 {
 "no": "2405",
 "dates": "2024",
-"name": "Berlin Notları #37: Şifaya Giden Dert Yolları",
+"name": "Berlin Notları #37: Şifaya Giden Dert Yolları / Berlin Notes #37: Roads of Trouble Leading to Healing",
 "types": [
 "Text"
 ],
@@ -726,7 +811,7 @@ const ARCHIVE = {
 {
 "no": "2403",
 "dates": "2024",
-"name": "Berlin Notları #36: Hayalet Müdavim",
+"name": "Berlin Notları #36: Hayalet Müdavim / Berlin Notes #36: The Ghost Regular",
 "types": [
 "Text"
 ],
@@ -756,6 +841,10 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://kulturakademie-tarabya.de/en/artists/yelta-kom-ulya-soley/"
+},
+{
+"label": "image",
+"url": "https://kulturakademie-tarabya.de/wp-content/uploads/2024/10/Foto-Website_Tandem-Ulya-und-Yelta-2048x681-1.jpg"
 }
 ],
 "section": "residency-award"
@@ -763,7 +852,7 @@ const ARCHIVE = {
 {
 "no": "2401",
 "dates": "2024",
-"name": "Berlin Notları #35: Veda",
+"name": "Berlin Notları #35: Veda / Berlin Notes #35: Farewell",
 "types": [
 "Text"
 ],
@@ -820,7 +909,7 @@ const ARCHIVE = {
 {
 "no": "2317",
 "dates": "2023-03",
-"name": "Berlin Notları #32: Unutmak ve Unutulmak",
+"name": "Berlin Notları #32: Unutmak ve Unutulmak / Berlin Notes #32: To Forget and to Be Forgotten",
 "types": [
 "Text"
 ],
@@ -1043,7 +1132,7 @@ const ARCHIVE = {
 {
 "no": "2305",
 "dates": "2023—24",
-"name": "Bir Gecenin Anatomisi: Karanlıkta Yeniden Doğan Mekânlar",
+"name": "Bir Gecenin Anatomisi: Karanlıkta Yeniden Doğan Mekânlar / Anatomy of a Night: Spaces Reborn in the Dark",
 "types": [
 "Text"
 ],
@@ -1059,7 +1148,7 @@ const ARCHIVE = {
 {
 "no": "2304",
 "dates": "2023",
-"name": "Berlin Notları #34: Radiye",
+"name": "Berlin Notları #34: Radiye / Berlin Notes #34: Radiye",
 "types": [
 "Text"
 ],
@@ -1072,7 +1161,7 @@ const ARCHIVE = {
 {
 "no": "2303",
 "dates": "2023",
-"name": "Berlin Notları #33: Zaman Zaman",
+"name": "Berlin Notları #33: Zaman Zaman / Berlin Notes #33: From Time to Time",
 "types": [
 "Text"
 ],
@@ -1251,7 +1340,7 @@ const ARCHIVE = {
 {
 "no": "2218",
 "dates": "2022-10",
-"name": "Berlin Notları #30: Yaz Raporu",
+"name": "Berlin Notları #30: Yaz Raporu / Berlin Notes #30: Summer Report",
 "types": [
 "Text"
 ],
@@ -1271,7 +1360,7 @@ const ARCHIVE = {
 {
 "no": "2217",
 "dates": "2022-02",
-"name": "Berlin Notları #28: tut mir manchmal weh",
+"name": "Berlin Notları #28: tut mir manchmal weh / Berlin Notes #28: tut mir manchmal weh",
 "types": [
 "Text"
 ],
@@ -1407,7 +1496,7 @@ const ARCHIVE = {
 {
 "no": "2209",
 "dates": "2022",
-"name": "Berlin Notları #31: 2022 Wrapped: Zaman Her Şeyi Siliyor",
+"name": "Berlin Notları #31: 2022 Wrapped: Zaman Her Şeyi Siliyor / Berlin Notes #31: 2022 Wrapped: Time Erases Everything",
 "types": [
 "Text"
 ],
@@ -1501,7 +1590,7 @@ const ARCHIVE = {
 {
 "no": "2205",
 "dates": "2022",
-"name": "Berlin Notları #29: Tesadüfler",
+"name": "Berlin Notları #29: Tesadüfler / Berlin Notes #29: Coincidences",
 "types": [
 "Text"
 ],
@@ -1543,7 +1632,7 @@ const ARCHIVE = {
 {
 "no": "2202",
 "dates": "2022",
-"name": "On Yıl Sonra Tekrar Sormak Üzere: Mimarlık Herkes İçin Olabilir mi?",
+"name": "On Yıl Sonra Tekrar Sormak Üzere: Mimarlık Herkes İçin Olabilir mi? / To Ask Again After Ten Years: Can Architecture Be for Everyone?",
 "types": [
 "Text"
 ],
@@ -1737,7 +1826,7 @@ const ARCHIVE = {
 {
 "no": "2123",
 "dates": "2021-12",
-"name": "Berlin Notları #27: Aradığınız Kişiye Ulaşılamıyor",
+"name": "Berlin Notları #27: Aradığınız Kişiye Ulaşılamıyor / Berlin Notes #27: The Person You Have Called Is Unreachable",
 "types": [
 "Text"
 ],
@@ -1757,7 +1846,7 @@ const ARCHIVE = {
 {
 "no": "2122",
 "dates": "2021-11",
-"name": "Berlin Notları #26: Gecenin İçine Sızan Işıklar",
+"name": "Berlin Notları #26: Gecenin İçine Sızan Işıklar / Berlin Notes #26: Lights Seeping into the Night",
 "types": [
 "Text"
 ],
@@ -1777,7 +1866,7 @@ const ARCHIVE = {
 {
 "no": "2121",
 "dates": "2021-09",
-"name": "Berlin Notları #25: Kırmızı Işıklar ve Dolanan Yollar",
+"name": "Berlin Notları #25: Kırmızı Işıklar ve Dolanan Yollar / Berlin Notes #25: Red Lights and Winding Roads",
 "types": [
 "Text"
 ],
@@ -1881,7 +1970,7 @@ const ARCHIVE = {
 {
 "no": "2115",
 "dates": "2021",
-"name": "Mimarlıkta lisans sonrası araştırma halleri (V): Yelta Köm ile söyleşi",
+"name": "Mimarlıkta lisans sonrası araştırma halleri (V): Yelta Köm ile söyleşi / Ways of Doing Postgraduate Research in Architecture (V): Conversation with Yelta Köm",
 "types": [
 "Talk / Lecture"
 ],
@@ -1913,7 +2002,7 @@ const ARCHIVE = {
 {
 "no": "2113",
 "dates": "2021",
-"name": "Mimarın Galaksi Rehberi",
+"name": "Mimarın Galaksi Rehberi / The Architect's Guide to the Galaxy",
 "types": [
 "Text"
 ],
@@ -1936,7 +2025,7 @@ const ARCHIVE = {
 {
 "no": "2112",
 "dates": "2021",
-"name": "Mimarlık Pratiğinin Dönüşümü ve Pandemi",
+"name": "Mimarlık Pratiğinin Dönüşümü ve Pandemi / The Transformation of Architectural Practice and the Pandemic",
 "types": [
 "Text"
 ],
@@ -1949,7 +2038,7 @@ const ARCHIVE = {
 {
 "no": "2111",
 "dates": "2021",
-"name": "Hakikat Arası",
+"name": "Hakikat Arası / Between Truths",
 "types": [
 "Text"
 ],
@@ -2103,7 +2192,7 @@ const ARCHIVE = {
 {
 "no": "2104",
 "dates": "2021",
-"name": "Berlin Notları #24: Sorumluluk?",
+"name": "Berlin Notları #24: Sorumluluk? / Berlin Notes #24: Responsibility?",
 "types": [
 "Text"
 ],
@@ -2116,7 +2205,7 @@ const ARCHIVE = {
 {
 "no": "2103",
 "dates": "2021",
-"name": "Berlin Notları #23",
+"name": "Berlin Notları #23 / Berlin Notes #23",
 "types": [
 "Text"
 ],
@@ -2229,6 +2318,12 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/blog/on-being-water-a-group-show-at-istanbul-apartment-gallery"
+},
+{
+"label": "image",
+"url": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/04/18/108876.jpg",
+"credit": "Courtesy of Versus Art Project",
+"caption": "Possibilistic Grounds (2021), video installation on an LED screen, in the group show On being water"
 }
 ],
 "section": "work",
@@ -2324,7 +2419,7 @@ const ARCHIVE = {
 {
 "no": "2016",
 "dates": "2020-11",
-"name": "Algoritmanın Gözleri (interview with Ege Özgirin)",
+"name": "Algoritmanın Gözleri (interview with Ege Özgirin) / The Eyes of the Algorithm (interview with Ege Özgirin)",
 "types": [
 "Text"
 ],
@@ -2340,7 +2435,7 @@ const ARCHIVE = {
 {
 "no": "2015",
 "dates": "2020",
-"name": "Hasan Cenk Dereli ve Yelta Köm ile sohbet",
+"name": "Hasan Cenk Dereli ve Yelta Köm ile sohbet / A conversation with Hasan Cenk Dereli and Yelta Köm",
 "types": [
 "Talk / Lecture"
 ],
@@ -2362,7 +2457,7 @@ const ARCHIVE = {
 {
 "no": "2014",
 "dates": "2020",
-"name": "Arkitera Seyahat Bursu Dijital Tema Tanıtım Toplantısı",
+"name": "Arkitera Seyahat Bursu Dijital Tema Tanıtım Toplantısı / Arkitera Travel Grant Digital Theme Presentation Meeting",
 "types": [
 "Talk / Lecture"
 ],
@@ -2383,7 +2478,7 @@ const ARCHIVE = {
 {
 "no": "2013",
 "dates": "2020",
-"name": "Nefes Noktaları #1",
+"name": "Nefes Noktaları #1 / Breathing Points #1",
 "types": [
 "Text"
 ],
@@ -2402,7 +2497,7 @@ const ARCHIVE = {
 {
 "no": "2012",
 "dates": "2020",
-"name": "Gündeliğin Ferahlığı",
+"name": "Gündeliğin Ferahlığı / The Ease of the Everyday",
 "types": [
 "Text"
 ],
@@ -2421,7 +2516,7 @@ const ARCHIVE = {
 {
 "no": "2011",
 "dates": "2020",
-"name": "Berlin Notları #22: Kafa Karışıklığı ve Toz Zerreleri",
+"name": "Berlin Notları #22: Kafa Karışıklığı ve Toz Zerreleri / Berlin Notes #22: Confusion and Dust Particles",
 "types": [
 "Text"
 ],
@@ -2440,7 +2535,7 @@ const ARCHIVE = {
 {
 "no": "2010",
 "dates": "2020",
-"name": "Berlin Notları #19",
+"name": "Berlin Notları #19 / Berlin Notes #19",
 "types": [
 "Text"
 ],
@@ -2459,7 +2554,7 @@ const ARCHIVE = {
 {
 "no": "2009",
 "dates": "2020",
-"name": "Berlin Notları #17: Pencereden Notlar*",
+"name": "Berlin Notları #17: Pencereden Notlar* / Berlin Notes #17: Notes from the Window*",
 "types": [
 "Text"
 ],
@@ -2478,7 +2573,7 @@ const ARCHIVE = {
 {
 "no": "2008",
 "dates": "2020",
-"name": "Berlin Notları #16: Yataklar",
+"name": "Berlin Notları #16: Yataklar / Berlin Notes #16: Mattresses",
 "types": [
 "Text"
 ],
@@ -2665,7 +2760,7 @@ const ARCHIVE = {
 {
 "no": "2004",
 "dates": "2020",
-"name": "Berlin Notları #21: Bizi Birbirimize Ne Bağlar?",
+"name": "Berlin Notları #21: Bizi Birbirimize Ne Bağlar? / Berlin Notes #21: What Binds Us to One Another?",
 "types": [
 "Text"
 ],
@@ -2684,7 +2779,7 @@ const ARCHIVE = {
 {
 "no": "2003",
 "dates": "2020",
-"name": "Berlin Notları #20: Dijitalleşen Kent",
+"name": "Berlin Notları #20: Dijitalleşen Kent / Berlin Notes #20: The Digitalizing City",
 "types": [
 "Text"
 ],
@@ -2703,7 +2798,7 @@ const ARCHIVE = {
 {
 "no": "2002",
 "dates": "2020",
-"name": "Evdeyiz #7 Yelta Köm Öneriyor: Dijital Eğitim Platformları",
+"name": "Evdeyiz #7 Yelta Köm Öneriyor: Dijital Eğitim Platformları / Evdeyiz #7 Yelta Köm Recommends: Digital Education Platforms",
 "types": [
 "Text"
 ],
@@ -2722,7 +2817,7 @@ const ARCHIVE = {
 {
 "no": "2001",
 "dates": "2020",
-"name": "Berlin Notları #18: Ateş, Kül, Toprak",
+"name": "Berlin Notları #18: Ateş, Kül, Toprak / Berlin Notes #18: Fire, Ash, Earth",
 "types": [
 "Text"
 ],
@@ -2879,7 +2974,7 @@ const ARCHIVE = {
 {
 "no": "1916",
 "dates": "2019",
-"name": "Yeniyi Ararken Yok Etmemek Mümkün mü?",
+"name": "Yeniyi Ararken Yok Etmemek Mümkün mü? / Is It Possible Not to Destroy While Searching for the New?",
 "types": [
 "Text"
 ],
@@ -2897,7 +2992,7 @@ const ARCHIVE = {
 {
 "no": "1915",
 "dates": "2019",
-"name": "Yaşasın Studio-X!",
+"name": "Yaşasın Studio-X! / Long Live Studio-X!",
 "types": [
 "Text"
 ],
@@ -2935,7 +3030,7 @@ const ARCHIVE = {
 {
 "no": "1913",
 "dates": "2019",
-"name": "Mimarlığın Püf Noktası?",
+"name": "Mimarlığın Püf Noktası? / The Trick of Architecture?",
 "types": [
 "Text"
 ],
@@ -2954,7 +3049,7 @@ const ARCHIVE = {
 {
 "no": "1912",
 "dates": "2019",
-"name": "İşgal İşleri Başkanlığı",
+"name": "İşgal İşleri Başkanlığı / Department of Occupation Affairs",
 "types": [
 "Text"
 ],
@@ -2973,7 +3068,7 @@ const ARCHIVE = {
 {
 "no": "1911",
 "dates": "2019",
-"name": "Hey Gidi Koca Dünya",
+"name": "Hey Gidi Koca Dünya / Oh, You Great Big World",
 "types": [
 "Text"
 ],
@@ -2992,7 +3087,7 @@ const ARCHIVE = {
 {
 "no": "1910",
 "dates": "2019",
-"name": "Bildiğimiz İnternetin Sonu mu Geldi?",
+"name": "Bildiğimiz İnternetin Sonu mu Geldi? / Has the End of the Internet as We Know It Arrived?",
 "types": [
 "Text"
 ],
@@ -3011,7 +3106,7 @@ const ARCHIVE = {
 {
 "no": "1909",
 "dates": "2019",
-"name": "Berlin Notları #15: Übergestern*",
+"name": "Berlin Notları #15: Übergestern* / Berlin Notes #15: Übergestern*",
 "types": [
 "Text"
 ],
@@ -3030,7 +3125,7 @@ const ARCHIVE = {
 {
 "no": "1908",
 "dates": "2019",
-"name": "Berlin Notları #14",
+"name": "Berlin Notları #14 / Berlin Notes #14",
 "types": [
 "Text"
 ],
@@ -3076,7 +3171,7 @@ const ARCHIVE = {
 {
 "no": "1905",
 "dates": "2019",
-"name": "Yelta Köm ve Herkes İçin Mimarlık ekibi, katılımcısı oldukları Şikago Mimarlık Bienali'nden bildiriyor",
+"name": "Yelta Köm ve Herkes İçin Mimarlık ekibi, katılımcısı oldukları Şikago Mimarlık Bienali'nden bildiriyor / Yelta Köm and the Herkes İçin Mimarlık team report from the Chicago Architecture Biennial, where they are participants",
 "types": [
 "Talk / Lecture"
 ],
@@ -3142,7 +3237,7 @@ const ARCHIVE = {
 {
 "no": "1903",
 "dates": "2019",
-"name": "Berlin Notları #13",
+"name": "Berlin Notları #13 / Berlin Notes #13",
 "types": [
 "Text"
 ],
@@ -3165,7 +3260,7 @@ const ARCHIVE = {
 {
 "no": "1902",
 "dates": "2019",
-"name": "Arredamento Mimarlık Nisan Sayısı",
+"name": "Arredamento Mimarlık Nisan Sayısı / Arredamento Mimarlık April Issue",
 "types": [
 "Text"
 ],
@@ -3270,6 +3365,13 @@ const ARCHIVE = {
 "role": "tutor",
 "status": "realised",
 "description": "Ten-day workshop on urban commons in Berlin.",
+"links": [
+{
+"label": "image",
+"url": "https://bi-bak.de/storage/veranstaltung/2019/05/236/conversions/titelbild__OP3IjC-frontend.jpg",
+"caption": "Project title image"
+}
+],
 "section": "workshop"
 },
 {
@@ -3284,6 +3386,13 @@ const ARCHIVE = {
 "role": "tutor",
 "status": "realised",
 "description": "Workshop of bi'bak and Sinema TransTopia.",
+"links": [
+{
+"label": "image",
+"url": "https://bi-bak.de/storage/reihe/2020/07/94/conversions/titelbild__LRrGwE-frontend.jpg",
+"caption": "Project title image"
+}
+],
 "section": "workshop"
 },
 {
@@ -3302,7 +3411,7 @@ const ARCHIVE = {
 {
 "no": "1812",
 "dates": "2018",
-"name": "Açık Mimarlık'ta Yelta Köm ile mimari projelerde insan temsilleri üzerine",
+"name": "Açık Mimarlık'ta Yelta Köm ile mimari projelerde insan temsilleri üzerine / On human representations in architectural projects with Yelta Köm on Açık Mimarlık",
 "types": [
 "Talk / Lecture"
 ],
@@ -3340,7 +3449,7 @@ const ARCHIVE = {
 {
 "no": "1810",
 "dates": "2018",
-"name": "Yarın Daha İyi mi Olacak?*",
+"name": "Yarın Daha İyi mi Olacak?* / Will Tomorrow Be Better?*",
 "types": [
 "Text"
 ],
@@ -3359,7 +3468,7 @@ const ARCHIVE = {
 {
 "no": "1809",
 "dates": "2018",
-"name": "Vardiya'ya Hoş Geldiniz!",
+"name": "Vardiya'ya Hoş Geldiniz! / Welcome to Vardiya!",
 "types": [
 "Text"
 ],
@@ -3378,7 +3487,7 @@ const ARCHIVE = {
 {
 "no": "1808",
 "dates": "2018",
-"name": "Senin Puanın Kaç?",
+"name": "Senin Puanın Kaç? / What Is Your Score?",
 "types": [
 "Text"
 ],
@@ -3560,7 +3669,7 @@ const ARCHIVE = {
 {
 "no": "1801",
 "dates": "2018",
-"name": "Selfie'den Sonra",
+"name": "Selfie'den Sonra / After the Selfie",
 "types": [
 "Text"
 ],
@@ -3609,7 +3718,7 @@ const ARCHIVE = {
 {
 "no": "1713",
 "dates": "2017",
-"name": "Katılımcı Sergi Projesinde Mimarın Kafa Karışıklığı",
+"name": "Katılımcı Sergi Projesinde Mimarın Kafa Karışıklığı / The Architect's Confusion in a Participatory Exhibition Project",
 "types": [
 "Text"
 ],
@@ -3628,7 +3737,7 @@ const ARCHIVE = {
 {
 "no": "1712",
 "dates": "2017",
-"name": "Berlin Notları #12: Final",
+"name": "Berlin Notları #12: Final / Berlin Notes #12: Finale",
 "types": [
 "Text"
 ],
@@ -3647,7 +3756,7 @@ const ARCHIVE = {
 {
 "no": "1711",
 "dates": "2017",
-"name": "Berlin Notları #11: Boncuk",
+"name": "Berlin Notları #11: Boncuk / Berlin Notes #11: Bead",
 "types": [
 "Text"
 ],
@@ -3666,7 +3775,7 @@ const ARCHIVE = {
 {
 "no": "1710",
 "dates": "2017",
-"name": "Berlin Notları #10: O Ev Berlin!",
+"name": "Berlin Notları #10: O Ev Berlin! / Berlin Notes #10: That Home Is Berlin!",
 "types": [
 "Text"
 ],
@@ -3685,7 +3794,7 @@ const ARCHIVE = {
 {
 "no": "1709",
 "dates": "2017",
-"name": "Berlin Notları #8",
+"name": "Berlin Notları #8 / Berlin Notes #8",
 "types": [
 "Text"
 ],
@@ -3704,7 +3813,7 @@ const ARCHIVE = {
 {
 "no": "1708",
 "dates": "2017",
-"name": "Berlin Notları #7: Kendime Notlar",
+"name": "Berlin Notları #7: Kendime Notlar / Berlin Notes #7: Notes to Myself",
 "types": [
 "Text"
 ],
@@ -3723,7 +3832,7 @@ const ARCHIVE = {
 {
 "no": "1707",
 "dates": "2017",
-"name": "Berlin Notları #6",
+"name": "Berlin Notları #6 / Berlin Notes #6",
 "types": [
 "Text"
 ],
@@ -3742,7 +3851,7 @@ const ARCHIVE = {
 {
 "no": "1706",
 "dates": "2017",
-"name": "Berlin Notları #5",
+"name": "Berlin Notları #5 / Berlin Notes #5",
 "types": [
 "Text"
 ],
@@ -3761,7 +3870,7 @@ const ARCHIVE = {
 {
 "no": "1705",
 "dates": "2017",
-"name": "Berlin Notları #2",
+"name": "Berlin Notları #2 / Berlin Notes #2",
 "types": [
 "Text"
 ],
@@ -3895,7 +4004,7 @@ const ARCHIVE = {
 {
 "no": "1703",
 "dates": "2017",
-"name": "Berlin Notları #9: Hong Kong",
+"name": "Berlin Notları #9: Hong Kong / Berlin Notes #9: Hong Kong",
 "types": [
 "Text"
 ],
@@ -3922,7 +4031,7 @@ const ARCHIVE = {
 {
 "no": "1702",
 "dates": "2017",
-"name": "Berlin Notları #4",
+"name": "Berlin Notları #4 / Berlin Notes #4",
 "types": [
 "Text"
 ],
@@ -3945,7 +4054,7 @@ const ARCHIVE = {
 {
 "no": "1701",
 "dates": "2017",
-"name": "Berlin Notları #3",
+"name": "Berlin Notları #3 / Berlin Notes #3",
 "types": [
 "Text"
 ],
@@ -4004,6 +4113,11 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "https://www.arkitera.com/etkinlik/terk-etmeyecegiz/"
+},
+{
+"label": "image",
+"url": "https://www.arkitera.com/wp-content/uploads/2016/04/terk20etmeyeceC49Fiz.jpg.jpeg",
+"caption": "Exhibition poster"
 }
 ],
 "section": "work",
@@ -4102,12 +4216,29 @@ const ARCHIVE = {
 "role": "member",
 "status": "ongoing",
 "description": "Research and spatial-practice collective working with people from villages flooded by the Ilısu Dam on counter-archives, video essays and counter-maps.",
+"links": [
+{
+"label": "image",
+"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3157-1600x1200.jpg",
+"credit": "Arazi Collective, Ecologies of Making Worlds"
+},
+{
+"label": "image",
+"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3158.jpg",
+"credit": "Arazi Collective, Ecologies of Making Worlds"
+},
+{
+"label": "image",
+"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3162.jpg",
+"credit": "Arazi Collective, Ecologies of Making Worlds"
+}
+],
 "section": "network"
 },
 {
 "no": "1607",
 "dates": "2016",
-"name": "Ticareti Olmayan Ama Ekonomisi Olan Bir Mimarlık Var",
+"name": "Ticareti Olmayan Ama Ekonomisi Olan Bir Mimarlık Var / There Is an Architecture Without Trade but With an Economy",
 "types": [
 "Text"
 ],
@@ -4119,7 +4250,7 @@ const ARCHIVE = {
 {
 "no": "1606",
 "dates": "2016",
-"name": "Kısa bir radyo hikayesi",
+"name": "Kısa bir radyo hikayesi / A Short Radio Story",
 "types": [
 "Text"
 ],
@@ -4138,7 +4269,7 @@ const ARCHIVE = {
 {
 "no": "1605",
 "dates": "2016",
-"name": "Bienalin Değerli Artıkları",
+"name": "Bienalin Değerli Artıkları / The Valuable Residues of the Biennale",
 "types": [
 "Text"
 ],
@@ -4216,7 +4347,7 @@ const ARCHIVE = {
 {
 "no": "1603",
 "dates": "2016",
-"name": "Berlin Notları #1",
+"name": "Berlin Notları #1 / Berlin Notes #1",
 "types": [
 "Text"
 ],
@@ -4239,7 +4370,7 @@ const ARCHIVE = {
 {
 "no": "1602",
 "dates": "2016",
-"name": "Türkiye Tasarım Kronolojisi: Deneme",
+"name": "Türkiye Tasarım Kronolojisi: Deneme / Chronology of Design in Türkiye: A Trial",
 "types": [
 "Talk / Lecture"
 ],
@@ -4352,6 +4483,16 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "https://www.arkitera.com/etkinlik/vitra-cagdas-mimarlik-dizisi-sunar-dikkat-kaygan-zemin/"
+},
+{
+"label": "image",
+"url": "https://www.istanbulmodern.org/contents/piclib/bigsize/content/193/6170-42017-6249404.jpg",
+"caption": "Exhibition view"
+},
+{
+"label": "image",
+"url": "https://www.istanbulmodern.org/contents/piclib/content/193/9-42017-6249404.jpg",
+"caption": "Exhibition view"
 }
 ],
 "section": "work",
@@ -4399,13 +4540,20 @@ const ARCHIVE = {
 "role": "director (per compiled archive)",
 "status": "realised",
 "description": "Video made at Städelschule Architecture Class (SAC), Frankfurt, 2015.",
+"links": [
+{
+"label": "image",
+"url": "https://worldarchitecture.org/cdnimgfiles/extupload/4-17-.png",
+"caption": "Video still of the installation"
+}
+],
 "section": "work",
 "page": "works/1513-de-coding-amsterdam.html"
 },
 {
 "no": "1512",
 "dates": "2015",
-"name": "Bugün neyi putlaştırdınız?",
+"name": "Bugün neyi putlaştırdınız? / What Did You Idolise Today?",
 "types": [
 "Text"
 ],
@@ -4425,7 +4573,7 @@ const ARCHIVE = {
 {
 "no": "1511",
 "dates": "2015",
-"name": "Bugünlerin Bir de Yarınları var (conference talk)",
+"name": "Bugünlerin Bir de Yarınları var / Todays Have Their Tomorrows Too (conference talk)",
 "types": [
 "Talk / Lecture"
 ],
@@ -4477,7 +4625,7 @@ const ARCHIVE = {
 {
 "no": "1508",
 "dates": "2015",
-"name": "Mimarlık hakkında yazarım diyordum…",
+"name": "Mimarlık hakkında yazarım diyordum… / I Used to Say I Would Write About Architecture…",
 "types": [
 "Text"
 ],
@@ -4496,7 +4644,7 @@ const ARCHIVE = {
 {
 "no": "1507",
 "dates": "2015",
-"name": "Kişisel bir blog serüveni",
+"name": "Kişisel bir blog serüveni / A Personal Blogging Adventure",
 "types": [
 "Text"
 ],
@@ -4530,7 +4678,7 @@ const ARCHIVE = {
 {
 "no": "1505",
 "dates": "2015",
-"name": "Bir kaldırım hikayesi",
+"name": "Bir kaldırım hikayesi / A Pavement Story",
 "types": [
 "Text"
 ],
@@ -4563,7 +4711,7 @@ const ARCHIVE = {
 {
 "no": "1503",
 "dates": "2015",
-"name": "Plankton Project: Merkez dışı mimarlıklar",
+"name": "Plankton Project: Merkez dışı mimarlıklar / Plankton Project: Off-Centre Architectures",
 "types": [
 "Text"
 ],
@@ -4608,7 +4756,7 @@ const ARCHIVE = {
 {
 "no": "1421",
 "dates": "2014",
-"name": "Yaparak Öğrenmek, Üretimi Müşterek Etmek",
+"name": "Yaparak Öğrenmek, Üretimi Müşterek Etmek / Learning by Doing, Making Production Common",
 "types": [
 "Text"
 ],
@@ -4662,7 +4810,7 @@ const ARCHIVE = {
 {
 "no": "1418",
 "dates": "2014",
-"name": "Tweet atmak zorunda mıyım?",
+"name": "Tweet atmak zorunda mıyım? / Do I Have to Tweet?",
 "types": [
 "Text"
 ],
@@ -4713,7 +4861,7 @@ const ARCHIVE = {
 {
 "no": "1415",
 "dates": "2014",
-"name": "Mimarlık herkes için olabilir mi?",
+"name": "Mimarlık herkes için olabilir mi? / Can Architecture Be for Everyone?",
 "types": [
 "Text"
 ],
@@ -4759,12 +4907,25 @@ const ARCHIVE = {
 "role": "participant (CV lists it under workshop participations)",
 "status": "realised",
 "description": "Summer workshop at the Deutsches Architekturmuseum, Frankfurt, in collaboration with Superpool, during his Städelschule studies.",
+"links": [
+{
+"label": "image",
+"url": "https://urbed.coop/sites/default/files/DSC03507.JPG",
+"credit": "URBED",
+"caption": "Workshop photograph"
+},
+{
+"label": "image",
+"url": "https://superpool.org/media/pages/news/asrm/629e07e111-1786979702/asrm.jpg",
+"caption": "Workshop poster"
+}
+],
 "section": "workshop"
 },
 {
 "no": "1412",
 "dates": "2014",
-"name": "Akşam yediğiniz yemek ile mimarlık yapmanızın nasıl bir ilgisi olabilir?",
+"name": "Akşam yediğiniz yemek ile mimarlık yapmanızın nasıl bir ilgisi olabilir? / What Could the Dinner You Eat in the Evening Have to Do With Your Practising Architecture?",
 "types": [
 "Text"
 ],
@@ -4845,7 +5006,7 @@ const ARCHIVE = {
 {
 "no": "1407",
 "dates": "2014",
-"name": "Mimarlık Nasıl Çözülür? Mimarlar Nasıl Düşünür?",
+"name": "Mimarlık Nasıl Çözülür? Mimarlar Nasıl Düşünür? / How Is Architecture Solved? How Do Architects Think?",
 "types": [
 "Text"
 ],
@@ -4909,6 +5070,13 @@ const ARCHIVE = {
 "place": "Galata Greek Primary School, Istanbul",
 "status": "realised",
 "description": "Project shown at the 2nd Istanbul Design Biennial alongside KONTRAAKT and #occupygezi architecture.",
+"links": [
+{
+"label": "image",
+"url": "https://2tb.iksv.org/images/projeler/twtrate.jpg",
+"caption": "Project graphic, 2nd Istanbul Design Biennial archive"
+}
+],
 "shown": [
 {
 "dates": "2014",
@@ -4937,7 +5105,7 @@ const ARCHIVE = {
 {
 "no": "1402",
 "dates": "2014",
-"name": "2. İstanbul Tasarım Bienali: Kontraakt",
+"name": "2. İstanbul Tasarım Bienali: Kontraakt / 2nd Istanbul Design Biennial: Kontraakt",
 "types": [
 "Talk / Lecture"
 ],
@@ -5083,7 +5251,7 @@ const ARCHIVE = {
 {
 "no": "1305",
 "dates": "2013-12",
-"name": "2. Uluslararası Antalya Mimarlık Bienali Üzerine...",
+"name": "2. Uluslararası Antalya Mimarlık Bienali Üzerine... / On the 2nd International Antalya Architecture Biennial...",
 "types": [
 "Text"
 ],
@@ -5358,6 +5526,12 @@ const ARCHIVE = {
 "role": "co-founder of the association; individual role in this series not stated",
 "status": "realised",
 "description": "Series of picnic-festival gatherings in Gezi Park, launched by Herkes İçin Mimarlık in March 2012 against the Taksim Square project; the first on 4 March 2012 followed a workshop 'Herkes İçin Taksim' on 26 February 2012 at Mimar Sinan Fine Arts University.",
+"links": [
+{
+"label": "image",
+"url": "img/drive/1210/01.jpg"
+}
+],
 "section": "work",
 "page": "works/1210-geleneksel-gezi-parki-senlikleri-gezi-park-celebrations.html"
 },
@@ -5493,7 +5667,8 @@ const ARCHIVE = {
 },
 {
 "label": "image",
-"url": "https://dr10ftxu9axbn.cloudfront.net/eyJidWNrZXQiOiJtYXMtY29udGV4dC1pbWFnZXMiLCJrZXkiOiJtZWRpYS9tYXNfbmV3c18yMDEyX21hc19jb250ZXh0X2luX2lzdGFuYnVsX2Rlc2lnbl9iaWVubmlhbF8wMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6NjMwLCJwb3NpdGlvbiI6ImNlbnRlciIsImZpdCI6ImNvdmVyIn0sIndpdGhNZXRhZGF0YSI6dHJ1ZSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo5MCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJvcHRpbWlzZUNvZGluZyI6dHJ1ZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlfX19?mtime=1672781979"
+"url": "https://dr10ftxu9axbn.cloudfront.net/eyJidWNrZXQiOiJtYXMtY29udGV4dC1pbWFnZXMiLCJrZXkiOiJtZWRpYS9tYXNfbmV3c18yMDEyX21hc19jb250ZXh0X2luX2lzdGFuYnVsX2Rlc2lnbl9iaWVubmlhbF8wMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6NjMwLCJwb3NpdGlvbiI6ImNlbnRlciIsImZpdCI6ImNvdmVyIn0sIndpdGhNZXRhZGF0YSI6dHJ1ZSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo5MCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJvcHRpbWlzZUNvZGluZyI6dHJ1ZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlfX19?mtime=1672781979",
+"credit": "Ethel Baraona Pohl"
 }
 ],
 "shown": [
@@ -5617,6 +5792,13 @@ const ARCHIVE = {
 "for": "Arkitera Architecture Centre",
 "status": "realised",
 "description": "Travel grant for the research diary In the Pursue of Production on post-Fordist design production in eight cities.",
+"links": [
+{
+"label": "image",
+"url": "https://saltonline.org/assets/5c8988fe-70b2-425e-b65e-df9c7553f554?fit=contain&width=1200&quality=75&format=webp",
+"caption": "From the travel grant journey"
+}
+],
 "section": "residency-award"
 },
 {
@@ -5666,6 +5848,11 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://saltonline.org/en/presentation-yelta-kom-a-story-from-an-arkitera-traveler-how-and-where-did-i-fin-124"
+},
+{
+"label": "image",
+"url": "https://saltonline.org/assets/5c8988fe-70b2-425e-b65e-df9c7553f554?fit=contain&width=1200&quality=75&format=webp",
+"caption": "From the travel grant journey"
 }
 ],
 "section": "talk"
@@ -5717,7 +5904,7 @@ const ARCHIVE = {
 {
 "no": "0903",
 "dates": "2009",
-"name": "Mimarlık Eğitiminde Nefes Noktaları: kayıt dışı deneyim",
+"name": "Mimarlık Eğitiminde Nefes Noktaları: kayıt dışı deneyim / Breathing Points in Architectural Education: the Kayıtdışı Experience",
 "types": [
 "Text"
 ],
@@ -5745,6 +5932,13 @@ const ARCHIVE = {
 "role": "organiser; led a media workshop",
 "status": "realised",
 "description": "Second Kayıtdışı design week at YTÜ (February 2009), theme liminal; the CV records a media workshop led by him. The 2009 paper reports 22 workshops, 16 speakers and over two hundred participants.",
+"links": [
+{
+"label": "image",
+"url": "img/drive/0902/01.jpg",
+"credit": "Franz von Bodelschwingh"
+}
+],
 "section": "work",
 "page": "works/0902-kayitdisi-02-liminal.html"
 },
@@ -5765,7 +5959,7 @@ const ARCHIVE = {
 {
 "no": "0803",
 "dates": "2008-02",
-"name": "Kayıtdışı 01: Yer(siz)leşme",
+"name": "Kayıtdışı 01: Yer(siz)leşme / Kayıtdışı 01: (Un)settling",
 "types": [
 "Workshop"
 ],
@@ -5775,7 +5969,7 @@ const ARCHIVE = {
 "status": "realised",
 "description": "First Kayıtdışı design week, 4 to 9 February 2008 at YTÜ Faculty of Architecture, with discussion sessions, workshops, an exhibition, night events and a closing party; theme Yer(siz)leşme.",
 "section": "work",
-"page": "works/0803-kayitdisi-01-yer-siz-lesme.html"
+"page": "works/0803-kayitdisi-01-yer-siz-lesme-kayitdisi-01-un-settling.html"
 },
 {
 "no": "0802",

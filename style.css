@@ -41,7 +41,7 @@ footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12re
 .lede { max-width: 44em; font-size: 1.05rem; }
 
 /* controls */
-.controls { border-top: 1px solid var(--ink); padding: 0.55rem 0 0.7rem; font-size: 14px; }
+.controls { border-top: 1px solid var(--ink); padding: 0.7rem 0 0.9rem; font-size: 14px; }
 .frow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.85rem; padding: 0.2rem 0; }
 #sections { font-size: 1.05rem; font-weight: var(--em); gap: 0.25rem 1.1rem; }
 .flabel { color: var(--mute); margin-right: 0.2rem; }
@@ -58,11 +58,11 @@ footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12re
 .view { margin-left: auto; }
 
 /* list view */
-.thead, .row { display: grid; grid-template-columns: var(--cols); gap: 0 1rem; }
-.thead { position: sticky; top: 0; z-index: 2; background: #fff; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 0.35rem 0; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
+.thead, .row { display: grid; grid-template-columns: var(--cols); gap: 0 1.4rem; }
+.thead { position: sticky; top: 0; z-index: 2; background: #fff; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 0.5rem 0; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
 .rows { list-style: none; margin: 0; padding: 0; }
 .entry { border-bottom: 1px solid var(--hair); }
-.row { width: 100%; padding: 0.42rem 0; align-items: baseline; }
+.row { width: 100%; padding: 0.72rem 0; align-items: baseline; line-height: 1.32; }
 .row:hover { color: var(--sig); }
 .row .c-no { color: var(--sig); }
 .row .c-name { font-weight: var(--em); }
@@ -70,7 +70,7 @@ footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12re
 .entry.open { background: var(--tint); border-bottom-color: var(--sig); }
 .entry.open .row { border-top: 2px solid var(--sig); margin-top: -1px; }
 .entry.open .row .c-name { color: var(--sig); }
-.oneline { margin: -0.15rem 0 0.45rem calc(4.2rem + 6.2rem + 2rem); color: var(--mute); font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 62em; }
+.oneline { margin: 0.1rem 0 0.1rem calc(4.2rem + 6.2rem + 2rem); color: var(--mute); font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 62em; }
 .detail { padding: 0.3rem 0 1.1rem calc(4.2rem + 6.2rem + 2rem); }
 .dgrid { max-width: 54rem; }
 .detail dl { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.3rem 1rem; margin: 0; }
@@ -87,13 +87,13 @@ footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12re
 .empty { padding: 1.5rem 0; }
 
 /* image view */
-.grid { list-style: none; margin: 0; padding: 0.8rem 0 0; columns: 4 15rem; column-gap: 1.2rem; border-top: 1px solid var(--ink); }
-.tile { break-inside: avoid; margin: 0 0 1.4rem; }
+.grid { list-style: none; margin: 0; padding: 1.2rem 0 0; columns: 5 13rem; column-gap: 1.4rem; border-top: 1px solid var(--ink); }
+.tile { break-inside: avoid; margin: 0 0 1.6rem; }
 .tile button { display: block; width: 100%; }
 .tile img { display: block; width: 100%; height: auto; }
-.tile .cap { display: block; padding-top: 0.35rem; font-size: 13.5px; }
+.tile .cap { display: block; padding-top: 0.45rem; font-size: 13.5px; line-height: 1.3; }
 .tile.type button { border-top: 1px solid var(--ink); padding-top: 0.35rem; }
-.tile.type .cap { font-size: 1.3rem; line-height: 1.15; letter-spacing: -0.01em; font-weight: var(--em); padding: 0; }
+.tile.type .cap { font-size: 1rem; line-height: 1.2; letter-spacing: -0.005em; font-weight: var(--em); padding: 0; }
 .tile .c-no { color: var(--sig); font-weight: 400; }
 .tile button:hover .cap { color: var(--sig); }
 .tile.type .c-no { display: block; font-size: 13px; margin-bottom: 0.2rem; }
@@ -255,3 +255,16 @@ h2.rule {
 #typetoggle[aria-expanded="true"] { color: var(--sig); }
 #typetoggle::after { content: " \203A"; display: inline-block; }
 #typetoggle[aria-expanded="true"]::after { transform: rotate(90deg); }
+
+/* photograph credits under a work's images */
+.work figure.shot figcaption {
+  color: var(--mute); font-size: 12px; letter-spacing: 0.02em;
+  padding-top: 0.35rem;
+}
+
+/* about: portrait sits beside the bio on a wide screen */
+.portrait { float: right; width: min(18rem, 34vw); margin: 0 0 1.2rem 2rem; }
+.portrait img { display: block; width: 100%; height: auto; }
+@media (max-width: 640px) {
+  .portrait { float: none; width: 100%; max-width: 20rem; margin: 0 0 1.2rem; }
+}

@@ -216,6 +216,9 @@ def main():
     for base, vers in groups.items():
         title = vers[0]["meta"].get("title", base)
         ent = by_key.get(base) or by_title.get(norm(title))
+        # the archive entry carries the bilingual name, so prefer it for the page title
+        if ent and ent.get("name"):
+            title = ent["name"]
         if not ent and norm(title) in excluded:
             skipped.append("%s (%s): listed in excluded, no page" % (base, title))
             continue
@@ -371,10 +374,11 @@ def wslug(ent):
 
 
 def imgs(ent):
-    """Image urls for an entry, self-hosted ones first: they are faster and they
-    do not depend on an old Squarespace CDN staying up."""
-    urls = [l["url"] for l in (ent.get("links") or []) if l.get("label") == "image"]
-    return [u for u in urls if not u.startswith("http")] + [u for u in urls if u.startswith("http")]
+    """Image links for an entry, self-hosted ones first: they are faster and they
+    do not depend on an old Squarespace CDN staying up. Returns (url, credit) pairs."""
+    ls = [l for l in (ent.get("links") or []) if l.get("label") == "image"]
+    ls = [l for l in ls if not l["url"].startswith("http")] + [l for l in ls if l["url"].startswith("http")]
+    return [(l["url"], l.get("credit"), l.get("caption")) for l in ls]
 
 
 def meta_line(ent):
@@ -424,11 +428,23 @@ ARCHIVE_CONTROLS = """<section class="controls" aria-label="Filter the archive">
 <noscript><p>The archive table needs JavaScript. A full list is on the <a href="about.html">About</a> page.</p></noscript>"""
 
 
+IMG_FALLBACK = ('<script>document.addEventListener("error",function(e){'
+                'var t=e.target;if(t&&t.tagName==="IMG"){var f=t.closest("figure");'
+                'if(f&&f.parentNode)f.parentNode.removeChild(f);}},true);</script>\n')
+
+
 def write_work(ent, slug, text_href, press_for):
     # work pages live in works/, so site-relative image paths need one level up
-    figs = "".join('<figure class="shot"><img src="%s" alt="" loading="lazy"></figure>'
-                   % E(u if u.startswith("http") else "../" + u)
-                   for u in imgs(ent))
+    def cap(credit, caption):
+        bits = [E(caption)] if caption else []
+        if credit:
+            # "Courtesy X" is already a complete credit line; a name is not
+            lead = "" if re.match(r"(?i)^(courtesy|©)", credit) else "Photograph: "
+            bits.append(lead + E(credit))
+        return ("<figcaption>%s</figcaption>" % ". ".join(bits)) if bits else ""
+    figs = "".join('<figure class="shot"><img src="%s" alt="%s" loading="lazy">%s</figure>'
+                   % (E(u if u.startswith("http") else "../" + u), E(cp or ""), cap(c, cp))
+                   for u, c, cp in imgs(ent))
     rows = []
     for label, val in (("No.", ent["no"]), ("Date/s", ent.get("dates")),
                        ("Type/s", ", ".join(ent.get("types") or [])),
@@ -461,7 +477,8 @@ def write_work(ent, slug, text_href, press_for):
             '<p class="more"><a href="../index.html#e-%s">Back to the archive &#8594;</a></p>\n</article>'
             % (meta_line(ent), E(ent["name"]), desc, read, "".join(rows), figs, pr, ent["no"]))
     open(os.path.join(HERE, "works", "%s.html" % slug), "w", encoding="utf-8").write(
-        page("%s · Yelta Köm" % ent["name"], body, root="../", current="Work", cls="workpage"))
+        page("%s · Yelta Köm" % ent["name"], body, root="../", current="Archive", cls="workpage",
+             scripts=IMG_FALLBACK))
 
 
 def write_search(entries, press, texts, work_pages, text_pages_by_no):
@@ -527,7 +544,10 @@ def write_about(entries):
            '<p>He co-founded the collective Herkes İçin Mimarlık / Architecture for All in 2011, was associate curator of Vardiya / The Shift, '
            'the Pavilion of Türkiye at the 16th International Architecture Exhibition of La Biennale di Venezia (2018), and worked as a researcher '
            'on the ERC project Topological Atlas / Border Topologies (TU Delft and Goldsmiths) from 2019 to 2022. He chairs the board of TOP e.V., '
-           'which runs TOP Project Space in Berlin.</p>')
+           'which runs TOP Project Space in Berlin.</p>'
+           '<p>Since 2022 he has been a research associate at the Chair of Practices and Politics of Representation, '
+           'Faculty of Architecture and Urbanism, Bauhaus-Universit&#228;t Weimar, where his doctoral research follows the '
+           'spatial and visual regimes of the Il&#305;su Dam, the flooding of Hasankeyf and displacement in the Tigris basin.</p>')
     groups = [
         ("Exhibitions", lambda x: has(x, "Exhibition (solo)", "Exhibition (group)")),
         ("Works", lambda x: x["section"] == "work" and not has(x, "Exhibition (solo)", "Exhibition (group)")),
@@ -546,7 +566,11 @@ def write_about(entries):
             lis.append('<li><span class="d">%s</span><span><a href="%s">%s</a>%s</span></li>'
                        % (E(x["dates"]), entry_href(x["no"]), E(x["name"]), (", " + extra) if extra else ""))
         secs.append('<section class="cv"><h2>%s <span class="n">%d</span></h2><ul>%s</ul></section>' % (title, len(items), "".join(lis)))
-    body = ('<h1 class="pagehead">About</h1>\n<div class="bio">%s\n<p class="contact" id="contact-about">Contact: %s<br>'
+    portrait = ""
+    if os.path.exists(os.path.join(HERE, "img", "portrait", "yelta-kom.jpg")):
+        portrait = ('<figure class="portrait"><img src="img/portrait/yelta-kom.jpg" '
+                    'alt="Yelta K&#246;m" loading="lazy"></figure>')
+    body = ('<h1 class="pagehead">About</h1>\n' + portrait + '<div class="bio">%s\n<p class="contact" id="contact-about">Contact: %s<br>'
             'Represented by Versus Art Project, Istanbul<br>Exhibition design and scenography: <a href="https://noframe.studio">Studio No Frame &#8599;</a></p></div>\n'
             '<div class="cvwrap">%s</div>' % (bio, EMAIL, "\n".join(secs)))
     open(os.path.join(HERE, "about.html"), "w", encoding="utf-8").write(page("About · Yelta Köm", body, current="About"))

@@ -211,6 +211,16 @@
     setSection(s ? s.id : 'all', false);
   }
 
+  // many images are hotlinked from institutions, so a dead one is normal over time:
+  // drop it rather than leave a broken-image icon in the grid
+  document.addEventListener('error', function (ev) {
+    var t = ev.target;
+    if (t && t.tagName === 'IMG') {
+      var tile = t.closest('.tile') || t.closest('.strip a') || t;
+      if (tile && tile.parentNode) { tile.parentNode.removeChild(tile); }
+    }
+  }, true);
+
   buildControls();
   fromHash();
   window.addEventListener('hashchange', fromHash);
