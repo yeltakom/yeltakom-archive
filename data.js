@@ -13,7 +13,7 @@ const ARCHIVE = {
 "with": [
 "Emre Akbil",
 "Socrates Stratis",
-"Merve Gül Özokcu",
+"Merve Gül Özokçu",
 "Melissa Harrison"
 ],
 "place": "Online",
@@ -24,35 +24,16 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "https://www.top-ev.de/online/spatial-narratives-of-commoning/"
-},
-{
-"label": "image",
-"url": "https://www.top-ev.de/wp-content/uploads/2026/10/snoc_cover.jpg",
-"caption": "Cover image of the Spatial Narratives of Commoning programme page"
 }
 ],
-"section": "talk"
-},
-{
-"no": "2615",
-"dates": "2026",
-"name": "MESAAS Graduate Conference 2026 (accepted paper)",
-"types": [
-"Talk / Lecture",
-"Research"
-],
-"for": "MESAAS Graduate Conference",
-"role": "presenter",
-"status": "accepted",
-"description": "Paper accepted for the MESAAS Graduate Conference 2026; acceptance confirmed by the organisers on 7 April 2026.",
-"links": [
-{
-"label": "image",
-"url": "https://mesaas.columbia.edu/wp-content/uploads/sites/6/2026/01/re_tracing_land.jpg",
-"caption": "Poster: (Re)Tracing Land, MESAAS Graduate Student Conference, 23-24 April 2026"
-}
-],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2616/01.webp",
+null,
+"Cover image of the Spatial Narratives of Commoning programme page"
+]
+]
 },
 {
 "no": "2614",
@@ -78,16 +59,17 @@ const ARCHIVE = {
 ],
 "for": "MESAAS Graduate Conference, Columbia University",
 "place": "Online (Columbia University, New York)",
+"role": "presenter",
 "status": "realised",
 "description": "Conference paper at (Re)Tracing Land, the MESAAS graduate conference, 23-24 April 2026, online.",
-"links": [
-{
-"label": "image",
-"url": "https://mesaas.columbia.edu/wp-content/uploads/sites/6/2026/01/re_tracing_land.jpg",
-"caption": "Poster of the conference the paper was presented at: (Re)Tracing Land, MESAAS 2026 (reused)"
-}
-],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2613/01.webp",
+null,
+"Poster of the conference the paper was presented at: (Re)Tracing Land, MESAAS 2026 (reused)"
+]
+]
 },
 {
 "no": "2612",
@@ -100,7 +82,7 @@ const ARCHIVE = {
 "with": [
 "Gülce Özkara"
 ],
-"place": "SALT Beyoğlu, Istanbul",
+"place": "Istanbul",
 "role": "speaker",
 "status": "realised",
 "description": "Artist talk at SALT Beyoğlu accompanying the exhibition Breaking Through a Dam: Memory, Land, Archive and Being with Place.",
@@ -121,7 +103,7 @@ const ARCHIVE = {
 },
 {
 "no": "2610",
-"dates": "2026—",
+"dates": "2026–ongoing",
 "name": "Savaştepe Köy Enstitüsü / Savaştepe Village Institute",
 "types": [
 "Research"
@@ -139,8 +121,8 @@ const ARCHIVE = {
 "types": [
 "Talk / Lecture"
 ],
-"for": "University of Kassel, FB06",
-"place": "University of Kassel, Kassel",
+"for": "Universität Kassel, FB 06",
+"place": "Kassel",
 "status": "upcoming",
 "description": "Guest lecture on the cartographic methods of Arazi Assembly and Topological Atlas in the public lecture series FUSION, 25 November 2026.",
 "section": "talk"
@@ -171,7 +153,7 @@ const ARCHIVE = {
 "with": [
 "Pelin Tan"
 ],
-"place": "Batman University, Batman",
+"place": "Batman",
 "status": "realised",
 "description": "Conference paper proposing stilling, screenshots set beside ground-level photographs, as a counter-method to the moving image archive of the Ilısu Dam, 22 to 24 October 2026.",
 "section": "talk"
@@ -230,7 +212,7 @@ const ARCHIVE = {
 "with": [
 "Üzüm Derin Solak"
 ],
-"place": "Spore Initiative, Berlin",
+"place": "Berlin",
 "role": "moderator",
 "status": "realised",
 "description": "Moderation of a screening and artist talk, 31 July 2026.",
@@ -261,22 +243,23 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "SALT",
-"place": "SALT Beyoğlu, Istanbul",
+"place": "Beyoğlu, Istanbul",
 "status": "realised",
 "description": "Talk on the installation hep seninleydim / I was always with you in the exhibition Breaking Through a Dam, 26 June 2026.",
 "links": [
 {
 "label": "original",
 "url": "https://saltonline.org/en/sergi-barajdan-sizanlar-3036"
-},
-{
-"label": "image",
-"url": "https://saltonline.org/assets/a4ebc1c2-a511-4238-a443-8073078b293d?fit=contain&width=1920&quality=75&format=webp",
-"credit": "Metean Bars",
-"caption": "Installation view of Yelta Köm, I was always with you (2026), Breaking Through a Dam, Salt Beyoğlu; image shown on the talk page"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2602/01.webp",
+"Metean Bars",
+"Installation view of Yelta Köm, I was always with you (2026), Breaking Through a Dam, Salt Beyoğlu; image shown on the talk page"
+]
+]
 },
 {
 "no": "2601",
@@ -293,30 +276,18 @@ const ARCHIVE = {
 "Ali Haydar Ararut",
 "Melisa Karataş"
 ],
-"place": "SALT Beyoğlu, Istanbul",
+"place": "Beyoğlu, Istanbul",
 "status": "realised",
 "description": "Installation of epoxy resin panels encapsulating telecommunication hardware, screens with poetry and a base station sculpture, drawing on the 1679 cipher manuscript Lettres Muettes and on Istanbul's mobile network infrastructure, part of the Urban Surveillance Bureau series.",
 "links": [
 {
 "label": "original",
 "url": "https://saltonline.org/en/sergi-barajdan-sizanlar-3036"
-},
-{
-"label": "image",
-"url": "https://saltonline.org/assets/a4ebc1c2-a511-4238-a443-8073078b293d?fit=contain&width=1920&quality=75&format=webp",
-"credit": "Metean Bars",
-"caption": "Installation view, SALT Beyoğlu"
-},
-{
-"label": "image",
-"url": "https://saltonline.org/assets/61d0c769-306a-4799-8bdf-dbb26afbc57e?fit=contain&width=1920&quality=75&format=webp",
-"credit": "Metean Bars",
-"caption": "Installation view, SALT Beyoğlu"
 }
 ],
 "shown": [
 {
-"dates": "22.04.—23.08.2026",
+"dates": "22.04.–23.08.2026",
 "venue": "SALT Beyoğlu",
 "city": "Istanbul",
 "exhibition_title": "Breaking Through a Dam: Memory, Land, Archive and Being with Place (Barajdan Sızanlar)",
@@ -324,7 +295,14 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2601-hep-seninleydim-i-was-always-with-you.html"
+"page": "works/2601-hep-seninleydim-i-was-always-with-you.html",
+"imgs": [
+[
+"assets/images/2601/01.webp",
+"Metean Bars",
+"Installation view, SALT Beyoğlu"
+]
+]
 },
 {
 "no": "2511",
@@ -363,7 +341,7 @@ const ARCHIVE = {
 "with": [
 "Agit Özdemir"
 ],
-"place": "Spore Initiative, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Workshop with Agit Özdemir.",
 "section": "workshop"
@@ -392,7 +370,7 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "Spore Initiative",
-"place": "Spore Initiative, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Talk as contributing author at the release of the Planetarische Bauern publication.",
 "section": "talk"
@@ -404,38 +382,38 @@ const ARCHIVE = {
 "types": [
 "Talk / Lecture"
 ],
-"for": "Kunstmuseum Moritzburg and Werkleitz",
+"for": "Kunstmuseum Moritzburg Halle (Saale) and Werkleitz",
 "with": [
 "Agit Özdemir",
 "Rojin Elif Tokur"
 ],
-"place": "Kunstmuseum Moritzburg, Halle (Saale)",
+"place": "Halle (Saale)",
 "status": "realised",
 "description": "English-language talk in the exhibition Planetary Peasants on environmental destruction, cultural extinction and the fight for justice in the Tigris region.",
 "links": [
 {
 "label": "original",
 "url": "https://planetarische-bauern.werkleitz.de/en/cracks-in-the-soil-talk"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/5793994b05-1756206156/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-h0a4262-1000x-q72.jpg",
-"credit": "Michel Klehm",
-"caption": "Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/a111da8f74-1756206156/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-dsf6746-1-kopie-944x-q72.jpg",
-"credit": "Michel Klehm",
-"caption": "Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil-talk/d1f5c32227-1756206156/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg",
-"caption": "Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2506/01.webp",
+"Michel Klehm",
+"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
+],
+[
+"assets/images/2506/02.webp",
+"Michel Klehm",
+"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
+],
+[
+"assets/images/2506/03.webp",
+null,
+"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
+]
+]
 },
 {
 "no": "2505",
@@ -493,7 +471,7 @@ const ARCHIVE = {
 },
 {
 "no": "2502",
-"dates": "2025—",
+"dates": "2025–ongoing",
 "name": "Spatial Narratives of Commoning",
 "types": [
 "Workshop",
@@ -524,97 +502,77 @@ const ARCHIVE = {
 "Counter-mapping"
 ],
 "for": "Kunstmuseum Moritzburg Halle (Saale) and Werkleitz",
-"place": "Kunstmuseum Moritzburg, Halle (Saale)",
+"place": "Halle (Saale)",
 "status": "realised",
 "description": "Installation of table-like landscape models fragmented by infrastructures and borders, with archival material, field recordings, a video essay and speculative maps from the Tigris and Euphrates region of southeast Türkiye.",
 "links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/cracks-in-the-soil"
-},
 {
 "label": "werkleitz",
 "url": "https://werkleitz.de/en/cracks-in-the-soil"
 },
 {
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/11c737d8e6-1752821863/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-h0a4262-1000x-q72.jpg"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/c897ec200f-1752821851/gross-wlg-pb25-b-10-yelta-koem-h0a4259-1000x-q72.jpg"
-},
-{
 "label": "original",
 "url": "https://planetarische-bauern.werkleitz.de/en/personen/yelta-koem"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/01.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/02.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/03.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/04.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/05.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/06.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/07.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "img/cracks-in-the-soil/08.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/c871940bc6-1752821873/gross-pb25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-dsf6746-1-kopie-944x-q72.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/cracks-in-the-soil/ada5862608-1752821881/gross-wlg-pb25-b-10-yelta-koem-h0a4255-1000x-q72.jpg",
-"credit": "Michel Klehm"
-},
-{
-"label": "image",
-"url": "https://werkleitz.de/media/pages/werke-veranstaltungen/planetarische-bauern-ausstellung/9ec8277fd0-1762604195/pb-25-yelta-koem-cracks-in-the-soil-foto-michel-klehm-13b-1000x-q72.jpg",
-"credit": "Michel Klehm"
 }
 ],
 "shown": [
 {
-"dates": "23.05.—14.09.2025",
-"venue": "Kunstmuseum Moritzburg",
+"dates": "23.05.–14.09.2025",
+"venue": "Kunstmuseum Moritzburg Halle (Saale)",
 "city": "Halle (Saale)",
 "exhibition_title": "Planetary Peasants (Planetarische Bauern)",
 "curator": "Övül Ö. Durmuşoğlu, Joanna Warsza (Kunstmuseum Moritzburg); Daniel Herrmann, Alexander Klose, Edit Molnár, Marcel Schwierin (Werkleitz)"
 }
 ],
 "section": "work",
-"page": "works/2501-cracks-in-the-soil.html"
+"page": "works/2501-cracks-in-the-soil.html",
+"imgs": [
+[
+"assets/images/2501/01.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/02.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/03.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/04.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/05.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/06.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/07.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/08.webp",
+"Michel Klehm",
+null
+],
+[
+"assets/images/2501/10.webp",
+"Michel Klehm",
+null
+]
+]
 },
 {
 "no": "2414",
@@ -653,7 +611,7 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "Marmara University, Faculty of Fine Arts, Painting Department",
-"place": "Marmara University, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "Guest lecture at the painting department of Marmara University.",
 "section": "talk"
@@ -679,39 +637,17 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://kkp.uni-ak.ac.at/?p=2864"
-},
-{
-"label": "image",
-"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2024/11/Ecologies_of_Making_Worlds_Poster_Final4-scaled.jpg",
-"caption": "Poster of the Ecologies of Making Worlds symposium, Vienna"
 }
 ],
 "section": "talk",
-"text": "texts/resisting-against-ecocide-remapping-hasankeyf-and-tigris.html"
-},
-{
-"no": "2410",
-"dates": "2024",
-"name": "Nightlife as Sustained Resistance in Istanbul",
-"types": [
-"Text"
-],
-"for": "CTM Festival Magazine",
-"with": [
-"Ulya Soley"
-],
-"place": "Berlin",
-"role": "co-author",
-"status": "realised",
-"description": "Essay co-written with Ulya Soley from the Tarabya residency research on Istanbul nightlife.",
-"links": [
-{
-"label": "original",
-"url": "https://www.ctm-festival.de/magazine/nightlife-as-sustained-resistance-in-istanbul"
-}
-],
-"section": "text",
-"text": "texts/nightlife-as-sustained-resistance-in-istanbul.html"
+"text": "texts/resisting-against-ecocide-remapping-hasankeyf-and-tigris.html",
+"imgs": [
+[
+"assets/images/2411/01.webp",
+null,
+"Poster of the Ecologies of Making Worlds symposium, Vienna"
+]
+]
 },
 {
 "no": "2409",
@@ -723,14 +659,6 @@ const ARCHIVE = {
 "place": "Istanbul Modern, Istanbul",
 "status": "realised",
 "description": "Resin work on a single tripod, first shown at Istanbul Modern.",
-"links": [
-{
-"label": "image",
-"url": "https://backend.artreview.com/wp-content/uploads/2024/07/Yelta_Kom_are_you_also_here-1365x2048.jpg",
-"credit": "Courtesy Istanbul Modern",
-"caption": "Sen de mi buradasın? (2023), found object, resin, metal"
-}
-],
 "shown": [
 {
 "dates": "2024",
@@ -741,7 +669,14 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2409-sen-de-mi-buradasin-are-you-here-too.html"
+"page": "works/2409-sen-de-mi-buradasin-are-you-here-too.html",
+"imgs": [
+[
+"assets/images/2409/01.webp",
+"Courtesy Istanbul Modern",
+"Sen de mi buradasın? (2023), found object, resin, metal"
+]
+]
 },
 {
 "no": "2408",
@@ -754,7 +689,7 @@ const ARCHIVE = {
 "with": [
 "Arazi Assembly"
 ],
-"place": "Akademie der bildenden Künste Wien, Vienna",
+"place": "Vienna",
 "status": "realised",
 "description": "Exhibition presentation with Arazi Assembly accompanying the conference Ecologies of Making Worlds.",
 "section": "work",
@@ -767,12 +702,12 @@ const ARCHIVE = {
 "types": [
 "Panel"
 ],
-"for": "Deutsches Architekturmuseum (DAM)",
+"for": "Deutsches Architekturmuseum",
 "with": [
 "Marten Reiß",
 "Independent Studio, RWTH Aachen"
 ],
-"place": "Deutsches Architekturmuseum, Frankfurt am Main",
+"place": "Frankfurt am Main",
 "status": "realised",
 "description": "Panel on documenting the protest camps of Gezi Park and Lützerath, 24 November 2024.",
 "section": "talk"
@@ -817,7 +752,7 @@ const ARCHIVE = {
 "Ulya Soley",
 "Queerwaves Collective"
 ],
-"place": "Kulturakademie Tarabya, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "One-day event at the Tarabya summer festival in the former kitchen of the academy, with DJ sets by Queerwaves and video works, concluding the tandem residency research on Istanbul nightlife.",
 "links": [
@@ -849,31 +784,33 @@ const ARCHIVE = {
 {
 "no": "2402",
 "dates": "2024",
-"name": "Tarabya Cultural Academy, Tandem-Residency",
+"name": "Kulturakademie Tarabya, Tandem-Residency",
 "types": [
 "Residency",
 "Award / Grant",
 "Research"
 ],
-"for": "Kulturakademie Tarabya, supported by Allianz Foundation",
+"for": "Kulturakademie Tarabya, Allianz Foundation",
 "with": [
 "Ulya Soley"
 ],
-"place": "Kulturakademie Tarabya, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "German-Turkish co-production residency with Ulya Soley for the research Nightlife as Sustained Resistance in Istanbul.",
 "links": [
 {
 "label": "original",
 "url": "https://kulturakademie-tarabya.de/en/artists/yelta-kom-ulya-soley/"
-},
-{
-"label": "image",
-"url": "https://kulturakademie-tarabya.de/wp-content/uploads/2024/10/Foto-Website_Tandem-Ulya-und-Yelta-2048x681-1.jpg",
-"caption": "Portraits of Yelta Köm (left, video still) and Ulya Soley (right) on the Tarabya fellows page"
 }
 ],
-"section": "residency-award"
+"section": "residency-award",
+"imgs": [
+[
+"assets/images/2402/01.webp",
+null,
+"Portraits of Yelta Köm (left, video still) and Ulya Soley (right) on the Tarabya fellows page"
+]
+]
 },
 {
 "no": "2401",
@@ -889,11 +826,31 @@ const ARCHIVE = {
 "text": "texts/berlin-notlari-35-veda.html"
 },
 {
-"no": "2320",
-"dates": "2023—24",
-"name": "Nightlife as Sustained Resistance in Istanbul (research project)",
+"no": "2321",
+"dates": "2023",
+"date_detail": "30.11.2023",
+"name": "Bir Gecenin Anatomisi / Anatomy of a Night",
 "types": [
-"Research"
+"Text"
+],
+"for": "Manifold",
+"status": "realised",
+"links": [
+{
+"label": "original",
+"url": "https://manifold.press/bir-gecenin-anatomisi"
+}
+],
+"section": "text",
+"text": "texts/bir-gecenin-anatomisi.html"
+},
+{
+"no": "2320",
+"dates": "2023–2024",
+"name": "Nightlife as Sustained Resistance in Istanbul",
+"types": [
+"Research",
+"Text"
 ],
 "for": "Kulturakademie Tarabya, Allianz Foundation",
 "with": [
@@ -902,8 +859,24 @@ const ARCHIVE = {
 "place": "Istanbul",
 "status": "realised",
 "description": "Research and exhibition project on nightlife as sustained resistance, carried out during the Tandem Residency, with a CTM text and the event Sound Kitchen.",
+"links": [
+{
+"label": "original",
+"url": "https://www.ctm-festival.de/magazine/nightlife-as-sustained-resistance-in-istanbul"
+}
+],
 "section": "work",
-"page": "works/2320-nightlife-as-sustained-resistance-in-istanbul-research-proje.html"
+"text": "texts/nightlife-as-sustained-resistance-in-istanbul.html",
+"page": "works/2320-nightlife-as-sustained-resistance-in-istanbul.html",
+"related": [
+{
+"kind": "text",
+"dates": "2024",
+"for": "CTM Festival Magazine",
+"place": "Berlin",
+"href": "texts/nightlife-as-sustained-resistance-in-istanbul.html"
+}
+]
 },
 {
 "no": "2319",
@@ -934,7 +907,8 @@ const ARCHIVE = {
 },
 {
 "no": "2317",
-"dates": "2023-03",
+"dates": "2023",
+"date_detail": "03.2023",
 "name": "Berlin Notları #32: Unutmak ve Unutulmak / Berlin Notes #32: To Forget and to Be Forgotten",
 "types": [
 "Text"
@@ -950,7 +924,8 @@ const ARCHIVE = {
 "url": "https://manifold.press/yelta-kom"
 }
 ],
-"section": "text"
+"section": "text",
+"text": "texts/berlin-notlari-32-unutmak-ve-unutulmak.html"
 },
 {
 "no": "2316",
@@ -976,11 +951,11 @@ const ARCHIVE = {
 "types": [
 "Talk / Lecture"
 ],
-"for": "HKW",
+"for": "Haus der Kulturen der Welt",
 "with": [
 "Ahmet Öğüt"
 ],
-"place": "HKW, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Silent University meeting with Ahmet Öğüt in the HKW programme Cultures d'avenir.",
 "section": "talk"
@@ -1015,21 +990,6 @@ const ARCHIVE = {
 "section": "talk"
 },
 {
-"no": "2312",
-"dates": "2023",
-"name": "Lines of Displacement: Along the Tigris (text)",
-"types": [
-"Text",
-"Research"
-],
-"with": [
-"Arazi Assembly"
-],
-"status": "realised",
-"description": "Text by members of Arazi Assembly on the Ilısu Dam, Hasankeyf and counter-archiving through visual regimes.",
-"section": "text"
-},
-{
 "no": "2311",
 "dates": "2023",
 "name": "Inaccurate topographies of territorial states",
@@ -1038,7 +998,7 @@ const ARCHIVE = {
 ],
 "for": "Urgent Pedagogies, Issue #7 Entangled Topographies",
 "with": [
-"Merve Gül Özokcu"
+"Merve Gül Özokçu"
 ],
 "place": "Online",
 "role": "author",
@@ -1090,11 +1050,12 @@ const ARCHIVE = {
 },
 {
 "no": "2308",
-"dates": "2023—",
+"dates": "2023–ongoing",
 "name": "Lines of Displacement: Along the Tigris",
 "types": [
 "Counter-mapping",
-"Research"
+"Research",
+"Text"
 ],
 "for": "Against Catastrophe",
 "with": [
@@ -1107,18 +1068,23 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/featured-projects/lines"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4a03c836a917f93b9e15/637f2bd3d0766a2feb145042/1676805047407/ezgif.com-gif-maker.gif?format=1500w"
-},
-{
-"label": "image",
-"url": "img/lines-of-displacement/01.jpg"
 }
 ],
 "section": "work",
-"page": "works/2308-lines-of-displacement-along-the-tigris.html"
+"page": "works/2308-lines-of-displacement-along-the-tigris.html",
+"imgs": [
+[
+"assets/images/2308/01.webp",
+null,
+null
+]
+],
+"related": [
+{
+"kind": "text",
+"dates": "2023"
+}
+]
 },
 {
 "no": "2307",
@@ -1157,7 +1123,7 @@ const ARCHIVE = {
 },
 {
 "no": "2305",
-"dates": "2023—24",
+"dates": "2023–2024",
 "name": "Bir Gecenin Anatomisi: Karanlıkta Yeniden Doğan Mekânlar / Anatomy of a Night: Spaces Reborn in the Dark",
 "types": [
 "Text"
@@ -1225,7 +1191,7 @@ const ARCHIVE = {
 "with": [
 "Ulya Soley"
 ],
-"place": "Versus Art Project, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "First solo exhibition in Istanbul, combining photography, video, sculpture and text into a speculative archaeological site on digital footprints, algorithmic divinities and power and technology.",
 "links": [
@@ -1236,59 +1202,11 @@ const ARCHIVE = {
 {
 "label": "press",
 "url": "https://www.hititseramik.com.tr/en/mod/art-discovery-of-the-month-her-sey-tanidik-her-sey-yabanci-all-familiar-all-foreign"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/6671762f-1f98-4c71-b61d-0073e7bead16/banner_2.gif"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/132372a9-9c17-40d9-ac18-e561ed652d3f/DSC08302.JPG"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/b37037ce-3263-42da-b362-369bdae4e3de/IMG_3313+copy.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/01.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/02.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/03.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/04.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/05.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/06.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/07.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/08.jpg"
-},
-{
-"label": "image",
-"url": "img/all-familiar-all-foreign/09.jpg"
 }
 ],
 "shown": [
 {
-"dates": "21.03.—30.04.2023",
+"dates": "21.03.–30.04.2023",
 "venue": "Versus Art Project",
 "city": "Istanbul",
 "exhibition_title": "all familiar, all foreign",
@@ -1303,11 +1221,58 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2301-all-familiar-all-foreign-her-sey-tanidik-her-sey-yabanci.html"
+"page": "works/2301-all-familiar-all-foreign-her-sey-tanidik-her-sey-yabanci.html",
+"imgs": [
+[
+"assets/images/2301/01.webp",
+null,
+null
+],
+[
+"assets/images/2301/02.webp",
+null,
+null
+],
+[
+"assets/images/2301/03.webp",
+null,
+null
+],
+[
+"assets/images/2301/04.webp",
+null,
+null
+],
+[
+"assets/images/2301/05.webp",
+null,
+null
+],
+[
+"assets/images/2301/06.webp",
+null,
+null
+],
+[
+"assets/images/2301/07.webp",
+null,
+null
+],
+[
+"assets/images/2301/08.webp",
+null,
+null
+],
+[
+"assets/images/2301/09.webp",
+null,
+null
+]
+]
 },
 {
 "no": "2221",
-"dates": "2022—23",
+"dates": "2022–2023",
 "name": "Yellow Pages",
 "types": [
 "Research"
@@ -1343,7 +1308,8 @@ const ARCHIVE = {
 },
 {
 "no": "2219",
-"dates": "2022-12",
+"dates": "2022",
+"date_detail": "12.2022",
 "name": "Iklim Krizi ve Mimari (ArtDog Istanbul web publication)",
 "types": [
 "Text"
@@ -1365,7 +1331,8 @@ const ARCHIVE = {
 },
 {
 "no": "2218",
-"dates": "2022-10",
+"dates": "2022",
+"date_detail": "10.2022",
 "name": "Berlin Notları #30: Yaz Raporu / Berlin Notes #30: Summer Report",
 "types": [
 "Text"
@@ -1381,11 +1348,13 @@ const ARCHIVE = {
 "url": "https://manifold.press/yelta-kom"
 }
 ],
-"section": "text"
+"section": "text",
+"text": "texts/berlin-notlari-30-yaz-raporu.html"
 },
 {
 "no": "2217",
-"dates": "2022-02",
+"dates": "2022",
+"date_detail": "02.2022",
 "name": "Berlin Notları #28: tut mir manchmal weh / Berlin Notes #28: tut mir manchmal weh",
 "types": [
 "Text"
@@ -1401,7 +1370,8 @@ const ARCHIVE = {
 "url": "https://manifold.press/yelta-kom"
 }
 ],
-"section": "text"
+"section": "text",
+"text": "texts/berlin-notlari-28-tut-mir-manchmal-weh.html"
 },
 {
 "no": "2216",
@@ -1429,7 +1399,7 @@ const ARCHIVE = {
 "Panel"
 ],
 "for": "Palazzo Grassi",
-"place": "Palazzo Grassi, Venice",
+"place": "Venice",
 "status": "realised",
 "description": "Presentation of The Silent University at Palazzo Grassi.",
 "section": "talk"
@@ -1441,8 +1411,8 @@ const ARCHIVE = {
 "types": [
 "Talk / Lecture"
 ],
-"for": "UdK Berlin",
-"place": "UdK Berlin, Berlin",
+"for": "Universität der Künste Berlin (UdK Berlin)",
+"place": "Berlin",
 "status": "realised",
 "description": "Talk at the Berlin University of the Arts, with a related text on his blog.",
 "links": [
@@ -1461,7 +1431,7 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "Postane",
-"place": "Postane, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "Talk on housing and rental policies in Berlin.",
 "section": "talk"
@@ -1478,7 +1448,7 @@ const ARCHIVE = {
 "Ezgi Kılınçaslan",
 "Öndercan Muti"
 ],
-"place": "AKEBİ, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Conversation with Ezgi Kılınçaslan moderated by Öndercan Muti.",
 "section": "talk"
@@ -1533,26 +1503,14 @@ const ARCHIVE = {
 "text": "texts/berlin-notlari-31-2022-wrapped-zaman-her-seyi-siliyor.html"
 },
 {
-"no": "2208",
-"dates": "2022",
-"name": "State of Displacement: Entangled Topographies (talk)",
-"types": [
-"Talk / Lecture"
-],
-"for": "17th Istanbul Biennial public programme",
-"place": "Pera Museum, Istanbul",
-"status": "realised",
-"description": "Presentation of the Arazi Assembly and Topological Atlas project in the public programme of the 17th Istanbul Biennial.",
-"section": "talk"
-},
-{
 "no": "2207",
 "dates": "2022",
 "name": "State of Displacement: Entangled Topographies",
 "types": [
 "Installation",
 "Counter-mapping",
-"Research"
+"Research",
+"Talk / Lecture"
 ],
 "for": "17th Istanbul Biennial",
 "with": [
@@ -1576,15 +1534,11 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://noframe.studio/projects/arazi-x-topological-istanbul"
-},
-{
-"label": "image",
-"url": "https://noframe.studio/images/projects/arazi-x-topological-istanbul/arazi-x-topological-istanbul-01.jpg"
 }
 ],
 "shown": [
 {
-"dates": "17.09.—20.11.2022",
+"dates": "17.09.–20.11.2022",
 "venue": "Müze Gazhane",
 "city": "Istanbul",
 "exhibition_title": "17th Istanbul Biennial",
@@ -1592,7 +1546,15 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2207-state-of-displacement-entangled-topographies.html"
+"page": "works/2207-state-of-displacement-entangled-topographies.html",
+"related": [
+{
+"kind": "talk",
+"dates": "2022",
+"for": "17th Istanbul Biennial public programme",
+"place": "Pera Museum, Istanbul"
+}
+]
 },
 {
 "no": "2206",
@@ -1608,17 +1570,17 @@ const ARCHIVE = {
 "Amal Jibril",
 "Suha Nabhan"
 ],
-"place": "SAHA Studio, Istanbul",
+"place": "Studio, Istanbul",
 "status": "realised",
 "description": "Studio residency with The Silent University team linked to the Orientation Programme at the 17th Istanbul Biennial.",
-"links": [
-{
-"label": "image",
-"url": "https://bienal.iksv.org/i/content/22394_1_saha-1366x550.jpg",
-"caption": "SAHA Studio space with timeline wall; header image of the SAHA Studio Talks page (Silent University)"
-}
-],
-"section": "residency-award"
+"section": "residency-award",
+"imgs": [
+[
+"assets/images/2206/01.webp",
+null,
+"SAHA Studio space with timeline wall; header image of the SAHA Studio Talks page (Silent University)"
+]
+]
 },
 {
 "no": "2205",
@@ -1694,69 +1656,13 @@ const ARCHIVE = {
 "description": "Fictional bureau staged as a mock-up government information point with surveillance tools, antennas, screens and camouflage surfaces, an interactive cell-tower mapping website and dissident walking tours through Berlin.",
 "links": [
 {
-"label": "original",
-"url": "https://www.yeltakom.info/usb-wip-berlin-top"
-},
-{
 "label": "project site",
 "url": "https://www.urban-surveillance.com"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/e7435c2b-1df5-4842-ab62-280ae18538c1/UrbanSurveillanceBureau_Exhibition_View_DSC05375+copy.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/20d83c84-3720-4f25-b443-484afb759916/UrbanSurveillanceBureau_Exhibition_View_DSC06616+copy.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/224cc4b9-6427-4104-89c1-4cea86cec0bb/UrbanSurveillanceBureau_Exhibition_View_DSC05365+copy+2.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/40b784aa-6c9a-4add-bf5a-82400f4cd05c/UrbanSurveillanceBureau_Exhibition_View_DSC06600.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/01.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/02.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/03.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/04.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/05.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/06.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-surveillance-bureau/07.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/7c9e60d7-ecfd-456e-bb40-83a397259bb8/UrbanSurveillanceBureau_Exhibition_View_DSC05410+copy.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/f2e71c88-6e60-4bea-ae5d-47ee9967d81f/UrbanSurveillanceBureau_Exhibition_View_DSC05384+copy.jpg"
 }
 ],
 "shown": [
 {
-"dates": "02.—09.02.2022",
+"dates": "02.–09.02.2022",
 "venue": "TOP e.V. Transdisciplinary Project Space",
 "city": "Berlin",
 "exhibition_title": "vorspiel transmediale 2022",
@@ -1765,7 +1671,44 @@ const ARCHIVE = {
 ],
 "section": "work",
 "text": "texts/urban-surveillance-bureau-exhibition-text.html",
-"page": "works/2201-urban-surveillance-bureau-exhibition-text.html"
+"page": "works/2201-urban-surveillance-bureau-exhibition-text.html",
+"imgs": [
+[
+"assets/images/2201/01.webp",
+null,
+null
+],
+[
+"assets/images/2201/02.webp",
+null,
+null
+],
+[
+"assets/images/2201/03.webp",
+null,
+null
+],
+[
+"assets/images/2201/04.webp",
+null,
+null
+],
+[
+"assets/images/2201/05.webp",
+null,
+null
+],
+[
+"assets/images/2201/06.webp",
+null,
+null
+],
+[
+"assets/images/2201/07.webp",
+null,
+null
+]
+]
 },
 {
 "no": "2129",
@@ -1830,7 +1773,7 @@ const ARCHIVE = {
 },
 {
 "no": "2125",
-"dates": "2021—",
+"dates": "2021–ongoing",
 "name": "Faculty Advisory Board, Istanbul Bilgi University",
 "types": [
 "Jury",
@@ -1858,7 +1801,8 @@ const ARCHIVE = {
 },
 {
 "no": "2123",
-"dates": "2021-12",
+"dates": "2021",
+"date_detail": "12.2021",
 "name": "Berlin Notları #27: Aradığınız Kişiye Ulaşılamıyor / Berlin Notes #27: The Person You Have Called Is Unreachable",
 "types": [
 "Text"
@@ -1874,11 +1818,13 @@ const ARCHIVE = {
 "url": "https://manifold.press/yelta-kom"
 }
 ],
-"section": "text"
+"section": "text",
+"text": "texts/berlin-notlari-27-aradiginiz-kisiye-ulasilamiyor.html"
 },
 {
 "no": "2122",
-"dates": "2021-11",
+"dates": "2021",
+"date_detail": "11.2021",
 "name": "Berlin Notları #26: Gecenin İçine Sızan Işıklar / Berlin Notes #26: Lights Seeping into the Night",
 "types": [
 "Text"
@@ -1894,11 +1840,13 @@ const ARCHIVE = {
 "url": "https://manifold.press/yelta-kom"
 }
 ],
-"section": "text"
+"section": "text",
+"text": "texts/berlin-notlari-26-gecenin-icine-sizan-isiklar.html"
 },
 {
 "no": "2121",
-"dates": "2021-09",
+"dates": "2021",
+"date_detail": "09.2021",
 "name": "Berlin Notları #25: Kırmızı Işıklar ve Dolanan Yollar / Berlin Notes #25: Red Lights and Winding Roads",
 "types": [
 "Text"
@@ -1914,17 +1862,18 @@ const ARCHIVE = {
 "url": "https://manifold.press/yelta-kom"
 }
 ],
-"section": "text"
+"section": "text",
+"text": "texts/berlin-notlari-25-kirmizi-isiklar-ve-dolanan-yollar.html"
 },
 {
 "no": "2120",
-"dates": "2021—",
+"dates": "2021–ongoing",
 "name": "TOP e.V.",
 "types": [
 "Collective / Organisation"
 ],
 "place": "Berlin",
-"role": "1. Vorsitzender (board chair)",
+"role": "board chair",
 "status": "ongoing",
 "description": "Board chair of the cultural association that runs TOP Project Space, overseeing its programme of public events and exhibitions.",
 "section": "network"
@@ -1941,21 +1890,23 @@ const ARCHIVE = {
 "with": [
 "Seçil Yersel"
 ],
-"place": "Apartment Project, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Discussion with Seçil Yersel on modes of inhabiting city space.",
 "links": [
 {
 "label": "original",
 "url": "https://www.yeltakom.info/blog/cw15-i-discussion-with-seil-yersel-amp-yelta-km-witnessing-the-modes-of-inhabiting-city-space"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/60851b9207caec3ca316a011/1619336208841/177907727_4279071675438195_7276734277130653904_n.jpeg?format=1500w",
-"caption": "Poster: Chromatic Wednesdays #15, Witnessing the Modes of Inhabiting City Space, 28 April 2021 (Apartment Project)"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2119/01.webp",
+null,
+"Poster: Chromatic Wednesdays #15, Witnessing the Modes of Inhabiting City Space, 28 April 2021 (Apartment Project)"
+]
+]
 },
 {
 "no": "2118",
@@ -1985,14 +1936,14 @@ const ARCHIVE = {
 "place": "Online",
 "status": "realised",
 "description": "Online seminar and guest lecture at Yaşar University, Izmir.",
-"links": [
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/60851d1ccf065f6346061ee8/1619337061573/maxresdefault.jpeg?format=1500w",
-"caption": "Poster / video title card: Yelta Köm, Spatial Investigations in Blurry Lines, Yaşar University Faculty of Architecture, interior architecture department (title card carries the English title of this talk)"
-}
-],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2117/01.webp",
+null,
+"Poster / video title card: Yelta Köm, Spatial Investigations in Blurry Lines, Yaşar University Faculty of Architecture, interior architecture department (title card carries the English title of this talk)"
+]
+]
 },
 {
 "no": "2116",
@@ -2058,10 +2009,6 @@ const ARCHIVE = {
 "links": [
 {
 "label": "original",
-"url": "https://www.yeltakom.info/blog/vzpupjc4413021tuep6swhb73j4a6w"
-},
-{
-"label": "original",
 "url": "https://www.academia.edu/17996521/Mimar%C4%B1n_Galaksi_Rehberi"
 }
 ],
@@ -2095,7 +2042,14 @@ const ARCHIVE = {
 "url": "https://www.yeltakom.info/blog/hakikat-aras"
 }
 ],
-"section": "text"
+"section": "text",
+"imgs": [
+[
+"assets/images/2111/01.webp",
+null,
+"Image accompanying \"Hakikat Arası\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "2110",
@@ -2108,7 +2062,7 @@ const ARCHIVE = {
 "with": [
 "Tuğçe Erel"
 ],
-"place": "TOP e.V., Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Group exhibition curated by Tuğçe Erel.",
 "section": "work",
@@ -2128,30 +2082,27 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/featured-projects/eyes-on-eyes"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1633172268419-DRT6YBK36SKGIRUXLY97/20210619_DSF0442-Orhan-Kolukisa-web.jpeg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/65a77ee6-bbb6-404a-9113-43eba5f61242/ezgif-2-c5f9edef6c9f.gif"
-},
-{
-"label": "image",
-"url": "img/eyes-on-eyes/01.jpg"
-},
-{
-"label": "image",
-"url": "img/eyes-on-eyes/02.jpg"
-},
-{
-"label": "image",
-"url": "img/eyes-on-eyes/03.jpg"
 }
 ],
 "section": "work",
-"page": "works/2109-eyes-on-eyes.html"
+"page": "works/2109-eyes-on-eyes.html",
+"imgs": [
+[
+"assets/images/2109/01.webp",
+"Orhan Kolukisa",
+null
+],
+[
+"assets/images/2109/02.webp",
+null,
+null
+],
+[
+"assets/images/2109/03.webp",
+null,
+null
+]
+]
 },
 {
 "no": "2108",
@@ -2194,7 +2145,7 @@ const ARCHIVE = {
 "Banu Çiçek Tülü",
 "Yaşar Adnan Adanalı"
 ],
-"place": "Oyoun, Berlin",
+"place": "Berlin",
 "role": "moderator",
 "status": "realised",
 "description": "Panel moderated by him, with a related blog text Moods of Living.",
@@ -2202,19 +2153,21 @@ const ARCHIVE = {
 {
 "label": "blog",
 "url": "https://www.yeltakom.info/blog/zlgb7da9lhx2op10josfy3s8cknjwf"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/61a3571a065082544031f6fd/1638095014233/Screenshot+2021-11-28+at+11.18.54.png?format=1500w",
-"caption": "Photograph of the panel on stage at Oyoun, THE PATH, 18 Sept 2021; image from the artist's own event post"
-},
-{
-"label": "image",
-"url": "https://oyoun.de/files/2021/09/moods-of-living-experiences-challenges.jpg",
-"caption": "Event visual of the Oyoun panel with portraits of the four panelists (Yelta Köm moderating)"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2107/01.webp",
+null,
+"Photograph of the panel on stage at Oyoun, THE PATH, 18 Sept 2021; image from the artist's own event post"
+],
+[
+"assets/images/2107/02.webp",
+null,
+"Event visual of the Oyoun panel with portraits of the four panelists (Yelta Köm moderating)"
+]
+]
 },
 {
 "no": "2106",
@@ -2225,26 +2178,21 @@ const ARCHIVE = {
 "Exhibition (group)"
 ],
 "for": "The Circle",
-"place": "The Circle, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "Selection among thirteen emerging practices, announced on 4 October 2021.",
-"links": [
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5eb26d6a69f2264eca994856/d4f5fafb-010b-4160-865e-f74965331213/GEMSS+Sergisi+Uzatildi_Yatay+Gorsel+Large.jpeg",
-"caption": "Poster: GEMSS'21 exhibition extended to 29 April 2022"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5eb26d6a69f2264eca994856/t/615ac664b5dd2a3f172692e3/1754381485548/Secki+Ilan-09.jpg?format=1500w",
-"caption": "Announcement graphic: GEMSS'21 results, listing the 13 selected practices including Yelta Köm"
-}
-],
-"section": "residency-award"
+"section": "residency-award",
+"imgs": [
+[
+"assets/images/2106/02.webp",
+null,
+"Announcement graphic: GEMSS'21 results, listing the 13 selected practices including Yelta Köm"
+]
+]
 },
 {
 "no": "2105",
-"dates": "2021—",
+"dates": "2021–ongoing",
 "name": "it is an elegy for all possibilities",
 "types": [
 "Video"
@@ -2298,70 +2246,18 @@ const ARCHIVE = {
 "Counter-mapping"
 ],
 "for": "Versus Art Project",
-"place": "Versus Art Project, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "Video installation on an LED screen and aluminium elements reflecting on how digital mapping and land records since the 1960s produce virtual images of the earth, using lead pouring to show fluidity in landforms.",
 "links": [
 {
 "label": "original",
 "url": "https://www.yeltakom.info/featured-projects/possibilistic-grounds"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1618064464429-LQDPP05H03RKL88HXDLO/olasiliksal_zeminler_3_yelta_kom_photocredit_noyan_ayturan.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/39c26ade-f790-4eb9-9461-85602bd4b6b4/olasiliksal_zeminler_yelta_kom_2021.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/01.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/02.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/03.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/04.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/05.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/06.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/07.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/08.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/09.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/10.jpg"
-},
-{
-"label": "image",
-"url": "img/possibilistic-grounds/11.jpg"
 }
 ],
 "shown": [
 {
-"dates": "18.04.—08.05.2021",
+"dates": "18.04.–08.05.2021",
 "venue": "Versus Art Project",
 "city": "Istanbul",
 "exhibition_title": "Fluid Dynamics",
@@ -2369,7 +2265,59 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/2102-possibilistic-grounds-olasiliksal-zeminler.html"
+"page": "works/2102-possibilistic-grounds-olasiliksal-zeminler.html",
+"imgs": [
+[
+"assets/images/2102/01.webp",
+null,
+null
+],
+[
+"assets/images/2102/02.webp",
+null,
+null
+],
+[
+"assets/images/2102/03.webp",
+null,
+null
+],
+[
+"assets/images/2102/04.webp",
+null,
+null
+],
+[
+"assets/images/2102/05.webp",
+null,
+null
+],
+[
+"assets/images/2102/06.webp",
+null,
+null
+],
+[
+"assets/images/2102/07.webp",
+null,
+null
+],
+[
+"assets/images/2102/08.webp",
+null,
+null
+],
+[
+"assets/images/2102/09.webp",
+null,
+null
+],
+[
+"assets/images/2102/10.webp",
+null,
+null
+]
+]
 },
 {
 "no": "2101",
@@ -2385,34 +2333,21 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/blog/on-being-water-a-group-show-at-istanbul-apartment-gallery"
-},
-{
-"label": "image",
-"url": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/04/18/108876.jpg",
-"credit": "Courtesy of Versus Art Project",
-"caption": "Possibilistic Grounds (2021), video installation on an LED screen, in the group show On being water"
 }
 ],
 "section": "work",
-"page": "works/2101-on-being-water.html"
-},
-{
-"no": "2022",
-"dates": "2020—",
-"name": "Represented by Versus Art Project",
-"types": [
-"Collective / Organisation"
-],
-"for": "Versus Art Project",
-"place": "Istanbul",
-"role": "represented artist",
-"status": "ongoing",
-"description": "Gallery relationship with Versus Art Project, Istanbul, which showed his work in Scale (2020), Fluid Dynamics (2021), Undertow (2022) and the solo all familiar, all foreign (2023).",
-"section": "network"
+"page": "works/2101-on-being-water.html",
+"imgs": [
+[
+"assets/images/2101/01.webp",
+"Courtesy of Versus Art Project",
+"Possibilistic Grounds (2021), video installation on an LED screen, in the group show On being water"
+]
+]
 },
 {
 "no": "2021",
-"dates": "2020—21",
+"dates": "2020–2021",
 "name": "Guest jury, TOBB University of Economics and Technology Studio V",
 "types": [
 "Jury"
@@ -2426,7 +2361,7 @@ const ARCHIVE = {
 },
 {
 "no": "2020",
-"dates": "2020—21",
+"dates": "2020–2021",
 "name": "Guest jury, TED University Architectural Design Studio III",
 "types": [
 "Jury"
@@ -2440,7 +2375,7 @@ const ARCHIVE = {
 },
 {
 "no": "2019",
-"dates": "2020—21",
+"dates": "2020–2021",
 "name": "Guest jury, Kadir Has University ARCH301",
 "types": [
 "Jury"
@@ -2481,19 +2416,19 @@ const ARCHIVE = {
 "role": "selected nominee",
 "status": "realised",
 "description": "Selected nominee of Forecast Platform for Hide & Seek / Urban Surveillance Bureau, with Evgeny Morozov as mentor.",
-"links": [
-{
-"label": "image",
-"url": "https://forecast-platform.com/wp-content/uploads/2020/10/Image-2-Snapshot-from-Desktop-Yelta-Ko%CC%88m-2020-1237x720.png",
-"credit": "©Yelta Köm",
-"caption": "Desktop snapshot of Yelta Köm's Forecast project, Hide & Seek (2020)"
-}
-],
-"section": "residency-award"
+"section": "residency-award",
+"imgs": [
+[
+"assets/images/2017/01.webp",
+"©Yelta Köm",
+"Desktop snapshot of Yelta Köm's Forecast project, Hide & Seek (2020)"
+]
+]
 },
 {
 "no": "2016",
-"dates": "2020-11",
+"dates": "2020",
+"date_detail": "11.2020",
 "name": "Algoritmanın Gözleri (interview with Ege Özgirin) / The Eyes of the Algorithm (interview with Ege Özgirin)",
 "types": [
 "Text"
@@ -2502,10 +2437,11 @@ const ARCHIVE = {
 "with": [
 "Ege Özgirin"
 ],
-"role": "interviewer / author (role inferred)",
+"role": "interviewer",
 "status": "realised",
 "description": "Interview on AI, GANs and machine vision with Ege Özgirin, published on Manifold.",
-"section": "text"
+"section": "text",
+"text": "texts/algoritmanin-gozleri.html"
 },
 {
 "no": "2015",
@@ -2548,7 +2484,14 @@ const ARCHIVE = {
 "url": "https://www.yeltakom.info/blog/20zupohyjz65cz0mts88djaxlbjp2d"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/2014/01.webp",
+null,
+"Poster: Arkitera Seyahat Bursu 2020 online theme presentation, 18 May 2020, with Atıl Aggündüz and Yelta Köm"
+]
+]
 },
 {
 "no": "2013",
@@ -2559,13 +2502,6 @@ const ARCHIVE = {
 ],
 "for": "Medium",
 "status": "realised",
-"description": "Blog essay first published on Medium.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/xkdskygqlxhwujkz0oabhbhey6vioz"
-}
-],
 "section": "text",
 "text": "texts/nefes-noktalari-1.html"
 },
@@ -2578,15 +2514,15 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/wded5squvazhfhbjv7cder6ejbzsfz"
-}
-],
 "section": "text",
-"text": "texts/gundeligin-ferahligi.html"
+"text": "texts/gundeligin-ferahligi.html",
+"imgs": [
+[
+"assets/images/2012/01.webp",
+null,
+"Image accompanying \"Gündeliğin Ferahlığı\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "2011",
@@ -2617,33 +2553,35 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/jh606apomkxiw7sfvpp24sgebbicx3"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-19.html"
+"text": "texts/berlin-notlari-19.html",
+"imgs": [
+[
+"assets/images/2010/01.webp",
+null,
+"Image accompanying \"Berlin Notları #19\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "2009",
 "dates": "2020",
-"name": "Berlin Notları #17: Pencereden Notlar* / Berlin Notes #17: Notes from the Window*",
+"name": "Berlin Notları #17: Pencereden Notlar / Berlin Notes #17: Notes from the Window",
 "types": [
 "Text"
 ],
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/bj4px2qk4f099gmye8stb8pdyg6ajq"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-17-pencereden-notlar.html"
+"text": "texts/berlin-notlari-17-pencereden-notlar.html",
+"imgs": [
+[
+"assets/images/2009/01.webp",
+null,
+"Image accompanying \"Berlin Notları #17: Pencereden Notlar*\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "2008",
@@ -2655,14 +2593,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/8f76hktlmrsjbj65um88iop1h9c2b0"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-16-yataklar.html"
+"text": "texts/berlin-notlari-16-yataklar.html",
+"imgs": [
+[
+"assets/images/2008/01.webp",
+null,
+"Image accompanying \"Berlin Notları #16: Yataklar\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "2007",
@@ -2675,7 +2614,7 @@ const ARCHIVE = {
 "with": [
 "Ezgi Bakçay"
 ],
-"place": "Versus Art Project, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "Group exhibition curated by Ezgi Bakçay.",
 "section": "work",
@@ -2705,94 +2644,107 @@ const ARCHIVE = {
 {
 "label": "forecast",
 "url": "https://forecast-platform.com/yelta-koem/"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1609256084158-2FL5CK8NW0Z30HR099X7/map_animation.gif"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1609166923709-RFBJ28S82PKJ7L5DNI8Z/01.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/01.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/02.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/03.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/04.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/05.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/06.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/07.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/08.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/09.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/10.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/11.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/12.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/13.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/14.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/15.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/16.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/17.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/18.jpg"
-},
-{
-"label": "image",
-"url": "img/hide-seek/19.jpg"
 }
 ],
 "section": "work",
-"page": "works/2006-hide-seek-latent-surveillance-map.html"
+"page": "works/2006-hide-seek-latent-surveillance-map.html",
+"imgs": [
+[
+"assets/images/2006/01.webp",
+null,
+null
+],
+[
+"assets/images/2006/02.webp",
+null,
+null
+],
+[
+"assets/images/2006/03.webp",
+null,
+null
+],
+[
+"assets/images/2006/04.webp",
+null,
+null
+],
+[
+"assets/images/2006/05.webp",
+null,
+null
+],
+[
+"assets/images/2006/06.webp",
+null,
+null
+],
+[
+"assets/images/2006/07.webp",
+null,
+null
+],
+[
+"assets/images/2006/08.webp",
+null,
+null
+],
+[
+"assets/images/2006/09.webp",
+null,
+null
+],
+[
+"assets/images/2006/10.webp",
+null,
+null
+],
+[
+"assets/images/2006/11.webp",
+null,
+null
+],
+[
+"assets/images/2006/12.webp",
+null,
+null
+],
+[
+"assets/images/2006/13.webp",
+null,
+null
+],
+[
+"assets/images/2006/14.webp",
+null,
+null
+],
+[
+"assets/images/2006/15.webp",
+null,
+null
+],
+[
+"assets/images/2006/16.webp",
+null,
+null
+],
+[
+"assets/images/2006/17.webp",
+null,
+null
+],
+[
+"assets/images/2006/18.webp",
+null,
+null
+],
+[
+"assets/images/2006/19.webp",
+null,
+null
+]
+]
 },
 {
 "no": "2005",
@@ -2807,30 +2759,27 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/featured-projects/what-about-today"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1609019566363-HXHSFNTPHERJ3A7OP8VB/_DSC4310%281%29.jpg"
-},
-{
-"label": "image",
-"url": "img/fateful-serendipity/01.jpg"
-},
-{
-"label": "image",
-"url": "img/fateful-serendipity/02.jpg"
-},
-{
-"label": "image",
-"url": "img/fateful-serendipity/03.jpg"
-},
-{
-"label": "image",
-"url": "img/fateful-serendipity/04.jpg"
 }
 ],
 "section": "work",
-"page": "works/2005-fateful-serendipity.html"
+"page": "works/2005-fateful-serendipity.html",
+"imgs": [
+[
+"assets/images/2005/01.webp",
+null,
+null
+],
+[
+"assets/images/2005/02.webp",
+null,
+null
+],
+[
+"assets/images/2005/04.webp",
+null,
+null
+]
+]
 },
 {
 "no": "2004",
@@ -2861,14 +2810,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/yey171d2in11myedlliixlx5a5phiu"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-20-dijitallesen-kent.html"
+"text": "texts/berlin-notlari-20-dijitallesen-kent.html",
+"imgs": [
+[
+"assets/images/2003/01.webp",
+null,
+"Image accompanying \"Berlin Notları #20: Dijitalleşen Kent\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "2002",
@@ -2880,14 +2830,15 @@ const ARCHIVE = {
 "for": "Evdeyiz series",
 "status": "realised",
 "description": "Recommendation of digital education platforms for the Evdeyiz series.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/2xso39no00mldm04xzl102px897jpi"
-}
-],
 "section": "text",
-"text": "texts/evdeyiz-7-yelta-kom-oneriyor-dijital-egitim-platformlari.html"
+"text": "texts/evdeyiz-7-yelta-kom-oneriyor-dijital-egitim-platformlari.html",
+"imgs": [
+[
+"assets/images/2002/01.webp",
+null,
+"Promotional card, Evdeyiz #7"
+]
+]
 },
 {
 "no": "2001",
@@ -2899,14 +2850,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/nluul5vvpknc72qsiqj9er7uncyubl"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-18-ates-kul-toprak.html"
+"text": "texts/berlin-notlari-18-ates-kul-toprak.html",
+"imgs": [
+[
+"assets/images/2001/01.webp",
+null,
+"Image accompanying \"Berlin Notları #18: Ateş, Kül, Toprak\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1923",
@@ -2930,7 +2882,7 @@ const ARCHIVE = {
 ],
 "for": "Istanbul Modern / VitrA",
 "place": "Istanbul",
-"role": "artist (per compiled archive)",
+"role": "artist",
 "status": "realised",
 "description": "Group exhibition listed as Istanbul Modern / VitrA, 2019.",
 "section": "work",
@@ -2957,7 +2909,7 @@ const ARCHIVE = {
 },
 {
 "no": "1920",
-"dates": "2019—22",
+"dates": "2019–2022",
 "name": "The Silent University Orientation Programme",
 "types": [
 "Workshop",
@@ -2978,10 +2930,6 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://noframe.studio/projects/silent-university-istanbul"
-},
-{
-"label": "image",
-"url": "https://noframe.studio/images/projects/silent-university-istanbul/silent-university-istanbul-01.jpg"
 }
 ],
 "shown": [
@@ -2995,13 +2943,20 @@ const ARCHIVE = {
 {
 "dates": null,
 "venue": "Kunstverein in Hamburg",
-"city": "Hamburg",
+"city": null,
 "exhibition_title": null,
 "curator": null
 }
 ],
 "section": "workshop",
-"text": "texts/text-silent-university-lunch.html"
+"text": "texts/text-silent-university-lunch.html",
+"imgs": [
+[
+"assets/images/1920/01.webp",
+null,
+null
+]
+]
 },
 {
 "no": "1919",
@@ -3024,7 +2979,7 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "Natural Building Lab, TU Berlin",
-"place": "TU Berlin, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Lecture on the methodology of Architecture for All.",
 "section": "talk"
@@ -3073,13 +3028,6 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/vkytk0ipcbaza7jj52zb1smwho0uxi"
-}
-],
 "section": "text",
 "text": "texts/yasasin-studio-x.html"
 },
@@ -3092,15 +3040,15 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/qh9jqoh2fne9uypjpfj9v8d2hyhkys"
-}
-],
 "section": "text",
-"text": "texts/uykusuz-uykular.html"
+"text": "texts/uykusuz-uykular.html",
+"imgs": [
+[
+"assets/images/1914/01.webp",
+null,
+"Image accompanying \"Uykusuz Uykular\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1913",
@@ -3111,13 +3059,6 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/hrvr7avgpsuurtpihpncba5gly9n6y"
-}
-],
 "section": "text",
 "text": "texts/mimarligin-puf-noktasi.html"
 },
@@ -3130,15 +3071,15 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/538q8xtj4alxa3tvuidhqftormdus3"
-}
-],
 "section": "text",
-"text": "texts/isgal-isleri-baskanligi.html"
+"text": "texts/isgal-isleri-baskanligi.html",
+"imgs": [
+[
+"assets/images/1912/01.webp",
+null,
+"Image accompanying \"İşgal İşleri Başkanlığı\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1911",
@@ -3149,15 +3090,15 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/vjg3i5duyjaumtgf8r32wkduy3l0vr"
-}
-],
 "section": "text",
-"text": "texts/hey-gidi-koca-dunya.html"
+"text": "texts/hey-gidi-koca-dunya.html",
+"imgs": [
+[
+"assets/images/1911/01.webp",
+null,
+"Image accompanying \"Hey Gidi Koca Dünya\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1910",
@@ -3168,34 +3109,35 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/6qtv69wxiin5mw32i1xdned0xp79bi"
-}
-],
 "section": "text",
-"text": "texts/bildigimiz-internetin-sonu-mu-geldi.html"
+"text": "texts/bildigimiz-internetin-sonu-mu-geldi.html",
+"imgs": [
+[
+"assets/images/1910/01.webp",
+null,
+"Image accompanying \"Bildiğimiz İnternetin Sonu mu Geldi?\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1909",
 "dates": "2019",
-"name": "Berlin Notları #15: Übergestern* / Berlin Notes #15: Übergestern*",
+"name": "Berlin Notları #15: Übergestern / Berlin Notes #15: Übergestern",
 "types": [
 "Text"
 ],
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/o579cwmgox7i63jrdyuv7che8libsl"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-15-ubergestern.html"
+"text": "texts/berlin-notlari-15-ubergestern.html",
+"imgs": [
+[
+"assets/images/1909/01.webp",
+null,
+"Image accompanying \"Berlin Notları #15: Übergestern*\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1908",
@@ -3207,14 +3149,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/7n5z28xl5js3xd021pjwsintu8e3sf"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-14.html"
+"text": "texts/berlin-notlari-14.html",
+"imgs": [
+[
+"assets/images/1908/01.webp",
+null,
+"Image accompanying \"Berlin Notları #14\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1907",
@@ -3228,11 +3171,11 @@ const ARCHIVE = {
 "status": "realised",
 "description": "Participation in the archive project of Matera European Capital of Culture 2019.",
 "section": "work",
-"page": "works/1907-i-dea-archive-of-archives-a-voyage-through-the-collections-o.html"
+"page": "works/1907-i-dea-archive-of-archives-a-voyage-through-the-collections.html"
 },
 {
 "no": "1906",
-"dates": "2019—22",
+"dates": "2019–2022",
 "name": "Hasankeyf (35 mm photographs)",
 "types": [
 "Research"
@@ -3291,10 +3234,6 @@ const ARCHIVE = {
 {
 "label": "biennial",
 "url": "https://chicagoarchitecturebiennial.org/people/herkes-icin-mimarlik-architecture-for-all"
-},
-{
-"label": "image",
-"url": "https://noframe.studio/images/projects/secret-ingredient/secret-ingredient-01.jpg"
 }
 ],
 "shown": [
@@ -3307,7 +3246,19 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/1904-secret-ingredient.html"
+"page": "works/1904-secret-ingredient.html",
+"imgs": [
+[
+"assets/images/1904/01.webp",
+null,
+null
+],
+[
+"assets/images/1904/02.webp",
+null,
+"Image accompanying \"MimarlığınPüf Noktası?\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1903",
@@ -3323,14 +3274,17 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://manifold.press/berlin-notlari-13"
-},
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/k3ae8d6fc10c5t101m3ba3fjzycedx"
 }
 ],
 "section": "text",
-"text": "texts/berlin-notlari-13.html"
+"text": "texts/berlin-notlari-13.html",
+"imgs": [
+[
+"assets/images/1903/01.webp",
+null,
+"Image accompanying \"Berlin Notları #13\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1902",
@@ -3348,11 +3302,18 @@ const ARCHIVE = {
 "url": "https://www.yeltakom.info/blog/jhbaiaojsaqg2ywc3nr4in5iare7py"
 }
 ],
-"section": "text"
+"section": "text",
+"imgs": [
+[
+"assets/images/1902/01.webp",
+null,
+"Magazine cover, Arredamento Mimarlık, April 2019"
+]
+]
 },
 {
 "no": "1901",
-"dates": "2019—22",
+"dates": "2019–2022",
 "name": "Topological Atlas / Border Topologies",
 "types": [
 "Research"
@@ -3365,6 +3326,25 @@ const ARCHIVE = {
 "status": "realised",
 "description": "Research on visual counter-geographies of border regions between Pakistan, Iran, Türkiye and Europe in the ERC project led by Nishat Awan.",
 "section": "network"
+},
+{
+"no": "1819",
+"dates": "2018",
+"date_detail": "24.06.2018",
+"name": "Bırakın Kettle Kaynasın / Let the Kettle Boil",
+"types": [
+"Text"
+],
+"for": "Manifold",
+"status": "realised",
+"links": [
+{
+"label": "original",
+"url": "https://manifold.press/birakin-kettle-kaynasin"
+}
+],
+"section": "text",
+"text": "texts/birakin-kettle-kaynasin.html"
 },
 {
 "no": "1818",
@@ -3384,12 +3364,12 @@ const ARCHIVE = {
 "Workshop",
 "Research"
 ],
-"for": "IKSV, Pavilion of Türkiye, 16th Venice Architecture Biennale",
+"for": "İKSV, Pavilion of Türkiye, 16th Venice Architecture Biennale",
 "with": [
 "Sophie Rezepcsky"
 ],
 "place": "Venice",
-"role": "coordinator (per compiled archive)",
+"role": "coordinator",
 "status": "realised",
 "description": "Workshop and newspaper project inside the Vardiya pavilion at the 16th Venice Architecture Biennale, with Sophie Rezepcsky.",
 "section": "work",
@@ -3397,7 +3377,7 @@ const ARCHIVE = {
 },
 {
 "no": "1816",
-"dates": "2018—23",
+"dates": "2018–2023",
 "name": "A Road to Home: Following the concrete",
 "types": [
 "Text",
@@ -3436,18 +3416,18 @@ const ARCHIVE = {
 "Merve Gül Özokçu",
 "Deutsch-Türkische Jugendbrücke"
 ],
-"place": "bi'bak, Berlin",
+"place": "Berlin",
 "role": "tutor",
 "status": "realised",
 "description": "Ten-day workshop on urban commons in Berlin.",
-"links": [
-{
-"label": "image",
-"url": "https://bi-bak.de/storage/veranstaltung/2019/05/236/conversions/titelbild__OP3IjC-frontend.jpg",
-"caption": "Project title image"
-}
-],
-"section": "workshop"
+"section": "workshop",
+"imgs": [
+[
+"assets/images/1815/01.webp",
+null,
+"Project title image"
+]
+]
 },
 {
 "no": "1814",
@@ -3461,14 +3441,14 @@ const ARCHIVE = {
 "role": "tutor",
 "status": "realised",
 "description": "Workshop of bi'bak and Sinema TransTopia.",
-"links": [
-{
-"label": "image",
-"url": "https://bi-bak.de/storage/reihe/2020/07/94/conversions/titelbild__LRrGwE-frontend.jpg",
-"caption": "Project title image"
-}
-],
-"section": "workshop"
+"section": "workshop",
+"imgs": [
+[
+"assets/images/1814/01.webp",
+null,
+"Project title image"
+]
+]
 },
 {
 "no": "1813",
@@ -3478,7 +3458,7 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "CommonsLab, Nachbarschaftslabor, TOP e.V.",
-"place": "TOP e.V., Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Lecture on urban struggles and commoning practices.",
 "section": "talk"
@@ -3500,7 +3480,14 @@ const ARCHIVE = {
 "url": "https://acikradyo.com.tr/acik-mimarlik/acik-mimarlikta-yelta-kom-ile-mimari-projelerde-insan-temsilleri-uzerine"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1812/01.webp",
+null,
+"Episode illustration shown on the artist's post of this broadcast"
+]
+]
 },
 {
 "no": "1811",
@@ -3511,34 +3498,34 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/1dm022ng9qj08oij1jy6onqietwknc"
-}
-],
 "section": "text",
-"text": "texts/yaz-bitti.html"
+"text": "texts/yaz-bitti.html",
+"imgs": [
+[
+"assets/images/1811/01.webp",
+null,
+"Image accompanying \"Yaz Bitti\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1810",
 "dates": "2018",
-"name": "Yarın Daha İyi mi Olacak?* / Will Tomorrow Be Better?*",
+"name": "Yarın Daha İyi mi Olacak? / Will Tomorrow Be Better?",
 "types": [
 "Text"
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/ic3g7fr8u5voft822nc9ieblqr00cq"
-}
-],
 "section": "text",
-"text": "texts/yarin-daha-iyi-mi-olacak.html"
+"text": "texts/yarin-daha-iyi-mi-olacak.html",
+"imgs": [
+[
+"assets/images/1810/01.webp",
+null,
+"Image accompanying \"Yarın Daha İyi mi Olacak?*\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1809",
@@ -3549,13 +3536,6 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/2n1qe5fobzcgonbyeru6mdpb9o6wa0"
-}
-],
 "section": "text",
 "text": "texts/vardiya-ya-hos-geldiniz.html"
 },
@@ -3569,18 +3549,15 @@ const ARCHIVE = {
 "for": "Manifold; Medium (English version, 2019)",
 "status": "realised",
 "description": "Essay on rating and scoring, published in his Manifold column and in English on Medium as What is your score?",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/zg6znej8xg4ps6r6yfxxkwgzlcel0i"
-},
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/4j6bo9mvqrtybve4tqwqpwc8kck88e"
-}
-],
 "section": "text",
-"text": "texts/senin-puanin-kac.html"
+"text": "texts/senin-puanin-kac.html",
+"imgs": [
+[
+"assets/images/1808/01.webp",
+null,
+"Image accompanying \"Senin Puanın Kaç?\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1807",
@@ -3613,46 +3590,15 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/lab6tyi4uf87uacmuxxhu5uvythplu"
-}
-],
 "section": "text",
-"text": "texts/nereye-gitti-dijital-bedenin.html"
-},
-{
-"no": "1805",
-"dates": "2018",
-"name": "Kontraakt",
-"types": [
-"Text"
-],
-"for": "Manifold",
-"status": "realised",
-"description": "Essay looking back at the communication experiment KONTRAAKT.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/wl8lhdxc57d2vjgd8blm41crn677b4"
-},
-{
-"label": "image",
-"url": "img/kontraakt/01.jpg"
-},
-{
-"label": "image",
-"url": "img/kontraakt/02.jpg"
-},
-{
-"label": "image",
-"url": "http://2tb.iksv.org/images/projeler/kontraakt.jpg"
-}
-],
-"section": "text",
-"text": "texts/kontraakt.html"
+"text": "texts/nereye-gitti-dijital-bedenin.html",
+"imgs": [
+[
+"assets/images/1806/01.webp",
+null,
+"Image accompanying \"Nereye GittiDijital Bedenin?\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1804",
@@ -3685,15 +3631,15 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/wvngb01134bq4auimhy3cb4lfx4ujw"
-}
-],
 "section": "text",
-"text": "texts/konum-atsana.html"
+"text": "texts/konum-atsana.html",
+"imgs": [
+[
+"assets/images/1803/01.webp",
+null,
+"Image accompanying \"Konum Atsana!\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1802",
@@ -3712,7 +3658,7 @@ const ARCHIVE = {
 "Yağız Söylev",
 "Erdem Tüzün"
 ],
-"place": "Pavilion of Türkiye, Arsenale, Venice",
+"place": "Arsenale, Venice",
 "role": "associate curator",
 "status": "realised",
 "description": "Pavilion turned into a live workshop space hosting 122 architecture students from 29 countries in rotating shifts, with 13 themed workshops over 25 weeks, 26 May to 25 November 2018.",
@@ -3720,26 +3666,67 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://noframe.studio/projects/vardiya"
-},
-{
-"label": "image",
-"url": "https://noframe.studio/images/projects/vardiya/vardiya-01.jpg"
-},
-{
-"label": "image",
-"url": "https://images.adsttc.com/media/images/59e8/818b/b22e/380d/6c00/008d/large_jpg/vardiya-gorsel.jpg?1508409729"
-},
-{
-"label": "image",
-"url": "https://www.metalocus.es/sites/default/files/styles/mopis_fullslider_desktop/public/lead-images/metalocus_vardiya_iksv_10p.jpg?itok=EIDQZH5Z"
-},
-{
-"label": "image",
-"url": "https://www.metalocus.es/sites/default/files/styles/mopis_fullslider_desktop/public/lead-images/metalocus_pabellon_turco_vardiya_bienal_venecia_2018_01_p.jpg?itok=_impVnYV"
 }
 ],
 "section": "work",
-"page": "works/1802-vardiya-the-shift.html"
+"page": "works/1802-vardiya-the-shift.html",
+"imgs": [
+[
+"assets/images/1802/01.webp",
+null,
+null
+],
+[
+"assets/images/1802/02.webp",
+null,
+"Article illustration"
+],
+[
+"assets/images/1802/03.webp",
+null,
+null
+],
+[
+"assets/images/1802/05.webp",
+null,
+"Image accompanying \"Vardiya: Esnasında ve Sonrasında\" on the old yeltakom.info"
+],
+[
+"assets/images/1802/06.webp",
+null,
+"Image accompanying \"Vardiya (the Shift)': The Turkish Pavilion at the 2018 Venice Biennale\" on the old yeltakom.info"
+],
+[
+"assets/images/1802/07.webp",
+null,
+"Image accompanying \"Venedik'te 'Vardiya' başladı: Bir fikir sunduk, buralara kadar geldik\" on the old yeltakom.info"
+],
+[
+"assets/images/1802/08.webp",
+null,
+"Image accompanying \"Venedik Bienali 16. Uluslararası Mimarlık Sergisi Türkiye Pavyonu VARDİYA Açıldı!\" on the old yeltakom.info"
+],
+[
+"assets/images/1802/09.webp",
+null,
+"Pavilion graphic: \"Bienal ne için var?\""
+],
+[
+"assets/images/1802/11.webp",
+null,
+"Image accompanying \"Türkiye Pavyonu'nda Vardiya sona erdi\" on the old yeltakom.info"
+],
+[
+"assets/images/1802/12.webp",
+null,
+"Image accompanying \"Hiç durmayan bir su; buluşma, karşılaşma, üretme ve mimarlık: Vardiya\" on the old yeltakom.info"
+],
+[
+"assets/images/1802/13.webp",
+null,
+"Image accompanying \"Venedik'te Türkiye Pavyonu açıldı\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1801",
@@ -3750,13 +3737,6 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/ivvkq9gekbvt052df7n53pcnmt33r2"
-}
-],
 "section": "text",
 "text": "texts/selfie-den-sonra.html"
 },
@@ -3799,13 +3779,6 @@ const ARCHIVE = {
 ],
 "for": "Manifold",
 "status": "realised",
-"description": "Essay published in his column on Manifold.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/dd2osnotxevgvt4au1169g8e91lzez"
-}
-],
 "section": "text",
 "text": "texts/katilimci-sergi-projesinde-mimarin-kafa-karisikligi.html"
 },
@@ -3819,14 +3792,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/37ochxpu3guw5twt7yectiy5q9ukj5"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-12-final.html"
+"text": "texts/berlin-notlari-12-final.html",
+"imgs": [
+[
+"assets/images/1712/01.webp",
+null,
+"Image accompanying \"Berlin Notları #12: Final\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1711",
@@ -3838,14 +3812,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/1mgjce91sxejkzxelb85qcy95vxan4"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-11-boncuk.html"
+"text": "texts/berlin-notlari-11-boncuk.html",
+"imgs": [
+[
+"assets/images/1711/01.webp",
+null,
+"Image accompanying \"Berlin Notları #11: Boncuk\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1710",
@@ -3857,14 +3832,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/n19qpb4fc4hvr9hgy7u4jafrwo85jq"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-10-o-ev-berlin.html"
+"text": "texts/berlin-notlari-10-o-ev-berlin.html",
+"imgs": [
+[
+"assets/images/1710/01.webp",
+null,
+"Image accompanying \"Berlin Notları #10: O Ev Berlin!\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1709",
@@ -3876,14 +3852,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/hvtblxsk140e5qw5uesdtjj1zy1hy5"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-8.html"
+"text": "texts/berlin-notlari-8.html",
+"imgs": [
+[
+"assets/images/1709/01.webp",
+null,
+"Image accompanying \"Berlin Notları #8\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1708",
@@ -3895,14 +3872,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/ob6hwho503cxqyaecfch54eu8xhwb7"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-7-kendime-notlar.html"
+"text": "texts/berlin-notlari-7-kendime-notlar.html",
+"imgs": [
+[
+"assets/images/1708/01.webp",
+null,
+"Image accompanying \"Berlin Notları #7: Kendime Notlar\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1707",
@@ -3914,14 +3892,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/entry-01-hnbhf"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-6.html"
+"text": "texts/berlin-notlari-6.html",
+"imgs": [
+[
+"assets/images/1707/01.webp",
+null,
+"Image accompanying \"Berlin Notları #6\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1706",
@@ -3933,14 +3912,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/entry-02-r3ep7"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-5.html"
+"text": "texts/berlin-notlari-5.html",
+"imgs": [
+[
+"assets/images/1706/01.webp",
+null,
+"Image accompanying \"Berlin Notları #5\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1705",
@@ -3952,14 +3932,15 @@ const ARCHIVE = {
 "for": "Manifold",
 "status": "realised",
 "description": "Instalment of the essay series Berlin Notları published on Manifold, written from Berlin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/entry-05-k762t"
-}
-],
 "section": "text",
-"text": "texts/berlin-notlari-2.html"
+"text": "texts/berlin-notlari-2.html",
+"imgs": [
+[
+"assets/images/1705/01.webp",
+null,
+"Image accompanying \"Berlin Notları #2\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1704",
@@ -3970,111 +3951,124 @@ const ARCHIVE = {
 "Counter-mapping",
 "Research"
 ],
-"for": "Goethe-Institut Athens",
-"place": "Goethe-Institut Athens",
+"for": "Goethe-Institut Athen",
+"place": "Athens",
 "status": "realised",
 "description": "Artistic research on conflict areas producing drawings and collages that merge cartographic and aerial imagery of Kızıltepe and Nusaybin.",
 "links": [
 {
 "label": "original",
 "url": "https://www.yeltakom.info/featured-projects/state-of-territory"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608925142318-ULU2HKSPCKY7N9H7T65C/actopolis_2.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608940301648-SL6OLKI4TFN76OP3NZY1/map.gif"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/01.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/02.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/03.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/04.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/05.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/06.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/07.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/08.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/09.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/10.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/11.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/12.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/13.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/14.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/15.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/16.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/17.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/18.jpg"
-},
-{
-"label": "image",
-"url": "img/state-of-territory/19.jpg"
 }
 ],
 "shown": [
 {
 "dates": "2017",
-"venue": "Goethe-Institut Athens",
-"city": "Athens",
+"venue": "Goethe-Institut Athen",
+"city": null,
 "exhibition_title": "ACTOPOLIS: The Art of Action",
 "curator": null
 }
 ],
 "section": "work",
-"page": "works/1704-state-of-territory.html"
+"page": "works/1704-state-of-territory.html",
+"imgs": [
+[
+"assets/images/1704/01.webp",
+null,
+null
+],
+[
+"assets/images/1704/02.webp",
+null,
+null
+],
+[
+"assets/images/1704/03.webp",
+null,
+null
+],
+[
+"assets/images/1704/04.webp",
+null,
+null
+],
+[
+"assets/images/1704/05.webp",
+null,
+null
+],
+[
+"assets/images/1704/06.webp",
+null,
+null
+],
+[
+"assets/images/1704/07.webp",
+null,
+null
+],
+[
+"assets/images/1704/08.webp",
+null,
+null
+],
+[
+"assets/images/1704/09.webp",
+null,
+null
+],
+[
+"assets/images/1704/10.webp",
+null,
+null
+],
+[
+"assets/images/1704/11.webp",
+null,
+null
+],
+[
+"assets/images/1704/12.webp",
+null,
+null
+],
+[
+"assets/images/1704/13.webp",
+null,
+null
+],
+[
+"assets/images/1704/14.webp",
+null,
+null
+],
+[
+"assets/images/1704/15.webp",
+null,
+null
+],
+[
+"assets/images/1704/16.webp",
+null,
+null
+],
+[
+"assets/images/1704/17.webp",
+null,
+null
+],
+[
+"assets/images/1704/18.webp",
+null,
+null
+],
+[
+"assets/images/1704/19.webp",
+null,
+null
+]
+]
 },
 {
 "no": "1703",
@@ -4094,14 +4088,17 @@ const ARCHIVE = {
 {
 "label": "recording",
 "url": "https://vimeo.com/231204710"
-},
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/mjaipj74zcmq2b7jw5wbvl1rg5cd49"
 }
 ],
 "section": "text",
-"text": "texts/berlin-notlari-9-hong-kong.html"
+"text": "texts/berlin-notlari-9-hong-kong.html",
+"imgs": [
+[
+"assets/images/1703/01.webp",
+null,
+"Image accompanying \"Berlin Notları #9: Hong Kong\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1702",
@@ -4117,14 +4114,17 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://manifold.press/berlin-notlari-4"
-},
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/entry-03-rd2cg"
 }
 ],
 "section": "text",
-"text": "texts/berlin-notlari-4.html"
+"text": "texts/berlin-notlari-4.html",
+"imgs": [
+[
+"assets/images/1702/01.webp",
+null,
+"Image accompanying \"Berlin Notları #4\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1701",
@@ -4140,14 +4140,17 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://manifold.press/berlin-notlari-3"
-},
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/entry-04-ep3c2"
 }
 ],
 "section": "text",
-"text": "texts/berlin-notlari-3.html"
+"text": "texts/berlin-notlari-3.html",
+"imgs": [
+[
+"assets/images/1701/01.webp",
+null,
+"Image accompanying \"Berlin Notları #3\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1614",
@@ -4180,23 +4183,25 @@ const ARCHIVE = {
 "Seçkin Aydın",
 "Ahmet Öğüt"
 ],
-"place": "Goethe-Institut Ankara",
+"place": "Ankara",
 "role": "participating artist",
 "status": "realised",
-"description": "Group exhibition (19 April to 13 May 2016) on visual strategies for resistance in spaces of struggle; Köm is a participant. His exhibition-design credit for it is excluded here.",
+"description": "Group exhibition (19 April to 13 May 2016) on visual strategies for resistance in spaces of struggle, with Köm as a participating artist.",
 "links": [
 {
 "label": "source",
 "url": "https://www.arkitera.com/etkinlik/terk-etmeyecegiz/"
-},
-{
-"label": "image",
-"url": "https://www.arkitera.com/wp-content/uploads/2016/04/terk20etmeyeceC49Fiz.jpg.jpeg",
-"caption": "Exhibition poster"
 }
 ],
 "section": "work",
-"page": "works/1613-terk-etmeyecegiz-we-won-t-leave.html"
+"page": "works/1613-terk-etmeyecegiz-we-won-t-leave.html",
+"imgs": [
+[
+"assets/images/1613/01.webp",
+null,
+"Exhibition poster"
+]
+]
 },
 {
 "no": "1612",
@@ -4208,7 +4213,7 @@ const ARCHIVE = {
 ],
 "for": "Routledge",
 "status": "realised",
-"description": "Routledge book listed in his writings with a Google Books link to page 179 found by searching his name; nature of the contribution unknown.",
+"description": "Contribution to the Routledge book Recoded City: Co-Creating Urban Futures.",
 "links": [
 {
 "label": "Google Books (page 179)",
@@ -4229,30 +4234,46 @@ const ARCHIVE = {
 "role": "workshop leader / tutor",
 "status": "realised",
 "description": "Workshop led at the 14th Betonart architecture summer school in Ünye/Ordu.",
-"section": "workshop"
+"section": "workshop",
+"imgs": [
+[
+"assets/images/1611/01.webp",
+null,
+"Exhibition poster, Betonart summer school, Ünye/Ordu"
+]
+]
 },
 {
 "no": "1610",
-"dates": "2016-04",
+"dates": "2016",
+"date_detail": "04.2016",
 "name": "Autonomous Archiving (book)",
 "types": [
 "Book / Publication"
 ],
 "for": "dpr-barcelona",
-"role": "contributor (design credit unverified)",
+"role": "contributor",
 "status": "realised",
-"description": "Publication of dpr-barcelona around the Istanbul Biennial talk 'bak.ma meets pad.ma'; listed in his writings (April 2016), and a book-design credit appears in an earlier compiled archive.",
+"description": "Publication of dpr-barcelona around the Istanbul Biennial talk 'bak.ma meets pad.ma'.",
 "links": [
 {
 "label": "Archinect release",
 "url": "https://archinect.com/firms/release/9215461/autonomous-archiving-book-name-your-price-and-get-it/149956198"
 }
 ],
-"section": "text"
+"section": "text",
+"imgs": [
+[
+"assets/images/1610/01.webp",
+null,
+"Book cover, Autonomous Archiving"
+]
+]
 },
 {
 "no": "1609",
-"dates": "2016-01-21",
+"dates": "2016",
+"date_detail": "21.01.2016",
 "name": "Arkitera Seyahat Bursu alumni texts, published as one interview",
 "types": [
 "Text"
@@ -4271,7 +4292,7 @@ const ARCHIVE = {
 },
 {
 "no": "1608",
-"dates": "2016—",
+"dates": "2016–ongoing",
 "name": "Arazi Assembly",
 "types": [
 "Collective / Organisation",
@@ -4291,27 +4312,24 @@ const ARCHIVE = {
 "role": "member",
 "status": "ongoing",
 "description": "Research and spatial-practice collective working with people from villages flooded by the Ilısu Dam on counter-archives, video essays and counter-maps.",
-"links": [
-{
-"label": "image",
-"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3157-1600x1200.jpg",
-"credit": "Arazi Collective",
-"caption": "Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
-},
-{
-"label": "image",
-"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3158.jpg",
-"credit": "Arazi Collective",
-"caption": "Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
-},
-{
-"label": "image",
-"url": "https://kkp.uni-ak.ac.at/wp-content/uploads/2025/06/IMG_3162.jpg",
-"credit": "Arazi Collective",
-"caption": "Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
-}
+"section": "network",
+"imgs": [
+[
+"assets/images/1608/01.webp",
+"Arazi Collective",
+"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
 ],
-"section": "network"
+[
+"assets/images/1608/02.webp",
+"Arazi Collective",
+"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
+],
+[
+"assets/images/1608/03.webp",
+"Arazi Collective",
+"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
+]
+]
 },
 {
 "no": "1607",
@@ -4334,13 +4352,6 @@ const ARCHIVE = {
 ],
 "for": "Medium",
 "status": "realised",
-"description": "Blog essay first published on Medium.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/z9xp13l5ku1yl6nizvaecxhh3es8wu"
-}
-],
 "section": "text",
 "text": "texts/kisa-bir-radyo-hikayesi.html"
 },
@@ -4358,18 +4369,19 @@ const ARCHIVE = {
 ],
 "status": "realised",
 "description": "Contribution on the 15th Venice Architecture Biennale to the journal of the Chamber of Architects, alongside Abdi Güzer and Berin Gür.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/47twegb6puzrfeebosl6pu3yy1rtsl"
-}
-],
 "section": "text",
-"text": "texts/bienalin-degerli-artiklari.html"
+"text": "texts/bienalin-degerli-artiklari.html",
+"imgs": [
+[
+"assets/images/1605/01.webp",
+null,
+"Magazine cover, Mimarlık 392"
+]
+]
 },
 {
 "no": "1604",
-"dates": "2016—",
+"dates": "2016–ongoing",
 "name": "Urban Blockade Atlas",
 "types": [
 "Counter-mapping",
@@ -4384,43 +4396,41 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/featured-projects/commoning-practices"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608941367187-FL8M8OBD7ZS8LP4WVYAO/atlas-mardin-Model.jpg"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608941847902-M0CTTBEGY2IDRGW5Y77P/_P1A9286.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-blockade-atlas/01.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-blockade-atlas/02.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-blockade-atlas/03.jpg"
-},
-{
-"label": "image",
-"url": "img/urban-blockade-atlas/04.jpg"
 }
 ],
 "shown": [
 {
 "dates": "2016",
 "venue": "Goethe-Institut Ankara",
-"city": "Ankara",
+"city": null,
 "exhibition_title": "We Won't Leave (Terk Etmeyeceğiz)",
 "curator": "Pelin Tan"
 }
 ],
 "section": "work",
-"page": "works/1604-urban-blockade-atlas.html"
+"page": "works/1604-urban-blockade-atlas.html",
+"imgs": [
+[
+"assets/images/1604/01.webp",
+null,
+null
+],
+[
+"assets/images/1604/02.webp",
+null,
+null
+],
+[
+"assets/images/1604/03.webp",
+null,
+null
+],
+[
+"assets/images/1604/04.webp",
+null,
+null
+]
+]
 },
 {
 "no": "1603",
@@ -4436,14 +4446,17 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://manifold.press/berlin-notlari-1"
-},
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/entry-06-yncl2"
 }
 ],
 "section": "text",
-"text": "texts/berlin-notlari-1.html"
+"text": "texts/berlin-notlari-1.html",
+"imgs": [
+[
+"assets/images/1603/01.webp",
+null,
+"Image accompanying \"Berlin Notları #1\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1602",
@@ -4460,7 +4473,14 @@ const ARCHIVE = {
 "url": "https://www.yeltakom.info/blog/1ahvqbkq5sabmmsdkl98ls0s5enouq"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1602/01.webp",
+null,
+"Screenshot collage from the Türkiye Tasarım Kronolojisi event post"
+]
+]
 },
 {
 "no": "1601",
@@ -4474,11 +4494,30 @@ const ARCHIVE = {
 "Ezgi Bakçay",
 "Selim Süme"
 ],
-"place": "Versus Art Project, Istanbul",
+"place": "Istanbul",
 "status": "realised",
 "description": "Group exhibition curated by Ezgi Bakçay and Selim Süme, 14 July to 13 August 2016.",
 "section": "work",
 "page": "works/1601-les-glaneurs-et-les-glaneuses-the-gleaners.html"
+},
+{
+"no": "1520",
+"dates": "2015",
+"date_detail": "20.05.2015",
+"name": "Neden Medium'da yazmaya karar verdim? / Why I decided to write on Medium",
+"types": [
+"Text"
+],
+"for": "Medium",
+"status": "realised",
+"links": [
+{
+"label": "original",
+"url": "https://medium.com/t%C3%BCrkiye/neden-medium-da-yazmaya-karar-verdim-b23e6b107a32"
+}
+],
+"section": "text",
+"text": "texts/neden-medium-da-yazmaya-karar-verdim.html"
 },
 {
 "no": "1519",
@@ -4496,7 +4535,8 @@ const ARCHIVE = {
 },
 {
 "no": "1518",
-"dates": "2015-05",
+"dates": "2015",
+"date_detail": "05.2015",
 "name": "Uğur Tanyeli interview, part 1 (Dikkat! Kaygan Zemin blog)",
 "types": [
 "Text"
@@ -4508,7 +4548,7 @@ const ARCHIVE = {
 ],
 "role": "interviewer",
 "status": "realised",
-"description": "First part of a multi-part interview with Uğur Tanyeli, published on the exhibition blog by 30 May 2015, with further parts to follow.",
+"description": "First part of a multi-part interview with Uğur Tanyeli, published on the exhibition blog.",
 "links": [
 {
 "label": "published interview",
@@ -4553,28 +4593,35 @@ const ARCHIVE = {
 "Curating"
 ],
 "for": "Istanbul Modern, VitrA Contemporary Architecture Series, TSMD",
-"place": "Istanbul Modern, Istanbul",
+"place": "Istanbul",
 "role": "curator",
 "status": "realised",
-"description": "Exhibition on architectural culture, 26 March to 31 May 2015, with salon talks and workshops; curated by Yelta Köm, coordinated by Pelin Derviş. Curatorial role only; any exhibition-design role is excluded.",
+"description": "Exhibition on architectural culture, 26 March to 31 May 2015, with salon talks and workshops; curated by Yelta Köm, coordinated by Pelin Derviş.",
 "links": [
 {
 "label": "source",
 "url": "https://www.arkitera.com/etkinlik/vitra-cagdas-mimarlik-dizisi-sunar-dikkat-kaygan-zemin/"
-},
-{
-"label": "image",
-"url": "https://www.istanbulmodern.org/contents/piclib/bigsize/content/193/6170-42017-6249404.jpg",
-"caption": "Exhibition view"
-},
-{
-"label": "image",
-"url": "https://www.istanbulmodern.org/contents/piclib/content/193/9-42017-6249404.jpg",
-"caption": "Exhibition view"
 }
 ],
 "section": "work",
-"page": "works/1515-dikkat-kaygan-zemin-caution-slippery-ground.html"
+"page": "works/1515-dikkat-kaygan-zemin-caution-slippery-ground.html",
+"imgs": [
+[
+"assets/images/1515/01.webp",
+null,
+"Exhibition view"
+],
+[
+"assets/images/1515/02.webp",
+null,
+"Image accompanying \"Dikkat! Kaygan Zemin' Şimdi de Ankara’da\" on the old yeltakom.info"
+],
+[
+"assets/images/1515/03.webp",
+null,
+"Image accompanying \"Dikkat Zemin Kaygan!\" on the old yeltakom.info"
+]
+]
 },
 {
 "no": "1514",
@@ -4593,7 +4640,7 @@ const ARCHIVE = {
 "place": "Istanbul; exhibition travelling to Ankara in Nov 2015",
 "role": "author of the blog framework and editor of invited texts",
 "status": "realised",
-"description": "In spring 2015 Yelta Köm ran a blog of essays and interviews on the cultural questions raised by the exhibition Dikkat! Kaygan Zemin, set out a framework for invited writers (about 700 words each) and planned a publication of all texts at year end.",
+"description": "In spring 2015 Yelta Köm ran a blog of essays and interviews on the cultural questions raised by the exhibition Dikkat! Kaygan Zemin and set out a framework for invited writers (about 700 words each).",
 "links": [
 {
 "label": "blog articles",
@@ -4614,19 +4661,19 @@ const ARCHIVE = {
 "Video"
 ],
 "for": "Städelschule Architecture Class",
-"place": "Frankfurt (Amsterdam subject)",
-"role": "director (per compiled archive)",
+"place": "Frankfurt am Main",
+"role": "director",
 "status": "realised",
 "description": "Video made at Städelschule Architecture Class (SAC), Frankfurt, 2015.",
-"links": [
-{
-"label": "image",
-"url": "https://worldarchitecture.org/cdnimgfiles/extupload/4-17-.png",
-"caption": "Video still of the installation"
-}
-],
 "section": "work",
-"page": "works/1513-de-coding-amsterdam.html"
+"page": "works/1513-de-coding-amsterdam.html",
+"imgs": [
+[
+"assets/images/1513/01.webp",
+null,
+"Video still of the installation"
+]
+]
 },
 {
 "no": "1512",
@@ -4639,7 +4686,6 @@ const ARCHIVE = {
 "place": "Istanbul",
 "role": "author",
 "status": "realised",
-"description": "Essay or criticism piece published in Istanbul Art News.",
 "links": [
 {
 "label": "Academia.edu",
@@ -4696,14 +4742,16 @@ const ARCHIVE = {
 {
 "label": "recording",
 "url": "https://www.youtube.com/watch?v=WdFnoCGRAoA&list=PLnfwDVFztYEA5O5-5ET2opoVq_eVIkjMj&ab_channel=TEDxTalks"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/5fedabeee293bc1fe203d0a3/1609411806241/Ekran+Al%C4%B1nt%C4%B1s%C4%B12.JPG?format=1500w",
-"caption": "Video still of Yelta Köm on the TEDxReset Salon stage; image from the artist's own event post"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1509/01.webp",
+null,
+"Video still of Yelta Köm on the TEDxReset Salon stage; image from the artist's own event post"
+]
+]
 },
 {
 "no": "1508",
@@ -4714,13 +4762,6 @@ const ARCHIVE = {
 ],
 "for": "Medium",
 "status": "realised",
-"description": "Blog essay first published on Medium.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/cuv1hcgunt281xfyc3icuxb50iw139"
-}
-],
 "section": "text",
 "text": "texts/mimarlik-hakkinda-yazarim-diyordum.html"
 },
@@ -4733,13 +4774,6 @@ const ARCHIVE = {
 ],
 "for": "Medium",
 "status": "realised",
-"description": "Blog essay first published on Medium.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/eibw2r72ioodfmr0zy83e6m1ut0hsv"
-}
-],
 "section": "text",
 "text": "texts/kisisel-bir-blog-seruveni.html"
 },
@@ -4767,13 +4801,6 @@ const ARCHIVE = {
 ],
 "for": "Medium",
 "status": "realised",
-"description": "Blog essay first published on Medium.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/t56svc7otd05hx8de1vyf7j2u6qrmw"
-}
-],
 "section": "text",
 "text": "texts/bir-kaldirim-hikayesi.html"
 },
@@ -4834,7 +4861,14 @@ const ARCHIVE = {
 "role": "guest editor",
 "status": "realised",
 "description": "Guest-edited summer issue with interviews conducted by him with Peter Eisenman, Beatriz Colomina, Pelin Tan and Marina Otero Verzier.",
-"section": "text"
+"section": "text",
+"imgs": [
+[
+"assets/images/1501/01.webp",
+null,
+"Magazine cover, Betonart"
+]
+]
 },
 {
 "no": "1421",
@@ -4847,7 +4881,6 @@ const ARCHIVE = {
 "place": "Istanbul",
 "role": "author",
 "status": "realised",
-"description": "Essay or criticism piece published in Istanbul Art News.",
 "links": [
 {
 "label": "Academia.edu",
@@ -4871,42 +4904,31 @@ const ARCHIVE = {
 "section": "workshop"
 },
 {
-"no": "1419",
-"dates": "2014-05",
-"name": "Tweet atmak zorunda mıyım? (Sosyal Medya, Mimarlık ve Aktivizm)",
-"types": [
-"Text"
-],
-"for": "Arredamento Mimarlık",
-"place": "Istanbul",
-"role": "author",
-"status": "realised",
-"description": "Article in Arredamento Mimarlık.",
-"links": [
-{
-"label": "Academia.edu",
-"url": "https://www.academia.edu/10418176/Tweet_atmak_zorunda_m%C4%B1y%C4%B1m"
-}
-],
-"section": "text"
-},
-{
 "no": "1418",
 "dates": "2014",
+"date_detail": "05.2014",
 "name": "Tweet atmak zorunda mıyım? / Do I Have to Tweet?",
 "types": [
 "Text"
 ],
 "for": "Arredamento Mimarlık",
 "status": "realised",
-"description": "Essay or criticism piece published in Arredamento Mimarlık.",
 "links": [
 {
-"label": "image",
-"url": "http://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608989702477-LKNY3JLDB6I25Y33DIS0/tumblr_inline_p9asjps8f51qzpy7v_540.jpg.tumblr.com/9292947734ed47e314b0b7552efaf265/tumblr_inline_ncjriwpHMQ1qzpy7v.jpg"
+"label": "Academia.edu",
+"url": "https://www.academia.edu/10418176/Tweet_atmak_zorunda_m%C4%B1y%C4%B1m"
 }
 ],
-"section": "text"
+"section": "text",
+"related": [
+{
+"kind": "text",
+"name": "Tweet atmak zorunda mıyım? (Sosyal Medya, Mimarlık ve Aktivizm)",
+"dates": "05.2014",
+"for": "Arredamento Mimarlık",
+"place": "Istanbul"
+}
+]
 },
 {
 "no": "1417",
@@ -4952,7 +4974,6 @@ const ARCHIVE = {
 "place": "Istanbul",
 "role": "author",
 "status": "realised",
-"description": "Essay or criticism piece published in Istanbul Art News.",
 "links": [
 {
 "label": "Academia.edu",
@@ -4963,7 +4984,7 @@ const ARCHIVE = {
 },
 {
 "no": "1414",
-"dates": "2014—15",
+"dates": "2014–2015",
 "name": "Istanbul Art News column (IAN.Mimar)",
 "types": [
 "Text"
@@ -4977,8 +4998,8 @@ const ARCHIVE = {
 },
 {
 "no": "1413",
-"dates": "2014—15",
-"name": "Architektur Sommer Rhein-Main (workshop with Superpool)",
+"dates": "2014–2015",
+"name": "Architektursommer Rhein-Main (workshop with Superpool)",
 "types": [
 "Workshop"
 ],
@@ -4986,24 +5007,18 @@ const ARCHIVE = {
 "with": [
 "Superpool"
 ],
-"place": "Frankfurt",
-"role": "participant (CV lists it under workshop participations)",
+"place": "Frankfurt am Main",
+"role": "participant",
 "status": "realised",
 "description": "Summer workshop at the Deutsches Architekturmuseum, Frankfurt, in collaboration with Superpool, during his Städelschule studies.",
-"links": [
-{
-"label": "image",
-"url": "https://urbed.coop/sites/default/files/DSC03507.JPG",
-"credit": "URBED",
-"caption": "Workshop photograph"
-},
-{
-"label": "image",
-"url": "https://superpool.org/media/pages/news/asrm/629e07e111-1786979702/asrm.jpg",
-"caption": "Workshop poster"
-}
-],
-"section": "workshop"
+"section": "workshop",
+"imgs": [
+[
+"assets/images/1413/02.webp",
+null,
+"Workshop poster"
+]
+]
 },
 {
 "no": "1412",
@@ -5016,7 +5031,6 @@ const ARCHIVE = {
 "place": "Istanbul",
 "role": "author",
 "status": "realised",
-"description": "Essay or criticism piece published in Istanbul Art News.",
 "links": [
 {
 "label": "Academia.edu",
@@ -5053,14 +5067,16 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://www.yeltakom.info/blog/is7r1tbfs3af6nta8z18n969oroaki"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/5ff4c01777573b3e67cf3c68/1609875788355/Ekran+Al%C4%B1nt%C4%B1s%C4%B13.JPG?format=1500w",
-"caption": "Video still of Yelta Köm presenting at the TSRRF Hackathon; image from the artist's own event post"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1410/01.webp",
+null,
+"Video still of Yelta Köm presenting at the TSRRF Hackathon; image from the artist's own event post"
+]
+]
 },
 {
 "no": "1409",
@@ -5073,17 +5089,17 @@ const ARCHIVE = {
 "with": [
 "#occupygezi architecture"
 ],
-"place": "bi'bak, Berlin",
+"place": "Berlin",
 "status": "realised",
 "description": "Presentation and conversation on #occupygezi architecture.",
-"links": [
-{
-"label": "image",
-"url": "https://bi-bak.de/storage/veranstaltung/2019/05/279/conversions/titelbild__rvPAnv-frontend.jpg",
-"caption": "Halftone title graphic of the bi'bak Gezi Park anniversary evening, 30 May 2014"
-}
-],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1409/01.webp",
+null,
+"Halftone title graphic of the bi'bak Gezi Park anniversary evening, 30 May 2014"
+]
+]
 },
 {
 "no": "1408",
@@ -5093,7 +5109,7 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "Mundus Urbano, TU Darmstadt",
-"place": "TU Darmstadt, Darmstadt",
+"place": "Darmstadt",
 "status": "realised",
 "description": "Lecture in the Mundus Urbano programme.",
 "section": "talk"
@@ -5108,12 +5124,6 @@ const ARCHIVE = {
 "for": "Istanbul Art News (IAN.Mimari)",
 "status": "realised",
 "description": "Article for the architecture section of Istanbul Art News.",
-"links": [
-{
-"label": "image",
-"url": "http://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608989701096-8Z0AIUL7F5YILLLVW2PH/tumblr_inline_p9asjpkZyL1qzpy7v_540.jpg.tumblr.com/daf4b4fa6bbad21f1d2bbe2052065679/tumblr_inline_ncivk2gnFK1qzpy7v.jpg"
-}
-],
 "section": "text"
 },
 {
@@ -5146,12 +5156,6 @@ const ARCHIVE = {
 "place": "Berlin",
 "status": "realised",
 "description": "Book chapter on Taksim Square and the Gezi resistance, edited by Moritz Ahlert, Jens-Uwe Fischer and Friedrich von Borries, republished on his blog in 2021 as Taksim Square: A Spatial Narrative of the Perpetual Reconquista.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/taksim-square-a-spatial-narrative-of-the-perpetual-reconquista"
-}
-],
 "section": "text",
 "text": "texts/a-spatial-narrative-of-the-perpetual-reconquista-what-s.html"
 },
@@ -5165,13 +5169,6 @@ const ARCHIVE = {
 "place": "Galata Greek Primary School, Istanbul",
 "status": "realised",
 "description": "Project shown at the 2nd Istanbul Design Biennial alongside KONTRAAKT and #occupygezi architecture.",
-"links": [
-{
-"label": "image",
-"url": "https://2tb.iksv.org/images/projeler/twtrate.jpg",
-"caption": "Project graphic, 2nd Istanbul Design Biennial archive"
-}
-],
 "shown": [
 {
 "dates": "2014",
@@ -5198,29 +5195,6 @@ const ARCHIVE = {
 "section": "talk"
 },
 {
-"no": "1402",
-"dates": "2014",
-"name": "2. İstanbul Tasarım Bienali: Kontraakt / 2nd Istanbul Design Biennial: Kontraakt",
-"types": [
-"Talk / Lecture"
-],
-"for": "2nd Istanbul Design Biennial",
-"with": [
-"H. Cenk Dereli",
-"Hayrettin Günç"
-],
-"place": "Istanbul",
-"status": "realised",
-"description": "Presentation of KONTRAAKT at the 2nd Istanbul Design Biennial.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/8t898d9ynnzlnxddhrk9kae8t0sr63"
-}
-],
-"section": "talk"
-},
-{
 "no": "1401",
 "dates": "2014",
 "name": "Cam Kutularda Mimarlık Yetiştirmek (Growing Architectures in Glass Boxes)",
@@ -5230,14 +5204,15 @@ const ARCHIVE = {
 "for": "Arredamento Mimarlık",
 "status": "realised",
 "description": "Essay on Wardian boxes and architecture, including a review of the Turkish Pavilion at the 2014 Venice Architecture Biennale, later reposted on his blog as Cam Kutularda Mimarlıkları Büyütmek.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/cam-kutularda-mimarliklari-buyutmek"
-}
-],
 "section": "text",
-"text": "texts/cam-kutularda-mimarlik-yetistirmek-growing-architectures-in.html"
+"text": "texts/cam-kutularda-mimarlik-yetistirmek-growing-architectures-in.html",
+"imgs": [
+[
+"assets/images/1401/01.webp",
+null,
+"Image from the artist's blog post on the text"
+]
+]
 },
 {
 "no": "1310",
@@ -5262,14 +5237,16 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "https://www.arkitera.com/haber/taksim-panelini-canli-olarak-izleyin/"
-},
-{
-"label": "image",
-"url": "https://www.arkitera.com/wp-content/uploads/2013/03/Taksim.jpg.jpeg",
-"caption": "Poster: Taksim Paneli, 26 March 2013, Eyüp (Kalebodur / Emre Arolat)"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1310/01.webp",
+null,
+"Poster: Taksim Paneli, 26 March 2013, Eyüp (Kalebodur / Emre Arolat)"
+]
+]
 },
 {
 "no": "1309",
@@ -5287,7 +5264,7 @@ const ARCHIVE = {
 },
 {
 "no": "1308",
-"dates": "2013—14",
+"dates": "2013–2014",
 "name": "Al-Mashaa' or the Space of the Common (HKW Berlin)",
 "types": [
 "Workshop",
@@ -5312,7 +5289,7 @@ const ARCHIVE = {
 },
 {
 "no": "1307",
-"dates": "2013—",
+"dates": "2013–ongoing",
 "name": "Açık Mimarlık (Open Architecture Radio Show)",
 "types": [
 "Talk / Lecture"
@@ -5330,14 +5307,16 @@ const ARCHIVE = {
 {
 "label": "Blog post on the show with Herkes İçin Mimarlık (17 May 2012)",
 "url": "http://acikmimarlik.blogspot.com/2012/05/herkes-icin-mimarlik.html?m=1"
-},
-{
-"label": "image",
-"url": "http://static1.squarespace.com/static/5fce48c8190b057dd37fbd06/5fce4acb662d5e24e0d13ad7/5fecaf865e7522035e609a80/1609347123426/640x640bb-75.jpg?format=1500w",
-"caption": "Programme cover art of Açık Mimarlık (Açık Radyo 94.9)"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1307/01.webp",
+null,
+"Programme cover art of Açık Mimarlık (Açık Radyo 94.9)"
+]
+]
 },
 {
 "no": "1306",
@@ -5355,7 +5334,8 @@ const ARCHIVE = {
 },
 {
 "no": "1305",
-"dates": "2013-12",
+"dates": "2013",
+"date_detail": "12.2013",
 "name": "2. Uluslararası Antalya Mimarlık Bienali Üzerine... / On the 2nd International Antalya Architecture Biennial...",
 "types": [
 "Text"
@@ -5364,15 +5344,10 @@ const ARCHIVE = {
 "place": "Istanbul",
 "role": "author",
 "status": "realised",
-"description": "Article in Arredamento Mimarlık.",
 "links": [
 {
 "label": "Academia.edu",
 "url": "https://www.academia.edu/6077035/2_Uluslararas%C4%B1_Antalya_Mimarl%C4%B1k_Bienali_%C3%9Czerine_"
-},
-{
-"label": "image",
-"url": "http://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608989705197-LUDV14QZCOQ37QLTO5T5/tumblr_inline_pkd371qJSK1qzpy7v_540.jpg.tumblr.com/28671b36e4086f7bdfc06ea8964e2854/tumblr_inline_mz8n2eieX31qzpy7v.jpg"
 }
 ],
 "section": "text"
@@ -5392,11 +5367,13 @@ const ARCHIVE = {
 },
 {
 "no": "1303",
-"dates": "2013—14",
+"dates": "2013–2014",
 "name": "KONTRAAKT",
 "types": [
 "Collective / Organisation",
-"Exhibition (group)"
+"Exhibition (group)",
+"Talk / Lecture",
+"Text"
 ],
 "with": [
 "H. Cenk Dereli",
@@ -5407,16 +5384,8 @@ const ARCHIVE = {
 "description": "Independent communication experiment founded in 2013 that produced critical content across creative fields through alternative media tools.",
 "links": [
 {
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/kontraakt"
-},
-{
 "label": "external",
 "url": "https://kontraakt.blogspot.com/"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608992350331-UWMYHCIUV6VO79ZQETZD/2tb_IKSV_Sahirugureren_041.jpg"
 }
 ],
 "shown": [
@@ -5429,7 +5398,40 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/1303-kontraakt.html"
+"text": "texts/kontraakt.html",
+"page": "works/1303-kontraakt.html",
+"imgs": [
+[
+"assets/images/1303/01.webp",
+null,
+null
+],
+[
+"assets/images/1303/02.webp",
+null,
+null
+],
+[
+"assets/images/1303/03.webp",
+null,
+"Video still, Yelta Köm (left) and H. Cenk Dereli for Kontraakt; image from the artist's own event post"
+]
+],
+"related": [
+{
+"kind": "talk",
+"name": "2. İstanbul Tasarım Bienali: Kontraakt / 2nd Istanbul Design Biennial: Kontraakt",
+"dates": "2014",
+"for": "2nd Istanbul Design Biennial",
+"place": "Istanbul"
+},
+{
+"kind": "text",
+"dates": "2018",
+"for": "Manifold",
+"href": "texts/kontraakt.html"
+}
+]
 },
 {
 "no": "1302",
@@ -5453,7 +5455,7 @@ const ARCHIVE = {
 },
 {
 "no": "1301",
-"dates": "2013—15",
+"dates": "2013–2015",
 "name": "#occupygezi architecture",
 "types": [
 "Research",
@@ -5484,38 +5486,6 @@ const ARCHIVE = {
 {
 "label": "original",
 "url": "https://noframe.studio/projects/occupy-gezi-architecture"
-},
-{
-"label": "image",
-"url": "https://noframe.studio/images/projects/occupy-gezi-architecture/occupy-gezi-architecture-01.jpg"
-},
-{
-"label": "image",
-"url": "https://images.adsttc.com/media/images/51cb/17f3/b3fc/4b68/7f00/0034/large_jpg/occupy_library.jpg?1372264432"
-},
-{
-"label": "image",
-"url": "https://www.inenart.eu/wp-content/uploads/2012/2013/06/tumblr_mopt0hDjTP1swq1jho2_1280.jpg"
-},
-{
-"label": "image",
-"url": "http://2tb.iksv.org/images/projeler/occupy_gezi.jpg"
-},
-{
-"label": "image",
-"url": "https://static-2026.dezeen.com/uploads/2013/06/dezeen_occupygezi-architecture_1sq.gif"
-},
-{
-"label": "image",
-"url": "https://archinect.gumlet.io/uploads/zu/zu7lmu8633eu8uwx.jpg?fit=crop&auto=compress&format=&enlarge=true&crop=faces&w=1200&h=707"
-},
-{
-"label": "image",
-"url": "https://www.metalocus.es/sites/default/files/styles/mopis_fullslider_desktop/public/images-lead/ml_occupygezi_01_1280.png?itok=2GSzEarY"
-},
-{
-"label": "image",
-"url": "https://payload.cargocollective.com/1/8/281065/6126747/prt_1375967844.jpg"
 }
 ],
 "shown": [
@@ -5534,7 +5504,7 @@ const ARCHIVE = {
 "curator": "Zoë Ryan"
 },
 {
-"dates": "26.07.2014—01.02.2015",
+"dates": "26.07.2014–01.02.2015",
 "venue": "Victoria and Albert Museum",
 "city": "London",
 "exhibition_title": "Disobedient Objects",
@@ -5570,7 +5540,39 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/1301-occupygezi-architecture.html"
+"page": "works/1301-occupygezi-architecture.html",
+"imgs": [
+[
+"assets/images/1301/01.webp",
+null,
+null
+],
+[
+"assets/images/1301/02.webp",
+null,
+"Article illustration"
+],
+[
+"assets/images/1301/03.webp",
+null,
+null
+],
+[
+"assets/images/1301/05.webp",
+null,
+"Article illustration"
+],
+[
+"assets/images/1301/06.webp",
+null,
+"Article illustration"
+],
+[
+"assets/images/1301/07.webp",
+null,
+"Line drawing of the occupygezi architecture library"
+]
+]
 },
 {
 "no": "1213",
@@ -5628,17 +5630,16 @@ const ARCHIVE = {
 ],
 "for": "Herkes İçin Mimarlık Derneği",
 "place": "Gezi Park, Istanbul",
-"role": "co-founder of the association; individual role in this series not stated",
 "status": "realised",
 "description": "Series of picnic-festival gatherings in Gezi Park, launched by Herkes İçin Mimarlık in March 2012 against the Taksim Square project; the first on 4 March 2012 followed a workshop 'Herkes İçin Taksim' on 26 February 2012 at Mimar Sinan Fine Arts University.",
-"links": [
-{
-"label": "image",
-"url": "img/drive/1210/01.jpg"
-}
-],
-"section": "work",
-"page": "works/1210-geleneksel-gezi-parki-senlikleri-gezi-park-celebrations.html"
+"section": "workshop",
+"imgs": [
+[
+"assets/images/1210/01.webp",
+null,
+null
+]
+]
 },
 {
 "no": "1209",
@@ -5662,21 +5663,22 @@ const ARCHIVE = {
 },
 {
 "no": "1208",
-"dates": "2012-03",
+"dates": "2012",
+"date_detail": "03.2012",
 "name": "Design for All (1st Istanbul Design Biennial workshop series)",
 "types": [
 "Workshop"
 ],
-"for": "IKSV, TAG Platform",
+"for": "İKSV, TAG Platform",
 "place": "Istanbul",
-"role": "workshop leader (CV); link to the TAG sheet inferred",
+"role": "workshop leader",
 "status": "realised",
-"description": "Workshop series 'Design for All' within the 1st Istanbul Design Biennial programme; a TAG Platform sheet lists two mapping exercises ('mapping the air', 'mapping my way') for 22 to 27 March.",
+"description": "Workshop series 'Design for All' within the 1st Istanbul Design Biennial programme.",
 "section": "workshop"
 },
 {
 "no": "1207",
-"dates": "2012—",
+"dates": "2012–ongoing",
 "name": "Chamber of Architects of Turkey (TMMOB Mimarlar Odası)",
 "types": [
 "Collective / Organisation"
@@ -5684,7 +5686,7 @@ const ARCHIVE = {
 "for": "TMMOB Chamber of Architects of Turkey",
 "role": "registered member",
 "status": "ongoing",
-"description": "Registered member of the Chamber of Architects of Turkey with professional registration as architect.",
+"description": "Registered member of the Chamber of Architects of Turkey.",
 "section": "network"
 },
 {
@@ -5769,11 +5771,6 @@ const ARCHIVE = {
 {
 "label": "archinect",
 "url": "https://archinect.com/yeltakom"
-},
-{
-"label": "image",
-"url": "https://dr10ftxu9axbn.cloudfront.net/eyJidWNrZXQiOiJtYXMtY29udGV4dC1pbWFnZXMiLCJrZXkiOiJtZWRpYS9tYXNfbmV3c18yMDEyX21hc19jb250ZXh0X2luX2lzdGFuYnVsX2Rlc2lnbl9iaWVubmlhbF8wMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6NjMwLCJwb3NpdGlvbiI6ImNlbnRlciIsImZpdCI6ImNvdmVyIn0sIndpdGhNZXRhZGF0YSI6dHJ1ZSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo5MCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJvcHRpbWlzZUNvZGluZyI6dHJ1ZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlfX19?mtime=1672781979",
-"credit": "Ethel Baraona Pohl"
 }
 ],
 "shown": [
@@ -5786,7 +5783,14 @@ const ARCHIVE = {
 }
 ],
 "section": "work",
-"page": "works/1202-ad-hoc-library.html"
+"page": "works/1202-ad-hoc-library.html",
+"imgs": [
+[
+"assets/images/1202/01.webp",
+"Ethel Baraona Pohl",
+null
+]
+]
 },
 {
 "no": "1201",
@@ -5819,18 +5823,27 @@ const ARCHIVE = {
 {
 "label": "source",
 "url": "http://www.cohstra.org/?portfolio=monument-to-urban-destruction"
-},
-{
-"label": "image",
-"url": "https://images.squarespace-cdn.com/content/v1/5fce48c8190b057dd37fbd06/1608994446161-PYUSDZ5DFF24R1N7CT10/Monument-half.jpg"
-},
-{
-"label": "image",
-"url": "img/active-monument-to-urban-destruction/01.jpg"
 }
 ],
 "section": "work",
-"page": "works/1201-active-monument-to-urban-destruction.html"
+"page": "works/1201-active-monument-to-urban-destruction.html",
+"imgs": [
+[
+"assets/images/1201/01.webp",
+null,
+null
+],
+[
+"assets/images/1201/02.webp",
+null,
+"Installation view (project page on the old yeltakom.info)"
+],
+[
+"assets/images/1201/03.webp",
+null,
+"Installation view with printed photographs on a table (project page on the old yeltakom.info)"
+]
+]
 },
 {
 "no": "1106",
@@ -5865,7 +5878,7 @@ const ARCHIVE = {
 },
 {
 "no": "1104",
-"dates": "2011—",
+"dates": "2011–ongoing",
 "name": "Herkes İçin Mimarlık / Architecture for All",
 "types": [
 "Collective / Organisation"
@@ -5897,18 +5910,23 @@ const ARCHIVE = {
 "for": "Arkitera Architecture Centre",
 "status": "realised",
 "description": "Travel grant for the research diary In the Pursue of Production on post-Fordist design production in eight cities.",
-"links": [
-{
-"label": "image",
-"url": "https://saltonline.org/assets/5c8988fe-70b2-425e-b65e-df9c7553f554?fit=contain&width=1200&quality=75&format=webp",
-"caption": "Same travel photograph strips as on the SALT presentation page (Arkitera travel grant journey), reused for the grant entry"
-}
+"section": "residency-award",
+"imgs": [
+[
+"assets/images/1103/01.webp",
+null,
+"Same travel photograph strips as on the SALT presentation page (Arkitera travel grant journey), reused for the grant entry"
 ],
-"section": "residency-award"
+[
+"assets/images/1103/02.webp",
+null,
+"Photograph on the Arkitera interview page about the travel grant"
+]
+]
 },
 {
 "no": "1102",
-"dates": "2011—",
+"dates": "2011–ongoing",
 "name": "Mobil Bureau",
 "types": [
 "Workshop",
@@ -5946,21 +5964,28 @@ const ARCHIVE = {
 "Talk / Lecture"
 ],
 "for": "SALT",
-"place": "SALT Beyoğlu, Istanbul",
+"place": "Beyoğlu, Istanbul",
 "status": "realised",
 "description": "Presentation of the research diary from the Arkitera travel grant on design production across eight cities.",
 "links": [
 {
 "label": "original",
 "url": "https://saltonline.org/en/presentation-yelta-kom-a-story-from-an-arkitera-traveler-how-and-where-did-i-fin-124"
-},
-{
-"label": "image",
-"url": "https://saltonline.org/assets/5c8988fe-70b2-425e-b65e-df9c7553f554?fit=contain&width=1200&quality=75&format=webp",
-"caption": "Strips of travel photographs from the Arkitera travel grant journey, shown on the SALT event page"
 }
 ],
-"section": "talk"
+"section": "talk",
+"imgs": [
+[
+"assets/images/1101/01.webp",
+null,
+"Strips of travel photographs from the Arkitera travel grant journey, shown on the SALT event page"
+],
+[
+"assets/images/1101/02.webp",
+null,
+"Video still of the presentation, from the artist's post on the SALT talk"
+]
+]
 },
 {
 "no": "1001",
@@ -5997,7 +6022,7 @@ const ARCHIVE = {
 ],
 "role": "author",
 "status": "realised",
-"description": "Conference paper on the Kayıtdışı design week as an informal event inside formal architecture education; English abstract in Drive, published form listed in Google Books (autumn 2009).",
+"description": "Conference paper on the Kayıtdışı design week as an informal event inside formal architecture education.",
 "links": [
 {
 "label": "Google Books (from project list)",
@@ -6016,7 +6041,6 @@ const ARCHIVE = {
 "for": "Mimarist",
 "role": "author",
 "status": "realised",
-"description": "Essay or criticism piece published in Mimarist.",
 "links": [
 {
 "label": "Academia.edu",
@@ -6027,7 +6051,8 @@ const ARCHIVE = {
 },
 {
 "no": "0902",
-"dates": "2009-02",
+"dates": "2009",
+"date_detail": "02.2009",
 "name": "Kayıtdışı 02: Liminal",
 "types": [
 "Workshop"
@@ -6036,16 +6061,15 @@ const ARCHIVE = {
 "place": "YTÜ Faculty of Architecture, Istanbul",
 "role": "organiser; led a media workshop",
 "status": "realised",
-"description": "Second Kayıtdışı design week at YTÜ (February 2009), theme liminal; the CV records a media workshop led by him. The 2009 paper reports 22 workshops, 16 speakers and over two hundred participants.",
-"links": [
-{
-"label": "image",
-"url": "img/drive/0902/01.jpg",
-"credit": "Franz von Bodelschwingh"
-}
-],
-"section": "work",
-"page": "works/0902-kayitdisi-02-liminal.html"
+"description": "Second Kayıtdışı design week at YTÜ (February 2009), theme liminal. The 2009 paper reports 22 workshops, 16 speakers and over two hundred participants.",
+"section": "workshop",
+"imgs": [
+[
+"assets/images/0902/01.webp",
+"Franz von Bodelschwingh",
+null
+]
+]
 },
 {
 "no": "0901",
@@ -6063,18 +6087,18 @@ const ARCHIVE = {
 },
 {
 "no": "0803",
-"dates": "2008-02",
+"dates": "2008",
+"date_detail": "02.2008",
 "name": "Kayıtdışı 01: Yer(siz)leşme / Kayıtdışı 01: (Un)settling",
 "types": [
 "Workshop"
 ],
 "for": "Yıldız Technical University, Faculty of Architecture",
 "place": "YTÜ Faculty of Architecture, Istanbul",
-"role": "member of the organising team (listed by name)",
+"role": "member of the organising team",
 "status": "realised",
 "description": "First Kayıtdışı design week, 4 to 9 February 2008 at YTÜ Faculty of Architecture, with discussion sessions, workshops, an exhibition, night events and a closing party; theme Yer(siz)leşme.",
-"section": "work",
-"page": "works/0803-kayitdisi-01-yer-siz-lesme-kayitdisi-01-un-settling.html"
+"section": "workshop"
 },
 {
 "no": "0802",
@@ -6092,7 +6116,7 @@ const ARCHIVE = {
 },
 {
 "no": "0801",
-"dates": "2008—16",
+"dates": "2008–2016",
 "name": "KOTUstudio",
 "types": [
 "Collective / Organisation"
@@ -6101,9 +6125,9 @@ const ARCHIVE = {
 "Erdem Tüzün"
 ],
 "place": "Istanbul",
-"role": "co-founder and architect",
+"role": "co-founder",
 "status": "realised",
-"description": "Independent architecture and design practice with competition entries.",
+"description": "Independent architecture and design practice.",
 "links": [
 {
 "label": "archinect",
@@ -6114,7 +6138,7 @@ const ARCHIVE = {
 },
 {
 "no": "0702",
-"dates": "2007—12",
+"dates": "2007–2012",
 "name": "EASA, European Architecture Student Assembly",
 "types": [
 "Collective / Organisation"
@@ -6127,7 +6151,7 @@ const ARCHIVE = {
 },
 {
 "no": "0701",
-"dates": "2007—11",
+"dates": "2007–2011",
 "name": "Kayıtdışı",
 "types": [
 "Collective / Organisation"
@@ -6329,7 +6353,7 @@ const ARCHIVE = {
 "url": null,
 "kind": "review",
 "about": "2501",
-"summary": "Feature on the exhibition Planetary Peasants; listed for verification in the CV."
+"summary": "Feature on the exhibition Planetary Peasants."
 },
 {
 "date": "2025",
@@ -6343,7 +6367,7 @@ const ARCHIVE = {
 },
 {
 "date": "2025",
-"outlet": "Werkleitz (Planetarische Bauern)",
+"outlet": "Werkleitz",
 "title": "Yelta Köm (artist page, Planetarische Bauern)",
 "language": "EN",
 "url": "https://planetarische-bauern.werkleitz.de/en/personen/yelta-koem",
@@ -6379,7 +6403,7 @@ const ARCHIVE = {
 "url": "https://artreview.com",
 "kind": "review",
 "about": null,
-"summary": "Review of the Istanbul Modern exhibition; domain only in source."
+"summary": "Review of the Istanbul Modern exhibition."
 },
 {
 "date": "2024-01",
@@ -6422,86 +6446,6 @@ const ARCHIVE = {
 "summary": "Exhibition and public programme of 24 June 2023 with Arazi Assembly; Köm presents on solidarity around the Tigris."
 },
 {
-"date": "2023-05-04",
-"outlet": "Sanat Dünyamız",
-"title": "Burcu Çimen review",
-"language": "TR",
-"url": "https://sanatdunyamiz.com",
-"kind": "review",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-05-02",
-"outlet": "TheMagger",
-"title": "Burcu Dimili review",
-"language": "TR",
-"url": "https://themagger.com",
-"kind": "review",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-04-26",
-"outlet": "Unlimited Magazine",
-"title": "Oğuz Karayemiş essay",
-"language": "TR",
-"url": "https://unlimitedrag.com",
-"kind": "article",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-04-26",
-"outlet": "Sanat Okur",
-"title": "Nil Has review",
-"language": "TR",
-"url": "https://sanatokur.com",
-"kind": "review",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-04-26",
-"outlet": "Nouvart",
-"title": "Elif Hopyar interview",
-"language": "TR",
-"url": "https://nouvart.net",
-"kind": "interview",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-04-20",
-"outlet": "Artful Living",
-"title": "Işıl Aydemir review",
-"language": "TR",
-"url": "https://artfulliving.com",
-"kind": "review",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-04-16",
-"outlet": "Sinan Eren Erk (podcast)",
-"title": "Sanat Dedikleri Tuhaf Şey podcast",
-"language": "TR",
-"url": "https://spotify.com",
-"kind": "podcast",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
-"date": "2023-04-08",
-"outlet": "Calling Mag",
-"title": "Ceren Kahveci interview",
-"language": "TR",
-"url": "https://callingmag.com",
-"kind": "interview",
-"about": "2301",
-"summary": "Placeholder title (author name plus type) from the compiled archive; real article title and URL to be found."
-},
-{
 "date": "2023-03-31",
 "outlet": "Gazete Oksijen",
 "title": "all familiar, all foreign (exhibition review)",
@@ -6509,7 +6453,7 @@ const ARCHIVE = {
 "url": "https://gazeteoksijen.com",
 "kind": "review",
 "about": "2301",
-"summary": "Review; article URL not given, domain only."
+"summary": "Review of the exhibition all familiar, all foreign."
 },
 {
 "date": "2023-03-21",
@@ -6563,7 +6507,7 @@ const ARCHIVE = {
 },
 {
 "date": "2023",
-"outlet": "HKW",
+"outlet": "Haus der Kulturen der Welt",
 "title": "Cultures d'Avenir 2023",
 "language": "DE",
 "url": "https://www.hkw.de/programme/cultures-d-avenir/cultures-d-avenir-2023",
@@ -6613,7 +6557,7 @@ const ARCHIVE = {
 },
 {
 "date": "2022",
-"outlet": "17th Istanbul Biennial (IKSV)",
+"outlet": "17th Istanbul Biennial (İKSV)",
 "title": "Ahmet Öğüt & The Silent University Team",
 "language": "EN",
 "url": "https://bienal.iksv.org/en/17b-artists/ahmet-ogut-the-silent-university-team",
@@ -6623,7 +6567,7 @@ const ARCHIVE = {
 },
 {
 "date": "2022",
-"outlet": "17th Istanbul Biennial (IKSV)",
+"outlet": "17th Istanbul Biennial (İKSV)",
 "title": "SAHA Studio Talks",
 "language": "EN",
 "url": "https://bienal.iksv.org/en/17-public-learning-programmes/saha-studio-talks",
@@ -6659,7 +6603,7 @@ const ARCHIVE = {
 "url": null,
 "kind": "review",
 "about": "2101",
-"summary": "Article on the group show On being water in Istanbul; date to be verified."
+"summary": "Article on the group show On being water in Istanbul."
 },
 {
 "date": "2020-11-24",
@@ -6729,7 +6673,7 @@ const ARCHIVE = {
 "url": "https://www.vbenzeri.com/mimari/vardiya-sona-erdi",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-11-30",
@@ -6739,7 +6683,7 @@ const ARCHIVE = {
 "url": "https://bi-ozet.com/2018/11/30/16-venedik-mimarlik-bienali-turkiye-pavyonunda-vardiya-sona-erdi/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-11-29",
@@ -6749,7 +6693,7 @@ const ARCHIVE = {
 "url": "https://www.hurriyet.com.tr/kitap-sanat/turkiye-pavyonunda-vardiya-sona-erdi-41035311",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-10-24",
@@ -6759,7 +6703,7 @@ const ARCHIVE = {
 "url": "https://www.hurriyet.com.tr/kitap-sanat/bu-vardiyada-herkes-mutlu-40997388",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-07-19",
@@ -6769,7 +6713,7 @@ const ARCHIVE = {
 "url": "https://bi-ozet.com/2018/07/19/16-uluslararasi-venedik-mimarlik-bienalinde-ilk-3/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-06-29",
@@ -6789,7 +6733,7 @@ const ARCHIVE = {
 "url": "https://t24.com.tr/haber/hic-durmayan-bir-su-bulusma-karsilasma-uretme-ve-mimarlik-vardiya,657976",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-06-21",
@@ -6809,7 +6753,7 @@ const ARCHIVE = {
 "url": "https://www.vbenzeri.com/mimari/turkiye-pavyonunda-vardiya",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-29",
@@ -6819,7 +6763,7 @@ const ARCHIVE = {
 "url": "https://www.milliyet.com.tr/gundem/bienalin-kendisini-ulasilabilir-kilsak-2678069",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-27",
@@ -6829,7 +6773,7 @@ const ARCHIVE = {
 "url": "https://t24.com.tr/haber/venedikte-vardiya-basladi-bir-fikir-sunduk-buralara-kadar-geldik,637431",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-24",
@@ -6839,7 +6783,7 @@ const ARCHIVE = {
 "url": "https://bi-ozet.com/2018/05/24/venedik-bienali-16-uluslararasi-mimarlik-sergisi-turkiye-pavyonu-vardiya-acildi/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-24",
@@ -6849,7 +6793,7 @@ const ARCHIVE = {
 "url": "https://www.yenicikanlar.com.tr/turkiye-pavyonunda-vardiya-basliyor-6646/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-24",
@@ -6859,7 +6803,7 @@ const ARCHIVE = {
 "url": "https://t24.com.tr/haber/venedikte-turkiye-pavyonu-acildi,636073",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-24",
@@ -6869,7 +6813,7 @@ const ARCHIVE = {
 "url": "https://www.e-flux.com/announcements/169000/vardiya-the-shift/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-24",
@@ -6899,7 +6843,7 @@ const ARCHIVE = {
 "url": "http://nilayornek.com/15-maddede-venedik-mimarlik-bienali-vardiyasi-siz-de-izleyebilirsiniz/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-22",
@@ -6919,7 +6863,7 @@ const ARCHIVE = {
 "url": "https://www.vbenzeri.com/mimari/geri-sayim-basladi",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-05-17",
@@ -6939,7 +6883,7 @@ const ARCHIVE = {
 "url": null,
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-04-23",
@@ -6959,7 +6903,7 @@ const ARCHIVE = {
 "url": "https://www.star.com.tr/pazar/venedik-mimarlik-bienalinde-genc-turkler-haber-1334389/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-03-07",
@@ -6969,7 +6913,7 @@ const ARCHIVE = {
 "url": "https://bi-ozet.com/2018/03/07/venedik-mimarlik-bienali-turkiye-pavyonu-vardiya-projesinin-ayrintilari-aciklandi/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-03-07",
@@ -6979,7 +6923,7 @@ const ARCHIVE = {
 "url": "https://www.sozcu.com.tr/hayatim/kultur-sanat-haberleri/vardiyanin-ayrintilari-aciklandi/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-03-07",
@@ -6999,17 +6943,17 @@ const ARCHIVE = {
 "url": "https://www.hurriyet.com.tr/kitap-sanat/vardiya-icin-100-mimarlik-ogrencisi-araniyor-40721480",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018-01-22",
-"outlet": "IKSV",
+"outlet": "İKSV",
 "title": "The Pavilion Of Turkey announces the project to be exhibited at the Biennale Architettura 2018",
 "language": "EN",
 "url": "https://www.iksv.org/en/news/the-pavilion-of-turkey-announces-the-project-to-be-exhibited-at-the-biennale-architettura-2018/",
 "kind": "news",
 "about": "1802",
-"summary": "IKSV press release naming Köm as assistant curator of Vardiya / The Shift."
+"summary": "İKSV press release naming Köm as assistant curator of Vardiya / The Shift."
 },
 {
 "date": "2018-01-17",
@@ -7019,7 +6963,7 @@ const ARCHIVE = {
 "url": "https://t24.com.tr/haber/ogrencileri-bienalin-takipcisi-degil-yaraticisi-yapacak-proje,536964",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2018",
@@ -7049,7 +6993,7 @@ const ARCHIVE = {
 "url": "https://e-architect.com/venice/venice-biennale-turkey-pavilion-2018",
 "kind": "article",
 "about": "1802",
-"summary": "Feature; path as given in compiled archive."
+"summary": "Feature."
 },
 {
 "date": "2018",
@@ -7059,7 +7003,7 @@ const ARCHIVE = {
 "url": "https://www.top-ev.de/commons-lab/urban-struggles-emergent-commoning-practices/",
 "kind": "listing",
 "about": "1813",
-"summary": "Commons Lab event page for a lecture by Köm on commoning and the #occupygezi architecture project (event dated 15 August 2018, 19:30; page also shows 2017 post date)."
+"summary": "Commons Lab event page for a lecture by Köm on commoning and the #occupygezi architecture project (event dated 15 August 2018, 19:30)."
 },
 {
 "date": "2017-12-21",
@@ -7079,7 +7023,7 @@ const ARCHIVE = {
 "url": "https://www.hurriyet.com.tr/kitap-sanat/mimarlik-ogrencilerine-venedik-bienali-daveti-40681886",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2017-12-18",
@@ -7099,7 +7043,7 @@ const ARCHIVE = {
 "url": "https://www.archdaily.com/881961/turkish-pavilion-at-the-2018-venice-biennale-to-host-a-series-of-student-workshops",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2017-10-04",
@@ -7109,7 +7053,7 @@ const ARCHIVE = {
 "url": "http://arsizsanat.com/venedik-bienali-16-uluslararasi-mimarlik-sergisi-turkiye-pavyonunda-yer-alacak-proje-belirlendi/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2017-09-26",
@@ -7119,7 +7063,7 @@ const ARCHIVE = {
 "url": "https://bi-ozet.com/2017/09/26/16-uluslararasi-mimarlik-sergisi-turkiye-pavyonunda-yer-alacak-proje-vardiya/",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2017-09-26",
@@ -7129,7 +7073,7 @@ const ARCHIVE = {
 "url": "http://www.sanatatak.com/view/venedik-bienali-16-uluslararasi-mimarlik-sergisine-vardiya-gidiyor",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2017-09-26",
@@ -7139,7 +7083,7 @@ const ARCHIVE = {
 "url": "https://www.vbenzeri.com/mimari/vardiya",
 "kind": "news",
 "about": "1802",
-"summary": "Coverage of the Turkish Pavilion project (about the project, not him alone)."
+"summary": null
 },
 {
 "date": "2017-09-26",
@@ -7259,7 +7203,7 @@ const ARCHIVE = {
 "url": "https://contemporaryartdaily.com/tag/yelta-kom/",
 "kind": "listing",
 "about": null,
-"summary": "Tag page; the biennial is presumably the 14th Istanbul Biennial (Autonomous Archiving talk), not verified."
+"summary": "Tag page on the Istanbul Biennial."
 },
 {
 "date": "2015-10-16",
@@ -7269,7 +7213,7 @@ const ARCHIVE = {
 "url": "https://bi-ozet.com/2015/10/16/bugunun-turkiyesinde-mimarlik-tartisildi/",
 "kind": "news",
 "about": null,
-"summary": "Event report; connection to him not verified."
+"summary": "Event report."
 },
 {
 "date": "2015-09-11",
@@ -7319,7 +7263,7 @@ const ARCHIVE = {
 "url": "http://www.mimarizm.com/haberler/bu-sistemde-tek-bir-mimarlik-yapma-biciminin-hayatta-kalma-sansi-yok_118002",
 "kind": "article",
 "about": null,
-"summary": "News item listed with the exhibition press; whether it quotes him is not verified."
+"summary": "News item."
 },
 {
 "date": "2015-02-03",
@@ -7339,7 +7283,7 @@ const ARCHIVE = {
 "url": "https://www.yeltakom.info/blog/5um5i0o7zgebacdjlrp43cis8vuba2",
 "kind": "interview",
 "about": null,
-"summary": "Interview with him reposted on his blog; publisher not identified."
+"summary": "Interview with him reposted on his blog."
 },
 {
 "date": "2015",
@@ -7349,7 +7293,7 @@ const ARCHIVE = {
 "url": "https://arkitera.com/etiket/yelta-kom/",
 "kind": "article",
 "about": "1510",
-"summary": "Award coverage; tag page only."
+"summary": "Award coverage."
 },
 {
 "date": "2014-12-04",
@@ -7358,12 +7302,12 @@ const ARCHIVE = {
 "language": "TR",
 "url": "https://www.youtube.com/watch?v=RCMwar-_PBY",
 "kind": "video",
-"about": "1402",
+"about": "1303",
 "summary": "Video of the Kontraakt talk."
 },
 {
 "date": "2014-11-02",
-"outlet": "2nd Istanbul Design Biennial (IKSV)",
+"outlet": "2nd Istanbul Design Biennial (İKSV)",
 "title": "Designers in Dialogue: The Future is? (panel programme)",
 "language": "EN",
 "url": "https://2tb.iksv.org/program_paneller.asp",
@@ -7383,7 +7327,7 @@ const ARCHIVE = {
 },
 {
 "date": "2014",
-"outlet": "2nd Istanbul Design Biennial (IKSV)",
+"outlet": "2nd Istanbul Design Biennial (İKSV)",
 "title": "#occupygezi architecture, Herkes İçin Mimarlık",
 "language": "EN",
 "url": "https://2tb.iksv.org/proje.asp?id=44",
@@ -7393,12 +7337,12 @@ const ARCHIVE = {
 },
 {
 "date": "2014",
-"outlet": "2nd Istanbul Design Biennial (IKSV)",
+"outlet": "2nd Istanbul Design Biennial (İKSV)",
 "title": "Kontraakt",
 "language": "TR",
 "url": "https://2tb.iksv.org/proje.asp?id=53",
 "kind": "listing",
-"about": "1805",
+"about": "1303",
 "summary": "Biennial project page presenting Kontraakt (H. Cenk Dereli, Hayrettin Günç, Yelta Köm)."
 },
 {
@@ -7429,7 +7373,7 @@ const ARCHIVE = {
 "url": "https://www.metalocus.es/en/news/occupygezi-architecture",
 "kind": "news",
 "about": "1301",
-"summary": "Metalocus (José Juan Barba) on the architects documenting the structures dismantled by police in Gezi Park; the article text does not name Köm."
+"summary": "Metalocus (José Juan Barba) on the architects documenting the structures dismantled by police in Gezi Park."
 },
 {
 "date": "2013-06-25",
@@ -7469,11 +7413,11 @@ const ARCHIVE = {
 "url": "https://www.arkitera.com/soylesi/mimarlik-medyasinda-bina-elestirisi-gormuyoruz/",
 "kind": "interview",
 "about": null,
-"summary": "Interview with architect Kerem Piker in which he describes Köm as a founder of Herkes İçin Mimarlık and a year-long colleague at his office; Köm is mentioned, not interviewed."
+"summary": "Interview with architect Kerem Piker in which he describes Köm as a founder of Herkes İçin Mimarlık and a year-long colleague at his office."
 },
 {
 "date": "2013",
-"outlet": "HKW (archive)",
+"outlet": "Haus der Kulturen der Welt (archive)",
 "title": "Al-mashaa' or the Space of the Common, workshop",
 "language": "EN",
 "url": "https://archiv.hkw.de/en/programm/projekte/2013/edward_said_konferenz/multimedia_edward_said/workshop.php",
@@ -7639,7 +7583,7 @@ const ARCHIVE = {
 "url": "https://forecast-platform.com/tag/yelta-kom",
 "kind": "news",
 "about": "2006",
-"summary": "Tag page naming him a nominee in the Dissecting Technocapitalism category, mentored by Evgeny Morozov."
+"summary": "Names him a nominee in the Dissecting Technocapitalism category, mentored by Evgeny Morozov."
 },
 {
 "date": null,
@@ -7659,7 +7603,7 @@ const ARCHIVE = {
 "url": "https://www.artfulliving.com.tr/sanat/is-uretmek-bir-hikye-anlatma-meselesi-i-25634",
 "kind": "interview",
 "about": "2203",
-"summary": "Conversation with Köm about his production, occasioned by the online video selection 'Dip Dalga' and his work 'İhtimaller İçin Bir Ağıt - Bölüm I'. Page shows no publication date."
+"summary": "Conversation with Köm about his production, occasioned by the online video selection 'Dip Dalga' and his work 'İhtimaller İçin Bir Ağıt - Bölüm I'."
 },
 {
 "date": null,

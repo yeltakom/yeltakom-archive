@@ -19,6 +19,7 @@
   var state = { section: 'all', q: '', view: 'list', open: new Set(), sort: { key: 'no', dir: -1 } };
   var $ = function (id) { return document.getElementById(id); };
   var root = $('archive');
+  var mixBox = $('mix');
   var secLinks = document.querySelectorAll('header.bar a[data-sec]');
 
   function has(e, t) { return (e.types || []).indexOf(t) > -1; }
@@ -30,12 +31,11 @@
     if (html != null) n.innerHTML = html;
     return n;
   }
-  /* pictures of an entry, the ones served from this site first */
+  /* pictures of an entry: the published rows of archive/images-manifest.csv, as [file, credit, caption] */
   function images(e) {
-    var all = (e.links || []).filter(function (l) { return l.label === 'image'; });
-    return all.filter(function (l) { return !/^https?:/.test(l.url); })
-      .concat(all.filter(function (l) { return /^https?:/.test(l.url); }));
+    return (e.imgs || []).map(function (i) { return { url: i[0], credit: i[1], caption: i[2] }; });
   }
+  function altOf(e, i) { return e.name + (i.caption ? ', ' + i.caption : ''); }
   ENTRIES.forEach(function (e) {
     e._hay = norm([e.no, e.dates, e.name, (e.types || []).join(' '), e['for'], (e['with'] || []).join(' '), e.place, e.role,
       e.description, (e.shown || []).map(function (s) { return [s.venue, s.city, s.exhibition_title, s.curator].join(' '); }).join(' ')].join(' '));
@@ -50,37 +50,75 @@
   });
 
   /* ---------- the bar ---------- */
-  function barHeight() { var b = $('bar'); return b ? b.offsetHeight : 0; }
+  function barHeight() { var b = $('bar'); return b && getComputedStyle(b).position === 'sticky' ? b.offsetHeight : 0; }   /* on a phone the bar scrolls away */
   function setSection(id, push) {
     state.section = SECTIONS[id] ? id : 'all';
-    secLinks.forEach(function (a) {
-      if (a.getAttribute('data-sec') === state.section) a.setAttribute('aria-current', 'true');
-      else a.removeAttribute('aria-current');
-    });
+    setSectionMark();
     if (push) history.replaceState(null, '', state.section === 'all' ? location.pathname : '#' + state.section);
+    if (state.view === 'mix') { setView('list'); return; }
     render();
+  }
+  /* the table's top edge sits just under the frozen bar */
+  function scrollToTable() {
+    window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
   }
   function setView(v) {
     state.view = v;
     $('vlist').setAttribute('aria-pressed', String(v === 'list'));
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
+    $('vmix').setAttribute('aria-pressed', String(v === 'mix'));
+    if (v === 'mix') secLinks.forEach(function (a) { a.removeAttribute('aria-current'); });
+    else setSectionMark();
     render();
+  }
+  function setSectionMark() {
+    secLinks.forEach(function (a) {
+      if (a.getAttribute('data-sec') === state.section) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+  }
+  /* the composition: landingdata.js and landing.js are fetched the first time Mix is chosen */
+  var mixState = 0;   /* 0 not asked, 1 loading, 2 ready, 3 failed */
+  function loadScript(src, done) {
+    var s = document.createElement('script');
+    s.src = src; s.onload = function () { done(true); }; s.onerror = function () { done(false); };
+    document.head.appendChild(s);
+  }
+  function buildMix() {
+    if (state.view !== 'mix' || !mixBox) return;
+    mixBox.removeAttribute('hidden');
+    if (mixState === 2) {
+      if (window.YKMix()) {
+        var top = mixBox.getBoundingClientRect().top;
+        if (top < barHeight()) window.scrollTo(0, top + window.pageYOffset - barHeight());
+      }
+      return;
+    }
+    if (mixState === 1) return;
+    mixState = 1;
+    var files = (mixBox.getAttribute('data-js') || '').split(' ').filter(Boolean);
+    (function next(i) {
+      if (i >= files.length) { mixState = 2; buildMix(); return; }
+      loadScript(files[i], function (ok) { if (ok) next(i + 1); else { mixState = 3; setView('list'); } });
+    })(0);
   }
   function wireBar() {
     secLinks.forEach(function (a) {
       a.addEventListener('click', function (ev) {
         ev.preventDefault();
         setSection(a.getAttribute('data-sec'), true);
-        // if the table top has scrolled under the bar, bring it back
-        if (root.getBoundingClientRect().top < barHeight()) {
-          window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
-        }
+        scrollToTable();
       });
     });
     var sq = $('sq');
-    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); });
-    $('vlist').addEventListener('click', function () { setView('list'); });
-    $('vimg').addEventListener('click', function () { setView('image'); });
+    if (sq) sq.addEventListener('input', function () { state.q = sq.value; if (state.view === 'mix') setView('list'); else render(); });
+    function leaveMix() { if (/^#mix$/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search); }
+    $('vlist').addEventListener('click', function () { leaveMix(); setView('list'); });
+    $('vimg').addEventListener('click', function () { leaveMix(); setView('image'); });
+    $('vmix').addEventListener('click', function () {
+      history.replaceState(null, '', location.pathname + location.search + '#mix');
+      setView('mix');
+    });
   }
 
   /* ---------- More: the biography opens under the introduction ---------- */
@@ -117,8 +155,9 @@
 
   /* ---------- the picture at the cursor ---------- */
   var thumb = null, canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
-  function showThumb(url) {
+  function showThumb(url, alt) {
     if (!thumb) { thumb = el('img', { id: 'thumb', alt: '' }); document.body.appendChild(thumb); }
+    thumb.setAttribute('alt', alt || '');
     if (thumb.getAttribute('src') !== url) thumb.setAttribute('src', url);
     thumb.style.display = 'block';
   }
@@ -159,7 +198,7 @@
       btn.addEventListener('click', function () { hideThumb(); toggle(e, li, btn, det); });
       var im = canHover ? images(e)[0] : null;
       if (im) {
-        btn.addEventListener('mouseenter', function (ev) { if (!li.classList.contains('open')) { showThumb(im.url); moveThumb(ev); } });
+        btn.addEventListener('mouseenter', function (ev) { if (!li.classList.contains('open')) { showThumb(im.url, altOf(e, im)); moveThumb(ev); } });
         btn.addEventListener('mousemove', moveThumb);
         btn.addEventListener('mouseleave', hideThumb);
       }
@@ -181,6 +220,7 @@
     var h = '<div class="dgrid"><dl>';
     function row(k, v) { if (v) h += '<dt>' + k + '</dt><dd>' + v + '</dd>'; }
     row('About', esc(e.description));
+    row('Date', esc(e.date_detail));
     if (e.status && e.status !== 'realised') row('Status', esc(e.status.charAt(0).toUpperCase() + e.status.slice(1)));
     row('Place', esc(e.place));
     row('Role', esc(e.role));
@@ -190,8 +230,16 @@
         return '<li><span class="d">' + esc(s.dates || '') + '</span><span>' + bits + (s.curator ? ', curated by ' + esc(s.curator) : '') + '</span></li>';
       }).join('') + '</ul>');
     }
+    if (e.related && e.related.length) {
+      row('Related', '<ul class="shown">' + e.related.map(function (r) {
+        var lab = [r.kind ? r.kind.charAt(0).toUpperCase() + r.kind.slice(1) : '', r.name].filter(Boolean).map(esc).join(', ');
+        if (r.href) lab = '<a href="' + esc(r.href) + '">' + lab + '</a>';
+        var rest = [r['for'], r.place].filter(Boolean).map(esc).join(', ');
+        return '<li><span class="d">' + esc(r.dates || '') + '</span><span>' + lab + (rest ? ', ' + rest : '') + '</span></li>';
+      }).join('') + '</ul>');
+    }
     var seen = {}, links = (e.links || []).filter(function (l) {
-      if (l.label === 'image' || seen[l.url]) return false; seen[l.url] = 1; return true;
+      if (seen[l.url]) return false; seen[l.url] = 1; return true;
     });
     links.sort(function (a, b) { return (a.label !== 'original') - (b.label !== 'original'); });
     var multi = links.filter(function (l) { return l.label === 'original'; }).length > 1;
@@ -208,7 +256,7 @@
     var imgs = images(e);
     if (imgs.length) {
       h += '<div class="strip">' + imgs.map(function (i, n) {
-        return '<a href="' + esc(i.url) + '"><img src="' + esc(i.url) + '" alt="' + esc(e.name) + ', image ' + (n + 1) + '" loading="lazy" decoding="async"></a>';
+        return '<a href="' + esc(i.url) + '"><img src="' + esc(i.url) + '" alt="' + esc(altOf(e, i)) + '" loading="lazy" decoding="async"></a>';
       }).join('') + '</div>';
     }
     return h;
@@ -221,7 +269,7 @@
       var im = images(e)[0];
       var li = el('li', { class: im ? 'tile pic' : 'tile type' });
       var b = el('button', { type: 'button', 'aria-label': e.no + ' ' + e.name + ', open in list' },
-        (im ? '<img src="' + esc(im.url) + '" alt="" loading="lazy" decoding="async">' : '') +
+        (im ? '<img src="' + esc(im.url) + '" alt="' + esc(altOf(e, im)) + '" loading="lazy" decoding="async">' : '') +
         '<span class="cap"><span class="c-no">' + esc(e.no) + '</span> ' + esc(e.name) + '</span>');
       b.addEventListener('click', function () {
         state.open.add(e.no); setView('list');
@@ -234,21 +282,34 @@
 
   function render() {
     hideThumb();
+    if (mixBox) { if (state.view === 'mix') { root.innerHTML = ''; root.className = ''; buildMix(); return; } mixBox.setAttribute('hidden', ''); }
     var list = filtered();
     root.innerHTML = '';
     root.className = state.view === 'image' ? 'imageview' : 'listview';
     if (state.view === 'image') renderImages(list); else renderList(list);
   }
 
+  var userMoved = false;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (t) {
+    window.addEventListener(t, function () { userMoved = true; }, { passive: true });
+  });
+  function toEntry(h) {
+    var t = $(h);
+    if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
+  }
+  // #mix means the composition; a section or an entry in the address means the table
   function fromHash() {
     var h = decodeURIComponent(location.hash.slice(1));
+    if (h === 'mix') { setView('mix'); return; }
+    if (state.view === 'mix') setView('list');
     if (h === 'more') { setSection('all', false); setMore(true); window.scrollTo(0, 0); return; }
     if (/^e-\d{4}$/.test(h)) {
-      state.open.add(h.slice(2)); setSection('all', false);
-      var t = $(h); if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
+      state.open.add(h.slice(2)); setSection('all', false); toEntry(h);
       return;
     }
-    setSection(SECTIONS[h] ? h : 'all', false);
+    var isSec = !!SECTIONS[h];
+    setSection(isSec ? h : 'all', false);
+    if (isSec || h === 'archive') scrollToTable();
   }
 
   // many images are hotlinked from institutions, so a dead one is normal over time:
@@ -264,5 +325,12 @@
 
   wireBar();
   fromHash();
-  window.addEventListener('hashchange', fromHash);
+  window.addEventListener('hashchange', function () { userMoved = true; fromHash(); });
+  // the opening composition and the images settle after this script: place the table again once the page is laid out
+  window.addEventListener('load', function () {
+    if (userMoved || !location.hash) return;
+    var h = decodeURIComponent(location.hash.slice(1));
+    if (/^e-\d{4}$/.test(h)) toEntry(h);
+    else if (SECTIONS[h]) scrollToTable();
+  });
 })();

@@ -1,0 +1,126 @@
+/* Text pages only. Loaded after style.css.
+   One idea: a text is a ledger of paragraphs. The Turkish and the English of each
+   paragraph share one row of the grid, so they start on the same line, and the number
+   in the margin is the shared index. Size, measure and space do all the ranking:
+   the family is Arial bold throughout, the signal colour marks only what can be
+   clicked, the archive number, and the translation status. */
+.tp {
+  --no: 1.8rem;          /* margin column: paragraph numbers, archive number */
+  --g: 2.4rem;           /* gutter between columns */
+  --axis: calc(var(--no) + var(--g));
+  --tpcols: var(--no) minmax(0, 1fr) minmax(0, 1fr);
+  --body: 1.125rem;
+  padding-bottom: 2rem;
+  scroll-padding-top: calc(var(--barh) + 1rem);
+}
+.tp [id] { scroll-margin-top: calc(var(--barh) + 1rem); }
+.tp.single, .tp.stacked { --tpcols: var(--no) minmax(0, 1fr) minmax(0, 1fr); }
+.tp.single { --tpcols: var(--no) minmax(0, 40rem); }
+
+/* ---- head: title, then the colophon on the same columns as the text ---- */
+.tp-head { padding-top: clamp(1.8rem, 5vw, 4rem); }
+.tp h1 {
+  font-size: clamp(2rem, 4.7vw, 4.4rem); line-height: 1.02; letter-spacing: -0.032em;
+  font-weight: var(--em); margin: 0 0 clamp(1.8rem, 3.6vw, 3rem); padding-left: var(--axis);
+  text-wrap: balance; hyphens: manual; overflow-wrap: break-word;
+}
+.tp h1:has(span) {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--g);
+  font-size: clamp(1.9rem, 3.5vw, 3.3rem);
+}
+.tp h1 span { display: block; }
+
+.tp-colo {
+  display: grid; grid-template-columns: var(--tpcols); column-gap: var(--g);
+  margin: 0; padding: 0.55rem 0 1.1rem; border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--hair); font-size: 15px; line-height: 1.3; align-items: start;
+}
+.tp-colo > div, .tp-colo .grp > div { min-width: 0; }
+.tp-colo dt { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--mute); margin: 0 0 0.2rem; }
+.tp-colo dd { margin: 0; overflow-wrap: anywhere; }
+.tp-colo .no dd a { text-decoration: none; color: var(--sig); }
+.tp-colo .no dd a:hover { text-decoration: underline; }
+.tp-colo .no { white-space: nowrap; }
+.tp-colo .long { display: none; }
+.tp-colo .grp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem var(--g); }
+.tp-colo .flag dd { color: var(--sig); }
+.tp.single .tp-colo .grp:first-of-type { grid-column: 2; }
+.tp.single .tp-colo .grp + .grp { grid-column: 2; margin-top: 0.8rem; }
+.tp-colo .grp:empty { display: none; }
+
+/* ---- status line: heads each column ---- */
+.tp-st { margin: 0; font-size: 14px; line-height: 1.3; color: var(--ink); }
+.tp-st.tr { color: var(--sig); }
+.tp-note { margin: 0.25rem 0 0; font-size: 14px; line-height: 1.3; color: var(--sig); }
+
+/* ---- aligned rows ---- */
+.tp-rows { margin-top: 1.4rem; }
+.r { display: grid; grid-template-columns: var(--tpcols); column-gap: var(--g); align-items: baseline; padding-bottom: 1.05rem; }
+.r.head { padding-bottom: 2rem; }
+.r.k-img, .r.shared { align-items: start; }
+.r.k-h, .r.k-notes { padding-top: 1.1rem; }
+.r.k-notes { padding-top: 2rem; }
+.r .no { font-size: 13px; color: var(--mute); text-align: left; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.r.shared .c { grid-column: 2 / -1; }
+.c, .col { min-width: 0; font-size: var(--body); line-height: 1.5; overflow-wrap: break-word; hyphens: manual; }
+.c > *:first-child, .b > *:first-child { margin-top: 0; }
+.c > *:last-child, .b > *:last-child { margin-bottom: 0; }
+.c p, .b p { margin: 0; text-wrap: pretty; }
+.tp .c .tp-st, .tp .col .tp-st { font-size: 14px; }
+
+/* ---- the unaligned fallback and single-language texts: plain columns ---- */
+.tp-cols { display: grid; column-gap: var(--g); margin-top: 1.4rem; padding-left: var(--axis); }
+.tp-cols.n1 { grid-template-columns: minmax(0, 40rem); }
+.tp-cols.n2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tp-cols.n3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.col > .tp-st { margin-bottom: 2rem; }
+.b { margin: 0 0 1.05rem; }
+.b.k-h { margin-top: 2rem; }
+.b.k-img { margin-bottom: 1.4rem; }
+
+/* ---- block types ---- */
+.tp h2, .tp h3, .tp h4 { font-weight: var(--em); line-height: 1.12; letter-spacing: -0.016em; margin: 0; text-wrap: balance; }
+.tp h2 { font-size: 1.75rem; }
+.tp h3 { font-size: 1.4rem; }
+.tp h4 { font-size: 1.125rem; }
+.tp blockquote { margin: 0; padding-left: 1.2rem; border-left: 2px solid var(--ink); font-size: 1.2rem; line-height: 1.34; letter-spacing: -0.006em; }
+.tp ul, .tp ol { margin: 0; padding-left: 1.25em; }
+.tp li { margin-bottom: 0.3em; }
+.tp li:last-child { margin-bottom: 0; }
+.tp hr { border: 0; border-top: 1px solid var(--ink); margin: 0.6rem 0; }
+.tp p.im { margin: 0; }
+.tp .im img { display: block; max-width: 100%; max-height: 82vh; width: auto; height: auto; }
+.tp ol.notes { font-size: 14px; line-height: 1.4; border-top: 1px solid var(--ink); padding: 0.55rem 0 0 1.7em; margin: 0; overflow-wrap: anywhere; }
+.tp ol.notes li { margin-bottom: 0.35rem; }
+
+/* ---- phone and narrow: one column, language tabs ---- */
+.tp-tabs { display: none; }
+@media (max-width: 899px) {
+  .tp { --body: 1.0625rem; }
+  .tp-head { padding-top: 1.4rem; }
+  .tp h1, .tp h1:has(span) { display: block; padding-left: 0; font-size: clamp(1.9rem, 9vw, 3rem); }
+  .tp-colo { grid-template-columns: 1fr; row-gap: 0.7rem; }
+  .tp-colo .grp, .tp.single .tp-colo .grp:first-of-type, .tp.single .tp-colo .grp + .grp { grid-column: 1; margin: 0; }
+  .tp-colo .no dd { color: var(--sig); }
+  .tp-colo .no { display: flex; gap: 0.6rem; align-items: baseline; }
+  .tp-colo .no dt { margin: 0; }
+  .tp-colo .long { display: inline; }
+  .r, .tp.single { --tpcols: 1fr; }
+  .r { grid-template-columns: 1fr; padding-bottom: 0.9rem; align-items: start; }
+  .r .no { display: none; }
+  .r.shared .c { grid-column: 1; }
+  .tp-cols, .tp-cols.n1, .tp-cols.n2, .tp-cols.n3 { grid-template-columns: minmax(0, 1fr); padding-left: 0; }
+  .tp h2 { font-size: 1.5rem; } .tp h3 { font-size: 1.25rem; }
+  .tp-colo + .tp-tabs { margin-top: 0; }
+  .tp.js .tp-tabs {
+    display: flex; gap: 1.2rem; position: sticky; top: calc(var(--barh) - 1px); z-index: 5;
+    background: #fff; padding: 0.55rem 0; border-bottom: 1px solid var(--ink); font-size: 1rem;
+  }
+  .tp-tabs button { padding: 0 0.3em; margin: 0 -0.3em; }
+  .tp-tabs button[aria-pressed="true"] { background: var(--sig); color: #fff; }
+  .tp.js[data-show="0"] [data-v]:not([data-v="0"]),
+  .tp.js[data-show="1"] [data-v]:not([data-v="1"]),
+  .tp.js[data-show="2"] [data-v]:not([data-v="2"]) { display: none; }
+  .tp:not(.js) .col + .col { margin-top: 2.5rem; }
+}
+@media (max-width: 760px) { .tp-tabs { top: 0 !important; } }
