@@ -1,19 +1,29 @@
-/* Language switch for text pages: original, translation, or side by side (wide screens). */
+/* Text pages: on a phone a language tab chooses which version is shown.
+   Desktop shows both side by side and ignores the tabs (CSS decides, at 900px).
+   When the tab changes, the paragraph at the top of the screen stays at the top. */
 (function () {
-  var page = document.querySelector('.textpage.multi');
-  if (!page) return;
-  var btns = page.querySelectorAll('.langswitch button');
-  var vers = page.querySelectorAll('.version');
-  var wide = window.matchMedia('(min-width: 900px)');
-  function show(which) {
-    if (which === 'both' && !wide.matches) which = '0';
-    page.classList.toggle('both', which === 'both');
-    vers.forEach(function (v) {
-      v.hidden = which === 'both' ? Number(v.dataset.v) > 1 : v.dataset.v !== which;
-    });
-    btns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.show === which)); });
+  var tp = document.querySelector('.tp');
+  if (!tp) return;
+  var btns = tp.querySelectorAll('.tp-tabs button');
+  if (!btns.length) return;
+  tp.classList.add('js');
+  var rows = tp.querySelectorAll('.r, .col .b');
+  function anchor() {
+    var y = btns[0].parentNode.getBoundingClientRect().bottom;
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i].getBoundingClientRect();
+      if (r.height && r.bottom > y + 4) return { el: rows[i], off: r.top - y, idx: i };
+    }
+    return null;
+  }
+  function show(n) {
+    var a = anchor(), nrows = tp.querySelectorAll('.r');
+    tp.setAttribute('data-show', n);
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.show === n)); });
+    if (a && a.el.classList.contains('r')) {
+      var y = btns[0].parentNode.getBoundingClientRect().bottom;
+      window.scrollBy(0, a.el.getBoundingClientRect().top - y - a.off);
+    }
   }
   btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.show); }); });
-  show(wide.matches ? 'both' : '0');
-  wide.addEventListener('change', function () { show(wide.matches ? 'both' : '0'); });
 })();

@@ -1,0 +1,53 @@
+/* yeltakom.info, the opening. One running block of bold Arial; every piece sits on a solid field.
+   Fields are defined once, in :root of style.css (--f1 yellow, --f2 vermilion, --f3 mint, --f4 pink). Text on all four is --ink (#141414), on ultramarine it is white.
+   Contrast: yellow 12.7, mint 10.4, pink 9.8, vermilion 5.9, ultramarine/white 7.9, ink/white 17.9. */
+#mix { margin: 1.1rem 0 0; font-size: clamp(1.8rem, 5vw, 4rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.03em; overflow-wrap: break-word; hyphens: manual; }
+#mix:empty, #mix[hidden] { display: none; }
+#mix .flow { text-wrap: pretty; }
+#mix a.p { color: var(--ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+#mix a.p:hover { background: var(--sig); color: #fff; }
+#mix a.p:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; position: relative; z-index: 3; }
+
+/* spacing scale for the gaps between pieces */
+:root { --sp-1: 0.5rem; --sp-2: 0.9rem; }
+
+/* fields */
+#mix .f1 { background: var(--f1); }
+#mix .f2 { background: var(--f2); }
+#mix .f3 { background: var(--f3); }
+#mix .f4 { background: var(--f4); }
+#mix .fs { background: var(--sig); color: #fff; }
+#mix a.fs { color: #fff; }
+#mix a.fs:hover { background: var(--ink); }
+#mix .fw { background: transparent; }
+
+/* titles, dates, places: type on a field, the field is the word's box */
+#mix .t, #mix .d { padding: 0.02em 0.14em 0.06em; }
+#mix .lead { font-size: 1.28em; letter-spacing: -0.035em; }
+#mix .d { letter-spacing: -0.02em; }
+#mix .l { font-size: 0.56em; letter-spacing: -0.01em; padding: 0.1em 0.3em 0.14em; vertical-align: 0.28em; }
+
+/* quotations from the texts: small blocks standing inside the lines of large type */
+#mix .q { display: inline-block; max-width: 15.5em; font-size: max(16px, 0.3em); line-height: 1.24; letter-spacing: 0; padding: 0.55em 0.7em 0.65em; text-align: left; margin: var(--sp-1) var(--sp-2); }
+#mix .vt { vertical-align: top; }
+#mix .vm { vertical-align: middle; }
+#mix .vb { vertical-align: bottom; }
+
+/* photographs: set in the line, in their own colours, never filtered */
+#mix .i { display: inline-block; height: var(--h, 2.6em); max-width: 100%; margin: var(--sp-1) var(--sp-2); line-height: 0; position: relative; z-index: 1; }
+#mix .i img { display: block; width: 100%; height: 100%; object-fit: cover; }
+#mix .s1 { --h: 2.1em; }
+#mix .s2 { --h: 3.1em; }
+#mix .s3 { --h: 3.9em; }
+#mix .i:hover { outline: 0.1em solid var(--sig); outline-offset: 0; background: none; }
+
+@media (max-width: 640px) {
+  #mix { font-size: clamp(1.7rem, 8.4vw, 2.6rem); line-height: 1.12; }
+  #mix .lead { font-size: 1.18em; }
+  #mix .q { max-width: 12.5em; font-size: max(15px, 0.5em); }
+  #mix .l { font-size: 0.6em; }
+  #mix .s1 { --h: 2.6em; }
+  #mix .s2 { --h: 3.8em; }
+  #mix .s3 { --h: 5.2em; }
+  :root { --sp-1: 0.35rem; --sp-2: 0.6rem; }
+}

@@ -1,5 +1,7 @@
 /* yeltakom.info archive. Hand-written. Data comes from data.js (ARCHIVE).
-   The bar at the top is the section filter, the search and the view switch.
+   The bar at the top is the section filter, the search and the List / Image switch.
+   The home page opens on the composition (landing.js); this file only places the reader
+   at the table when the address, the bar or the search asks for it.
    The table sorts on its column headings, rows open in place, and a row that has
    a picture shows it at the cursor. */
 (function () {
@@ -30,12 +32,11 @@
     if (html != null) n.innerHTML = html;
     return n;
   }
-  /* pictures of an entry, the ones served from this site first */
+  /* pictures of an entry: the published rows of archive/images-manifest.csv, as [file, credit, caption] */
   function images(e) {
-    var all = (e.links || []).filter(function (l) { return l.label === 'image'; });
-    return all.filter(function (l) { return !/^https?:/.test(l.url); })
-      .concat(all.filter(function (l) { return /^https?:/.test(l.url); }));
+    return (e.imgs || []).map(function (i) { return { url: i[0], credit: i[1], caption: i[2] }; });
   }
+  function altOf(e, i) { return e.name + (i.caption ? ', ' + i.caption : ''); }
   ENTRIES.forEach(function (e) {
     e._hay = norm([e.no, e.dates, e.name, (e.types || []).join(' '), e['for'], (e['with'] || []).join(' '), e.place, e.role,
       e.description, (e.shown || []).map(function (s) { return [s.venue, s.city, s.exhibition_title, s.curator].join(' '); }).join(' ')].join(' '));
@@ -50,15 +51,16 @@
   });
 
   /* ---------- the bar ---------- */
-  function barHeight() { var b = $('bar'); return b ? b.offsetHeight : 0; }
+  function barHeight() { var b = $('bar'); return b && getComputedStyle(b).position === 'sticky' ? b.offsetHeight : 0; }   /* on a phone the bar scrolls away */
   function setSection(id, push) {
     state.section = SECTIONS[id] ? id : 'all';
-    secLinks.forEach(function (a) {
-      if (a.getAttribute('data-sec') === state.section) a.setAttribute('aria-current', 'true');
-      else a.removeAttribute('aria-current');
-    });
+    setSectionMark();
     if (push) history.replaceState(null, '', state.section === 'all' ? location.pathname : '#' + state.section);
     render();
+  }
+  /* the table's top edge (its column header) sits just under the frozen bar */
+  function scrollToTable() {
+    window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
   }
   function setView(v) {
     state.view = v;
@@ -66,21 +68,24 @@
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
     render();
   }
+  function setSectionMark() {
+    secLinks.forEach(function (a) {
+      if (a.getAttribute('data-sec') === state.section) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+  }
   function wireBar() {
     secLinks.forEach(function (a) {
       a.addEventListener('click', function (ev) {
         ev.preventDefault();
         setSection(a.getAttribute('data-sec'), true);
-        // if the table top has scrolled under the bar, bring it back
-        if (root.getBoundingClientRect().top < barHeight()) {
-          window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
-        }
+        scrollToTable();
       });
     });
     var sq = $('sq');
-    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); });
-    $('vlist').addEventListener('click', function () { setView('list'); });
-    $('vimg').addEventListener('click', function () { setView('image'); });
+    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); scrollToTable(); });
+    $('vlist').addEventListener('click', function () { setView('list'); scrollToTable(); });
+    $('vimg').addEventListener('click', function () { setView('image'); scrollToTable(); });
   }
 
   /* ---------- More: the biography opens under the introduction ---------- */
@@ -117,8 +122,9 @@
 
   /* ---------- the picture at the cursor ---------- */
   var thumb = null, canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
-  function showThumb(url) {
+  function showThumb(url, alt) {
     if (!thumb) { thumb = el('img', { id: 'thumb', alt: '' }); document.body.appendChild(thumb); }
+    thumb.setAttribute('alt', alt || '');
     if (thumb.getAttribute('src') !== url) thumb.setAttribute('src', url);
     thumb.style.display = 'block';
   }
@@ -159,7 +165,7 @@
       btn.addEventListener('click', function () { hideThumb(); toggle(e, li, btn, det); });
       var im = canHover ? images(e)[0] : null;
       if (im) {
-        btn.addEventListener('mouseenter', function (ev) { if (!li.classList.contains('open')) { showThumb(im.url); moveThumb(ev); } });
+        btn.addEventListener('mouseenter', function (ev) { if (!li.classList.contains('open')) { showThumb(im.url, altOf(e, im)); moveThumb(ev); } });
         btn.addEventListener('mousemove', moveThumb);
         btn.addEventListener('mouseleave', hideThumb);
       }
@@ -181,6 +187,7 @@
     var h = '<div class="dgrid"><dl>';
     function row(k, v) { if (v) h += '<dt>' + k + '</dt><dd>' + v + '</dd>'; }
     row('About', esc(e.description));
+    row('Date', esc(e.date_detail));
     if (e.status && e.status !== 'realised') row('Status', esc(e.status.charAt(0).toUpperCase() + e.status.slice(1)));
     row('Place', esc(e.place));
     row('Role', esc(e.role));
@@ -190,8 +197,16 @@
         return '<li><span class="d">' + esc(s.dates || '') + '</span><span>' + bits + (s.curator ? ', curated by ' + esc(s.curator) : '') + '</span></li>';
       }).join('') + '</ul>');
     }
+    if (e.related && e.related.length) {
+      row('Related', '<ul class="shown">' + e.related.map(function (r) {
+        var lab = [r.kind ? r.kind.charAt(0).toUpperCase() + r.kind.slice(1) : '', r.name].filter(Boolean).map(esc).join(', ');
+        if (r.href) lab = '<a href="' + esc(r.href) + '">' + lab + '</a>';
+        var rest = [r['for'], r.place].filter(Boolean).map(esc).join(', ');
+        return '<li><span class="d">' + esc(r.dates || '') + '</span><span>' + lab + (rest ? ', ' + rest : '') + '</span></li>';
+      }).join('') + '</ul>');
+    }
     var seen = {}, links = (e.links || []).filter(function (l) {
-      if (l.label === 'image' || seen[l.url]) return false; seen[l.url] = 1; return true;
+      if (seen[l.url]) return false; seen[l.url] = 1; return true;
     });
     links.sort(function (a, b) { return (a.label !== 'original') - (b.label !== 'original'); });
     var multi = links.filter(function (l) { return l.label === 'original'; }).length > 1;
@@ -208,7 +223,7 @@
     var imgs = images(e);
     if (imgs.length) {
       h += '<div class="strip">' + imgs.map(function (i, n) {
-        return '<a href="' + esc(i.url) + '"><img src="' + esc(i.url) + '" alt="' + esc(e.name) + ', image ' + (n + 1) + '" loading="lazy" decoding="async"></a>';
+        return '<a href="' + esc(i.url) + '"><img src="' + esc(i.url) + '" alt="' + esc(altOf(e, i)) + '" loading="lazy" decoding="async"></a>';
       }).join('') + '</div>';
     }
     return h;
@@ -221,7 +236,7 @@
       var im = images(e)[0];
       var li = el('li', { class: im ? 'tile pic' : 'tile type' });
       var b = el('button', { type: 'button', 'aria-label': e.no + ' ' + e.name + ', open in list' },
-        (im ? '<img src="' + esc(im.url) + '" alt="" loading="lazy" decoding="async">' : '') +
+        (im ? '<img src="' + esc(im.url) + '" alt="' + esc(altOf(e, im)) + '" loading="lazy" decoding="async">' : '') +
         '<span class="cap"><span class="c-no">' + esc(e.no) + '</span> ' + esc(e.name) + '</span>');
       b.addEventListener('click', function () {
         state.open.add(e.no); setView('list');
@@ -240,15 +255,31 @@
     if (state.view === 'image') renderImages(list); else renderList(list);
   }
 
+  var userMoved = false;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (t) {
+    window.addEventListener(t, function () { userMoved = true; }, { passive: true });
+  });
+  function toEntry(h) {
+    var t = $(h);
+    if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
+  }
+  // no hash or #mix: the top of the page, the composition. A section or an entry in the address: the table.
+  // #more opens the biography and scrolls to the introduction.
+  function toAbout() {
+    var a = document.querySelector('.about');
+    if (a) window.scrollTo(0, a.getBoundingClientRect().top + window.pageYOffset - barHeight() - 8);
+  }
   function fromHash() {
     var h = decodeURIComponent(location.hash.slice(1));
-    if (h === 'more') { setSection('all', false); setMore(true); window.scrollTo(0, 0); return; }
+    if (h === 'mix') { setSection('all', false); window.scrollTo(0, 0); return; }
+    if (h === 'more') { setSection('all', false); setMore(true); toAbout(); return; }
     if (/^e-\d{4}$/.test(h)) {
-      state.open.add(h.slice(2)); setSection('all', false);
-      var t = $(h); if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
+      state.open.add(h.slice(2)); setSection('all', false); toEntry(h);
       return;
     }
-    setSection(SECTIONS[h] ? h : 'all', false);
+    var isSec = !!SECTIONS[h];
+    setSection(isSec ? h : 'all', false);
+    if (isSec || h === 'archive') scrollToTable();
   }
 
   // many images are hotlinked from institutions, so a dead one is normal over time:
@@ -264,5 +295,16 @@
 
   wireBar();
   fromHash();
-  window.addEventListener('hashchange', fromHash);
+  window.addEventListener('hashchange', function () { userMoved = true; fromHash(); });
+  // the composition is built after this script and the images settle later: place the reader again
+  // once it has filled the page, and once more when everything has loaded
+  function replace() {
+    if (userMoved || !location.hash) return;
+    var h = decodeURIComponent(location.hash.slice(1));
+    if (/^e-\d{4}$/.test(h)) toEntry(h);
+    else if (SECTIONS[h] || h === 'archive') scrollToTable();
+    else if (h === 'more') toAbout();
+  }
+  document.addEventListener('ykmix', replace);
+  window.addEventListener('load', replace);
 })();

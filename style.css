@@ -4,8 +4,12 @@
   --mute: #5c5c5c;      /* 6.7:1 on white, 6.1:1 on tint */
   --sig: #1f3bd6;       /* ultramarine, 7.2:1 on white */
   --tint: #edf0fd;
+  --f1: #ffd21f;        /* Mix fields, shared with landing.css: yellow     */
+  --f2: #ff5a2d;        /* vermilion */
+  --f3: #4fdc7b;        /* mint green */
+  --f4: #ff9fd2;        /* pink */
   --hair: #d2d2d2;
-  --cols: 4.2rem 6.2rem minmax(0, 3fr) minmax(0, 1.7fr) minmax(0, 1.7fr) minmax(0, 1.5fr);
+  --cols: 4.2rem 7.6rem minmax(0, 3fr) minmax(0, 1.7fr) minmax(0, 1.7fr) minmax(0, 1.5fr);
   --pad: clamp(0.9rem, 2.4vw, 2rem);
   --font: Arial, "Helvetica Neue", Helvetica, sans-serif;
   --em: 700;            /* the whole site is set in bold; hierarchy is size and colour */
@@ -83,7 +87,7 @@ table.press { width: 100%; border-collapse: collapse; margin-top: 1.4rem; }
 .cv h2 { font-size: 15px; font-weight: var(--em); margin: 1.6rem 0 0; padding: 0.35rem 0; border-bottom: 1px solid var(--ink); }
 .cv h2 .n { color: var(--sig); }
 .cv ul { list-style: none; margin: 0; padding: 0; }
-.cv li { padding: 0.28rem 0; border-bottom: 1px solid var(--hair); grid-template-columns: 5.5rem 1fr; font-size: 14px; }
+.cv li { padding: 0.28rem 0; border-bottom: 1px solid var(--hair); grid-template-columns: 7.2rem 1fr; font-size: 14px; }
 .cv li a { color: var(--ink); text-decoration: none; font-weight: var(--em); }
 .cv li a:hover { color: var(--sig); text-decoration: underline; }
 
@@ -167,7 +171,7 @@ h2.rule {
   width: 100%; border: 0; border-bottom: 2px solid var(--ink); border-radius: 0;
   background: transparent; padding: 0.2rem 0;
 }
-.bigsearch input::placeholder { color: var(--hair); }
+.bigsearch input::placeholder { color: var(--mute); opacity: 1; }
 .results .n { font-weight: var(--em); }
 .results .sn {
   display: block; color: var(--mute); font-size: 13.5px;
@@ -192,7 +196,7 @@ h2.rule {
 /* ------------------------------------------------------------ the bar
    One row on every page, frozen at the top. It is the navigation, the section
    filter, the search and the view switch at once, so nothing is said twice. */
-:root { --gap: 1.4rem; --namex: calc(4.2rem + 6.2rem + 2 * var(--gap)); --barh: 2.7rem; }
+:root { --gap: 1.4rem; --namex: calc(4.2rem + 7.6rem + 2 * var(--gap)); --barh: 2.7rem; }
 header.bar {
   position: sticky; top: 0; z-index: 6; background: #fff;
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1.1rem;
@@ -209,7 +213,7 @@ header.bar .mark { margin-right: 0.7rem; }
   border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
   background: transparent; padding: 0;
 }
-.sitesearch input::placeholder { color: var(--mute); }
+.sitesearch input::placeholder { color: var(--mute); opacity: 1; }
 .sitesearch input:focus { outline: none; border-bottom-color: var(--sig); }
 .view button, .langswitch button { padding: 0 0.22em; margin: 0 -0.22em; }
 .view button:hover, .langswitch button:hover { color: var(--sig); }
@@ -280,3 +284,31 @@ figure.shot figcaption { color: var(--mute); font-size: 12px; letter-spacing: 0.
   .shots { padding-left: 0; }
 }
 @media print { header.bar nav, .sitesearch, .view { display: none; } header.bar { position: static; } .thead { position: static; } }
+
+/* ------------------------------------------------------------ under-construction notice
+   Two solid fields above the bar, running against each other. They scroll away with the page;
+   the bar then freezes. Contrast: white on ultramarine 7.9, ink on yellow 12.7. */
+.notices { margin: 0 calc(var(--pad) * -1); }
+.notice { overflow: hidden; white-space: nowrap; font-size: clamp(1rem, 1.5vw, 1.3rem); font-weight: 700; line-height: 1; letter-spacing: -0.01em; padding: 0.42em 0 0.5em; }
+.n-a { background: var(--sig); color: #fff; }
+.n-b { background: var(--f1); color: var(--ink); }
+.notice:focus-visible { outline: 3px solid var(--ink); outline-offset: -3px; }
+.n-a:focus-visible { outline-color: #fff; }
+.ntrack { display: flex; width: max-content; animation: nrun 130s linear infinite; }
+.n-b .ntrack { animation-direction: reverse; animation-duration: 118s; }
+.ngrp { display: flex; flex: none; }
+.notice ul { display: flex; flex: none; margin: 0; padding: 0; list-style: none; }
+.notice li { flex: none; padding-right: 1.1em; }
+.notice li::after { content: "///"; padding-left: 1.1em; }
+@keyframes nrun { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.notice:hover .ntrack, .notice:focus-within .ntrack, .notice:focus .ntrack { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .notice { white-space: normal; }
+  .ntrack { animation: none; width: auto; display: block; }
+  .ngrp[aria-hidden], .notice ul[aria-hidden] { display: none; }
+  .notice ul { flex-wrap: wrap; }
+  .notice li { padding-right: 0; }
+  .notice li::after { padding-left: 1.1em; padding-right: 1.1em; }
+  .notice li:last-child::after { content: none; }
+}
+@media print { .notices { display: none; } }
