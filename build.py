@@ -143,27 +143,43 @@ def host(u):
 
 
 # ---------------------------------------------------------------- page chrome
-def nav(root, current=""):
-    items = [("Archive", root + "index.html"), ("Texts", root + "index.html#texts"),
-             ("Talks", root + "index.html#talks"), ("Press", root + "press.html"),
-             ("About", root + "about.html")]
-    links = "".join('<a href="%s"%s>%s</a>' % (href, ' aria-current="page"' if label == current else "", label)
-                    for label, href in items)
-    return ('<header class="site"><a class="mark" href="%sindex.html">Yelta K&#246;m</a>'
-            '<nav aria-label="Main">%s</nav>'
-            '<form class="sitesearch" role="search" action="%ssearch.html" method="get">'
+SECTION_LINKS = [("All", "all"), ("Works", "works"), ("Texts", "texts"), ("Talks", "talks"),
+                 ("Workshops", "workshops"), ("Networks", "networks")]
+# keeps the column header exactly under the frozen bar, whatever height the bar wraps to
+BAR_JS = ('<script>(function(){var b=document.getElementById("bar");function s(){'
+          'document.documentElement.style.setProperty("--barh",b.offsetHeight+"px");}'
+          's();window.addEventListener("resize",s);window.addEventListener("load",s);})();</script>')
+
+
+def nav(root, current="", view=False, search=True):
+    """The one bar: name, section filter, Press, search, and on the archive the
+    List / Image switch. It is on every page and frozen at the top, so it is also
+    the way back from a work or a text."""
+    links = []
+    for label, sec in SECTION_LINKS:
+        href = root + "index.html" + ("" if sec == "all" else "#" + sec)
+        links.append('<a href="%s" data-sec="%s"%s>%s</a>'
+                     % (href, sec, ' aria-current="true"' if label == current else "", label))
+    links.append('<a href="%spress.html"%s>Press</a>'
+                 % (root, ' aria-current="true"' if current == "Press" else ""))
+    form = ('<form class="sitesearch" role="search" action="%ssearch.html" method="get">'
             '<label for="sq" class="vh">Search the archive</label>'
             '<input id="sq" name="q" type="search" placeholder="Search" autocomplete="off">'
-            '<button type="submit" class="vh">Search</button></form>'
-            '</header>' % (root, links, root))
+            '<button type="submit" class="vh">Search</button></form>' % root) if search else ""
+    switch = ('<span class="view" role="group" aria-label="View">'
+              '<button type="button" id="vlist" aria-pressed="true">List</button> / '
+              '<button type="button" id="vimg" aria-pressed="false">Image</button></span>') if view else ""
+    return ('<header class="bar" id="bar"><a class="mark" href="%sindex.html">Yelta K&#246;m</a>'
+            '<nav aria-label="Sections">%s</nav>%s%s</header>\n%s'
+            % (root, "".join(links), form, switch, BAR_JS))
 
 
 def footer(root):
-    return ('<footer class="site"><div><strong>Yelta Köm</strong><br>Berlin</div>'
+    return ('<footer class="site"><div>Yelta Köm<br>Berlin</div>'
             '<div>Represented by Versus Art Project, Istanbul</div>'
             '<div>Exhibition design and scenography: <a href="https://noframe.studio">Studio No Frame &#8599;</a></div>'
             '<div id="contact">Contact: %s</div>'
-            '<div><a href="%sabout.html">About</a> &#183; <a href="%spress.html">Press</a></div></footer>'
+            '<div><a href="%sindex.html#more">About</a> &#183; <a href="%spress.html">Press</a></div></footer>'
             % (EMAIL, root, root))
 
 
@@ -177,12 +193,13 @@ def ver(name):
         return name
 
 
-def page(title, body, root="", current="", cls="", scripts=""):
+def page(title, body, root="", current="", cls="", scripts="", view=False, search=True):
     return ('<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<title>%s</title>\n%s\n<link rel="stylesheet" href="%s%s">\n</head>\n'
             '<body class="%s">\n<a class="skip" href="#main">Skip to content</a>\n%s\n<main id="main">\n%s\n</main>\n%s\n%s</body>\n</html>\n'
-            % (E(title), FONT, root, ver("style.css"), cls, nav(root, current), body, footer(root), scripts))
+            % (E(title), FONT, root, ver("style.css"), cls, nav(root, current, view, search),
+               body, footer(root), scripts))
 
 
 # ---------------------------------------------------------------- build
@@ -286,7 +303,10 @@ def main():
     write_index(entries, work_pages, text_pages_by_no)
     write_search(entries, press, search_texts, work_pages, text_pages_by_no)
     write_press(press, names)
-    write_about(entries)
+    # the About page is gone: its content opens under the introduction (More)
+    stale = os.path.join(HERE, "about.html")
+    if os.path.exists(stale):
+        os.remove(stale)
 
     log = ["entries: %d" % len(out), "text pages: %d" % len([1 for _ in text_pages]),
            "work pages: %d" % len(work_pages), "press: %d" % len(press),
@@ -399,42 +419,78 @@ def srow(href, year, name, kicker):
             '<span class="k">%s</span></a></li>' % (E(href), E(year), E(name), kicker))
 
 
+def about_block(entries):
+    """What opens under the introduction when More is pressed: the rest of the
+    biography in the same large type, then contact, then the CV lists, which are
+    generated from the archive. This replaces the old About page."""
+    def has(x, *ts):
+        return any(t in x["types"] for t in ts)
+    bio = ('<p>He studied architecture at Yıldız Technical University in Istanbul and in the Architecture Class of the '
+           'Städelschule in Frankfurt am Main. His work combines counter-mapping, critical cartography, installation, video '
+           'and research, with a long engagement with water, displacement and territory along the Tigris, including work '
+           'with Arazi Assembly alongside people from villages flooded by the Ilısu Dam.</p>'
+           '<p>He co-founded the collective Herkes İçin Mimarlık / Architecture for All in 2011, was associate curator of '
+           'Vardiya / The Shift, the Pavilion of Türkiye at the 16th International Architecture Exhibition of La Biennale di '
+           'Venezia (2018), and worked as a researcher on the ERC project Topological Atlas / Border Topologies (TU Delft and '
+           'Goldsmiths) from 2019 to 2022. He chairs the board of TOP e.V., which runs TOP Project Space in Berlin.</p>'
+           '<p>Since 2022 he has been a research associate at the Chair of Practices and Politics of Representation, '
+           'Faculty of Architecture and Urbanism, Bauhaus-Universität Weimar, where his doctoral research follows the '
+           'spatial and visual regimes of the Ilısu Dam, the flooding of Hasankeyf and displacement in the Tigris basin.</p>')
+    groups = [
+        ("Exhibitions", lambda x: has(x, "Exhibition (solo)", "Exhibition (group)")),
+        ("Works", lambda x: x["section"] == "work" and not has(x, "Exhibition (solo)", "Exhibition (group)")),
+        ("Texts and publications", lambda x: has(x, "Text", "Book / Publication", "Artist book")),
+        ("Talks", lambda x: x["section"] == "talk"),
+        ("Workshops", lambda x: x["section"] == "workshop"),
+        ("Residencies and awards", lambda x: x["section"] == "residency-award"),
+        ("Networks", lambda x: x["section"] == "network"),
+    ]
+    secs = []
+    for title, f in groups:
+        items = [x for x in entries if f(x)]
+        lis = []
+        for x in items:
+            extra = ", ".join(E(v) for v in (x.get("for"), x.get("place")) if v)
+            lis.append('<li><span class="d">%s</span><span><a href="%s">%s</a>%s</span></li>'
+                       % (E(x["dates"]), entry_href(x["no"]), E(x["name"]), (", " + extra) if extra else ""))
+        secs.append('<section class="cv"><h2>%s <span class="n">%d</span></h2><ul>%s</ul></section>'
+                    % (title, len(items), "".join(lis)))
+    portrait = ""
+    if os.path.exists(os.path.join(HERE, "img", "portrait", "yelta-kom.jpg")):
+        portrait = ('<figure class="portrait"><img src="img/portrait/yelta-kom.jpg" '
+                    'alt="Yelta K&#246;m" loading="lazy"></figure>')
+    return (portrait + '<div class="intro more">%s</div>\n'
+            '<p class="contact" id="contact-about">Contact: %s<br>Represented by Versus Art Project, Istanbul<br>'
+            'Exhibition design and scenography: <a href="https://noframe.studio">Studio No Frame &#8599;</a></p>\n'
+            '<div class="cvwrap">%s</div>' % (bio, EMAIL, "\n".join(secs)))
+
+
 def write_index(entries, work_pages, text_pages_by_no):
-    intro = ('<p class="intro">Yelta K&#246;m is an artist working through spatial practices, trained as an '
-             'architect and based in Berlin. His work moves between counter-mapping, critical cartography, '
-             'installation and research, much of it on water and territory along the Tigris. '
-             'Exhibition design and scenography: <a href="https://noframe.studio">Studio No Frame &#8599;</a>. '
-             'Here is more <a href="about.html">about</a> his practice and his '
-             '<a href="press.html">press</a>, or look through the archive below, which can be '
-             'filtered, searched or seen in image view.</p>')
+    intro = ('<section class="about" aria-label="About">\n<div class="intro"><p>Yelta K&#246;m is an artist working through '
+             'spatial practices, trained as an architect and based in Berlin. His work moves between counter-mapping, '
+             'critical cartography, installation and research, much of it on water and territory along the Tigris. '
+             '<button type="button" id="more" class="plain" aria-expanded="false" aria-controls="morebox">More</button></p></div>\n'
+             '<div id="morebox" hidden>\n%s\n</div>\n</section>\n' % about_block(entries))
+    shell = ('<div id="archive"></div>\n'
+             '<noscript><p>The archive table needs JavaScript.</p></noscript>')
     open(os.path.join(HERE, "index.html"), "w", encoding="utf-8").write(
-        page("Yelta Köm · Archive", intro + ARCHIVE_CONTROLS, current="Archive", cls="home",
+        page("Yelta Köm · Archive", intro + shell, current="All", cls="home", view=True,
              scripts='<script src="%s"></script>\n<script src="%s"></script>\n'
                      % (ver("data.js"), ver("app.js"))))
-
-
-ARCHIVE_CONTROLS = """<section class="controls" aria-label="Filter the archive">
-  <div class="frow" id="sections" role="group" aria-label="Section"></div>
-  <div class="frow tools">
-    <label class="search"><span class="vh">Search</span><input id="q" type="search" placeholder="Search" autocomplete="off"></label>
-    <button type="button" id="typetoggle" class="plain" aria-expanded="false" aria-controls="types">Type/s</button>
-    <button type="button" id="reset" class="plain">Clear</button>
-    <span id="count" aria-live="polite"></span>
-    <span class="view" role="group" aria-label="View"><button type="button" id="vlist" aria-pressed="true">List</button> / <button type="button" id="vimg" aria-pressed="false">Image</button></span>
-  </div>
-  <div class="frow types" id="types" role="group" aria-label="Type/s" hidden></div>
-</section>
-<div id="archive"></div>
-<noscript><p>The archive table needs JavaScript. A full list is on the <a href="about.html">About</a> page.</p></noscript>"""
 
 
 IMG_FALLBACK = ('<script>document.addEventListener("error",function(e){'
                 'var t=e.target;if(t&&t.tagName==="IMG"){var f=t.closest("figure");'
                 'if(f&&f.parentNode)f.parentNode.removeChild(f);}},true);</script>\n')
+THEAD = ('<div class="thead" aria-hidden="true"><span class="c-no">No.</span><span class="c-date">Date/s</span>'
+         '<span class="c-name">Name</span><span class="c-type">Type/s</span><span class="c-for">For</span>'
+         '<span class="c-with">With</span></div>')
 
 
 def write_work(ent, slug, text_href, press_for):
-    # work pages live in works/, so site-relative image paths need one level up
+    """A work's page reads as its row in the archive, opened: the bar and the
+    column header stay frozen on top, the row is the caption, and the pictures
+    follow underneath."""
     def cap(credit, caption):
         bits = [E(caption)] if caption else []
         if credit:
@@ -442,27 +498,36 @@ def write_work(ent, slug, text_href, press_for):
             lead = "" if re.match(r"(?i)^(courtesy|©)", credit) else "Photograph: "
             bits.append(lead + E(credit))
         return ("<figcaption>%s</figcaption>" % ". ".join(bits)) if bits else ""
+    # work pages live in works/, so site-relative image paths need one level up
     figs = "".join('<figure class="shot"><img src="%s" alt="%s" loading="lazy">%s</figure>'
                    % (E(u if u.startswith("http") else "../" + u), E(cp or ""), cap(c, cp))
                    for u, c, cp in imgs(ent))
+    row = ('<div class="row"><span class="c-no">%s</span><span class="c-date">%s</span>'
+           '<h1 class="c-name">%s</h1><span class="c-type">%s</span><span class="c-for">%s</span>'
+           '<span class="c-with">%s</span></div>'
+           % (E(ent["no"]), E(ent.get("dates") or ""), E(ent["name"]), E(", ".join(ent.get("types") or [])),
+              E(ent.get("for") or ""), E(", ".join(ent.get("with") or []))))
     rows = []
-    for label, val in (("No.", ent["no"]), ("Date/s", ent.get("dates")),
-                       ("Type/s", ", ".join(ent.get("types") or [])),
-                       ("For", ent.get("for")), ("With", ", ".join(ent.get("with") or [])),
-                       ("Place", ent.get("place")), ("Role", ent.get("role")),
-                       ("Status", ent.get("status"))):
+    status = ent.get("status")
+    for label, val in (("About", ent.get("description")),
+                       ("Status", status.capitalize() if status and status != "realised" else None),
+                       ("Place", ent.get("place")), ("Role", ent.get("role"))):
         if val:
             rows.append("<dt>%s</dt><dd>%s</dd>" % (E(label), E(val)))
-    for sh in (ent.get("shown") or []):
-        bits = [sh.get("exhibition_title"), sh.get("venue"), sh.get("city"), sh.get("dates")]
-        rows.append("<dt>Shown</dt><dd>%s</dd>" % E(", ".join(b for b in bits if b)))
+    shown = ent.get("shown") or []
+    if shown:
+        lis = "".join('<li><span class="d">%s</span><span>%s%s</span></li>'
+                      % (E(sh.get("dates") or ""),
+                         E(", ".join(b for b in (sh.get("exhibition_title"), sh.get("venue"), sh.get("city")) if b)),
+                         (", curated by " + E(sh["curator"])) if sh.get("curator") else "")
+                      for sh in shown)
+        rows.append('<dt>Shown</dt><dd><ul class="shown">%s</ul></dd>' % lis)
     other = [l for l in (ent.get("links") or []) if l.get("label") != "image"]
     if other:
-        rows.append("<dt>Links</dt><dd>%s</dd>" % " &#183; ".join(
-            '<a href="%s">%s &#8599;</a>' % (E(l["url"]), E(l.get("label") or host(l["url"])))
+        rows.append("<dt>Links</dt><dd>%s</dd>" % "<br>".join(
+            '<a href="%s">%s &#8599;</a>' % (E(l["url"]), E((l.get("label") or host(l["url"])).capitalize()))
             for l in other))
-    desc = '<p class="worktext">%s</p>' % E(ent["description"]) if ent.get("description") else ""
-    read = '<p class="read"><a href="../%s">Read the text &#8594;</a></p>' % E(text_href) if text_href else ""
+    read = '<p class="read"><a href="../%s">Read the text</a></p>' % E(text_href) if text_href else ""
     pr = ""
     if press_for:
         items = "".join(
@@ -472,12 +537,12 @@ def write_work(ent, slug, text_href, press_for):
                if p.get("url") else E(p.get("title") or ""), E(p.get("outlet") or ""))
             for p in press_for)
         pr = '<section class="pressfor"><h2 class="rule">Press</h2><ul class="slist">%s</ul></section>' % items
-    body = ('<article class="work">\n<p class="eyebrow">%s</p>\n<h1 class="worktitle">%s</h1>\n'
-            '%s%s\n<dl class="detail">%s</dl>\n%s\n%s\n'
-            '<p class="more"><a href="../index.html#e-%s">Back to the archive &#8594;</a></p>\n</article>'
-            % (meta_line(ent), E(ent["name"]), desc, read, "".join(rows), figs, pr, ent["no"]))
+    body = ('<article class="filepage listview">\n%s\n<div class="entry open">%s\n'
+            '<div class="detail"><div class="dgrid"><dl>%s</dl>%s</div></div></div>\n'
+            '<div class="shots">%s\n%s</div>\n</article>'
+            % (THEAD, row, "".join(rows), read, figs, pr))
     open(os.path.join(HERE, "works", "%s.html" % slug), "w", encoding="utf-8").write(
-        page("%s · Yelta Köm" % ent["name"], body, root="../", current="Archive", cls="workpage",
+        page("%s · Yelta Köm" % ent["name"], body, root="../", current="Works", cls="workpage",
              scripts=IMG_FALLBACK))
 
 
@@ -513,7 +578,7 @@ def write_search(entries, press, texts, work_pages, text_pages_by_no):
             '<input id="bq" type="search" placeholder="Search the archive" autocomplete="off" autofocus></form>\n'
             '<p id="scount" class="lede" aria-live="polite"></p>\n<div id="sres"></div>')
     open(os.path.join(HERE, "search.html"), "w", encoding="utf-8").write(
-        page("Search · Yelta Köm", body, current="",
+        page("Search · Yelta Köm", body, current="", search=False,
              scripts='<script src="%s"></script>\n<script src="%s"></script>\n'
                      % (ver("searchdata.js"), ver("search.js"))))
 
@@ -532,48 +597,6 @@ def write_press(press, names):
             '<th scope="col">Lang.</th><th scope="col">Kind</th><th scope="col">Work</th></tr></thead>\n<tbody>\n%s\n</tbody></table>'
             % "\n".join(rows))
     open(os.path.join(HERE, "press.html"), "w", encoding="utf-8").write(page("Press · Yelta Köm", body, current="Press"))
-
-
-def write_about(entries):
-    def has(x, *ts):
-        return any(t in x["types"] for t in ts)
-    bio = ('<p>Yelta Köm is an artist working through spatial practices, trained as an architect at Yıldız Technical University in Istanbul '
-           'and in the Architecture Class of the Städelschule in Frankfurt am Main, and based in Berlin. His work combines counter-mapping, '
-           'critical cartography, installation, video and research, with a long engagement with water, displacement and territory along the Tigris, '
-           'including work with Arazi Assembly alongside people from villages flooded by the Ilısu Dam.</p>'
-           '<p>He co-founded the collective Herkes İçin Mimarlık / Architecture for All in 2011, was associate curator of Vardiya / The Shift, '
-           'the Pavilion of Türkiye at the 16th International Architecture Exhibition of La Biennale di Venezia (2018), and worked as a researcher '
-           'on the ERC project Topological Atlas / Border Topologies (TU Delft and Goldsmiths) from 2019 to 2022. He chairs the board of TOP e.V., '
-           'which runs TOP Project Space in Berlin.</p>'
-           '<p>Since 2022 he has been a research associate at the Chair of Practices and Politics of Representation, '
-           'Faculty of Architecture and Urbanism, Bauhaus-Universit&#228;t Weimar, where his doctoral research follows the '
-           'spatial and visual regimes of the Il&#305;su Dam, the flooding of Hasankeyf and displacement in the Tigris basin.</p>')
-    groups = [
-        ("Exhibitions", lambda x: has(x, "Exhibition (solo)", "Exhibition (group)")),
-        ("Works", lambda x: x["section"] == "work" and not has(x, "Exhibition (solo)", "Exhibition (group)")),
-        ("Texts and publications", lambda x: has(x, "Text", "Book / Publication", "Artist book")),
-        ("Talks", lambda x: x["section"] == "talk"),
-        ("Workshops", lambda x: x["section"] == "workshop"),
-        ("Residencies and awards", lambda x: x["section"] == "residency-award"),
-        ("Networks", lambda x: x["section"] == "network"),
-    ]
-    secs = []
-    for title, f in groups:
-        items = [x for x in entries if f(x)]
-        lis = []
-        for x in items:
-            extra = ", ".join(E(v) for v in (x.get("for"), x.get("place")) if v)
-            lis.append('<li><span class="d">%s</span><span><a href="%s">%s</a>%s</span></li>'
-                       % (E(x["dates"]), entry_href(x["no"]), E(x["name"]), (", " + extra) if extra else ""))
-        secs.append('<section class="cv"><h2>%s <span class="n">%d</span></h2><ul>%s</ul></section>' % (title, len(items), "".join(lis)))
-    portrait = ""
-    if os.path.exists(os.path.join(HERE, "img", "portrait", "yelta-kom.jpg")):
-        portrait = ('<figure class="portrait"><img src="img/portrait/yelta-kom.jpg" '
-                    'alt="Yelta K&#246;m" loading="lazy"></figure>')
-    body = ('<h1 class="pagehead">About</h1>\n' + portrait + '<div class="bio">%s\n<p class="contact" id="contact-about">Contact: %s<br>'
-            'Represented by Versus Art Project, Istanbul<br>Exhibition design and scenography: <a href="https://noframe.studio">Studio No Frame &#8599;</a></p></div>\n'
-            '<div class="cvwrap">%s</div>' % (bio, EMAIL, "\n".join(secs)))
-    open(os.path.join(HERE, "about.html"), "w", encoding="utf-8").write(page("About · Yelta Köm", body, current="About"))
 
 
 if __name__ == "__main__":

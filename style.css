@@ -8,14 +8,14 @@
   --cols: 4.2rem 6.2rem minmax(0, 3fr) minmax(0, 1.7fr) minmax(0, 1.7fr) minmax(0, 1.5fr);
   --pad: clamp(0.9rem, 2.4vw, 2rem);
   --font: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  --em: 700;            /* Arial has 400 and 700 only, so emphasis is bold */
+  --em: 700;            /* the whole site is set in bold; hierarchy is size and colour */
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; padding: 0 var(--pad);
   background: #fff; color: var(--ink);
-  font: 400 15px/1.38 var(--font);
+  font: 700 15px/1.38 var(--font);
   font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1;
 }
 a { color: var(--sig); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
@@ -26,13 +26,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .skip { position: absolute; left: -999px; }
 .skip:focus { left: var(--pad); top: 0.5rem; background: var(--sig); color: #fff; padding: 0.2rem 0.4rem; z-index: 10; }
 
-/* header and footer */
-header.site { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.9rem 0 0.7rem; border-bottom: 1px solid var(--ink); }
-header.site .mark { color: var(--ink); text-decoration: none; font-weight: var(--em); letter-spacing: -0.01em; }
-header.site nav { display: flex; flex-wrap: wrap; gap: 0 1.1rem; }
-header.site nav a { color: var(--ink); text-decoration: none; }
-header.site nav a:hover, header.site nav a[aria-current] { color: var(--sig); }
-header.site nav a[aria-current] { text-decoration: underline; text-decoration-thickness: 2px; }
+/* footer */
 footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.6rem 1.5rem; margin-top: 4rem; padding: 0.9rem 0 2.5rem; border-top: 1px solid var(--ink); font-size: 13px; }
 
 /* intro */
@@ -40,41 +34,17 @@ footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12re
 .pagehead { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: var(--em); letter-spacing: -0.02em; margin: 1.6rem 0 0.8rem; }
 .lede { max-width: 44em; font-size: 1.05rem; }
 
-/* controls */
-.controls { border-top: 1px solid var(--ink); padding: 0.7rem 0 0.9rem; font-size: 14px; }
-.frow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.85rem; padding: 0.2rem 0; }
-#sections { font-size: 1.05rem; font-weight: var(--em); gap: 0.25rem 1.1rem; }
-.flabel { color: var(--mute); margin-right: 0.2rem; }
-.controls button[aria-pressed], .langswitch button { padding: 0 0.22em; margin: 0 -0.22em; }
-.controls button[aria-pressed]:hover, .langswitch button:hover { color: var(--sig); }
-.controls button[aria-pressed="true"], .langswitch button[aria-pressed="true"] { background: var(--sig); color: #fff; }
-.tools { gap: 0.4rem 1.2rem; margin-top: 0.25rem; }
-.search input { font: inherit; width: 15rem; max-width: 60vw; border: 0; border-bottom: 1px solid var(--ink); padding: 0.15rem 0; background: transparent; color: var(--ink); border-radius: 0; }
-.search input::placeholder { color: var(--mute); }
-.search input:focus { outline: none; border-bottom: 2px solid var(--sig); }
-.forsel select { font: inherit; color: var(--ink); max-width: 16rem; border: 0; border-bottom: 1px solid var(--ink); background: #fff; padding: 0.1rem 0; border-radius: 0; }
-.plain { color: var(--sig); text-decoration: underline; text-underline-offset: 0.15em; }
-#count { color: var(--mute); }
-.view { margin-left: auto; }
 
 /* list view */
-.thead, .row { display: grid; grid-template-columns: var(--cols); gap: 0 1.4rem; }
-.thead { position: sticky; top: 0; z-index: 2; background: #fff; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 0.5rem 0; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
 .rows { list-style: none; margin: 0; padding: 0; }
 .entry { border-bottom: 1px solid var(--hair); }
-.row { width: 100%; padding: 0.72rem 0; align-items: baseline; line-height: 1.32; }
 .row:hover { color: var(--sig); }
 .row .c-no { color: var(--sig); }
 .row .c-name { font-weight: var(--em); }
 .row .c-type, .row .c-for, .row .c-with { font-size: 13.5px; }
-.entry.open { background: var(--tint); border-bottom-color: var(--sig); }
-.entry.open .row { border-top: 2px solid var(--sig); margin-top: -1px; }
 .entry.open .row .c-name { color: var(--sig); }
-.oneline { margin: 0.1rem 0 0.1rem calc(4.2rem + 6.2rem + 2rem); color: var(--mute); font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 62em; }
-.detail { padding: 0.3rem 0 1.1rem calc(4.2rem + 6.2rem + 2rem); }
 .dgrid { max-width: 54rem; }
 .detail dl { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.3rem 1rem; margin: 0; }
-.detail dt { color: var(--mute); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; padding-top: 0.12rem; }
 .detail dd { margin: 0; }
 .shown { list-style: none; margin: 0; padding: 0; }
 .shown li, .cv li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 0 0.8rem; }
@@ -94,13 +64,13 @@ footer.site { display: grid; grid-template-columns: repeat(auto-fit, minmax(12re
 .tile .cap { display: block; padding-top: 0.45rem; font-size: 13.5px; line-height: 1.3; }
 .tile.type button { border-top: 1px solid var(--ink); padding-top: 0.35rem; }
 .tile.type .cap { font-size: 1rem; line-height: 1.2; letter-spacing: -0.005em; font-weight: var(--em); padding: 0; }
-.tile .c-no { color: var(--sig); font-weight: 400; }
+.tile .c-no { color: var(--sig); }
 .tile button:hover .cap { color: var(--sig); }
 .tile.type .c-no { display: block; font-size: 13px; margin-bottom: 0.2rem; }
 
 /* press */
 table.press { width: 100%; border-collapse: collapse; margin-top: 1.4rem; }
-.press th { text-align: left; font-weight: 400; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 0.35rem 1rem 0.35rem 0; }
+.press th { text-align: left; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 0.35rem 1rem 0.35rem 0; }
 .press td { border-bottom: 1px solid var(--hair); padding: 0.42rem 1rem 0.42rem 0; vertical-align: baseline; }
 .press td:nth-child(3) { font-weight: var(--em); }
 .press td:nth-child(1), .press td:nth-child(4), .press td:nth-child(5) { white-space: nowrap; color: var(--mute); font-size: 13.5px; }
@@ -111,7 +81,7 @@ table.press { width: 100%; border-collapse: collapse; margin-top: 1.4rem; }
 .contact { font-size: 15px; border-top: 1px solid var(--ink); padding-top: 0.6rem; }
 .cvwrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); gap: 0 2.5rem; margin-top: 2.5rem; }
 .cv h2 { font-size: 15px; font-weight: var(--em); margin: 1.6rem 0 0; padding: 0.35rem 0; border-bottom: 1px solid var(--ink); }
-.cv h2 .n { color: var(--sig); font-weight: 400; }
+.cv h2 .n { color: var(--sig); }
 .cv ul { list-style: none; margin: 0; padding: 0; }
 .cv li { padding: 0.28rem 0; border-bottom: 1px solid var(--hair); grid-template-columns: 5.5rem 1fr; font-size: 14px; }
 .cv li a { color: var(--ink); text-decoration: none; font-weight: var(--em); }
@@ -133,7 +103,7 @@ table.press { width: 100%; border-collapse: collapse; margin-top: 1.4rem; }
 .version ul, .version ol { padding-left: 1.2em; margin: 0 0 0.85em; }
 .version hr { border: 0; border-top: 1px solid var(--hair); }
 .ai { margin: 0 0 1.2rem; padding-top: 0.4rem; border-top: 2px solid var(--sig); color: var(--sig); font-size: 14px; font-weight: var(--em); }
-.ai.orig { border-top-color: var(--ink); color: var(--ink); font-weight: 400; }
+.ai.orig { border-top-color: var(--ink); color: var(--ink); }
 sup.fn { line-height: 0; font-size: 0.72em; }
 sup.fn a { text-decoration: none; padding: 0 0.1em; }
 .notes { font-size: 14px; line-height: 1.4; border-top: 1px solid var(--hair); padding: 0.8rem 0 0 1.6em; margin-top: 2rem; overflow-wrap: anywhere; }
@@ -153,7 +123,6 @@ sup.fn a { text-decoration: none; padding: 0 0.1em; }
   .detail dl { grid-template-columns: 1fr; }
   .detail dt { padding-top: 0.5rem; }
   .strip img { height: 180px; }
-  .view { margin-left: 0; }
   .grid { columns: 2; column-gap: 0.8rem; }
   .cvwrap { grid-template-columns: 1fr; }
   .press thead { display: none; }
@@ -162,21 +131,10 @@ sup.fn a { text-decoration: none; padding: 0 0.1em; }
   .press td:empty { display: none; }
 }
 @media (max-width: 899px) { .langswitch .both { display: none; } }
-@media print { .controls, header.site nav { display: none; } .detail[hidden] { display: block; } }
-
-/* ------------------------------------------------------------ site search bar */
-header.site { gap: 0.6rem 1.2rem; flex-wrap: wrap; }
-.sitesearch { margin-left: auto; display: flex; }
-.sitesearch input {
-  font: inherit; color: var(--ink); width: 9rem; max-width: 40vw;
-  border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
-  background: transparent; padding: 0.1rem 0;
-}
-.sitesearch input::placeholder { color: var(--mute); }
 
 /* ------------------------------------------------------------ shared lists */
 h2.rule {
-  font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 400;
+  font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
   color: var(--mute); border-top: 1px solid var(--ink); margin: 0 0 0.2rem;
   padding: 0.35rem 0 0;
 }
@@ -202,27 +160,6 @@ h2.rule {
 .more a { color: var(--sig); text-decoration: none; }
 .more a:hover { text-decoration: underline; }
 
-/* ------------------------------------------------------------ one work */
-.work { max-width: 54rem; }
-.eyebrow { color: var(--mute); font-size: 13px; margin: 1.6rem 0 0.3rem; }
-.worktitle {
-  font-size: clamp(1.7rem, 3.6vw, 2.9rem); line-height: 1.06; letter-spacing: -0.022em;
-  font-weight: var(--em); margin: 0 0 0.9rem; max-width: 20em;
-}
-.worktext { font-size: 1.15rem; line-height: 1.4; max-width: 40em; margin: 0 0 1.4rem; }
-.workpage .detail {
-  display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0.1rem 1.2rem;
-  margin: 1.4rem 0 2rem; border-top: 1px solid var(--ink); padding-top: 0.6rem;
-}
-.workpage .detail dt {
-  color: var(--mute); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
-  padding-top: 0.2rem;
-}
-.workpage .detail dd { margin: 0; padding: 0.1rem 0; }
-.work figure.shot { margin: 0 0 1.4rem; }
-.work figure.shot img { display: block; width: 100%; height: auto; }
-.pressfor { margin-top: 2.4rem; }
-
 /* ------------------------------------------------------------ search page */
 .bigsearch { margin: 1.4rem 0 0.6rem; }
 .bigsearch input {
@@ -233,7 +170,7 @@ h2.rule {
 .bigsearch input::placeholder { color: var(--hair); }
 .results .n { font-weight: var(--em); }
 .results .sn {
-  display: block; font-weight: 400; color: var(--mute); font-size: 13.5px;
+  display: block; color: var(--mute); font-size: 13.5px;
   line-height: 1.35; padding-top: 0.2rem; max-width: 52em;
 }
 .results mark { background: var(--tint); color: var(--ink); }
@@ -241,25 +178,6 @@ h2.rule {
 @media (max-width: 640px) {
   .slist li > a, .pressfor .slist li { grid-template-columns: 3.4rem minmax(0, 1fr); }
   .slist .k { grid-column: 2; }
-  .workpage .detail { grid-template-columns: 1fr; gap: 0 0; }
-  .workpage .detail dd { padding-bottom: 0.45rem; }
-  .sitesearch { margin-left: 0; width: 100%; }
-  /* the header already draws a rule underneath, so the field does not need its own */
-  .sitesearch input { width: 100%; max-width: none; border-bottom: 0; padding-bottom: 0; }
-}
-
-/* type chips stay folded until asked for.
-   [hidden] needs the override because .frow sets display: flex. */
-[hidden] { display: none !important; }
-.frow.types { padding-top: 0.35rem; }
-#typetoggle[aria-expanded="true"] { color: var(--sig); }
-#typetoggle::after { content: " \203A"; display: inline-block; }
-#typetoggle[aria-expanded="true"]::after { transform: rotate(90deg); }
-
-/* photograph credits under a work's images */
-.work figure.shot figcaption {
-  color: var(--mute); font-size: 12px; letter-spacing: 0.02em;
-  padding-top: 0.35rem;
 }
 
 /* about: portrait sits beside the bio on a wide screen */
@@ -268,3 +186,97 @@ h2.rule {
 @media (max-width: 640px) {
   .portrait { float: none; width: 100%; max-width: 20rem; margin: 0 0 1.2rem; }
 }
+
+[hidden] { display: none !important; }
+
+/* ------------------------------------------------------------ the bar
+   One row on every page, frozen at the top. It is the navigation, the section
+   filter, the search and the view switch at once, so nothing is said twice. */
+:root { --gap: 1.4rem; --namex: calc(4.2rem + 6.2rem + 2 * var(--gap)); --barh: 2.7rem; }
+header.bar {
+  position: sticky; top: 0; z-index: 6; background: #fff;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1.1rem;
+  padding: 0.75rem 0 0.65rem; border-bottom: 1px solid var(--ink); font-size: 1.05rem;
+}
+header.bar nav { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; }
+header.bar a { color: var(--ink); text-decoration: none; padding: 0 0.22em; margin: 0 -0.22em; }
+header.bar a:hover { color: var(--sig); }
+header.bar a[aria-current] { background: var(--sig); color: #fff; }
+header.bar .mark { margin-right: 0.7rem; }
+.sitesearch { margin-left: auto; display: flex; }
+.sitesearch input {
+  font: inherit; color: var(--ink); width: 9rem; max-width: 40vw;
+  border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
+  background: transparent; padding: 0;
+}
+.sitesearch input::placeholder { color: var(--mute); }
+.sitesearch input:focus { outline: none; border-bottom-color: var(--sig); }
+.view button, .langswitch button { padding: 0 0.22em; margin: 0 -0.22em; }
+.view button:hover, .langswitch button:hover { color: var(--sig); }
+.view button[aria-pressed="true"], .langswitch button[aria-pressed="true"] { background: var(--sig); color: #fff; }
+.plain { color: var(--sig); text-decoration: underline; text-underline-offset: 0.12em; text-decoration-thickness: 1px; }
+
+/* ------------------------------------------------------------ introduction and More */
+.about { margin: 1.6rem 0 2.2rem; }
+.about .intro { margin: 0; }
+.intro p { margin: 0 0 0.75em; }
+.intro p:last-child { margin-bottom: 0; }
+#more { font: inherit; letter-spacing: inherit; }
+#morebox { padding-top: 0.9em; }
+#morebox .intro.more { margin-bottom: 1.6rem; }
+#morebox .contact { clear: both; }
+
+/* ------------------------------------------------------------ the table */
+.thead, .row { display: grid; grid-template-columns: var(--cols); gap: 0 var(--gap); }
+.thead {
+  position: sticky; top: calc(var(--barh) - 1px); z-index: 4; background: #fff;
+  border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
+  padding: 0.5rem 0; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+}
+.thead button { font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; text-align: left; }
+.thead button:hover { color: var(--sig); }
+.thead button[data-dir]::after { content: " \2193"; }
+.thead button[data-dir="asc"]::after { content: " \2191"; }
+.row { width: 100%; padding: 0.72rem 0; align-items: baseline; line-height: 1.32; }
+.entry { scroll-margin-top: calc(var(--barh) + 2.3rem); }
+/* an open row is ruled above and below with the same line */
+.entry.open { background: var(--tint); border-bottom: 1px solid var(--sig); }
+.entry.open .row { border-top: 1px solid var(--sig); margin-top: -1px; }
+/* everything under an open row hangs from the Name column */
+.oneline { margin: 0.1rem 0 0.1rem var(--namex); color: var(--mute); font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 62em; }
+.detail { padding: 0.3rem 0 1.1rem var(--namex); }
+.detail dl { align-items: baseline; }
+.detail dt { color: var(--mute); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* the picture that follows the cursor over a row */
+#thumb {
+  position: fixed; z-index: 30; pointer-events: none; display: none;
+  width: auto; height: auto; max-width: 16rem; max-height: 16rem; background: var(--tint);
+}
+
+/* ------------------------------------------------------------ one work, as an opened file */
+/* here the header row sits straight under the bar, whose rule it shares */
+.filepage .thead { border-top: 0; top: var(--barh); }
+.filepage .row { cursor: default; }
+.filepage .row:hover { color: inherit; }
+.filepage h1.c-name { margin: 0; font: inherit; color: var(--sig); }
+.shots { padding: 1.8rem 0 0 var(--namex); max-width: calc(var(--namex) + 62rem); }
+figure.shot { margin: 0 0 1.4rem; }
+figure.shot img { display: block; width: 100%; height: auto; }
+figure.shot figcaption { color: var(--mute); font-size: 12px; letter-spacing: 0.02em; padding-top: 0.35rem; }
+.pressfor { margin-top: 2.4rem; }
+
+@media (max-width: 760px) {
+  :root { --namex: 0rem; }
+  /* on a phone the bar wraps to three lines, too much to keep frozen */
+  header.bar { position: static; font-size: 1rem; gap: 0.25rem 0.9rem; }
+  /* these repeat the stacked-row rules above, which the table section would override */
+  .thead { display: none; }
+  .row { grid-template-columns: auto 1fr; gap: 0.05rem 0.7rem; padding: 0.6rem 0; }
+  .filepage h1.c-name { font-size: 1.2rem; line-height: 1.2; }
+  header.bar nav { gap: 0.25rem 0.9rem; }
+  .sitesearch { margin-left: 0; flex: 1 1 7rem; }
+  .sitesearch input { width: 100%; max-width: none; }
+  .shots { padding-left: 0; }
+}
+@media print { header.bar nav, .sitesearch, .view { display: none; } header.bar { position: static; } .thead { position: static; } }

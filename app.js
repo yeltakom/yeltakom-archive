@@ -1,23 +1,25 @@
-/* yeltakom.info archive: filter, list/image view, inline expanding rows. Data comes from data.js (ARCHIVE). */
+/* yeltakom.info archive. Hand-written. Data comes from data.js (ARCHIVE).
+   The bar at the top is the section filter, the search and the view switch.
+   The table sorts on its column headings, rows open in place, and a row that has
+   a picture shows it at the cursor. */
 (function () {
   'use strict';
   var ENTRIES = ARCHIVE.entries;
-  var TYPE_ORDER = ['Installation', 'Exhibition (solo)', 'Exhibition (group)', 'Counter-mapping', 'Drawing', 'Video',
-    'Artist book', 'Public art / Kunst am Bau', 'Proposal / Competition', 'Research', 'Text', 'Book / Publication',
-    'Talk / Lecture', 'Panel', 'Workshop', 'Curating', 'Residency', 'Award / Grant',
-    'Collective / Organisation'];
-  var SECTIONS = [
-    { id: 'all', label: 'All', test: function () { return true; } },
-    { id: 'works', label: 'Works', test: function (e) { return e.section === 'work'; } },
-    { id: 'texts', label: 'Texts', test: function (e) { return e.section === 'text'; } },
-    { id: 'talks', label: 'Talks', test: function (e) { return e.section === 'talk'; } },
-    { id: 'workshops', label: 'Workshops', test: function (e) { return e.section === 'workshop'; } },
-    { id: 'networks', label: 'Networks', test: function (e) { return e.section === 'network'; } }
-  ];
+  var SECTIONS = {
+    all: function () { return true; },
+    works: function (e) { return e.section === 'work'; },
+    texts: function (e) { return e.section === 'text'; },
+    talks: function (e) { return e.section === 'talk'; },
+    workshops: function (e) { return e.section === 'workshop'; },
+    networks: function (e) { return e.section === 'network'; }
+  };
   var FEATURED = ['Installation', 'Exhibition (solo)', 'Counter-mapping', 'Public art / Kunst am Bau', 'Artist book'];
-  var state = { section: 'all', types: new Set(), forv: '', q: '', view: 'list', open: new Set() };
+  var COLUMNS = [['no', 'No.'], ['dates', 'Date/s'], ['name', 'Name'], ['type', 'Type/s'], ['for', 'For'], ['with', 'With']];
+  var CLS = { no: 'c-no', dates: 'c-date', name: 'c-name', type: 'c-type', 'for': 'c-for', 'with': 'c-with' };
+  var state = { section: 'all', q: '', view: 'list', open: new Set(), sort: { key: 'no', dir: -1 } };
   var $ = function (id) { return document.getElementById(id); };
   var root = $('archive');
+  var secLinks = document.querySelectorAll('header.bar a[data-sec]');
 
   function has(e, t) { return (e.types || []).indexOf(t) > -1; }
   function norm(s) { return String(s || '').toLowerCase().replace(/ı/g, 'i').normalize('NFKD').replace(/[̀-ͯ]/g, ''); }
@@ -28,59 +30,34 @@
     if (html != null) n.innerHTML = html;
     return n;
   }
-  function images(e) { return (e.links || []).filter(function (l) { return l.label === 'image'; }); }
+  /* pictures of an entry, the ones served from this site first */
+  function images(e) {
+    var all = (e.links || []).filter(function (l) { return l.label === 'image'; });
+    return all.filter(function (l) { return !/^https?:/.test(l.url); })
+      .concat(all.filter(function (l) { return /^https?:/.test(l.url); }));
+  }
   ENTRIES.forEach(function (e) {
     e._hay = norm([e.no, e.dates, e.name, (e.types || []).join(' '), e['for'], (e['with'] || []).join(' '), e.place, e.role,
       e.description, (e.shown || []).map(function (s) { return [s.venue, s.city, s.exhibition_title, s.curator].join(' '); }).join(' ')].join(' '));
+    e._k = {
+      no: e.no,
+      dates: (String(e.dates || '').match(/\d{4}/) || [''])[0] + e.no,
+      name: norm(e.name).replace(/^[^a-z0-9]+/, ''),
+      type: norm((e.types || [])[0]),
+      'for': norm(e['for']),
+      'with': norm((e['with'] || [])[0])
+    };
   });
 
-  /* ---------- controls ---------- */
-  function pressBtn(label, pressed, onclick) {
-    var b = el('button', { type: 'button', 'aria-pressed': String(pressed) }, esc(label));
-    b.addEventListener('click', onclick);
-    return b;
-  }
-  function buildControls() {
-    var s = $('sections'); s.innerHTML = '';
-    SECTIONS.forEach(function (sec) {
-      s.appendChild(pressBtn(sec.label, state.section === sec.id, function () { setSection(sec.id, true); }));
-    });
-    var t = $('types'); t.innerHTML = '<span class="flabel">Type/s</span>';
-    var counts = {};
-    ENTRIES.forEach(function (e) { (e.types || []).forEach(function (x) { counts[x] = (counts[x] || 0) + 1; }); });
-    var list = TYPE_ORDER.filter(function (x) { return counts[x]; })
-      .concat(Object.keys(counts).filter(function (x) { return TYPE_ORDER.indexOf(x) < 0; }).sort());
-    list.forEach(function (x) {
-      var b = pressBtn(x, state.types.has(x), function () {
-        if (state.types.has(x)) state.types.delete(x); else state.types.add(x);
-        b.setAttribute('aria-pressed', String(state.types.has(x)));
-        render();
-      });
-      b.className = 'type';
-      t.appendChild(b);
-    });
-    // type chips stay folded away until asked for: they are a second-order filter
-    var tt = $('typetoggle'), tbox = $('types');
-    tt.addEventListener('click', function () {
-      var open = tbox.hasAttribute('hidden');
-      if (open) { tbox.removeAttribute('hidden'); } else { tbox.setAttribute('hidden', ''); }
-      tt.setAttribute('aria-expanded', String(open));
-    });
-    $('q').addEventListener('input', function (ev) { state.q = ev.target.value; render(); });
-    $('reset').addEventListener('click', function () {
-      state.types.clear(); state.q = ''; $('q').value = '';
-      setSection('all', true); buildTypesPressed();
-    });
-    $('vlist').addEventListener('click', function () { setView('list'); });
-    $('vimg').addEventListener('click', function () { setView('image'); });
-  }
-  function buildTypesPressed() {
-    document.querySelectorAll('#types button').forEach(function (b) { b.setAttribute('aria-pressed', String(state.types.has(b.textContent))); });
-  }
+  /* ---------- the bar ---------- */
+  function barHeight() { var b = $('bar'); return b ? b.offsetHeight : 0; }
   function setSection(id, push) {
-    state.section = id;
-    document.querySelectorAll('#sections button').forEach(function (b, i) { b.setAttribute('aria-pressed', String(SECTIONS[i].id === id)); });
-    if (push) history.replaceState(null, '', id === 'all' ? location.pathname : '#' + id);
+    state.section = SECTIONS[id] ? id : 'all';
+    secLinks.forEach(function (a) {
+      if (a.getAttribute('data-sec') === state.section) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+    if (push) history.replaceState(null, '', state.section === 'all' ? location.pathname : '#' + state.section);
     render();
   }
   function setView(v) {
@@ -89,29 +66,87 @@
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
     render();
   }
-
-  /* ---------- filtering ---------- */
-  function filtered() {
-    var sec = SECTIONS.filter(function (s) { return s.id === state.section; })[0] || SECTIONS[0];
-    var words = norm(state.q).split(/\s+/).filter(Boolean);
-    return ENTRIES.filter(function (e) {
-      if (!sec.test(e)) return false;
-      if (state.types.size && !(e.types || []).some(function (t) { return state.types.has(t); })) return false;
-      return words.every(function (w) { return e._hay.indexOf(w) > -1; });
+  function wireBar() {
+    secLinks.forEach(function (a) {
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        setSection(a.getAttribute('data-sec'), true);
+        // if the table top has scrolled under the bar, bring it back
+        if (root.getBoundingClientRect().top < barHeight()) {
+          window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
+        }
+      });
     });
+    var sq = $('sq');
+    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); });
+    $('vlist').addEventListener('click', function () { setView('list'); });
+    $('vimg').addEventListener('click', function () { setView('image'); });
   }
 
+  /* ---------- More: the biography opens under the introduction ---------- */
+  var moreBtn = $('more'), moreBox = $('morebox');
+  function setMore(open) {
+    if (!moreBtn || !moreBox) return;
+    if (open) moreBox.removeAttribute('hidden'); else moreBox.setAttribute('hidden', '');
+    moreBtn.setAttribute('aria-expanded', String(open));
+    moreBtn.textContent = open ? 'Less' : 'More';
+  }
+  if (moreBtn) moreBtn.addEventListener('click', function () { setMore(moreBox.hasAttribute('hidden')); });
+
+  /* ---------- filtering and sorting ---------- */
+  function filtered() {
+    var test = SECTIONS[state.section] || SECTIONS.all;
+    var words = norm(state.q).split(/\s+/).filter(Boolean);
+    var list = ENTRIES.filter(function (e) {
+      return test(e) && words.every(function (w) { return e._hay.indexOf(w) > -1; });
+    });
+    var key = state.sort.key, dir = state.sort.dir;
+    return list.slice().sort(function (a, b) {
+      var x = a._k[key], y = b._k[key];
+      if (!x && y) return 1;            // empty cells always sink to the end
+      if (x && !y) return -1;
+      if (x === y) return a.no < b.no ? 1 : -1;
+      return (x < y ? -1 : 1) * dir;
+    });
+  }
+  function sortBy(key) {
+    if (state.sort.key === key) state.sort.dir *= -1;
+    else state.sort = { key: key, dir: (key === 'no' || key === 'dates') ? -1 : 1 };
+    render();
+  }
+
+  /* ---------- the picture at the cursor ---------- */
+  var thumb = null, canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+  function showThumb(url) {
+    if (!thumb) { thumb = el('img', { id: 'thumb', alt: '' }); document.body.appendChild(thumb); }
+    if (thumb.getAttribute('src') !== url) thumb.setAttribute('src', url);
+    thumb.style.display = 'block';
+  }
+  function moveThumb(ev) {
+    if (!thumb) return;
+    var w = thumb.offsetWidth || 240, h = thumb.offsetHeight || 180;
+    var x = ev.clientX + 18, y = ev.clientY + 18;
+    if (x + w > window.innerWidth - 8) x = ev.clientX - w - 18;
+    if (y + h > window.innerHeight - 8) y = Math.max(8, ev.clientY - h - 18);
+    thumb.style.left = x + 'px'; thumb.style.top = y + 'px';
+  }
+  function hideThumb() { if (thumb) thumb.style.display = 'none'; }
+
   /* ---------- list view ---------- */
-  var COLS = '<span class="c-no">No.</span><span class="c-date">Date/s</span><span class="c-name">Name</span>' +
-    '<span class="c-type">Type/s</span><span class="c-for">For</span><span class="c-with">With</span>';
   function rowHTML(e) {
     return '<span class="c-no">' + esc(e.no) + '</span><span class="c-date">' + esc(e.dates) + '</span>' +
       '<span class="c-name">' + esc(e.name) + '</span><span class="c-type">' + esc((e.types || []).join(', ')) + '</span>' +
       '<span class="c-for">' + esc(e['for'] || '') + '</span><span class="c-with">' + esc((e['with'] || []).join(', ')) + '</span>';
   }
   function renderList(list) {
-    var head = el('div', { class: 'thead', 'aria-hidden': 'true' }, COLS);
-    var ol = el('ol', { class: 'rows', 'aria-label': 'Archive entries, newest first' });
+    var head = el('div', { class: 'thead', role: 'group', 'aria-label': 'Sort the archive' });
+    COLUMNS.forEach(function (c) {
+      var b = el('button', { type: 'button', class: CLS[c[0]], title: 'Sort by ' + c[1] }, esc(c[1]));
+      if (state.sort.key === c[0]) b.setAttribute('data-dir', state.sort.dir > 0 ? 'asc' : 'desc');
+      b.addEventListener('click', function () { sortBy(c[0]); });
+      head.appendChild(b);
+    });
+    var ol = el('ol', { class: 'rows', 'aria-label': 'Archive entries' });
     list.forEach(function (e) {
       var li = el('li', { class: 'entry', id: 'e-' + e.no });
       var btn = el('button', { type: 'button', class: 'row', 'aria-expanded': 'false', 'aria-controls': 'd-' + e.no }, rowHTML(e));
@@ -121,13 +156,19 @@
       }
       var det = el('div', { class: 'detail', id: 'd-' + e.no, hidden: '' });
       li.appendChild(det);
-      btn.addEventListener('click', function () { toggle(e, li, btn, det); });
+      btn.addEventListener('click', function () { hideThumb(); toggle(e, li, btn, det); });
+      var im = canHover ? images(e)[0] : null;
+      if (im) {
+        btn.addEventListener('mouseenter', function (ev) { if (!li.classList.contains('open')) { showThumb(im.url); moveThumb(ev); } });
+        btn.addEventListener('mousemove', moveThumb);
+        btn.addEventListener('mouseleave', hideThumb);
+      }
       if (state.open.has(e.no)) toggle(e, li, btn, det, true);
       ol.appendChild(li);
     });
     root.appendChild(head);
     root.appendChild(ol);
-    if (!list.length) root.appendChild(el('p', { class: 'empty' }, 'No entries match. <button type="button" class="plain" id="clear2">Clear filters</button>'));
+    if (!list.length) root.appendChild(el('p', { class: 'empty' }, 'Nothing in the archive matches that.'));
   }
   function toggle(e, li, btn, det, force) {
     var open = force || btn.getAttribute('aria-expanded') !== 'true';
@@ -192,36 +233,36 @@
   }
 
   function render() {
+    hideThumb();
     var list = filtered();
     root.innerHTML = '';
     root.className = state.view === 'image' ? 'imageview' : 'listview';
     if (state.view === 'image') renderImages(list); else renderList(list);
-    $('count').textContent = list.length + (list.length === 1 ? ' entry' : ' entries') + (list.length < ENTRIES.length ? ' of ' + ENTRIES.length : '');
-    var c2 = $('clear2'); if (c2) c2.addEventListener('click', function () { $('reset').click(); });
   }
 
   function fromHash() {
     var h = decodeURIComponent(location.hash.slice(1));
+    if (h === 'more') { setSection('all', false); setMore(true); window.scrollTo(0, 0); return; }
     if (/^e-\d{4}$/.test(h)) {
       state.open.add(h.slice(2)); setSection('all', false);
       var t = $(h); if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
       return;
     }
-    var s = SECTIONS.filter(function (x) { return x.id === h; })[0];
-    setSection(s ? s.id : 'all', false);
+    setSection(SECTIONS[h] ? h : 'all', false);
   }
 
   // many images are hotlinked from institutions, so a dead one is normal over time:
-  // drop it rather than leave a broken-image icon in the grid
+  // drop it rather than leave a broken-image icon behind
   document.addEventListener('error', function (ev) {
     var t = ev.target;
     if (t && t.tagName === 'IMG') {
+      if (t.id === 'thumb') { hideThumb(); return; }
       var tile = t.closest('.tile') || t.closest('.strip a') || t;
       if (tile && tile.parentNode) { tile.parentNode.removeChild(tile); }
     }
   }, true);
 
-  buildControls();
+  wireBar();
   fromHash();
   window.addEventListener('hashchange', fromHash);
 })();
