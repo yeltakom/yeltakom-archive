@@ -20,190 +20,10 @@ const LANDING = {
 "href":"texts/a-spatial-narrative-of-the-perpetual-reconquista-what-s.html"
 },
 {
-"no":"2016",
-"text":"Sonuçta taklit ederek, benzerleri üreterek öğreniyoruz. Bu durumda algoritma da taklit etmeyi mi öğreniyor, böyle mi eğitiyor kendini?",
-"lang":"tr",
-"href":"texts/algoritmanin-gozleri.html"
-},
-{
-"no":"1710",
-"text":"Bir yandan da eskiden getto gözüyle bakılan mahallelerin dönüşümle karşı karşıya kalmasıyla ev bulma meselesi iyice zorlaşmış durumda.",
-"lang":"tr",
-"href":"texts/berlin-notlari-10-o-ev-berlin.html"
-},
-{
-"no":"1903",
-"text":"DDR’nin ulusal kutlamaları için kullandığı anıtsal Karl-Marx-Allee rengârenk eylemcileri ile kent hakkı için bir mekân olmuştu.",
-"lang":"tr",
-"href":"texts/berlin-notlari-13.html"
-},
-{
-"no":"1908",
-"text":"Farklı geçmişlerin ortaklaştığı bir şehir Berlin, İtalya’dan da gelseniz, Arjantin’den de gelseniz bir tonunu yakalıyorsunuz Berlin’in.",
-"lang":"tr",
-"href":"texts/berlin-notlari-14.html"
-},
-{
-"no":"2008",
-"text":"Bugün Berlin’de birinin yatağından kurtulması için onu ya atması ya birine vermesi, hadi yatak iyi durumdaysa da satması gerek.",
-"lang":"tr",
-"href":"texts/berlin-notlari-16-yataklar.html"
-},
-{
-"no":"2001",
-"text":"Yanan kitaplar gibi, şimdi fiziksel birliktelikler yanıyor. Ne ateş var ne küller ama arkasında bıraktıkları sanki benziyor birbirine.",
-"lang":"tr",
-"href":"texts/berlin-notlari-18-ates-kul-toprak.html"
-},
-{
-"no":"2001",
-"text":"İlerde Brandenburg Kapısı gözüküyor, hemen önümde müzeler adası ama bomboş. Tek tük yürüyen insanlar, sanki bir cumartesi günü değil.",
-"lang":"tr",
-"href":"texts/berlin-notlari-18-ates-kul-toprak.html"
-},
-{
-"no":"2010",
-"text":"Hani sanalda olan hafızanın nereye gittiğini sorguluyoruz ya sürekli, belki de internete ilişkin hatıraları toplamak önemli.",
-"lang":"tr",
-"href":"texts/berlin-notlari-19.html"
-},
-{
-"no":"2003",
-"text":"Kullandığımız mekânlar dijital mekânlara dönüşüyor, kamusal alanın tanımı değişiyor, online alışverişin sonucu olarak ticari alanlar boş kalıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-20-dijitallesen-kent.html"
-},
-{
-"no":"2004",
-"text":"Kimi zaman bisikletle biraz uzağa gitsem de yürüme mesafesinin dışına nadiren çıkıyorum. Mahallenin her sokağını, köşesini daha iyi öğrendim.",
-"lang":"tr",
-"href":"texts/berlin-notlari-21-bizi-birbirimize-ne-baglar.html"
-},
-{
-"no":"2011",
-"text":"Kimimiz eve “ev” demeye kitaplarını yerleştirdikten sonra, kimimiz mutfağı yerleştirdiğinde, kimisi de ilk geceyi geçirdiğinde başlıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-22-kafa-karisikligi-ve-toz-zerreleri.html"
-},
-{
-"no":"2011",
-"text":"Köklerimizi saldığımız topraklar, her uzaklaştığımızda yeni bir değişimden geçiyor sanki ve bu değişim benzerleri gibi can yakıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-22-kafa-karisikligi-ve-toz-zerreleri.html"
-},
-{
-"no":"2104",
-"text":"Ortaya koyduğumuz, ürettiğimiz, yazdığımız, çizdiğimiz her mecranın içinde yer alan bir mesele sorumluluk ve “Kimin sorumluluğu?” sorusu.",
-"lang":"tr",
-"href":"texts/berlin-notlari-24-sorumluluk.html"
-},
-{
-"no":"2122",
-"text":"Dünyanın en pratik havaalanlarından biriydi Tegel, uçaktan inmeniz ve binadan ayrılmanız hemencecik olurdu, uçağa biniş de bir o kadar hızlı.",
-"lang":"tr",
-"href":"texts/berlin-notlari-26-gecenin-icine-sizan-isiklar.html"
-},
-{
-"no":"2123",
-"text":"Bugün yeni teknolojik gelişmelerin tümüne “Artık dünya eskisi gibi değil” türünden bakışımız, geçmişteki bakışlarla benzer değil mi?",
-"lang":"tr",
-"href":"texts/berlin-notlari-27-aradiginiz-kisiye-ulasilamiyor.html"
-},
-{
-"no":"2123",
-"text":"Bir ülkede ahtapotların çiftlikte yetiştirilmesine karşı çıkanlar var. Bir ülkede taksimetreler çalışmıyor. Bir ülkede kira düzenlemesi yok.",
-"lang":"tr",
-"href":"texts/berlin-notlari-27-aradiginiz-kisiye-ulasilamiyor.html"
-},
-{
-"no":"2205",
-"text":"İyi bir sohbet kanal kenarında, birkaç buzlu içecek hepsi bu kadar aslında. Bir şehirden başka ne ister ki insan, hem de mevsim yazsa.",
-"lang":"tr",
-"href":"texts/berlin-notlari-29-tesadufler.html"
-},
-{
-"no":"2218",
-"text":"Bugünün Mitte’sindeki yeraltı kulüplerinde hayat devam ediyor. Berlin’in kaybedenlerin ve kaybolanların şehri olduğunu söyleyenler var.",
-"lang":"tr",
-"href":"texts/berlin-notlari-30-yaz-raporu.html"
-},
-{
-"no":"2303",
-"text":"Metinlerimin çoğunun polikronik bir zaman anlayışı içinde olduğunu fark ediyorum, bunun sadece bana özgü olmadığının farkındayım.",
-"lang":"tr",
-"href":"texts/berlin-notlari-33-zaman-zaman.html"
-},
-{
-"no":"2403",
-"text":"Oysa Berlin tarih boyunca birçok değişim ve dönüşüm yaşamış bir şehir olarak, yeniye alışmanın ve değişimi benimsemenin anavatanı gibi.",
-"lang":"tr",
-"href":"texts/berlin-notlari-36-hayalet-mudavim.html"
-},
-{
-"no":"2403",
-"text":"Her ne kadar yeniliklere daima açık olsam da değişime alışmak her seferinde beni zorluyor. Yeni bir sokak, yeni bir mahalle, yeni bir durak…",
-"lang":"tr",
-"href":"texts/berlin-notlari-36-hayalet-mudavim.html"
-},
-{
-"no":"2405",
-"text":"İnsan ne okuduğundan ne de gördüğünden keyif alıyor. Mahalleler değişiyor, insanlar değişiyor, sesler kısılıyor, alanlar daralıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-37-sifaya-giden-dert-yollari.html"
-},
-{
-"no":"1707",
-"text":"Kendi ellerimizle toprağa eklediğimiz katmanlar, daha sonra nasıl kullanacağımızı bilmediğimiz metreküplerce yıkıntıyı barındırıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-6.html"
-},
-{
-"no":"1703",
-"text":"Almanya’nın “en hareketli” denen kenti Berlin’den sonra Hong Kong bambaşka bir yer gibi geldi, aslında İstanbul’a bir hayli benziyordu.",
-"lang":"tr",
-"href":"texts/berlin-notlari-9-hong-kong.html"
-},
-{
-"no":"2321",
-"text":"Dans pisti özgürleştiren ve herkesi eşitleyen bir alan, dans etmek ise özgürleştiren bir pratik olarak önemli bir yapı taşına dönüşüyor.",
-"lang":"tr",
-"href":"texts/bir-gecenin-anatomisi.html"
-},
-{
-"no":"2305",
-"text":"Yarın yokmuş gibi eğlenmenin çok ötesinde dans pisti, gündüzü daha kapsayıcı, güvenli ve özgür kılmak için önemli bir rol üstleniyor.",
-"lang":"tr",
-"href":"texts/bir-gecenin-anatomisi-karanlikta-yeniden-dogan-mekanlar.html"
-},
-{
-"no":"1505",
-"text":"Ne bebek arabası geçebilirdi, ne başka bir şey, özellikle trafiğin yoğun olduğu saatlerde, araçlar ile birlikte yürümek zorundasınız.",
-"lang":"tr",
-"href":"texts/bir-kaldirim-hikayesi.html"
-},
-{
 "no":"2108",
 "text":"As human beings, we are starting to understand the importance of living together more and more when resources are getting less and less.",
 "lang":"en",
 "href":"texts/cohabitation-a-manifesto-for-the-solidarity-of-non-humans.html"
-},
-{
-"no":"2012",
-"text":"Boş kalan parsellere yapılan sahalar, orada inşa edilecek yapıya işaret edecek ama bir yandan da etrafında bir topluluk kuracaktı.",
-"lang":"tr",
-"href":"texts/gundeligin-ferahligi.html"
-},
-{
-"no":"1911",
-"text":"Dünya ile derdimiz sadece onun imgesinden değil, kozmolojik olarak kendimizi konumlandırdığımız bir yerdeki sorgulamalardan da geliyor.",
-"lang":"tr",
-"href":"texts/hey-gidi-koca-dunya.html"
-},
-{
-"no":"1911",
-"text":"Bugünlerde elimizin altında olduğunu düşündüğümüz Dünya, yıllardır aklımızda inşa ettiğimiz bir imgeden daha fazlası da değil aslında.",
-"lang":"tr",
-"href":"texts/hey-gidi-koca-dunya.html"
 },
 {
 "no":"2311",
@@ -218,28 +38,10 @@ const LANDING = {
 "href":"texts/inaccurate-topographies-of-territorial-states.html"
 },
 {
-"no":"1803",
-"text":"Sınırına hiç basmadığınız ülkeniz bir anda gözünüzde değerlenir çünkü haritalanmış bilgi görselleşmiş, bir anlamda katılaşmıştır artık.",
-"lang":"tr",
-"href":"texts/konum-atsana.html"
-},
-{
-"no":"1806",
-"text":"Üç boyutlu bir modelin içinde iki ve üç boyutlu insan figürlerini kopyalayıp kopyalayıp yerleştiriyoruz. Kimin bedenini yeniden üretiyorum?",
-"lang":"tr",
-"href":"texts/nereye-gitti-dijital-bedenin.html"
-},
-{
 "no":"2320",
 "text":"The taverns are local establishments where alcohol is consumed with mezes, often accompanied by traditional music, leading to dancing.",
 "lang":"en",
 "href":"works/2320-nightlife-as-sustained-resistance-in-istanbul.html"
-},
-{
-"no":"2202",
-"text":"Beraber üretmek böyle bir şey değil mi? Birbirimize benzemezken, bir araya gelip yapabildiklerimiz değerli kılmıyor mu üretimleri?",
-"lang":"tr",
-"href":"texts/on-yil-sonra-tekrar-sormak-uzere-mimarlik-herkes-icin.html"
 },
 {
 "no":"2411",
@@ -254,160 +56,10 @@ const LANDING = {
 "href":"texts/resisting-against-ecocide-remapping-hasankeyf-and-tigris.html"
 },
 {
-"no":"1801",
-"text":"Çerçevelerin çoğunda surat büyük bir yüzdeyi kaplasa da çizime dönüşen selfie’nin gören ile kurduğu ilişki de başka bir şeye dönüşüyor.",
-"lang":"tr",
-"href":"texts/selfie-den-sonra.html"
-},
-{
 "no":"2201",
 "text":"What kind of city do we live in today? Urban surveillance constantly stares at us and manifests itself in different situations.",
 "lang":"en",
 "href":"works/2201-urban-surveillance-bureau-exhibition-text.html"
-},
-{
-"no":"1810",
-"text":"Kariyer planlarının, ezberlenmiş mimarlık mitlerinin dışında kurabildiğimiz bir ilişki ağında, yeni bir mimarlık yapma biçimi doğabilir.",
-"lang":"tr",
-"href":"texts/yarin-daha-iyi-mi-olacak.html"
-},
-{
-"no":"2004",
-"text":"Geçen gün, sık alışveriş yaptığım süpermarketin çalışanlarının buralarda başıma bir şey gelse hemen yardıma geleceğini düşünüyordum.",
-"lang":"tr",
-"href":"texts/berlin-notlari-21-bizi-birbirimize-ne-baglar.html"
-},
-{
-"no":"2103",
-"text":"Eskiden yazmak iyi gelirdi aslında ama pandemide beni çok zorladı, yazmak yerine görsel olarak kayda almak kolayıma geldi bir yandan.",
-"lang":"tr",
-"href":"texts/berlin-notlari-23.html"
-},
-{
-"no":"2104",
-"text":"Herkes dışarda, öyle bir dışarda olma hâli ki masanın yanından geçen “Afiyet olsun!” diyor, masalarda yer bulamayanlar ayakta dolanıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-24-sorumluluk.html"
-},
-{
-"no":"2121",
-"text":"Sergi mekânı Oyoun’da başlayan etkinliğe gitmek için, bizim evin köşesinde buluşup Kottbusser Damm üzerinden Hermannplatz’a doğru yürüdük.",
-"lang":"tr",
-"href":"texts/berlin-notlari-25-kirmizi-isiklar-ve-dolanan-yollar.html"
-},
-{
-"no":"2218",
-"text":"Bir sene geldiğimde, ne olduğunu sonraları çok daha iyi anladığım Berlin’in en büyük sokak partilerinden Love Parade’e şahitlik etmiştim.",
-"lang":"tr",
-"href":"texts/berlin-notlari-30-yaz-raporu.html"
-},
-{
-"no":"1707",
-"text":"Spandau tarafına giden S-Bahn hattında daha önce yanından geçmiştim. Teufelsberg niyetiyle çıktığım yol Le Corbusier tarafından kesilmişti.",
-"lang":"tr",
-"href":"texts/berlin-notlari-6.html"
-},
-{
-"no":"1708",
-"text":"Göçülen yerde “mış” gibi yapmak, belki hayatın olağan akışı içinde olan bir durum. Hiç yerleşememe durumundan kaynaklanan bir mesele.",
-"lang":"tr",
-"href":"texts/berlin-notlari-7-kendime-notlar.html"
-},
-{
-"no":"1709",
-"text":"Sergi için çıktığımız alışveriş sırasında spontane şekilde bazı malzemeleri değiştirdik, çok daha hafif ve kullanışlı olanları bulduk.",
-"lang":"tr",
-"href":"texts/berlin-notlari-8.html"
-},
-{
-"no":"1605",
-"text":"Başvuruların çoğu aciliyet gerektiren durumları, sosyal mücadele ve toplumsal hareketler çerçevesinde mimarlığın yerlerini ele alıyordu.",
-"lang":"tr",
-"href":"texts/bienalin-degerli-artiklari.html"
-},
-{
-"no":"2305",
-"text":"Bir dans pistinde ışıklar çok parlak olduğunda, herkesin öz farkındalığı artar, herkes kendini tuhaf hisseder ve kimse dans etmek istemez.",
-"lang":"tr",
-"href":"texts/bir-gecenin-anatomisi-karanlikta-yeniden-dogan-mekanlar.html"
-},
-{
-"no":"1801",
-"text":"Sonuçta Velázquez’in dönemindeki imge üretimi ‘anlık’ bir imge üretimi değildi, ama ona bakarak geleceğin arkeolojisini konuşamaz mıyız?",
-"lang":"tr",
-"href":"texts/selfie-den-sonra.html"
-},
-{
-"no":"1914",
-"text":"İnsanın içinde merak mı dersiniz, yoksa doyumsuzluk hissi mi bilmiyorum ama bu dünyayı tamamen bitirmeden rahatlamayacağımız bir gerçek.",
-"lang":"tr",
-"href":"texts/uykusuz-uykular.html"
-},
-{
-"no":"1915",
-"text":"Karaköy’de şu an müşteri beğenmeyen o ünlü köşe kafe bazen ücretsiz, bazen gönlünden ne koparsa usulüyle sabahları kahve veriyordu.",
-"lang":"tr",
-"href":"texts/yasasin-studio-x.html"
-},
-{
-"no":"2009",
-"text":"Kültürel üretimin sabit bir zeminden oluşmadığını ve devingen zeminlerdeki birçok farklı bileşenin bir araya gelmesiyle çoğaldığını söylemişim.",
-"lang":"tr",
-"href":"texts/berlin-notlari-17-pencereden-notlar.html"
-},
-{
-"no":"2103",
-"text":"Yıllardır bu kadar uzun süre seyahat etmediğim, aynı yerde kaldığım olmamıştı. Bir yerde sabit kalmak ikilik hissini artırdı sanırım.",
-"lang":"tr",
-"href":"texts/berlin-notlari-23.html"
-},
-{
-"no":"1507",
-"text":"Üretmek büyük derdimizmiş, belki de bilgisayar dergilerinden çıkan ücretsiz müzik, video programlarının bize en büyük artısı o olmuş.",
-"lang":"tr",
-"href":"texts/kisisel-bir-blog-seruveni.html"
-},
-{
-"no":"1303",
-"text":"Alternatif söz söyleyen, eleştiriden kaçınmayan, kışkırtıcı bir mimarlık ve tasarım mecrası olamaz mı sorusu kafamızı karıştırıyordu.",
-"lang":"tr",
-"href":"works/1303-kontraakt.html"
-},
-{
-"no":"1706",
-"text":"Tasarımcılar, mimarlar, şehir plancıları, mekân tasarlama bilgisini pratiğe dökenler ise buradaki yeni potansiyeli çoğunlukla kaçırıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-5.html"
-},
-{
-"no":"1913",
-"text":"Bronzeville bölgesi özellikle siyahların yoğun olarak yaşadığı bir bölge olduğu için bölge “Black Metropolis” olarak da anılıyor.",
-"lang":"tr",
-"href":"texts/mimarligin-puf-noktasi.html"
-},
-{
-"no":"2217",
-"text":"Müzik protest tavrıyla aslında bir ifade aracına dönüşüyor, Alman toplumu içinde kendini ifade edemeyen göçmenlerin dışavurumu oluyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-28-tut-mir-manchmal-weh.html"
-},
-{
-"no":"2010",
-"text":"Mahalleden arkadaşlarımla klasörlerin içinde ufak resimleri olan dosyalardan seçimlerimizi yapıyoruz. Hangi oyunun kaç diskette yüklü olduğu yazıyor.",
-"lang":"tr",
-"href":"texts/berlin-notlari-19.html"
-},
-{
-"no":"1705",
-"text":"Bir yandan da blogun kolayca bir web sitesi kurma şansı verdiği fark edildi, kişiler için gruplar için iletişim platformu oluyorlardı.",
-"lang":"tr",
-"href":"texts/berlin-notlari-2.html"
-},
-{
-"no":"1711",
-"text":"Dünyanın çoğu yerinden gelen yaratıcı insanlarla Berlin’de karşılaşmak çok olası.",
-"lang":"tr",
-"href":"texts/berlin-notlari-11-boncuk.html"
 },
 {
 "no":"1816",
@@ -416,10 +68,124 @@ const LANDING = {
 "href":"texts/a-road-to-home-following-the-concrete.html"
 },
 {
-"no":"1909",
-"text":"Doğu Almanlar içinde büyümedikleri bir rekabet ve iş ortamıyla başa çıkmayı öğrenmek zorundaydı.",
-"lang":"tr",
-"href":"texts/berlin-notlari-15-ubergestern.html"
+"no":"1816",
+"text":"Where destruction is occurring in the neighbourhoods, it brings a process of destruction and deterritorialisation.",
+"lang":"en",
+"href":"texts/a-road-to-home-following-the-concrete.html"
+},
+{
+"no":"1816",
+"text":"You are on your way to a new hope; a concrete wall has set a barrier in front of you.",
+"lang":"en",
+"href":"texts/a-road-to-home-following-the-concrete.html"
+},
+{
+"no":"1405",
+"text":"The story of a city, which has constantly fed aspirations for seizure and domination, does surely bear traces of past sorrows and losses.",
+"lang":"en",
+"href":"texts/a-spatial-narrative-of-the-perpetual-reconquista-what-s.html"
+},
+{
+"no":"1405",
+"text":"Our eyes, shut tight with all the force bestowed by this sanctification, no longer have any tolerance for the different or the Other.",
+"lang":"en",
+"href":"texts/a-spatial-narrative-of-the-perpetual-reconquista-what-s.html"
+},
+{
+"no":"1405",
+"text":"Ambition turns architecture into a tool of power and it is at these very points that the direct rapport of the former with power becomes apparent.",
+"lang":"en",
+"href":"texts/a-spatial-narrative-of-the-perpetual-reconquista-what-s.html"
+},
+{
+"no":"1405",
+"text":"The Gezi Park organized itself and put forward a new form of experience, which the politicians or experts could not dominate or become a part of.",
+"lang":"en",
+"href":"texts/a-spatial-narrative-of-the-perpetual-reconquista-what-s.html"
+},
+{
+"no":"2108",
+"text":"Cohabitation is a concept that is progressively becoming not only more difficult but also a core component of solidarity.",
+"lang":"en",
+"href":"texts/cohabitation-a-manifesto-for-the-solidarity-of-non-humans.html"
+},
+{
+"no":"2108",
+"text":"Our relationship with nonhuman species in the city stems from processes and attempts to domesticate and “civilize” the natural environment.",
+"lang":"en",
+"href":"texts/cohabitation-a-manifesto-for-the-solidarity-of-non-humans.html"
+},
+{
+"no":"2311",
+"text":"The modern state looks at the world from a bird’s eye view, divides it into pieces, and regulates it in a subject hierarchy.",
+"lang":"en",
+"href":"texts/inaccurate-topographies-of-territorial-states.html"
+},
+{
+"no":"2311",
+"text":"The history of the maps progresses in tandem with the means of war and control.",
+"lang":"en",
+"href":"texts/inaccurate-topographies-of-territorial-states.html"
+},
+{
+"no":"2311",
+"text":"Mercator, one of the world’s most frequently used map projections, provided the most useful solution to seafarers while also building neo-colonial routes.",
+"lang":"en",
+"href":"texts/inaccurate-topographies-of-territorial-states.html"
+},
+{
+"no":"2320",
+"text":"Is it possible to see colours in the dark? How do we establish the night for self-expression, and expand its potential into the day?",
+"lang":"en",
+"href":"works/2320-nightlife-as-sustained-resistance-in-istanbul.html"
+},
+{
+"no":"2320",
+"text":"Even when clubs open and close, or when there are big problems like economic or political crises, nightlife always finds a way to keep going.",
+"lang":"en",
+"href":"works/2320-nightlife-as-sustained-resistance-in-istanbul.html"
+},
+{
+"no":"2320",
+"text":"As the night progresses, the boundaries between strangers blur, crafting a sense of unity and shared experience that is ephemeral yet profound.",
+"lang":"en",
+"href":"works/2320-nightlife-as-sustained-resistance-in-istanbul.html"
+},
+{
+"no":"2411",
+"text":"Deconstructing these visual narratives reveals the deeper realities of displacement and cultural erasure.",
+"lang":"en",
+"href":"texts/resisting-against-ecocide-remapping-hasankeyf-and-tigris.html"
+},
+{
+"no":"2411",
+"text":"The submerged roads, villages, and ancient structures documented through these efforts symbolize not just loss but resistance rooted in memory and hope for the future.",
+"lang":"en",
+"href":"texts/resisting-against-ecocide-remapping-hasankeyf-and-tigris.html"
+},
+{
+"no":"2411",
+"text":"Neoliberal visual regimes have long emphasized narratives of modernization and economic gain while marginalizing the social and ecological repercussions.",
+"lang":"en",
+"href":"texts/resisting-against-ecocide-remapping-hasankeyf-and-tigris.html"
+},
+{
+"no":"2201",
+"text":"Today's profit-oriented surveillance systems categorize any human subject as a consumer within the framework of the attention economy in cities.",
+"lang":"en",
+"href":"works/2201-urban-surveillance-bureau-exhibition-text.html"
+},
+{
+"no":"2201",
+"text":"Even though the cities are created by power and capital, one can still find resistance points that are created by solidarity actions and practices.",
+"lang":"en",
+"href":"works/2201-urban-surveillance-bureau-exhibition-text.html"
+},
+{
+"no":"2201",
+"text":"You can read the lines, they are pieces from our working environment, sometimes a reminder sometimes a piece of a poem and sometimes just a silent outcry.",
+"lang":"en",
+"href":"works/2201-urban-surveillance-bureau-exhibition-text.html"
 }
 ],
 "sizes":{
@@ -1191,5 +957,130 @@ const LANDING = {
 1600,
 1120
 ]
-}
+},
+"titles":{
+"2611":"What Seeps Through the Crack",
+"2610":"Savaştepe Village Institute",
+"2605":"Fragments on the Dicle Batman Stream",
+"2601":"I was always with you",
+"2505":"Planetary Peasants (contribution)",
+"2504":"A Search for Justice on the Threshold of Doors",
+"2414":"Fictions, Poems, the Future and Pouring Lead",
+"2413":"What Accumulates in Gülsün Karamustafa's Art",
+"2409":"Are You Here Too?",
+"2406":"Berlin Notes #38: Dancing with the Breath, Sunny but Cold",
+"2405":"Berlin Notes #37: Roads of Trouble Leading to Healing",
+"2403":"Berlin Notes #36: The Ghost Regular",
+"2401":"Berlin Notes #35: Farewell",
+"2321":"Anatomy of a Night",
+"2317":"Berlin Notes #32: To Forget and to Be Forgotten",
+"2305":"Anatomy of a Night: Spaces Reborn in the Dark",
+"2304":"Berlin Notes #34: Radiye",
+"2303":"Berlin Notes #33: From Time to Time",
+"2302":"Eschatology",
+"2301":"all familiar, all foreign",
+"2218":"Berlin Notes #30: Summer Report",
+"2217":"Berlin Notes #28: tut mir manchmal weh",
+"2209":"Berlin Notes #31: 2022 Wrapped: Time Erases Everything",
+"2205":"Berlin Notes #29: Coincidences",
+"2203":"Undertow",
+"2202":"To Ask Again After Ten Years: Can Architecture Be for Everyone?",
+"2123":"Berlin Notes #27: The Person You Have Called Is Unreachable",
+"2122":"Berlin Notes #26: Lights Seeping into the Night",
+"2121":"Berlin Notes #25: Red Lights and Winding Roads",
+"2115":"Ways of Doing Postgraduate Research in Architecture (V): Conversation with Yelta Köm",
+"2113":"The Architect's Guide to the Galaxy",
+"2112":"The Transformation of Architectural Practice and the Pandemic",
+"2111":"Between Truths",
+"2104":"Berlin Notes #24: Responsibility?",
+"2103":"Berlin Notes #23",
+"2102":"Possibilistic Grounds",
+"2016":"The Eyes of the Algorithm (interview with Ege Özgirin)",
+"2015":"A conversation with Hasan Cenk Dereli and Yelta Köm",
+"2014":"Arkitera Travel Grant Digital Theme Presentation Meeting",
+"2013":"Breathing Points #1",
+"2012":"The Ease of the Everyday",
+"2011":"Berlin Notes #22: Confusion and Dust Particles",
+"2010":"Berlin Notes #19",
+"2009":"Berlin Notes #17: Notes from the Window",
+"2008":"Berlin Notes #16: Mattresses",
+"2007":"Scale",
+"2004":"Berlin Notes #21: What Binds Us to One Another?",
+"2003":"Berlin Notes #20: The Digitalizing City",
+"2002":"Evdeyiz #7 Yelta Köm Recommends: Digital Education Platforms",
+"2001":"Berlin Notes #18: Fire, Ash, Earth",
+"1916":"Is It Possible Not to Destroy While Searching for the New?",
+"1915":"Long Live Studio-X!",
+"1913":"The Trick of Architecture?",
+"1912":"Department of Occupation Affairs",
+"1911":"Oh, You Great Big World",
+"1910":"Has the End of the Internet as We Know It Arrived?",
+"1909":"Berlin Notes #15: Übergestern",
+"1908":"Berlin Notes #14",
+"1905":"Yelta Köm and the Herkes İçin Mimarlık team report from the Chicago Architecture Biennial, where they are participants",
+"1903":"Berlin Notes #13",
+"1902":"Arredamento Mimarlık April Issue",
+"1819":"Let the Kettle Boil",
+"1812":"On human representations in architectural projects with Yelta Köm on Açık Mimarlık",
+"1810":"Will Tomorrow Be Better?",
+"1809":"Welcome to Vardiya!",
+"1808":"What Is Your Score?",
+"1802":"The Shift",
+"1801":"After the Selfie",
+"1713":"The Architect's Confusion in a Participatory Exhibition Project",
+"1712":"Berlin Notes #12: Finale",
+"1711":"Berlin Notes #11: Bead",
+"1710":"Berlin Notes #10: That Home Is Berlin!",
+"1709":"Berlin Notes #8",
+"1708":"Berlin Notes #7: Notes to Myself",
+"1707":"Berlin Notes #6",
+"1706":"Berlin Notes #5",
+"1705":"Berlin Notes #2",
+"1703":"Berlin Notes #9: Hong Kong",
+"1702":"Berlin Notes #4",
+"1701":"Berlin Notes #3",
+"1613":"We Won't Leave",
+"1607":"There Is an Architecture Without Trade but With an Economy",
+"1606":"A Short Radio Story",
+"1605":"The Valuable Residues of the Biennale",
+"1603":"Berlin Notes #1",
+"1602":"Chronology of Design in Türkiye: A Trial",
+"1520":"Why I decided to write on Medium",
+"1515":"Caution! Slippery Ground",
+"1512":"What Did You Idolise Today?",
+"1511":"Todays Have Their Tomorrows Too (conference talk)",
+"1510":"Young Architect Encouragement Award",
+"1508":"I Used to Say I Would Write About Architecture…",
+"1507":"A Personal Blogging Adventure",
+"1505":"A Pavement Story",
+"1503":"Plankton Project: Off-Centre Architectures",
+"1421":"Learning by Doing, Making Production Common",
+"1418":"Do I Have to Tweet?",
+"1415":"Can Architecture Be for Everyone?",
+"1412":"What Could the Dinner You Eat in the Evening Have to Do With Your Practising Architecture?",
+"1407":"How Is Architecture Solved? How Do Architects Think?",
+"1401":"Growing Architectures in Glass Boxes",
+"1305":"On the 2nd International Antalya Architecture Biennial...",
+"1210":"Gezi Park Celebrations",
+"1104":"Architecture for All",
+"1103":"Arkitera Travel Grant",
+"0903":"Breathing Points in Architectural Education: the Kayıtdışı Experience",
+"0803":"Kayıtdışı 01: (Un)settling"
+},
+"notitle":[
+"1203",
+"1211",
+"1307",
+"1310",
+"1514",
+"1518",
+"1803",
+"1804",
+"1806",
+"1811",
+"1914",
+"1917",
+"2407",
+"2507"
+]
 };

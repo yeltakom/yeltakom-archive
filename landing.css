@@ -1,12 +1,6 @@
 /* yeltakom.info, the opening. One running block of bold Arial; every piece sits on a solid field.
-   Fields are defined once here. Text on all four is --ink (#141414), on ultramarine it is white.
+   Fields are defined once, in :root of style.css (--f1 yellow, --f2 vermilion, --f3 mint, --f4 pink). Text on all four is --ink (#141414), on ultramarine it is white.
    Contrast: yellow 12.7, mint 10.4, pink 9.8, vermilion 5.9, ultramarine/white 7.9, ink/white 17.9. */
-:root {
-  --f1: #ffd21f;   /* yellow     */
-  --f2: #ff5a2d;   /* vermilion  */
-  --f3: #4fdc7b;   /* mint green */
-  --f4: #ff9fd2;   /* pink       */
-}
 #mix { margin: 1.1rem 0 0; font-size: clamp(1.8rem, 5vw, 4rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.03em; overflow-wrap: break-word; hyphens: manual; }
 #mix:empty, #mix[hidden] { display: none; }
 #mix .flow { text-wrap: pretty; }

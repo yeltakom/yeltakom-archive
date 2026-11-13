@@ -1,25 +1,25 @@
-/* yeltakom.info, the opening. Hand-written.
+/* yeltakom.info, the opening of the home page. Hand-written.
    One running block of large type, as one long sentence made of the archive: titles, dates and
    places on solid colour fields, quotations from the texts set small inside the lines, and
    photographs standing in the line like words. Every piece is a link to its record. The
-   selection and the order change with every build; index.html?seed=123#mix repeats one of them
-   (the first build only, choosing Mix again reshuffles).
-   Loaded by app.js only when Mix is first chosen. Defines window.YKMix(), which fills
-   <section id="mix"> and returns true when it did.
+   selection and the order change with every visit; index.html?seed=123 repeats one of them.
+   The composition is in English only: quotations come from texts the artist wrote in English
+   (see MIX_LANGS in make_landing_data.py) and a name written "Turkish / English" shows its
+   English half (LANDING.titles).
+   Loaded with defer after landingdata.js; fills <section id="mix"> and then shows it. If either
+   file is missing the section stays hidden and the page begins with the introduction.
    Data: ARCHIVE (data.js) and LANDING (landingdata.js). */
 (function () {
   'use strict';
-  var firstBuild = true;
-  window.YKMix = function () {
+  function build() {
   var root = document.getElementById('mix');
-  if (!root || typeof ARCHIVE === 'undefined' || typeof LANDING === 'undefined') return false;
+  if (!root || typeof ARCHIVE === 'undefined' || typeof LANDING === 'undefined' || !LANDING.quotes) return false;
   root.innerHTML = '';
 
   /* ---------- seeded random ---------- */
   function hash(s) { var h = 2166136261; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
   var param = null;
-  try { if (firstBuild) param = new URLSearchParams(location.search).get('seed'); } catch (x) { /* old browser: random */ }
-  firstBuild = false;
+  try { param = new URLSearchParams(location.search).get('seed'); } catch (x) { /* old browser: random */ }
   var seed = param !== null && param !== '' ? (/^-?\d+$/.test(param) ? parseInt(param, 10) >>> 0 : hash(param))
     : ((Math.random() * 4294967296) >>> 0);
   var a = seed;
@@ -33,16 +33,20 @@
   /* ---------- the pools, all from the archive ---------- */
   var ENT = ARCHIVE.entries;
   var byNo = {}; ENT.forEach(function (e) { byNo[e.no] = e; });
+  /* the name as the composition shows it: the English half of "Turkish / English", else the name as it is */
+  var EN = LANDING.titles || {};
+  function nameOf(e) { return EN[e.no] || e.name; }
 
   /* a title short enough to be set large: the whole of it, else its first part */
   function shortTitle(name) {
     var n = String(name || '').trim();
     if (n.length <= 28) return n;
-    var parts = n.split(/\s+\/\s+|:\s+/);
+    var parts = n.split(/:\s+/);
     for (var i = 0; i < parts.length; i++) if (parts[i].length >= 4 && parts[i].length <= 28) return parts[i];
     return null;
   }
-  var titles = ENT.filter(function (e) { return shortTitle(e.name); });
+  var SKIP = {}; (LANDING.notitle || []).forEach(function (n) { SKIP[n] = 1; });
+  var titles = ENT.filter(function (e) { return !SKIP[e.no] && shortTitle(nameOf(e)); });
 
   /* the published images of the archive (assets/images/..., from the manifest), at most three per record, ten in all */
   function imgsOf(e) { return (e.imgs || []).filter(function (i) { return LANDING.sizes && LANDING.sizes[i[0]]; }); }
@@ -85,7 +89,7 @@
     usedT[e.no] = 1; return e;
   }
   function titlePiece(e, cls) {
-    return '<a class="p t ' + field() + (cls ? ' ' + cls : '') + '" href="' + esc(hrefOf(e)) + '">' + esc(shortTitle(e.name)) + '</a>';
+    return '<a class="p t ' + field() + (cls ? ' ' + cls : '') + '" href="' + esc(hrefOf(e)) + '">' + esc(shortTitle(nameOf(e))) + '</a>';
   }
   function datePiece(e) {
     return '<a class="p d ' + (rnd() < 0.7 ? 'fs' : field()) + '" href="' + esc(hrefOf(e)) + '">' + esc(e.dates) + '</a>';
@@ -97,7 +101,7 @@
     var e = byNo[q.no]; var f = field(); if (f === 'fw') f = 'f' + (1 + Math.floor(rnd() * 4));
     var va = pickOne(['vt', 'vm', 'vb']);
     return '<a class="p q ' + f + ' ' + va + '" lang="' + esc(q.lang) + '" href="' + esc(q.href) + '">' + esc(q.text) +
-      (e ? '<span class="vh"> (' + esc(e.name) + ')</span>' : '') + '</a>';
+      (e ? '<span class="vh"> (' + esc(nameOf(e)) + ')</span>' : '') + '</a>';
   }
   var nImg = 0;
   function picPiece(p) {
@@ -105,7 +109,7 @@
     var va = pickOne(['vt', 'vm', 'vb']);
     var w = p.wh[0], h = p.wh[1];
     return '<a class="p i ' + s + ' ' + va + '" href="' + esc(hrefOf(p.e)) + '" style="aspect-ratio:' + w + '/' + h + '">' +
-      '<img src="' + esc(p.url) + '" width="' + w + '" height="' + h + '" alt="' + esc(p.e.name) + '"' + (nImg++ < 4 ? '' : ' loading="lazy"') + ' decoding="async"></a>';
+      '<img src="' + esc(p.url) + '" width="' + w + '" height="' + h + '" alt="' + esc(nameOf(p.e)) + '"' + (nImg++ < 4 ? '' : ' loading="lazy"') + ' decoding="async"></a>';
   }
 
   /* one step of the sentence: a cluster of pieces, usually one record (date, title, place),
@@ -151,5 +155,11 @@
   } while (root.offsetHeight < target && guard < 80);
 
   return true;
-  };
+  }
+  var box = document.getElementById('mix');
+  if (box) {
+    box.removeAttribute('hidden');   /* shown first: the height is measured while the block is filled */
+    if (build()) document.dispatchEvent(new Event('ykmix'));   /* app.js places the table again if the address asked for it */
+    else box.setAttribute('hidden', '');
+  }
 })();

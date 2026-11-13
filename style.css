@@ -4,6 +4,10 @@
   --mute: #5c5c5c;      /* 6.7:1 on white, 6.1:1 on tint */
   --sig: #1f3bd6;       /* ultramarine, 7.2:1 on white */
   --tint: #edf0fd;
+  --f1: #ffd21f;        /* Mix fields, shared with landing.css: yellow     */
+  --f2: #ff5a2d;        /* vermilion */
+  --f3: #4fdc7b;        /* mint green */
+  --f4: #ff9fd2;        /* pink */
   --hair: #d2d2d2;
   --cols: 4.2rem 7.6rem minmax(0, 3fr) minmax(0, 1.7fr) minmax(0, 1.7fr) minmax(0, 1.5fr);
   --pad: clamp(0.9rem, 2.4vw, 2rem);
@@ -280,3 +284,31 @@ figure.shot figcaption { color: var(--mute); font-size: 12px; letter-spacing: 0.
   .shots { padding-left: 0; }
 }
 @media print { header.bar nav, .sitesearch, .view { display: none; } header.bar { position: static; } .thead { position: static; } }
+
+/* ------------------------------------------------------------ under-construction notice
+   Two solid fields above the bar, running against each other. They scroll away with the page;
+   the bar then freezes. Contrast: white on ultramarine 7.9, ink on yellow 12.7. */
+.notices { margin: 0 calc(var(--pad) * -1); }
+.notice { overflow: hidden; white-space: nowrap; font-size: clamp(1rem, 1.5vw, 1.3rem); font-weight: 700; line-height: 1; letter-spacing: -0.01em; padding: 0.42em 0 0.5em; }
+.n-a { background: var(--sig); color: #fff; }
+.n-b { background: var(--f1); color: var(--ink); }
+.notice:focus-visible { outline: 3px solid var(--ink); outline-offset: -3px; }
+.n-a:focus-visible { outline-color: #fff; }
+.ntrack { display: flex; width: max-content; animation: nrun 130s linear infinite; }
+.n-b .ntrack { animation-direction: reverse; animation-duration: 118s; }
+.ngrp { display: flex; flex: none; }
+.notice ul { display: flex; flex: none; margin: 0; padding: 0; list-style: none; }
+.notice li { flex: none; padding-right: 1.1em; }
+.notice li::after { content: "///"; padding-left: 1.1em; }
+@keyframes nrun { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.notice:hover .ntrack, .notice:focus-within .ntrack, .notice:focus .ntrack { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .notice { white-space: normal; }
+  .ntrack { animation: none; width: auto; display: block; }
+  .ngrp[aria-hidden], .notice ul[aria-hidden] { display: none; }
+  .notice ul { flex-wrap: wrap; }
+  .notice li { padding-right: 0; }
+  .notice li::after { padding-left: 1.1em; padding-right: 1.1em; }
+  .notice li:last-child::after { content: none; }
+}
+@media print { .notices { display: none; } }

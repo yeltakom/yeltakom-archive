@@ -1,5 +1,7 @@
 /* yeltakom.info archive. Hand-written. Data comes from data.js (ARCHIVE).
-   The bar at the top is the section filter, the search and the view switch.
+   The bar at the top is the section filter, the search and the List / Image switch.
+   The home page opens on the composition (landing.js); this file only places the reader
+   at the table when the address, the bar or the search asks for it.
    The table sorts on its column headings, rows open in place, and a row that has
    a picture shows it at the cursor. */
 (function () {
@@ -19,7 +21,6 @@
   var state = { section: 'all', q: '', view: 'list', open: new Set(), sort: { key: 'no', dir: -1 } };
   var $ = function (id) { return document.getElementById(id); };
   var root = $('archive');
-  var mixBox = $('mix');
   var secLinks = document.querySelectorAll('header.bar a[data-sec]');
 
   function has(e, t) { return (e.types || []).indexOf(t) > -1; }
@@ -55,10 +56,9 @@
     state.section = SECTIONS[id] ? id : 'all';
     setSectionMark();
     if (push) history.replaceState(null, '', state.section === 'all' ? location.pathname : '#' + state.section);
-    if (state.view === 'mix') { setView('list'); return; }
     render();
   }
-  /* the table's top edge sits just under the frozen bar */
+  /* the table's top edge (its column header) sits just under the frozen bar */
   function scrollToTable() {
     window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
   }
@@ -66,9 +66,6 @@
     state.view = v;
     $('vlist').setAttribute('aria-pressed', String(v === 'list'));
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
-    $('vmix').setAttribute('aria-pressed', String(v === 'mix'));
-    if (v === 'mix') secLinks.forEach(function (a) { a.removeAttribute('aria-current'); });
-    else setSectionMark();
     render();
   }
   function setSectionMark() {
@@ -76,31 +73,6 @@
       if (a.getAttribute('data-sec') === state.section) a.setAttribute('aria-current', 'true');
       else a.removeAttribute('aria-current');
     });
-  }
-  /* the composition: landingdata.js and landing.js are fetched the first time Mix is chosen */
-  var mixState = 0;   /* 0 not asked, 1 loading, 2 ready, 3 failed */
-  function loadScript(src, done) {
-    var s = document.createElement('script');
-    s.src = src; s.onload = function () { done(true); }; s.onerror = function () { done(false); };
-    document.head.appendChild(s);
-  }
-  function buildMix() {
-    if (state.view !== 'mix' || !mixBox) return;
-    mixBox.removeAttribute('hidden');
-    if (mixState === 2) {
-      if (window.YKMix()) {
-        var top = mixBox.getBoundingClientRect().top;
-        if (top < barHeight()) window.scrollTo(0, top + window.pageYOffset - barHeight());
-      }
-      return;
-    }
-    if (mixState === 1) return;
-    mixState = 1;
-    var files = (mixBox.getAttribute('data-js') || '').split(' ').filter(Boolean);
-    (function next(i) {
-      if (i >= files.length) { mixState = 2; buildMix(); return; }
-      loadScript(files[i], function (ok) { if (ok) next(i + 1); else { mixState = 3; setView('list'); } });
-    })(0);
   }
   function wireBar() {
     secLinks.forEach(function (a) {
@@ -111,14 +83,9 @@
       });
     });
     var sq = $('sq');
-    if (sq) sq.addEventListener('input', function () { state.q = sq.value; if (state.view === 'mix') setView('list'); else render(); });
-    function leaveMix() { if (/^#mix$/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search); }
-    $('vlist').addEventListener('click', function () { leaveMix(); setView('list'); });
-    $('vimg').addEventListener('click', function () { leaveMix(); setView('image'); });
-    $('vmix').addEventListener('click', function () {
-      history.replaceState(null, '', location.pathname + location.search + '#mix');
-      setView('mix');
-    });
+    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); scrollToTable(); });
+    $('vlist').addEventListener('click', function () { setView('list'); scrollToTable(); });
+    $('vimg').addEventListener('click', function () { setView('image'); scrollToTable(); });
   }
 
   /* ---------- More: the biography opens under the introduction ---------- */
@@ -282,7 +249,6 @@
 
   function render() {
     hideThumb();
-    if (mixBox) { if (state.view === 'mix') { root.innerHTML = ''; root.className = ''; buildMix(); return; } mixBox.setAttribute('hidden', ''); }
     var list = filtered();
     root.innerHTML = '';
     root.className = state.view === 'image' ? 'imageview' : 'listview';
@@ -297,12 +263,16 @@
     var t = $(h);
     if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
   }
-  // #mix means the composition; a section or an entry in the address means the table
+  // no hash or #mix: the top of the page, the composition. A section or an entry in the address: the table.
+  // #more opens the biography and scrolls to the introduction.
+  function toAbout() {
+    var a = document.querySelector('.about');
+    if (a) window.scrollTo(0, a.getBoundingClientRect().top + window.pageYOffset - barHeight() - 8);
+  }
   function fromHash() {
     var h = decodeURIComponent(location.hash.slice(1));
-    if (h === 'mix') { setView('mix'); return; }
-    if (state.view === 'mix') setView('list');
-    if (h === 'more') { setSection('all', false); setMore(true); window.scrollTo(0, 0); return; }
+    if (h === 'mix') { setSection('all', false); window.scrollTo(0, 0); return; }
+    if (h === 'more') { setSection('all', false); setMore(true); toAbout(); return; }
     if (/^e-\d{4}$/.test(h)) {
       state.open.add(h.slice(2)); setSection('all', false); toEntry(h);
       return;
@@ -326,11 +296,15 @@
   wireBar();
   fromHash();
   window.addEventListener('hashchange', function () { userMoved = true; fromHash(); });
-  // the opening composition and the images settle after this script: place the table again once the page is laid out
-  window.addEventListener('load', function () {
+  // the composition is built after this script and the images settle later: place the reader again
+  // once it has filled the page, and once more when everything has loaded
+  function replace() {
     if (userMoved || !location.hash) return;
     var h = decodeURIComponent(location.hash.slice(1));
     if (/^e-\d{4}$/.test(h)) toEntry(h);
-    else if (SECTIONS[h]) scrollToTable();
-  });
+    else if (SECTIONS[h] || h === 'archive') scrollToTable();
+    else if (h === 'more') toAbout();
+  }
+  document.addEventListener('ykmix', replace);
+  window.addEventListener('load', replace);
 })();
