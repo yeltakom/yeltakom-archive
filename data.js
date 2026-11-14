@@ -31,7 +31,11 @@ const ARCHIVE = {
 [
 "assets/images/2616/01.webp",
 null,
-"Cover image of the Spatial Narratives of Commoning programme page"
+"Cover image of the Spatial Narratives of Commoning programme page",
+[
+1080,
+1350
+]
 ]
 ]
 },
@@ -67,7 +71,11 @@ null,
 [
 "assets/images/2613/01.webp",
 null,
-"Poster of the conference the paper was presented at: (Re)Tracing Land, MESAAS 2026 (reused)"
+"Poster of the conference the paper was presented at: (Re)Tracing Land, MESAAS 2026 (reused)",
+[
+1500,
+2000
+]
 ]
 ]
 },
@@ -100,19 +108,6 @@ null,
 "description": "Installation and single-channel video with scale models that read the crack as both rupture and opening.",
 "section": "work",
 "page": "works/2611-yariktan-sizanlar-what-seeps-through-the-crack.html"
-},
-{
-"no": "2610",
-"dates": "2026–ongoing",
-"name": "Savaştepe Köy Enstitüsü / Savaştepe Village Institute",
-"types": [
-"Research"
-],
-"place": "Savaştepe",
-"status": "ongoing",
-"description": "Research-based project on the Savaştepe Village Institute around spatial restoration, community co-production, digital archiving and speculative pedagogy.",
-"section": "work",
-"page": "works/2610-savastepe-koy-enstitusu-savastepe-village-institute.html"
 },
 {
 "no": "2609",
@@ -257,7 +252,11 @@ null,
 [
 "assets/images/2602/01.webp",
 "Metean Bars",
-"Installation view of Yelta Köm, I was always with you (2026), Breaking Through a Dam, Salt Beyoğlu; image shown on the talk page"
+"Installation view of Yelta Köm, I was always with you (2026), Breaking Through a Dam, Salt Beyoğlu; image shown on the talk page",
+[
+1920,
+1280
+]
 ]
 ]
 },
@@ -300,7 +299,11 @@ null,
 [
 "assets/images/2601/01.webp",
 "Metean Bars",
-"Installation view, SALT Beyoğlu"
+"Installation view, SALT Beyoğlu",
+[
+1920,
+1280
+]
 ]
 ]
 },
@@ -401,17 +404,29 @@ null,
 [
 "assets/images/2506/01.webp",
 "Michel Klehm",
-"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
+"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page",
+[
+1000,
+666
+]
 ],
 [
 "assets/images/2506/02.webp",
 "Michel Klehm",
-"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
+"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page",
+[
+944,
+1280
+]
 ],
 [
 "assets/images/2506/03.webp",
 null,
-"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page"
+"Installation view, Cracks in the Soil, Kunstmuseum Moritzburg, shown on the talk page",
+[
+1000,
+666
+]
 ]
 ]
 },
@@ -530,47 +545,83 @@ null,
 [
 "assets/images/2501/01.webp",
 "Michel Klehm",
-null
+null,
+[
+2000,
+1333
+]
 ],
 [
 "assets/images/2501/02.webp",
 "Michel Klehm",
-null
+null,
+[
+2000,
+1333
+]
 ],
 [
 "assets/images/2501/03.webp",
 "Michel Klehm",
-null
+null,
+[
+1500,
+2000
+]
 ],
 [
 "assets/images/2501/04.webp",
 "Michel Klehm",
-null
+null,
+[
+1475,
+2000
+]
 ],
 [
 "assets/images/2501/05.webp",
 "Michel Klehm",
-null
+null,
+[
+2000,
+1500
+]
 ],
 [
 "assets/images/2501/06.webp",
 "Michel Klehm",
-null
+null,
+[
+2000,
+1333
+]
 ],
 [
 "assets/images/2501/07.webp",
 "Michel Klehm",
-null
+null,
+[
+1561,
+2000
+]
 ],
 [
 "assets/images/2501/08.webp",
 "Michel Klehm",
-null
+null,
+[
+2000,
+1333
+]
 ],
 [
 "assets/images/2501/10.webp",
 "Michel Klehm",
-null
+null,
+[
+1500,
+2000
+]
 ]
 ]
 },
@@ -645,7 +696,11 @@ null
 [
 "assets/images/2411/01.webp",
 null,
-"Poster of the Ecologies of Making Worlds symposium, Vienna"
+"Poster of the Ecologies of Making Worlds symposium, Vienna",
+[
+1600,
+2000
+]
 ]
 ]
 },
@@ -674,7 +729,11 @@ null,
 [
 "assets/images/2409/01.webp",
 "Courtesy Istanbul Modern",
-"Sen de mi buradasın? (2023), found object, resin, metal"
+"Sen de mi buradasın? (2023), found object, resin, metal",
+[
+1333,
+2000
+]
 ]
 ]
 },
@@ -808,7 +867,11 @@ null,
 [
 "assets/images/2402/01.webp",
 null,
-"Portraits of Yelta Köm (left, video still) and Ulya Soley (right) on the Tarabya fellows page"
+"Portraits of Yelta Köm (left, video still) and Ulya Soley (right) on the Tarabya fellows page",
+[
+2000,
+665
+]
 ]
 ]
 },
@@ -1076,7 +1139,11 @@ null,
 [
 "assets/images/2308/01.webp",
 null,
-null
+null,
+[
+420,
+237
+]
 ]
 ],
 "related": [
@@ -1226,47 +1293,83 @@ null
 [
 "assets/images/2301/01.webp",
 null,
-null
+null,
+[
+450,
+254
+]
 ],
 [
 "assets/images/2301/02.webp",
 null,
-null
+null,
+[
+2000,
+1126
+]
 ],
 [
 "assets/images/2301/03.webp",
 null,
-null
+null,
+[
+2000,
+1500
+]
 ],
 [
 "assets/images/2301/04.webp",
 null,
-null
+null,
+[
+1510,
+2000
+]
 ],
 [
 "assets/images/2301/05.webp",
 null,
-null
+null,
+[
+1523,
+2000
+]
 ],
 [
 "assets/images/2301/06.webp",
 null,
-null
+null,
+[
+1600,
+1200
+]
 ],
 [
 "assets/images/2301/07.webp",
 null,
-null
+null,
+[
+1600,
+1200
+]
 ],
 [
 "assets/images/2301/08.webp",
 null,
-null
+null,
+[
+1600,
+1200
+]
 ],
 [
 "assets/images/2301/09.webp",
 null,
-null
+null,
+[
+1200,
+1600
+]
 ]
 ]
 },
@@ -1578,7 +1681,11 @@ null
 [
 "assets/images/2206/01.webp",
 null,
-"SAHA Studio space with timeline wall; header image of the SAHA Studio Talks page (Silent University)"
+"SAHA Studio space with timeline wall; header image of the SAHA Studio Talks page (Silent University)",
+[
+1366,
+550
+]
 ]
 ]
 },
@@ -1676,37 +1783,65 @@ null,
 [
 "assets/images/2201/01.webp",
 null,
-null
+null,
+[
+2000,
+1126
+]
 ],
 [
 "assets/images/2201/02.webp",
 null,
-null
+null,
+[
+1799,
+2000
+]
 ],
 [
 "assets/images/2201/03.webp",
 null,
-null
+null,
+[
+1841,
+2000
+]
 ],
 [
 "assets/images/2201/04.webp",
 null,
-null
+null,
+[
+2000,
+1747
+]
 ],
 [
 "assets/images/2201/05.webp",
 null,
-null
+null,
+[
+1316,
+2000
+]
 ],
 [
 "assets/images/2201/06.webp",
 null,
-null
+null,
+[
+1673,
+2000
+]
 ],
 [
 "assets/images/2201/07.webp",
 null,
-null
+null,
+[
+1170,
+2000
+]
 ]
 ]
 },
@@ -1904,7 +2039,11 @@ null
 [
 "assets/images/2119/01.webp",
 null,
-"Poster: Chromatic Wednesdays #15, Witnessing the Modes of Inhabiting City Space, 28 April 2021 (Apartment Project)"
+"Poster: Chromatic Wednesdays #15, Witnessing the Modes of Inhabiting City Space, 28 April 2021 (Apartment Project)",
+[
+1500,
+844
+]
 ]
 ]
 },
@@ -1941,7 +2080,11 @@ null,
 [
 "assets/images/2117/01.webp",
 null,
-"Poster / video title card: Yelta Köm, Spatial Investigations in Blurry Lines, Yaşar University Faculty of Architecture, interior architecture department (title card carries the English title of this talk)"
+"Poster / video title card: Yelta Köm, Spatial Investigations in Blurry Lines, Yaşar University Faculty of Architecture, interior architecture department (title card carries the English title of this talk)",
+[
+1280,
+720
+]
 ]
 ]
 },
@@ -2047,7 +2190,11 @@ null,
 [
 "assets/images/2111/01.webp",
 null,
-"Image accompanying \"Hakikat Arası\" on the old yeltakom.info"
+"Image accompanying \"Hakikat Arası\" on the old yeltakom.info",
+[
+1024,
+576
+]
 ]
 ]
 },
@@ -2090,17 +2237,29 @@ null,
 [
 "assets/images/2109/01.webp",
 "Orhan Kolukisa",
-null
+null,
+[
+1500,
+2000
+]
 ],
 [
 "assets/images/2109/02.webp",
 null,
-null
+null,
+[
+300,
+534
+]
 ],
 [
 "assets/images/2109/03.webp",
 null,
-null
+null,
+[
+828,
+1450
+]
 ]
 ]
 },
@@ -2160,12 +2319,20 @@ null
 [
 "assets/images/2107/01.webp",
 null,
-"Photograph of the panel on stage at Oyoun, THE PATH, 18 Sept 2021; image from the artist's own event post"
+"Photograph of the panel on stage at Oyoun, THE PATH, 18 Sept 2021; image from the artist's own event post",
+[
+1500,
+1109
+]
 ],
 [
 "assets/images/2107/02.webp",
 null,
-"Event visual of the Oyoun panel with portraits of the four panelists (Yelta Köm moderating)"
+"Event visual of the Oyoun panel with portraits of the four panelists (Yelta Köm moderating)",
+[
+1920,
+1440
+]
 ]
 ]
 },
@@ -2186,7 +2353,11 @@ null,
 [
 "assets/images/2106/02.webp",
 null,
-"Announcement graphic: GEMSS'21 results, listing the 13 selected practices including Yelta Köm"
+"Announcement graphic: GEMSS'21 results, listing the 13 selected practices including Yelta Köm",
+[
+1080,
+1021
+]
 ]
 ]
 },
@@ -2270,52 +2441,92 @@ null,
 [
 "assets/images/2102/01.webp",
 null,
-null
+null,
+[
+2000,
+1300
+]
 ],
 [
 "assets/images/2102/02.webp",
 null,
-null
+null,
+[
+1055,
+2000
+]
 ],
 [
 "assets/images/2102/03.webp",
 null,
-null
+null,
+[
+422,
+800
+]
 ],
 [
 "assets/images/2102/04.webp",
 null,
-null
+null,
+[
+1333,
+2000
+]
 ],
 [
 "assets/images/2102/05.webp",
 null,
-null
+null,
+[
+600,
+338
+]
 ],
 [
 "assets/images/2102/06.webp",
 null,
-null
+null,
+[
+1333,
+2000
+]
 ],
 [
 "assets/images/2102/07.webp",
 null,
-null
+null,
+[
+1055,
+2000
+]
 ],
 [
 "assets/images/2102/08.webp",
 null,
-null
+null,
+[
+1125,
+2000
+]
 ],
 [
 "assets/images/2102/09.webp",
 null,
-null
+null,
+[
+2000,
+1334
+]
 ],
 [
 "assets/images/2102/10.webp",
 null,
-null
+null,
+[
+1055,
+2000
+]
 ]
 ]
 },
@@ -2341,7 +2552,11 @@ null
 [
 "assets/images/2101/01.webp",
 "Courtesy of Versus Art Project",
-"Possibilistic Grounds (2021), video installation on an LED screen, in the group show On being water"
+"Possibilistic Grounds (2021), video installation on an LED screen, in the group show On being water",
+[
+1333,
+2000
+]
 ]
 ]
 },
@@ -2421,7 +2636,11 @@ null
 [
 "assets/images/2017/01.webp",
 "©Yelta Köm",
-"Desktop snapshot of Yelta Köm's Forecast project, Hide & Seek (2020)"
+"Desktop snapshot of Yelta Köm's Forecast project, Hide & Seek (2020)",
+[
+1237,
+720
+]
 ]
 ]
 },
@@ -2489,7 +2708,11 @@ null
 [
 "assets/images/2014/01.webp",
 null,
-"Poster: Arkitera Seyahat Bursu 2020 online theme presentation, 18 May 2020, with Atıl Aggündüz and Yelta Köm"
+"Poster: Arkitera Seyahat Bursu 2020 online theme presentation, 18 May 2020, with Atıl Aggündüz and Yelta Köm",
+[
+2000,
+1480
+]
 ]
 ]
 },
@@ -2520,7 +2743,11 @@ null,
 [
 "assets/images/2012/01.webp",
 null,
-"Image accompanying \"Gündeliğin Ferahlığı\" on the old yeltakom.info"
+"Image accompanying \"Gündeliğin Ferahlığı\" on the old yeltakom.info",
+[
+855,
+750
+]
 ]
 ]
 },
@@ -2559,7 +2786,11 @@ null,
 [
 "assets/images/2010/01.webp",
 null,
-"Image accompanying \"Berlin Notları #19\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #19\" on the old yeltakom.info",
+[
+1200,
+743
+]
 ]
 ]
 },
@@ -2579,7 +2810,11 @@ null,
 [
 "assets/images/2009/01.webp",
 null,
-"Image accompanying \"Berlin Notları #17: Pencereden Notlar*\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #17: Pencereden Notlar*\" on the old yeltakom.info",
+[
+1200,
+800
+]
 ]
 ]
 },
@@ -2599,7 +2834,11 @@ null,
 [
 "assets/images/2008/01.webp",
 null,
-"Image accompanying \"Berlin Notları #16: Yataklar\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #16: Yataklar\" on the old yeltakom.info",
+[
+1200,
+1600
+]
 ]
 ]
 },
@@ -2652,97 +2891,173 @@ null,
 [
 "assets/images/2006/01.webp",
 null,
-null
+null,
+[
+454,
+664
+]
 ],
 [
 "assets/images/2006/02.webp",
 null,
-null
+null,
+[
+600,
+600
+]
 ],
 [
 "assets/images/2006/03.webp",
 null,
-null
+null,
+[
+600,
+600
+]
 ],
 [
 "assets/images/2006/04.webp",
 null,
-null
+null,
+[
+600,
+353
+]
 ],
 [
 "assets/images/2006/05.webp",
 null,
-null
+null,
+[
+2000,
+1125
+]
 ],
 [
 "assets/images/2006/06.webp",
 null,
-null
+null,
+[
+1746,
+1190
+]
 ],
 [
 "assets/images/2006/07.webp",
 null,
-null
+null,
+[
+2000,
+1557
+]
 ],
 [
 "assets/images/2006/08.webp",
 null,
-null
+null,
+[
+1024,
+1024
+]
 ],
 [
 "assets/images/2006/09.webp",
 null,
-null
+null,
+[
+600,
+600
+]
 ],
 [
 "assets/images/2006/10.webp",
 null,
-null
+null,
+[
+1024,
+1024
+]
 ],
 [
 "assets/images/2006/11.webp",
 null,
-null
+null,
+[
+1024,
+1024
+]
 ],
 [
 "assets/images/2006/12.webp",
 null,
-null
+null,
+[
+600,
+600
+]
 ],
 [
 "assets/images/2006/13.webp",
 null,
-null
+null,
+[
+1024,
+1024
+]
 ],
 [
 "assets/images/2006/14.webp",
 null,
-null
+null,
+[
+600,
+600
+]
 ],
 [
 "assets/images/2006/15.webp",
 null,
-null
+null,
+[
+1024,
+1024
+]
 ],
 [
 "assets/images/2006/16.webp",
 null,
-null
+null,
+[
+1024,
+1024
+]
 ],
 [
 "assets/images/2006/17.webp",
 null,
-null
+null,
+[
+1274,
+1228
+]
 ],
 [
 "assets/images/2006/18.webp",
 null,
-null
+null,
+[
+1200,
+1200
+]
 ],
 [
 "assets/images/2006/19.webp",
 null,
-null
+null,
+[
+1262,
+1218
+]
 ]
 ]
 },
@@ -2767,17 +3082,29 @@ null
 [
 "assets/images/2005/01.webp",
 null,
-null
+null,
+[
+2000,
+1334
+]
 ],
 [
 "assets/images/2005/02.webp",
 null,
-null
+null,
+[
+600,
+544
+]
 ],
 [
 "assets/images/2005/04.webp",
 null,
-null
+null,
+[
+1000,
+1364
+]
 ]
 ]
 },
@@ -2816,7 +3143,11 @@ null
 [
 "assets/images/2003/01.webp",
 null,
-"Image accompanying \"Berlin Notları #20: Dijitalleşen Kent\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #20: Dijitalleşen Kent\" on the old yeltakom.info",
+[
+1890,
+1260
+]
 ]
 ]
 },
@@ -2836,7 +3167,11 @@ null,
 [
 "assets/images/2002/01.webp",
 null,
-"Promotional card, Evdeyiz #7"
+"Promotional card, Evdeyiz #7",
+[
+1024,
+538
+]
 ]
 ]
 },
@@ -2856,7 +3191,11 @@ null,
 [
 "assets/images/2001/01.webp",
 null,
-"Image accompanying \"Berlin Notları #18: Ateş, Kül, Toprak\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #18: Ateş, Kül, Toprak\" on the old yeltakom.info",
+[
+1200,
+800
+]
 ]
 ]
 },
@@ -2954,7 +3293,11 @@ null,
 [
 "assets/images/1920/01.webp",
 null,
-null
+null,
+[
+1600,
+1066
+]
 ]
 ]
 },
@@ -3046,7 +3389,11 @@ null
 [
 "assets/images/1914/01.webp",
 null,
-"Image accompanying \"Uykusuz Uykular\" on the old yeltakom.info"
+"Image accompanying \"Uykusuz Uykular\" on the old yeltakom.info",
+[
+1890,
+1417
+]
 ]
 ]
 },
@@ -3077,7 +3424,11 @@ null,
 [
 "assets/images/1912/01.webp",
 null,
-"Image accompanying \"İşgal İşleri Başkanlığı\" on the old yeltakom.info"
+"Image accompanying \"İşgal İşleri Başkanlığı\" on the old yeltakom.info",
+[
+600,
+800
+]
 ]
 ]
 },
@@ -3096,7 +3447,11 @@ null,
 [
 "assets/images/1911/01.webp",
 null,
-"Image accompanying \"Hey Gidi Koca Dünya\" on the old yeltakom.info"
+"Image accompanying \"Hey Gidi Koca Dünya\" on the old yeltakom.info",
+[
+1200,
+805
+]
 ]
 ]
 },
@@ -3115,7 +3470,11 @@ null,
 [
 "assets/images/1910/01.webp",
 null,
-"Image accompanying \"Bildiğimiz İnternetin Sonu mu Geldi?\" on the old yeltakom.info"
+"Image accompanying \"Bildiğimiz İnternetin Sonu mu Geldi?\" on the old yeltakom.info",
+[
+1200,
+900
+]
 ]
 ]
 },
@@ -3135,7 +3494,11 @@ null,
 [
 "assets/images/1909/01.webp",
 null,
-"Image accompanying \"Berlin Notları #15: Übergestern*\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #15: Übergestern*\" on the old yeltakom.info",
+[
+1200,
+794
+]
 ]
 ]
 },
@@ -3155,7 +3518,11 @@ null,
 [
 "assets/images/1908/01.webp",
 null,
-"Image accompanying \"Berlin Notları #14\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #14\" on the old yeltakom.info",
+[
+600,
+771
+]
 ]
 ]
 },
@@ -3251,12 +3618,20 @@ null,
 [
 "assets/images/1904/01.webp",
 null,
-null
+null,
+[
+1600,
+694
+]
 ],
 [
 "assets/images/1904/02.webp",
 null,
-"Image accompanying \"MimarlığınPüf Noktası?\" on the old yeltakom.info"
+"Image accompanying \"MimarlığınPüf Noktası?\" on the old yeltakom.info",
+[
+1200,
+900
+]
 ]
 ]
 },
@@ -3282,7 +3657,11 @@ null,
 [
 "assets/images/1903/01.webp",
 null,
-"Image accompanying \"Berlin Notları #13\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #13\" on the old yeltakom.info",
+[
+1200,
+900
+]
 ]
 ]
 },
@@ -3307,7 +3686,11 @@ null,
 [
 "assets/images/1902/01.webp",
 null,
-"Magazine cover, Arredamento Mimarlık, April 2019"
+"Magazine cover, Arredamento Mimarlık, April 2019",
+[
+1024,
+1473
+]
 ]
 ]
 },
@@ -3425,7 +3808,11 @@ null,
 [
 "assets/images/1815/01.webp",
 null,
-"Project title image"
+"Project title image",
+[
+1200,
+600
+]
 ]
 ]
 },
@@ -3446,7 +3833,11 @@ null,
 [
 "assets/images/1814/01.webp",
 null,
-"Project title image"
+"Project title image",
+[
+1200,
+600
+]
 ]
 ]
 },
@@ -3485,7 +3876,11 @@ null,
 [
 "assets/images/1812/01.webp",
 null,
-"Episode illustration shown on the artist's post of this broadcast"
+"Episode illustration shown on the artist's post of this broadcast",
+[
+670,
+359
+]
 ]
 ]
 },
@@ -3504,7 +3899,11 @@ null,
 [
 "assets/images/1811/01.webp",
 null,
-"Image accompanying \"Yaz Bitti\" on the old yeltakom.info"
+"Image accompanying \"Yaz Bitti\" on the old yeltakom.info",
+[
+1200,
+674
+]
 ]
 ]
 },
@@ -3523,7 +3922,11 @@ null,
 [
 "assets/images/1810/01.webp",
 null,
-"Image accompanying \"Yarın Daha İyi mi Olacak?*\" on the old yeltakom.info"
+"Image accompanying \"Yarın Daha İyi mi Olacak?*\" on the old yeltakom.info",
+[
+285,
+250
+]
 ]
 ]
 },
@@ -3555,7 +3958,11 @@ null,
 [
 "assets/images/1808/01.webp",
 null,
-"Image accompanying \"Senin Puanın Kaç?\" on the old yeltakom.info"
+"Image accompanying \"Senin Puanın Kaç?\" on the old yeltakom.info",
+[
+1890,
+946
+]
 ]
 ]
 },
@@ -3596,7 +4003,11 @@ null,
 [
 "assets/images/1806/01.webp",
 null,
-"Image accompanying \"Nereye GittiDijital Bedenin?\" on the old yeltakom.info"
+"Image accompanying \"Nereye GittiDijital Bedenin?\" on the old yeltakom.info",
+[
+1200,
+721
+]
 ]
 ]
 },
@@ -3637,7 +4048,11 @@ null,
 [
 "assets/images/1803/01.webp",
 null,
-"Image accompanying \"Konum Atsana!\" on the old yeltakom.info"
+"Image accompanying \"Konum Atsana!\" on the old yeltakom.info",
+[
+1200,
+899
+]
 ]
 ]
 },
@@ -3674,57 +4089,101 @@ null,
 [
 "assets/images/1802/01.webp",
 null,
-null
+null,
+[
+1600,
+1589
+]
 ],
 [
 "assets/images/1802/02.webp",
 null,
-"Article illustration"
+"Article illustration",
+[
+2000,
+1252
+]
 ],
 [
 "assets/images/1802/03.webp",
 null,
-null
+null,
+[
+1920,
+850
+]
 ],
 [
 "assets/images/1802/05.webp",
 null,
-"Image accompanying \"Vardiya: Esnasında ve Sonrasında\" on the old yeltakom.info"
+"Image accompanying \"Vardiya: Esnasında ve Sonrasında\" on the old yeltakom.info",
+[
+1900,
+1267
+]
 ],
 [
 "assets/images/1802/06.webp",
 null,
-"Image accompanying \"Vardiya (the Shift)': The Turkish Pavilion at the 2018 Venice Biennale\" on the old yeltakom.info"
+"Image accompanying \"Vardiya (the Shift)': The Turkish Pavilion at the 2018 Venice Biennale\" on the old yeltakom.info",
+[
+1500,
+1000
+]
 ],
 [
 "assets/images/1802/07.webp",
 null,
-"Image accompanying \"Venedik'te 'Vardiya' başladı: Bir fikir sunduk, buralara kadar geldik\" on the old yeltakom.info"
+"Image accompanying \"Venedik'te 'Vardiya' başladı: Bir fikir sunduk, buralara kadar geldik\" on the old yeltakom.info",
+[
+1200,
+800
+]
 ],
 [
 "assets/images/1802/08.webp",
 null,
-"Image accompanying \"Venedik Bienali 16. Uluslararası Mimarlık Sergisi Türkiye Pavyonu VARDİYA Açıldı!\" on the old yeltakom.info"
+"Image accompanying \"Venedik Bienali 16. Uluslararası Mimarlık Sergisi Türkiye Pavyonu VARDİYA Açıldı!\" on the old yeltakom.info",
+[
+1024,
+683
+]
 ],
 [
 "assets/images/1802/09.webp",
 null,
-"Pavilion graphic: \"Bienal ne için var?\""
+"Pavilion graphic: \"Bienal ne için var?\"",
+[
+1024,
+576
+]
 ],
 [
 "assets/images/1802/11.webp",
 null,
-"Image accompanying \"Türkiye Pavyonu'nda Vardiya sona erdi\" on the old yeltakom.info"
+"Image accompanying \"Türkiye Pavyonu'nda Vardiya sona erdi\" on the old yeltakom.info",
+[
+1024,
+576
+]
 ],
 [
 "assets/images/1802/12.webp",
 null,
-"Image accompanying \"Hiç durmayan bir su; buluşma, karşılaşma, üretme ve mimarlık: Vardiya\" on the old yeltakom.info"
+"Image accompanying \"Hiç durmayan bir su; buluşma, karşılaşma, üretme ve mimarlık: Vardiya\" on the old yeltakom.info",
+[
+740,
+493
+]
 ],
 [
 "assets/images/1802/13.webp",
 null,
-"Image accompanying \"Venedik'te Türkiye Pavyonu açıldı\" on the old yeltakom.info"
+"Image accompanying \"Venedik'te Türkiye Pavyonu açıldı\" on the old yeltakom.info",
+[
+620,
+310
+]
 ]
 ]
 },
@@ -3798,7 +4257,11 @@ null,
 [
 "assets/images/1712/01.webp",
 null,
-"Image accompanying \"Berlin Notları #12: Final\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #12: Final\" on the old yeltakom.info",
+[
+1200,
+811
+]
 ]
 ]
 },
@@ -3818,7 +4281,11 @@ null,
 [
 "assets/images/1711/01.webp",
 null,
-"Image accompanying \"Berlin Notları #11: Boncuk\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #11: Boncuk\" on the old yeltakom.info",
+[
+600,
+800
+]
 ]
 ]
 },
@@ -3838,7 +4305,11 @@ null,
 [
 "assets/images/1710/01.webp",
 null,
-"Image accompanying \"Berlin Notları #10: O Ev Berlin!\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #10: O Ev Berlin!\" on the old yeltakom.info",
+[
+1200,
+1600
+]
 ]
 ]
 },
@@ -3858,7 +4329,11 @@ null,
 [
 "assets/images/1709/01.webp",
 null,
-"Image accompanying \"Berlin Notları #8\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #8\" on the old yeltakom.info",
+[
+1000,
+667
+]
 ]
 ]
 },
@@ -3878,7 +4353,11 @@ null,
 [
 "assets/images/1708/01.webp",
 null,
-"Image accompanying \"Berlin Notları #7: Kendime Notlar\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #7: Kendime Notlar\" on the old yeltakom.info",
+[
+600,
+871
+]
 ]
 ]
 },
@@ -3898,7 +4377,11 @@ null,
 [
 "assets/images/1707/01.webp",
 null,
-"Image accompanying \"Berlin Notları #6\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #6\" on the old yeltakom.info",
+[
+1126,
+634
+]
 ]
 ]
 },
@@ -3918,7 +4401,11 @@ null,
 [
 "assets/images/1706/01.webp",
 null,
-"Image accompanying \"Berlin Notları #5\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #5\" on the old yeltakom.info",
+[
+900,
+675
+]
 ]
 ]
 },
@@ -3938,7 +4425,11 @@ null,
 [
 "assets/images/1705/01.webp",
 null,
-"Image accompanying \"Berlin Notları #2\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #2\" on the old yeltakom.info",
+[
+600,
+860
+]
 ]
 ]
 },
@@ -3976,97 +4467,173 @@ null,
 [
 "assets/images/1704/01.webp",
 null,
-null
+null,
+[
+2000,
+1002
+]
 ],
 [
 "assets/images/1704/02.webp",
 null,
-null
+null,
+[
+1200,
+1199
+]
 ],
 [
 "assets/images/1704/03.webp",
 null,
-null
+null,
+[
+956,
+685
+]
 ],
 [
 "assets/images/1704/04.webp",
 null,
-null
+null,
+[
+967,
+683
+]
 ],
 [
 "assets/images/1704/05.webp",
 null,
-null
+null,
+[
+943,
+683
+]
 ],
 [
 "assets/images/1704/06.webp",
 null,
-null
+null,
+[
+951,
+686
+]
 ],
 [
 "assets/images/1704/07.webp",
 null,
-null
+null,
+[
+953,
+680
+]
 ],
 [
 "assets/images/1704/08.webp",
 null,
-null
+null,
+[
+954,
+680
+]
 ],
 [
 "assets/images/1704/09.webp",
 null,
-null
+null,
+[
+966,
+679
+]
 ],
 [
 "assets/images/1704/10.webp",
 null,
-null
+null,
+[
+959,
+678
+]
 ],
 [
 "assets/images/1704/11.webp",
 null,
-null
+null,
+[
+964,
+685
+]
 ],
 [
 "assets/images/1704/12.webp",
 null,
-null
+null,
+[
+947,
+677
+]
 ],
 [
 "assets/images/1704/13.webp",
 null,
-null
+null,
+[
+960,
+687
+]
 ],
 [
 "assets/images/1704/14.webp",
 null,
-null
+null,
+[
+955,
+680
+]
 ],
 [
 "assets/images/1704/15.webp",
 null,
-null
+null,
+[
+959,
+684
+]
 ],
 [
 "assets/images/1704/16.webp",
 null,
-null
+null,
+[
+962,
+686
+]
 ],
 [
 "assets/images/1704/17.webp",
 null,
-null
+null,
+[
+960,
+683
+]
 ],
 [
 "assets/images/1704/18.webp",
 null,
-null
+null,
+[
+949,
+674
+]
 ],
 [
 "assets/images/1704/19.webp",
 null,
-null
+null,
+[
+962,
+679
+]
 ]
 ]
 },
@@ -4096,7 +4663,11 @@ null
 [
 "assets/images/1703/01.webp",
 null,
-"Image accompanying \"Berlin Notları #9: Hong Kong\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #9: Hong Kong\" on the old yeltakom.info",
+[
+1000,
+561
+]
 ]
 ]
 },
@@ -4122,7 +4693,11 @@ null,
 [
 "assets/images/1702/01.webp",
 null,
-"Image accompanying \"Berlin Notları #4\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #4\" on the old yeltakom.info",
+[
+1080,
+1080
+]
 ]
 ]
 },
@@ -4148,7 +4723,11 @@ null,
 [
 "assets/images/1701/01.webp",
 null,
-"Image accompanying \"Berlin Notları #3\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #3\" on the old yeltakom.info",
+[
+1000,
+750
+]
 ]
 ]
 },
@@ -4199,7 +4778,11 @@ null,
 [
 "assets/images/1613/01.webp",
 null,
-"Exhibition poster"
+"Exhibition poster",
+[
+640,
+482
+]
 ]
 ]
 },
@@ -4239,7 +4822,11 @@ null,
 [
 "assets/images/1611/01.webp",
 null,
-"Exhibition poster, Betonart summer school, Ünye/Ordu"
+"Exhibition poster, Betonart summer school, Ünye/Ordu",
+[
+439,
+1024
+]
 ]
 ]
 },
@@ -4266,7 +4853,11 @@ null,
 [
 "assets/images/1610/01.webp",
 null,
-"Book cover, Autonomous Archiving"
+"Book cover, Autonomous Archiving",
+[
+615,
+615
+]
 ]
 ]
 },
@@ -4317,17 +4908,29 @@ null,
 [
 "assets/images/1608/01.webp",
 "Arazi Collective",
-"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
+"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024",
+[
+1600,
+1200
+]
 ],
 [
 "assets/images/1608/02.webp",
 "Arazi Collective",
-"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
+"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024",
+[
+1000,
+750
+]
 ],
 [
 "assets/images/1608/03.webp",
 "Arazi Collective",
-"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024"
+"Exhibition view, Ecologies of Making Worlds (Arazi Collective), 2024",
+[
+1000,
+750
+]
 ]
 ]
 },
@@ -4375,7 +4978,11 @@ null,
 [
 "assets/images/1605/01.webp",
 null,
-"Magazine cover, Mimarlık 392"
+"Magazine cover, Mimarlık 392",
+[
+282,
+378
+]
 ]
 ]
 },
@@ -4413,22 +5020,38 @@ null,
 [
 "assets/images/1604/01.webp",
 null,
-null
+null,
+[
+2000,
+1414
+]
 ],
 [
 "assets/images/1604/02.webp",
 null,
-null
+null,
+[
+1800,
+1200
+]
 ],
 [
 "assets/images/1604/03.webp",
 null,
-null
+null,
+[
+827,
+663
+]
 ],
 [
 "assets/images/1604/04.webp",
 null,
-null
+null,
+[
+1800,
+1200
+]
 ]
 ]
 },
@@ -4454,7 +5077,11 @@ null
 [
 "assets/images/1603/01.webp",
 null,
-"Image accompanying \"Berlin Notları #1\" on the old yeltakom.info"
+"Image accompanying \"Berlin Notları #1\" on the old yeltakom.info",
+[
+945,
+1386
+]
 ]
 ]
 },
@@ -4478,7 +5105,11 @@ null,
 [
 "assets/images/1602/01.webp",
 null,
-"Screenshot collage from the Türkiye Tasarım Kronolojisi event post"
+"Screenshot collage from the Türkiye Tasarım Kronolojisi event post",
+[
+1457,
+603
+]
 ]
 ]
 },
@@ -4609,17 +5240,29 @@ null,
 [
 "assets/images/1515/01.webp",
 null,
-"Exhibition view"
+"Exhibition view",
+[
+1920,
+1280
+]
 ],
 [
 "assets/images/1515/02.webp",
 null,
-"Image accompanying \"Dikkat! Kaygan Zemin' Şimdi de Ankara’da\" on the old yeltakom.info"
+"Image accompanying \"Dikkat! Kaygan Zemin' Şimdi de Ankara’da\" on the old yeltakom.info",
+[
+920,
+613
+]
 ],
 [
 "assets/images/1515/03.webp",
 null,
-"Image accompanying \"Dikkat Zemin Kaygan!\" on the old yeltakom.info"
+"Image accompanying \"Dikkat Zemin Kaygan!\" on the old yeltakom.info",
+[
+620,
+413
+]
 ]
 ]
 },
@@ -4671,7 +5314,11 @@ null,
 [
 "assets/images/1513/01.webp",
 null,
-"Video still of the installation"
+"Video still of the installation",
+[
+1420,
+846
+]
 ]
 ]
 },
@@ -4749,7 +5396,11 @@ null,
 [
 "assets/images/1509/01.webp",
 null,
-"Video still of Yelta Köm on the TEDxReset Salon stage; image from the artist's own event post"
+"Video still of Yelta Köm on the TEDxReset Salon stage; image from the artist's own event post",
+[
+1223,
+643
+]
 ]
 ]
 },
@@ -4866,7 +5517,11 @@ null,
 [
 "assets/images/1501/01.webp",
 null,
-"Magazine cover, Betonart"
+"Magazine cover, Betonart",
+[
+744,
+1053
+]
 ]
 ]
 },
@@ -5016,7 +5671,11 @@ null,
 [
 "assets/images/1413/02.webp",
 null,
-"Workshop poster"
+"Workshop poster",
+[
+735,
+490
+]
 ]
 ]
 },
@@ -5074,7 +5733,11 @@ null,
 [
 "assets/images/1410/01.webp",
 null,
-"Video still of Yelta Köm presenting at the TSRRF Hackathon; image from the artist's own event post"
+"Video still of Yelta Köm presenting at the TSRRF Hackathon; image from the artist's own event post",
+[
+1267,
+662
+]
 ]
 ]
 },
@@ -5097,7 +5760,11 @@ null,
 [
 "assets/images/1409/01.webp",
 null,
-"Halftone title graphic of the bi'bak Gezi Park anniversary evening, 30 May 2014"
+"Halftone title graphic of the bi'bak Gezi Park anniversary evening, 30 May 2014",
+[
+1200,
+600
+]
 ]
 ]
 },
@@ -5210,7 +5877,11 @@ null,
 [
 "assets/images/1401/01.webp",
 null,
-"Image from the artist's blog post on the text"
+"Image from the artist's blog post on the text",
+[
+500,
+369
+]
 ]
 ]
 },
@@ -5244,7 +5915,11 @@ null,
 [
 "assets/images/1310/01.webp",
 null,
-"Poster: Taksim Paneli, 26 March 2013, Eyüp (Kalebodur / Emre Arolat)"
+"Poster: Taksim Paneli, 26 March 2013, Eyüp (Kalebodur / Emre Arolat)",
+[
+640,
+480
+]
 ]
 ]
 },
@@ -5314,7 +5989,11 @@ null,
 [
 "assets/images/1307/01.webp",
 null,
-"Programme cover art of Açık Mimarlık (Açık Radyo 94.9)"
+"Programme cover art of Açık Mimarlık (Açık Radyo 94.9)",
+[
+640,
+640
+]
 ]
 ]
 },
@@ -5404,17 +6083,29 @@ null,
 [
 "assets/images/1303/01.webp",
 null,
-null
+null,
+[
+2000,
+1334
+]
 ],
 [
 "assets/images/1303/02.webp",
 null,
-null
+null,
+[
+1333,
+2000
+]
 ],
 [
 "assets/images/1303/03.webp",
 null,
-"Video still, Yelta Köm (left) and H. Cenk Dereli for Kontraakt; image from the artist's own event post"
+"Video still, Yelta Köm (left) and H. Cenk Dereli for Kontraakt; image from the artist's own event post",
+[
+1261,
+623
+]
 ]
 ],
 "related": [
@@ -5545,32 +6236,56 @@ null,
 [
 "assets/images/1301/01.webp",
 null,
-null
+null,
+[
+1600,
+1055
+]
 ],
 [
 "assets/images/1301/02.webp",
 null,
-"Article illustration"
+"Article illustration",
+[
+1280,
+1267
+]
 ],
 [
 "assets/images/1301/03.webp",
 null,
-null
+null,
+[
+350,
+304
+]
 ],
 [
 "assets/images/1301/05.webp",
 null,
-"Article illustration"
+"Article illustration",
+[
+1200,
+707
+]
 ],
 [
 "assets/images/1301/06.webp",
 null,
-"Article illustration"
+"Article illustration",
+[
+1280,
+638
+]
 ],
 [
 "assets/images/1301/07.webp",
 null,
-"Line drawing of the occupygezi architecture library"
+"Line drawing of the occupygezi architecture library",
+[
+700,
+552
+]
 ]
 ]
 },
@@ -5637,7 +6352,11 @@ null,
 [
 "assets/images/1210/01.webp",
 null,
-null
+null,
+[
+1600,
+1066
+]
 ]
 ]
 },
@@ -5788,7 +6507,11 @@ null
 [
 "assets/images/1202/01.webp",
 "Ethel Baraona Pohl",
-null
+null,
+[
+1200,
+630
+]
 ]
 ]
 },
@@ -5831,17 +6554,29 @@ null
 [
 "assets/images/1201/01.webp",
 null,
-null
+null,
+[
+537,
+629
+]
 ],
 [
 "assets/images/1201/02.webp",
 null,
-"Installation view (project page on the old yeltakom.info)"
+"Installation view (project page on the old yeltakom.info)",
+[
+1500,
+920
+]
 ],
 [
 "assets/images/1201/03.webp",
 null,
-"Installation view with printed photographs on a table (project page on the old yeltakom.info)"
+"Installation view with printed photographs on a table (project page on the old yeltakom.info)",
+[
+1350,
+900
+]
 ]
 ]
 },
@@ -5915,12 +6650,20 @@ null,
 [
 "assets/images/1103/01.webp",
 null,
-"Same travel photograph strips as on the SALT presentation page (Arkitera travel grant journey), reused for the grant entry"
+"Same travel photograph strips as on the SALT presentation page (Arkitera travel grant journey), reused for the grant entry",
+[
+1200,
+1808
+]
 ],
 [
 "assets/images/1103/02.webp",
 null,
-"Photograph on the Arkitera interview page about the travel grant"
+"Photograph on the Arkitera interview page about the travel grant",
+[
+655,
+378
+]
 ]
 ]
 },
@@ -5978,12 +6721,20 @@ null,
 [
 "assets/images/1101/01.webp",
 null,
-"Strips of travel photographs from the Arkitera travel grant journey, shown on the SALT event page"
+"Strips of travel photographs from the Arkitera travel grant journey, shown on the SALT event page",
+[
+1200,
+1808
+]
 ],
 [
 "assets/images/1101/02.webp",
 null,
-"Video still of the presentation, from the artist's post on the SALT talk"
+"Video still of the presentation, from the artist's post on the SALT talk",
+[
+799,
+423
+]
 ]
 ]
 },
@@ -6067,7 +6818,11 @@ null,
 [
 "assets/images/0902/01.webp",
 "Franz von Bodelschwingh",
-null
+null,
+[
+1600,
+1120
+]
 ]
 ]
 },
