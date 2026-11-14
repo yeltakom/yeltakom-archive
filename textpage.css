@@ -2,8 +2,8 @@
    One idea: a text is a ledger of paragraphs. The Turkish and the English of each
    paragraph share one row of the grid, so they start on the same line, and the number
    in the margin is the shared index. Size, measure and space do all the ranking:
-   the family is Arial bold throughout, the signal colour marks only what can be
-   clicked, the archive number, and the translation status. */
+   the family is Arial bold throughout, links are underlined, the current state is an inverted block,
+   and there is no accent colour. */
 .tp {
   --no: 1.8rem;          /* margin column: paragraph numbers, archive number */
   --g: 2.4rem;           /* gutter between columns */
@@ -33,25 +33,25 @@
 .tp-colo {
   display: grid; grid-template-columns: var(--tpcols); column-gap: var(--g);
   margin: 0; padding: 0.55rem 0 1.1rem; border-top: 2px solid var(--ink);
-  border-bottom: 1px solid var(--hair); font-size: 15px; line-height: 1.3; align-items: start;
+  border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.3; align-items: start;
 }
 .tp-colo > div, .tp-colo .grp > div { min-width: 0; }
 .tp-colo dt { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--mute); margin: 0 0 0.2rem; }
 .tp-colo dd { margin: 0; overflow-wrap: anywhere; }
-.tp-colo .no dd a { text-decoration: none; color: var(--sig); }
+.tp-colo .no dd a { text-decoration: none; color: var(--ink); }
 .tp-colo .no dd a:hover { text-decoration: underline; }
 .tp-colo .no { white-space: nowrap; }
 .tp-colo .long { display: none; }
 .tp-colo .grp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem var(--g); }
-.tp-colo .flag dd { color: var(--sig); }
+.tp-colo .flag dd { color: var(--ink); }
 .tp.single .tp-colo .grp:first-of-type { grid-column: 2; }
 .tp.single .tp-colo .grp + .grp { grid-column: 2; margin-top: 0.8rem; }
 .tp-colo .grp:empty { display: none; }
 
 /* ---- status line: heads each column ---- */
 .tp-st { margin: 0; font-size: 14px; line-height: 1.3; color: var(--ink); }
-.tp-st.tr { color: var(--sig); }
-.tp-note { margin: 0.25rem 0 0; font-size: 14px; line-height: 1.3; color: var(--sig); }
+.tp-st.tr { color: var(--mute); }
+.tp-note { margin: 0.25rem 0 0; font-size: 14px; line-height: 1.3; color: var(--mute); }
 
 /* ---- aligned rows ---- */
 .tp-rows { margin-top: 1.4rem; }
@@ -101,7 +101,7 @@
   .tp h1, .tp h1:has(span) { display: block; padding-left: 0; font-size: clamp(1.9rem, 9vw, 3rem); }
   .tp-colo { grid-template-columns: 1fr; row-gap: 0.7rem; }
   .tp-colo .grp, .tp.single .tp-colo .grp:first-of-type, .tp.single .tp-colo .grp + .grp { grid-column: 1; margin: 0; }
-  .tp-colo .no dd { color: var(--sig); }
+  .tp-colo .no dd { color: var(--ink); }
   .tp-colo .no { display: flex; gap: 0.6rem; align-items: baseline; }
   .tp-colo .no dt { margin: 0; }
   .tp-colo .long { display: inline; }
@@ -114,10 +114,10 @@
   .tp-colo + .tp-tabs { margin-top: 0; }
   .tp.js .tp-tabs {
     display: flex; gap: 1.2rem; position: sticky; top: calc(var(--barh) - 1px); z-index: 5;
-    background: #fff; padding: 0.55rem 0; border-bottom: 1px solid var(--ink); font-size: 1rem;
+    background: var(--bg); padding: 0.55rem 0; border-bottom: 1px solid var(--ink); font-size: 1rem;
   }
   .tp-tabs button { padding: 0 0.3em; margin: 0 -0.3em; }
-  .tp-tabs button[aria-pressed="true"] { background: var(--sig); color: #fff; }
+  .tp-tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
   .tp.js[data-show="0"] [data-v]:not([data-v="0"]),
   .tp.js[data-show="1"] [data-v]:not([data-v="1"]),
   .tp.js[data-show="2"] [data-v]:not([data-v="2"]) { display: none; }

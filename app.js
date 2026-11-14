@@ -1,7 +1,7 @@
 /* yeltakom.info archive. Hand-written. Data comes from data.js (ARCHIVE).
-   The bar at the top is the section filter, the search and the List / Image switch.
-   The home page opens on the composition (landing.js); this file only places the reader
-   at the table when the address, the bar or the search asks for it.
+   The bar at the top is the section filter, the search and the Image / List switch.
+   The home page opens on the stream (Image): projects and texts as one run of pictures on the
+   ground, captioned by kind, number and name. List is the table.
    The table sorts on its column headings, rows open in place, and a row that has
    a picture shows it at the cursor. */
 (function () {
@@ -15,10 +15,18 @@
     workshops: function (e) { return e.section === 'workshop'; },
     networks: function (e) { return e.section === 'network'; }
   };
+  /* WHAT "ALL" SHOWS IN THE STREAM, AND IN WHAT ORDER. Under All the Image view shows only these
+     sections, in this order: first every project ("work": installations, videos, exhibitions, research),
+     newest first, then the texts ("text"), newest first. Talks, workshops, networks and residencies join
+     the stream only when their own section is chosen in the bar. The List view under All still lists
+     everything in one run. To show everything in the stream, make this null. */
+  var STREAM_ALL = ['work', 'text'];
+  /* picture width inside its cell, by shape (width / height): portrait, square, landscape */
+  var WIDTH_BY_SHAPE = { portrait: 0.62, square: 0.8, landscape: 1 };
   var FEATURED = ['Installation', 'Exhibition (solo)', 'Counter-mapping', 'Public art / Kunst am Bau', 'Artist book'];
   var COLUMNS = [['no', 'No.'], ['dates', 'Date/s'], ['name', 'Name'], ['type', 'Type/s'], ['for', 'For'], ['with', 'With']];
   var CLS = { no: 'c-no', dates: 'c-date', name: 'c-name', type: 'c-type', 'for': 'c-for', 'with': 'c-with' };
-  var state = { section: 'all', q: '', view: 'list', open: new Set(), sort: { key: 'no', dir: -1 } };
+  var state = { section: 'all', q: '', view: 'image', open: new Set(), sort: { key: 'no', dir: -1 } };
   var $ = function (id) { return document.getElementById(id); };
   var root = $('archive');
   var secLinks = document.querySelectorAll('header.bar a[data-sec]');
@@ -34,7 +42,7 @@
   }
   /* pictures of an entry: the published rows of archive/images-manifest.csv, as [file, credit, caption] */
   function images(e) {
-    return (e.imgs || []).map(function (i) { return { url: i[0], credit: i[1], caption: i[2] }; });
+    return (e.imgs || []).map(function (i) { return { url: i[0], credit: i[1], caption: i[2], size: i[3] }; });
   }
   function altOf(e, i) { return e.name + (i.caption ? ', ' + i.caption : ''); }
   ENTRIES.forEach(function (e) {
@@ -55,17 +63,20 @@
   function setSection(id, push) {
     state.section = SECTIONS[id] ? id : 'all';
     setSectionMark();
-    if (push) history.replaceState(null, '', state.section === 'all' ? location.pathname : '#' + state.section);
+    if (push) history.replaceState(null, '', state.section === 'all' ? (state.view === 'list' ? '#list' : location.pathname) : '#' + state.section);
     render();
   }
-  /* the table's top edge (its column header) sits just under the frozen bar */
-  function scrollToTable() {
-    window.scrollTo(0, root.getBoundingClientRect().top + window.pageYOffset - barHeight());
+  /* a new filter replaces the content: if the reader is already down the page, start again at its top edge */
+  function toTopOfContent() {
+    var top = root.getBoundingClientRect().top + window.pageYOffset - barHeight();
+    if (window.pageYOffset > top) window.scrollTo(0, top);
   }
-  function setView(v) {
+  function setView(v, push) {
     state.view = v;
     $('vlist').setAttribute('aria-pressed', String(v === 'list'));
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
+    // #list addresses the table; the section hashes (#works ...) keep their own meaning
+    if (push && state.section === 'all') history.replaceState(null, '', v === 'list' ? '#list' : location.pathname);
     render();
   }
   function setSectionMark() {
@@ -79,13 +90,13 @@
       a.addEventListener('click', function (ev) {
         ev.preventDefault();
         setSection(a.getAttribute('data-sec'), true);
-        scrollToTable();
+        toTopOfContent();
       });
     });
     var sq = $('sq');
-    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); scrollToTable(); });
-    $('vlist').addEventListener('click', function () { setView('list'); scrollToTable(); });
-    $('vimg').addEventListener('click', function () { setView('image'); scrollToTable(); });
+    if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); toTopOfContent(); });
+    $('vlist').addEventListener('click', function () { setView('list', true); toTopOfContent(); });
+    $('vimg').addEventListener('click', function () { setView('image', true); toTopOfContent(); });
   }
 
   /* ---------- More: the biography opens under the introduction ---------- */
@@ -102,17 +113,22 @@
   function filtered() {
     var test = SECTIONS[state.section] || SECTIONS.all;
     var words = norm(state.q).split(/\s+/).filter(Boolean);
+    var stream = state.view === 'image' && state.section === 'all' && STREAM_ALL;
     var list = ENTRIES.filter(function (e) {
-      return test(e) && words.every(function (w) { return e._hay.indexOf(w) > -1; });
+      return test(e) && (!stream || STREAM_ALL.indexOf(e.section) > -1) && words.every(function (w) { return e._hay.indexOf(w) > -1; });
     });
     var key = state.sort.key, dir = state.sort.dir;
-    return list.slice().sort(function (a, b) {
+    var sorted = list.slice().sort(function (a, b) {
       var x = a._k[key], y = b._k[key];
       if (!x && y) return 1;            // empty cells always sink to the end
       if (x && !y) return -1;
       if (x === y) return a.no < b.no ? 1 : -1;
       return (x < y ? -1 : 1) * dir;
     });
+    if (!stream) return sorted;
+    /* works lead the home page: keep each section's own order, put the sections in STREAM_ALL's order */
+    return sorted.map(function (e, n) { return [STREAM_ALL.indexOf(e.section), n, e]; })
+      .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; }).map(function (t) { return t[2]; });
   }
   function sortBy(key) {
     if (state.sort.key === key) state.sort.dir *= -1;
@@ -229,22 +245,39 @@
     return h;
   }
 
-  /* ---------- image view ---------- */
+  /* ---------- image view: the stream ---------- */
+  /* Every item is one link: the work page, the text page, or the entry's row in the List view.
+     The caption is the same for all: the kind (first type) in small capitals, then number and name.
+     An entry without a picture sets its name large instead (the name is the picture) and the
+     caption keeps the kind and the number. The first entry that has a picture opens the stream at
+     full width; the rest follow newest first, in a field of columns. */
+  function hrefOf(e) { return e.page || e.text || 'index.html#e-' + e.no; }
+  function streamItem(e, hero) {
+    var im = images(e)[0], sz = im && im.size && im.size[0] && im.size[1] ? im.size : null;
+    var kind = (e.types || [])[0] || '';
+    var li = el('li', { class: (hero ? 'hero ' : '') + (im ? 'pic' : 'noimg') });
+    var pic = '';
+    if (im) {
+      var w = sz ? sz[0] : 4, h = sz ? sz[1] : 3, r = w / h;
+      var k = r < 0.9 ? WIDTH_BY_SHAPE.portrait : (r <= 1.1 ? WIDTH_BY_SHAPE.square : WIDTH_BY_SHAPE.landscape);
+      pic = '<img class="pic" src="' + esc(im.url) + '" alt="' + esc(altOf(e, im)) + '" width="' + w + '" height="' + h +
+        '" style="--w:' + w + ';--h:' + h + ';--k:' + (hero ? 1 : k) + '" loading="lazy" decoding="async">';
+    }
+    var a = el('a', { href: hrefOf(e) },
+      pic + '<span class="big">' + esc(e.name) + '</span>' +
+      '<span class="cap">' + (kind ? '<span class="kind">' + esc(kind) + '</span>' : '') +
+      '<span class="nm"><span class="c-no">' + esc(e.no) + '</span><span class="c-nm"> ' + esc(e.name) + '</span></span></span>');
+    li.appendChild(a);
+    return li;
+  }
   function renderImages(list) {
-    var g = el('ol', { class: 'grid', 'aria-label': 'Archive entries, image view' });
-    list.forEach(function (e) {
-      var im = images(e)[0];
-      var li = el('li', { class: im ? 'tile pic' : 'tile type' });
-      var b = el('button', { type: 'button', 'aria-label': e.no + ' ' + e.name + ', open in list' },
-        (im ? '<img src="' + esc(im.url) + '" alt="' + esc(altOf(e, im)) + '" loading="lazy" decoding="async">' : '') +
-        '<span class="cap"><span class="c-no">' + esc(e.no) + '</span> ' + esc(e.name) + '</span>');
-      b.addEventListener('click', function () {
-        state.open.add(e.no); setView('list');
-        var t = $('e-' + e.no); if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
-      });
-      li.appendChild(b); g.appendChild(li);
-    });
+    var g = el('ol', { class: 'stream', 'aria-label': 'Archive entries, image view' });
+    var first = -1;
+    list.forEach(function (e, i) { if (first < 0 && images(e).length) first = i; });
+    if (first > -1) g.appendChild(streamItem(list[first], true));
+    list.forEach(function (e, i) { if (i !== first) g.appendChild(streamItem(e, false)); });
     root.appendChild(g);
+    if (!list.length) root.appendChild(el('p', { class: 'empty' }, 'Nothing in the archive matches that.'));
   }
 
   function render() {
@@ -263,48 +296,43 @@
     var t = $(h);
     if (t) { t.scrollIntoView({ block: 'start' }); t.querySelector('.row').focus({ preventScroll: true }); }
   }
-  // no hash or #mix: the top of the page, the composition. A section or an entry in the address: the table.
   // #more opens the biography and scrolls to the introduction.
   function toAbout() {
     var a = document.querySelector('.about');
     if (a) window.scrollTo(0, a.getBoundingClientRect().top + window.pageYOffset - barHeight() - 8);
   }
+  // no hash: the stream. #works, #texts ...: the stream of that section. #list: the table.
+  // #e-NNNN: the table, with that row open. #more: the biography.
   function fromHash() {
     var h = decodeURIComponent(location.hash.slice(1));
-    if (h === 'mix') { setSection('all', false); window.scrollTo(0, 0); return; }
-    if (h === 'more') { setSection('all', false); setMore(true); toAbout(); return; }
+    if (h === 'more') { setView('image'); setSection('all', false); setMore(true); toAbout(); return; }
     if (/^e-\d{4}$/.test(h)) {
-      state.open.add(h.slice(2)); setSection('all', false); toEntry(h);
+      state.open.add(h.slice(2)); setView('list'); setSection('all', false); toEntry(h);
       return;
     }
-    var isSec = !!SECTIONS[h];
-    setSection(isSec ? h : 'all', false);
-    if (isSec || h === 'archive') scrollToTable();
+    setView(h === 'list' ? 'list' : 'image');
+    setSection(SECTIONS[h] ? h : 'all', false);
   }
 
-  // many images are hotlinked from institutions, so a dead one is normal over time:
-  // drop it rather than leave a broken-image icon behind
+  // a picture that fails to load (a dead link, a missing file) turns its stream item into the
+  // no-picture form (name set large) instead of leaving a hole; strip and table pictures are dropped
   document.addEventListener('error', function (ev) {
     var t = ev.target;
     if (t && t.tagName === 'IMG') {
       if (t.id === 'thumb') { hideThumb(); return; }
-      var tile = t.closest('.tile') || t.closest('.strip a') || t;
-      if (tile && tile.parentNode) { tile.parentNode.removeChild(tile); }
+      var item = t.closest('.stream > li');
+      if (item) { item.classList.remove('pic'); item.classList.add('noimg'); return; }
+      var strip = t.closest('.strip a') || t;
+      if (strip && strip.parentNode) { strip.parentNode.removeChild(strip); }
     }
   }, true);
 
   wireBar();
   fromHash();
   window.addEventListener('hashchange', function () { userMoved = true; fromHash(); });
-  // the composition is built after this script and the images settle later: place the reader again
-  // once it has filled the page, and once more when everything has loaded
-  function replace() {
-    if (userMoved || !location.hash) return;
+  // row heights settle when pictures in open rows load: place the reader on the row once more
+  window.addEventListener('load', function () {
     var h = decodeURIComponent(location.hash.slice(1));
-    if (/^e-\d{4}$/.test(h)) toEntry(h);
-    else if (SECTIONS[h] || h === 'archive') scrollToTable();
-    else if (h === 'more') toAbout();
-  }
-  document.addEventListener('ykmix', replace);
-  window.addEventListener('load', replace);
+    if (!userMoved && /^e-\d{4}$/.test(h)) toEntry(h);
+  });
 })();
