@@ -35,7 +35,8 @@ null,
 [
 1080,
 1350
-]
+],
+"poster"
 ]
 ]
 },
@@ -75,7 +76,8 @@ null,
 [
 1500,
 2000
-]
+],
+"poster"
 ]
 ]
 },
@@ -256,7 +258,8 @@ null,
 [
 1920,
 1280
-]
+],
+"work"
 ]
 ]
 },
@@ -303,7 +306,8 @@ null,
 [
 1920,
 1280
-]
+],
+"work"
 ]
 ]
 },
@@ -408,7 +412,8 @@ null,
 [
 1000,
 666
-]
+],
+"work"
 ],
 [
 "assets/images/2506/02.webp",
@@ -417,7 +422,8 @@ null,
 [
 944,
 1280
-]
+],
+"work"
 ],
 [
 "assets/images/2506/03.webp",
@@ -426,7 +432,8 @@ null,
 [
 1000,
 666
-]
+],
+"work"
 ]
 ]
 },
@@ -549,7 +556,8 @@ null,
 [
 2000,
 1333
-]
+],
+"work"
 ],
 [
 "assets/images/2501/02.webp",
@@ -558,7 +566,8 @@ null,
 [
 2000,
 1333
-]
+],
+"work"
 ],
 [
 "assets/images/2501/03.webp",
@@ -567,7 +576,8 @@ null,
 [
 1500,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2501/04.webp",
@@ -576,7 +586,8 @@ null,
 [
 1475,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2501/05.webp",
@@ -585,7 +596,8 @@ null,
 [
 2000,
 1500
-]
+],
+"work"
 ],
 [
 "assets/images/2501/06.webp",
@@ -594,7 +606,8 @@ null,
 [
 2000,
 1333
-]
+],
+"work"
 ],
 [
 "assets/images/2501/07.webp",
@@ -603,7 +616,8 @@ null,
 [
 1561,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2501/08.webp",
@@ -612,7 +626,8 @@ null,
 [
 2000,
 1333
-]
+],
+"work"
 ],
 [
 "assets/images/2501/10.webp",
@@ -621,7 +636,8 @@ null,
 [
 1500,
 2000
-]
+],
+"work"
 ]
 ]
 },
@@ -700,7 +716,8 @@ null,
 [
 1600,
 2000
-]
+],
+"poster"
 ]
 ]
 },
@@ -733,7 +750,8 @@ null,
 [
 1333,
 2000
-]
+],
+"work"
 ]
 ]
 },
@@ -871,7 +889,8 @@ null,
 [
 2000,
 665
-]
+],
+"portrait"
 ]
 ]
 },
@@ -1143,7 +1162,8 @@ null,
 [
 420,
 237
-]
+],
+"work"
 ]
 ],
 "related": [
@@ -1152,28 +1172,6 @@ null,
 "dates": "2023"
 }
 ]
-},
-{
-"no": "2307",
-"dates": "2023",
-"name": "I'm not good at catchy one-liners, but who can say no to a laser proposal?",
-"types": [
-"Video"
-],
-"with": [
-"Aslı Serbest",
-"Mona Mahall",
-"Ayşenaz Toker",
-"Merve Tuna",
-"Ömer Tevfik Erten",
-"Pınar Üzeltüzenci",
-"Tanja Ostojić"
-],
-"role": "co-author within the collective",
-"status": "realised",
-"description": "Collective laser projection recorded on a seven-minute video and a poster magazine of eleven posters, starting from the Women's Library in Fener and Dolores Hayden's essay on the non-sexist city, supported by Kulturakademie Tarabya and Koç Museum.",
-"section": "work",
-"page": "works/2307-concept-text-lazer.html"
 },
 {
 "no": "2306",
@@ -1297,7 +1295,8 @@ null,
 [
 450,
 254
-]
+],
+"work"
 ],
 [
 "assets/images/2301/02.webp",
@@ -1306,7 +1305,8 @@ null,
 [
 2000,
 1126
-]
+],
+"work"
 ],
 [
 "assets/images/2301/03.webp",
@@ -1315,7 +1315,8 @@ null,
 [
 2000,
 1500
-]
+],
+"work"
 ],
 [
 "assets/images/2301/04.webp",
@@ -1324,7 +1325,8 @@ null,
 [
 1510,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2301/05.webp",
@@ -1333,7 +1335,8 @@ null,
 [
 1523,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2301/06.webp",
@@ -1342,7 +1345,8 @@ null,
 [
 1600,
 1200
-]
+],
+"work"
 ],
 [
 "assets/images/2301/07.webp",
@@ -1351,7 +1355,8 @@ null,
 [
 1600,
 1200
-]
+],
+"work"
 ],
 [
 "assets/images/2301/08.webp",
@@ -1360,7 +1365,8 @@ null,
 [
 1600,
 1200
-]
+],
+"work"
 ],
 [
 "assets/images/2301/09.webp",
@@ -1369,7 +1375,8 @@ null,
 [
 1200,
 1600
-]
+],
+"work"
 ]
 ]
 },
@@ -1685,7 +1692,8 @@ null,
 [
 1366,
 550
-]
+],
+"event"
 ]
 ]
 },
@@ -1787,7 +1795,8 @@ null,
 [
 2000,
 1126
-]
+],
+"work"
 ],
 [
 "assets/images/2201/02.webp",
@@ -1796,7 +1805,8 @@ null,
 [
 1799,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2201/03.webp",
@@ -1805,7 +1815,8 @@ null,
 [
 1841,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2201/04.webp",
@@ -1814,7 +1825,8 @@ null,
 [
 2000,
 1747
-]
+],
+"work"
 ],
 [
 "assets/images/2201/05.webp",
@@ -1823,7 +1835,8 @@ null,
 [
 1316,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2201/06.webp",
@@ -1832,7 +1845,8 @@ null,
 [
 1673,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2201/07.webp",
@@ -1841,7 +1855,8 @@ null,
 [
 1170,
 2000
-]
+],
+"work"
 ]
 ]
 },
@@ -2043,7 +2058,8 @@ null,
 [
 1500,
 844
-]
+],
+"poster"
 ]
 ]
 },
@@ -2084,7 +2100,8 @@ null,
 [
 1280,
 720
-]
+],
+"poster"
 ]
 ]
 },
@@ -2194,7 +2211,8 @@ null,
 [
 1024,
 576
-]
+],
+"illustration"
 ]
 ]
 },
@@ -2241,7 +2259,8 @@ null,
 [
 1500,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2109/02.webp",
@@ -2250,7 +2269,8 @@ null,
 [
 300,
 534
-]
+],
+"work"
 ],
 [
 "assets/images/2109/03.webp",
@@ -2259,7 +2279,8 @@ null,
 [
 828,
 1450
-]
+],
+"work"
 ]
 ]
 },
@@ -2323,7 +2344,8 @@ null,
 [
 1500,
 1109
-]
+],
+"event"
 ],
 [
 "assets/images/2107/02.webp",
@@ -2332,7 +2354,8 @@ null,
 [
 1920,
 1440
-]
+],
+"poster"
 ]
 ]
 },
@@ -2357,7 +2380,8 @@ null,
 [
 1080,
 1021
-]
+],
+"poster"
 ]
 ]
 },
@@ -2445,7 +2469,8 @@ null,
 [
 2000,
 1300
-]
+],
+"work"
 ],
 [
 "assets/images/2102/02.webp",
@@ -2454,7 +2479,8 @@ null,
 [
 1055,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2102/03.webp",
@@ -2463,7 +2489,8 @@ null,
 [
 422,
 800
-]
+],
+"work"
 ],
 [
 "assets/images/2102/04.webp",
@@ -2472,7 +2499,8 @@ null,
 [
 1333,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2102/05.webp",
@@ -2481,7 +2509,8 @@ null,
 [
 600,
 338
-]
+],
+"work"
 ],
 [
 "assets/images/2102/06.webp",
@@ -2490,7 +2519,8 @@ null,
 [
 1333,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2102/07.webp",
@@ -2499,7 +2529,8 @@ null,
 [
 1055,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2102/08.webp",
@@ -2508,7 +2539,8 @@ null,
 [
 1125,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/2102/09.webp",
@@ -2517,7 +2549,8 @@ null,
 [
 2000,
 1334
-]
+],
+"work"
 ],
 [
 "assets/images/2102/10.webp",
@@ -2526,7 +2559,8 @@ null,
 [
 1055,
 2000
-]
+],
+"work"
 ]
 ]
 },
@@ -2556,7 +2590,8 @@ null,
 [
 1333,
 2000
-]
+],
+"work"
 ]
 ]
 },
@@ -2640,7 +2675,8 @@ null,
 [
 1237,
 720
-]
+],
+"work"
 ]
 ]
 },
@@ -2712,7 +2748,8 @@ null,
 [
 2000,
 1480
-]
+],
+"poster"
 ]
 ]
 },
@@ -2747,7 +2784,8 @@ null,
 [
 855,
 750
-]
+],
+"illustration"
 ]
 ]
 },
@@ -2790,7 +2828,8 @@ null,
 [
 1200,
 743
-]
+],
+"illustration"
 ]
 ]
 },
@@ -2814,7 +2853,8 @@ null,
 [
 1200,
 800
-]
+],
+"illustration"
 ]
 ]
 },
@@ -2838,7 +2878,8 @@ null,
 [
 1200,
 1600
-]
+],
+"illustration"
 ]
 ]
 },
@@ -2895,7 +2936,8 @@ null,
 [
 454,
 664
-]
+],
+"work"
 ],
 [
 "assets/images/2006/02.webp",
@@ -2904,7 +2946,8 @@ null,
 [
 600,
 600
-]
+],
+"work"
 ],
 [
 "assets/images/2006/03.webp",
@@ -2913,7 +2956,8 @@ null,
 [
 600,
 600
-]
+],
+"work"
 ],
 [
 "assets/images/2006/04.webp",
@@ -2922,7 +2966,8 @@ null,
 [
 600,
 353
-]
+],
+"work"
 ],
 [
 "assets/images/2006/05.webp",
@@ -2931,7 +2976,8 @@ null,
 [
 2000,
 1125
-]
+],
+"work"
 ],
 [
 "assets/images/2006/06.webp",
@@ -2940,7 +2986,8 @@ null,
 [
 1746,
 1190
-]
+],
+"work"
 ],
 [
 "assets/images/2006/07.webp",
@@ -2949,7 +2996,8 @@ null,
 [
 2000,
 1557
-]
+],
+"work"
 ],
 [
 "assets/images/2006/08.webp",
@@ -2958,7 +3006,8 @@ null,
 [
 1024,
 1024
-]
+],
+"work"
 ],
 [
 "assets/images/2006/09.webp",
@@ -2967,7 +3016,8 @@ null,
 [
 600,
 600
-]
+],
+"work"
 ],
 [
 "assets/images/2006/10.webp",
@@ -2976,7 +3026,8 @@ null,
 [
 1024,
 1024
-]
+],
+"work"
 ],
 [
 "assets/images/2006/11.webp",
@@ -2985,7 +3036,8 @@ null,
 [
 1024,
 1024
-]
+],
+"work"
 ],
 [
 "assets/images/2006/12.webp",
@@ -2994,7 +3046,8 @@ null,
 [
 600,
 600
-]
+],
+"work"
 ],
 [
 "assets/images/2006/13.webp",
@@ -3003,7 +3056,8 @@ null,
 [
 1024,
 1024
-]
+],
+"work"
 ],
 [
 "assets/images/2006/14.webp",
@@ -3012,7 +3066,8 @@ null,
 [
 600,
 600
-]
+],
+"work"
 ],
 [
 "assets/images/2006/15.webp",
@@ -3021,7 +3076,8 @@ null,
 [
 1024,
 1024
-]
+],
+"work"
 ],
 [
 "assets/images/2006/16.webp",
@@ -3030,7 +3086,8 @@ null,
 [
 1024,
 1024
-]
+],
+"work"
 ],
 [
 "assets/images/2006/17.webp",
@@ -3039,7 +3096,8 @@ null,
 [
 1274,
 1228
-]
+],
+"work"
 ],
 [
 "assets/images/2006/18.webp",
@@ -3048,7 +3106,8 @@ null,
 [
 1200,
 1200
-]
+],
+"work"
 ],
 [
 "assets/images/2006/19.webp",
@@ -3057,7 +3116,8 @@ null,
 [
 1262,
 1218
-]
+],
+"work"
 ]
 ]
 },
@@ -3086,7 +3146,8 @@ null,
 [
 2000,
 1334
-]
+],
+"work"
 ],
 [
 "assets/images/2005/02.webp",
@@ -3095,7 +3156,8 @@ null,
 [
 600,
 544
-]
+],
+"work"
 ],
 [
 "assets/images/2005/04.webp",
@@ -3104,7 +3166,8 @@ null,
 [
 1000,
 1364
-]
+],
+"work"
 ]
 ]
 },
@@ -3147,7 +3210,8 @@ null,
 [
 1890,
 1260
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3171,7 +3235,8 @@ null,
 [
 1024,
 538
-]
+],
+"poster"
 ]
 ]
 },
@@ -3195,7 +3260,8 @@ null,
 [
 1200,
 800
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3297,7 +3363,8 @@ null,
 [
 1600,
 1066
-]
+],
+"work"
 ]
 ]
 },
@@ -3393,7 +3460,8 @@ null,
 [
 1890,
 1417
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3428,7 +3496,8 @@ null,
 [
 600,
 800
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3451,7 +3520,8 @@ null,
 [
 1200,
 805
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3474,7 +3544,8 @@ null,
 [
 1200,
 900
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3498,7 +3569,8 @@ null,
 [
 1200,
 794
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3522,7 +3594,8 @@ null,
 [
 600,
 771
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3622,7 +3695,8 @@ null,
 [
 1600,
 694
-]
+],
+"work"
 ],
 [
 "assets/images/1904/02.webp",
@@ -3631,7 +3705,8 @@ null,
 [
 1200,
 900
-]
+],
+"work"
 ]
 ]
 },
@@ -3661,7 +3736,8 @@ null,
 [
 1200,
 900
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3690,7 +3766,8 @@ null,
 [
 1024,
 1473
-]
+],
+"cover"
 ]
 ]
 },
@@ -3812,7 +3889,8 @@ null,
 [
 1200,
 600
-]
+],
+"poster"
 ]
 ]
 },
@@ -3837,7 +3915,8 @@ null,
 [
 1200,
 600
-]
+],
+"work"
 ]
 ]
 },
@@ -3880,7 +3959,8 @@ null,
 [
 670,
 359
-]
+],
+"poster"
 ]
 ]
 },
@@ -3903,7 +3983,8 @@ null,
 [
 1200,
 674
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3926,7 +4007,8 @@ null,
 [
 285,
 250
-]
+],
+"illustration"
 ]
 ]
 },
@@ -3962,7 +4044,8 @@ null,
 [
 1890,
 946
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4007,7 +4090,8 @@ null,
 [
 1200,
 721
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4052,7 +4136,8 @@ null,
 [
 1200,
 899
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4093,7 +4178,8 @@ null,
 [
 1600,
 1589
-]
+],
+"work"
 ],
 [
 "assets/images/1802/02.webp",
@@ -4102,7 +4188,8 @@ null,
 [
 2000,
 1252
-]
+],
+"work"
 ],
 [
 "assets/images/1802/03.webp",
@@ -4111,7 +4198,8 @@ null,
 [
 1920,
 850
-]
+],
+"poster"
 ],
 [
 "assets/images/1802/05.webp",
@@ -4120,7 +4208,8 @@ null,
 [
 1900,
 1267
-]
+],
+"work"
 ],
 [
 "assets/images/1802/06.webp",
@@ -4129,7 +4218,8 @@ null,
 [
 1500,
 1000
-]
+],
+"work"
 ],
 [
 "assets/images/1802/07.webp",
@@ -4138,7 +4228,8 @@ null,
 [
 1200,
 800
-]
+],
+"work"
 ],
 [
 "assets/images/1802/08.webp",
@@ -4147,7 +4238,8 @@ null,
 [
 1024,
 683
-]
+],
+"work"
 ],
 [
 "assets/images/1802/09.webp",
@@ -4156,7 +4248,8 @@ null,
 [
 1024,
 576
-]
+],
+"poster"
 ],
 [
 "assets/images/1802/11.webp",
@@ -4165,7 +4258,8 @@ null,
 [
 1024,
 576
-]
+],
+"work"
 ],
 [
 "assets/images/1802/12.webp",
@@ -4174,7 +4268,8 @@ null,
 [
 740,
 493
-]
+],
+"work"
 ],
 [
 "assets/images/1802/13.webp",
@@ -4183,7 +4278,8 @@ null,
 [
 620,
 310
-]
+],
+"work"
 ]
 ]
 },
@@ -4261,7 +4357,8 @@ null,
 [
 1200,
 811
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4285,7 +4382,8 @@ null,
 [
 600,
 800
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4309,7 +4407,8 @@ null,
 [
 1200,
 1600
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4333,7 +4432,8 @@ null,
 [
 1000,
 667
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4357,7 +4457,8 @@ null,
 [
 600,
 871
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4381,7 +4482,8 @@ null,
 [
 1126,
 634
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4405,7 +4507,8 @@ null,
 [
 900,
 675
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4429,7 +4532,8 @@ null,
 [
 600,
 860
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4471,7 +4575,8 @@ null,
 [
 2000,
 1002
-]
+],
+"work"
 ],
 [
 "assets/images/1704/02.webp",
@@ -4480,7 +4585,8 @@ null,
 [
 1200,
 1199
-]
+],
+"work"
 ],
 [
 "assets/images/1704/03.webp",
@@ -4489,7 +4595,8 @@ null,
 [
 956,
 685
-]
+],
+"work"
 ],
 [
 "assets/images/1704/04.webp",
@@ -4498,7 +4605,8 @@ null,
 [
 967,
 683
-]
+],
+"work"
 ],
 [
 "assets/images/1704/05.webp",
@@ -4507,7 +4615,8 @@ null,
 [
 943,
 683
-]
+],
+"work"
 ],
 [
 "assets/images/1704/06.webp",
@@ -4516,7 +4625,8 @@ null,
 [
 951,
 686
-]
+],
+"work"
 ],
 [
 "assets/images/1704/07.webp",
@@ -4525,7 +4635,8 @@ null,
 [
 953,
 680
-]
+],
+"work"
 ],
 [
 "assets/images/1704/08.webp",
@@ -4534,7 +4645,8 @@ null,
 [
 954,
 680
-]
+],
+"work"
 ],
 [
 "assets/images/1704/09.webp",
@@ -4543,7 +4655,8 @@ null,
 [
 966,
 679
-]
+],
+"work"
 ],
 [
 "assets/images/1704/10.webp",
@@ -4552,7 +4665,8 @@ null,
 [
 959,
 678
-]
+],
+"work"
 ],
 [
 "assets/images/1704/11.webp",
@@ -4561,7 +4675,8 @@ null,
 [
 964,
 685
-]
+],
+"work"
 ],
 [
 "assets/images/1704/12.webp",
@@ -4570,7 +4685,8 @@ null,
 [
 947,
 677
-]
+],
+"work"
 ],
 [
 "assets/images/1704/13.webp",
@@ -4579,7 +4695,8 @@ null,
 [
 960,
 687
-]
+],
+"work"
 ],
 [
 "assets/images/1704/14.webp",
@@ -4588,7 +4705,8 @@ null,
 [
 955,
 680
-]
+],
+"work"
 ],
 [
 "assets/images/1704/15.webp",
@@ -4597,7 +4715,8 @@ null,
 [
 959,
 684
-]
+],
+"work"
 ],
 [
 "assets/images/1704/16.webp",
@@ -4606,7 +4725,8 @@ null,
 [
 962,
 686
-]
+],
+"work"
 ],
 [
 "assets/images/1704/17.webp",
@@ -4615,7 +4735,8 @@ null,
 [
 960,
 683
-]
+],
+"work"
 ],
 [
 "assets/images/1704/18.webp",
@@ -4624,7 +4745,8 @@ null,
 [
 949,
 674
-]
+],
+"work"
 ],
 [
 "assets/images/1704/19.webp",
@@ -4633,7 +4755,8 @@ null,
 [
 962,
 679
-]
+],
+"work"
 ]
 ]
 },
@@ -4667,7 +4790,8 @@ null,
 [
 1000,
 561
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4697,7 +4821,8 @@ null,
 [
 1080,
 1080
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4727,7 +4852,8 @@ null,
 [
 1000,
 750
-]
+],
+"illustration"
 ]
 ]
 },
@@ -4782,7 +4908,8 @@ null,
 [
 640,
 482
-]
+],
+"poster"
 ]
 ]
 },
@@ -4826,7 +4953,8 @@ null,
 [
 439,
 1024
-]
+],
+"poster"
 ]
 ]
 },
@@ -4857,7 +4985,8 @@ null,
 [
 615,
 615
-]
+],
+"cover"
 ]
 ]
 },
@@ -4912,7 +5041,8 @@ null,
 [
 1600,
 1200
-]
+],
+"work"
 ],
 [
 "assets/images/1608/02.webp",
@@ -4921,7 +5051,8 @@ null,
 [
 1000,
 750
-]
+],
+"work"
 ],
 [
 "assets/images/1608/03.webp",
@@ -4930,7 +5061,8 @@ null,
 [
 1000,
 750
-]
+],
+"work"
 ]
 ]
 },
@@ -4982,7 +5114,8 @@ null,
 [
 282,
 378
-]
+],
+"cover"
 ]
 ]
 },
@@ -5024,7 +5157,8 @@ null,
 [
 2000,
 1414
-]
+],
+"work"
 ],
 [
 "assets/images/1604/02.webp",
@@ -5033,7 +5167,8 @@ null,
 [
 1800,
 1200
-]
+],
+"work"
 ],
 [
 "assets/images/1604/03.webp",
@@ -5042,7 +5177,8 @@ null,
 [
 827,
 663
-]
+],
+"work"
 ],
 [
 "assets/images/1604/04.webp",
@@ -5051,7 +5187,8 @@ null,
 [
 1800,
 1200
-]
+],
+"work"
 ]
 ]
 },
@@ -5081,7 +5218,8 @@ null,
 [
 945,
 1386
-]
+],
+"illustration"
 ]
 ]
 },
@@ -5109,7 +5247,8 @@ null,
 [
 1457,
 603
-]
+],
+"event"
 ]
 ]
 },
@@ -5244,7 +5383,8 @@ null,
 [
 1920,
 1280
-]
+],
+"work"
 ],
 [
 "assets/images/1515/02.webp",
@@ -5253,7 +5393,8 @@ null,
 [
 920,
 613
-]
+],
+"work"
 ],
 [
 "assets/images/1515/03.webp",
@@ -5262,7 +5403,8 @@ null,
 [
 620,
 413
-]
+],
+"work"
 ]
 ]
 },
@@ -5318,7 +5460,8 @@ null,
 [
 1420,
 846
-]
+],
+"work"
 ]
 ]
 },
@@ -5400,7 +5543,8 @@ null,
 [
 1223,
 643
-]
+],
+"portrait"
 ]
 ]
 },
@@ -5521,7 +5665,8 @@ null,
 [
 744,
 1053
-]
+],
+"cover"
 ]
 ]
 },
@@ -5675,7 +5820,8 @@ null,
 [
 735,
 490
-]
+],
+"poster"
 ]
 ]
 },
@@ -5737,7 +5883,8 @@ null,
 [
 1267,
 662
-]
+],
+"event"
 ]
 ]
 },
@@ -5764,7 +5911,8 @@ null,
 [
 1200,
 600
-]
+],
+"poster"
 ]
 ]
 },
@@ -5881,7 +6029,8 @@ null,
 [
 500,
 369
-]
+],
+"illustration"
 ]
 ]
 },
@@ -5919,7 +6068,8 @@ null,
 [
 640,
 480
-]
+],
+"poster"
 ]
 ]
 },
@@ -5993,7 +6143,8 @@ null,
 [
 640,
 640
-]
+],
+"poster"
 ]
 ]
 },
@@ -6087,7 +6238,8 @@ null,
 [
 2000,
 1334
-]
+],
+"work"
 ],
 [
 "assets/images/1303/02.webp",
@@ -6096,7 +6248,8 @@ null,
 [
 1333,
 2000
-]
+],
+"work"
 ],
 [
 "assets/images/1303/03.webp",
@@ -6105,7 +6258,8 @@ null,
 [
 1261,
 623
-]
+],
+"portrait"
 ]
 ],
 "related": [
@@ -6240,7 +6394,8 @@ null,
 [
 1600,
 1055
-]
+],
+"work"
 ],
 [
 "assets/images/1301/02.webp",
@@ -6249,7 +6404,8 @@ null,
 [
 1280,
 1267
-]
+],
+"work"
 ],
 [
 "assets/images/1301/03.webp",
@@ -6258,7 +6414,8 @@ null,
 [
 350,
 304
-]
+],
+"work"
 ],
 [
 "assets/images/1301/05.webp",
@@ -6267,7 +6424,8 @@ null,
 [
 1200,
 707
-]
+],
+"work"
 ],
 [
 "assets/images/1301/06.webp",
@@ -6276,7 +6434,8 @@ null,
 [
 1280,
 638
-]
+],
+"work"
 ],
 [
 "assets/images/1301/07.webp",
@@ -6285,7 +6444,8 @@ null,
 [
 700,
 552
-]
+],
+"work"
 ]
 ]
 },
@@ -6356,7 +6516,8 @@ null,
 [
 1600,
 1066
-]
+],
+"event"
 ]
 ]
 },
@@ -6511,7 +6672,8 @@ null,
 [
 1200,
 630
-]
+],
+"work"
 ]
 ]
 },
@@ -6558,7 +6720,8 @@ null,
 [
 537,
 629
-]
+],
+"work"
 ],
 [
 "assets/images/1201/02.webp",
@@ -6567,7 +6730,8 @@ null,
 [
 1500,
 920
-]
+],
+"work"
 ],
 [
 "assets/images/1201/03.webp",
@@ -6576,7 +6740,8 @@ null,
 [
 1350,
 900
-]
+],
+"work"
 ]
 ]
 },
@@ -6654,7 +6819,8 @@ null,
 [
 1200,
 1808
-]
+],
+"work"
 ],
 [
 "assets/images/1103/02.webp",
@@ -6663,7 +6829,8 @@ null,
 [
 655,
 378
-]
+],
+"portrait"
 ]
 ]
 },
@@ -6725,7 +6892,8 @@ null,
 [
 1200,
 1808
-]
+],
+"work"
 ],
 [
 "assets/images/1101/02.webp",
@@ -6734,7 +6902,8 @@ null,
 [
 799,
 423
-]
+],
+"event"
 ]
 ]
 },
@@ -6822,7 +6991,8 @@ null,
 [
 1600,
 1120
-]
+],
+"work"
 ]
 ]
 },

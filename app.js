@@ -1,7 +1,8 @@
 /* yeltakom.info archive. Hand-written. Data comes from data.js (ARCHIVE).
-   The bar at the top is the section filter, the search and the Image / List switch.
+   The bar at the top is the section filter, the search and the Image / Sheet / List switch.
    The home page opens on the stream (Image): projects and texts as one run of pictures on the
-   ground, captioned by kind, number and name. List is the table.
+   ground, captioned by kind, number and name. Sheet is the contact sheet: every picture, small,
+   numbered; a click opens it in the viewer (viewer.js). List is the table.
    The table sorts on its column headings, rows open in place, and a row that has
    a picture shows it at the cursor. */
 (function () {
@@ -26,6 +27,25 @@
   var FEATURED = ['Installation', 'Exhibition (solo)', 'Counter-mapping', 'Public art / Kunst am Bau', 'Artist book'];
   var COLUMNS = [['no', 'No.'], ['dates', 'Date/s'], ['name', 'Name'], ['type', 'Type/s'], ['for', 'For'], ['with', 'With']];
   var CLS = { no: 'c-no', dates: 'c-date', name: 'c-name', type: 'c-type', 'for': 'c-for', 'with': 'c-with' };
+  /* THE CONTACT SHEET (view "sheet", address #sheet). A sheet of the work: it shows the pictures of the
+     entries that pass the section filter and the search, but only the kinds named in SHEET_KINDS. Each
+     row of archive/images-manifest.csv has a kind: work (views, drawings, maps, stills), event (a talk,
+     panel or workshop in progress), illustration (a picture beside a text), poster (posters, title and
+     announcement graphics), cover (magazine and book covers), portrait (the artist as the subject).
+     Posters, covers and portraits never appear on the sheet; they stay on their entry's own page.
+     Illustrations appear only when Texts is chosen in the bar (SHEET_KINDS_BY_SECTION). The stream's rule
+     STREAM_ALL does NOT apply here. Order: entry number, newest first, an entry's pictures in their
+     manifest order. A frame number is the picture's place on its entry's page, so it does not change
+     when a neighbour is left off the sheet. Columns per row go through a fixed scale; the first number
+     of each scale is the smallest picture size. */
+  var SHEET_KINDS = ['work', 'event'];
+  var SHEET_KINDS_BY_SECTION = { texts: ['work', 'event', 'illustration'] };
+  var SHEET_SCALE = { desk: [16, 12, 8, 6, 4], phone: [6, 4, 3, 2] };
+  var PHONE_MAX = 700;      /* px; the stream's two-column breakpoint */
+  var sheetCols = null;     /* the reader's choice, kept for the session in this variable */
+  try { var kept = parseInt(sessionStorage.getItem('ykSheetCols'), 10); if (kept > 0) sheetCols = kept; } catch (err) { /* no storage: the variable still works */ }
+  var renderToken = 0;      /* a new render cancels the chunks of the previous sheet */
+  var dead = {};            /* pictures that failed to load, by key "no-frame" */
   var state = { section: 'all', q: '', view: 'image', open: new Set(), sort: { key: 'no', dir: -1 } };
   var $ = function (id) { return document.getElementById(id); };
   var root = $('archive');
@@ -42,7 +62,7 @@
   }
   /* pictures of an entry: the published rows of archive/images-manifest.csv, as [file, credit, caption] */
   function images(e) {
-    return (e.imgs || []).map(function (i) { return { url: i[0], credit: i[1], caption: i[2], size: i[3] }; });
+    return (e.imgs || []).map(function (i) { return { url: i[0], credit: i[1], caption: i[2], size: i[3], kind: i[4] || 'work' }; });
   }
   function altOf(e, i) { return e.name + (i.caption ? ', ' + i.caption : ''); }
   ENTRIES.forEach(function (e) {
@@ -63,8 +83,13 @@
   function setSection(id, push) {
     state.section = SECTIONS[id] ? id : 'all';
     setSectionMark();
-    if (push) history.replaceState(null, '', state.section === 'all' ? (state.view === 'list' ? '#list' : location.pathname) : '#' + state.section);
+    if (push) history.replaceState(null, '', currentHash() || location.pathname);
     render();
+  }
+  /* the address that describes the present view and section; a hashchange to it needs no re-render */
+  function currentHash() {
+    if (state.section !== 'all') return '#' + state.section;
+    return state.view === 'list' ? '#list' : (state.view === 'sheet' ? '#sheet' : '');
   }
   /* a new filter replaces the content: if the reader is already down the page, start again at its top edge */
   function toTopOfContent() {
@@ -74,9 +99,10 @@
   function setView(v, push) {
     state.view = v;
     $('vlist').setAttribute('aria-pressed', String(v === 'list'));
+    $('vsheet').setAttribute('aria-pressed', String(v === 'sheet'));
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
-    // #list addresses the table; the section hashes (#works ...) keep their own meaning
-    if (push && state.section === 'all') history.replaceState(null, '', v === 'list' ? '#list' : location.pathname);
+    // #list and #sheet address those views; the section hashes (#works ...) keep their own meaning
+    if (push && state.section === 'all') history.replaceState(null, '', currentHash() || location.pathname);
     render();
   }
   function setSectionMark() {
@@ -96,6 +122,7 @@
     var sq = $('sq');
     if (sq) sq.addEventListener('input', function () { state.q = sq.value; render(); toTopOfContent(); });
     $('vlist').addEventListener('click', function () { setView('list', true); toTopOfContent(); });
+    $('vsheet').addEventListener('click', function () { setView('sheet', true); toTopOfContent(); });
     $('vimg').addEventListener('click', function () { setView('image', true); toTopOfContent(); });
   }
 
@@ -280,11 +307,92 @@
     if (!list.length) root.appendChild(el('p', { class: 'empty' }, 'Nothing in the archive matches that.'));
   }
 
+  /* ---------- sheet view: every picture, small, numbered ---------- */
+  /* Each cell is one link to the viewer (#p-<no>-<frame>). The label is the entry number, and
+     a frame number after it when the entry has more than one picture: 2601 or 2601.3. */
+  function sheetEntries() {
+    var test = SECTIONS[state.section] || SECTIONS.all;
+    var words = norm(state.q).split(/\s+/).filter(Boolean);
+    return ENTRIES.filter(function (e) { return test(e) && words.every(function (w) { return e._hay.indexOf(w) > -1; }); })
+      .sort(function (a, b) { return a.no < b.no ? 1 : -1; });
+  }
+  function pictureItems(list, kinds) {
+    var out = [];
+    list.forEach(function (e) {
+      var ims = images(e);
+      ims.forEach(function (i, n) {
+        var key = e.no + '-' + (n + 1);
+        if (dead[key] || (kinds && kinds.indexOf(i.kind) < 0)) return;
+        out.push({ key: key, no: e.no, name: e.name, href: hrefOf(e), frame: n + 1, total: ims.length, src: i.url,
+          w: i.size && i.size[0] || 0, h: i.size && i.size[1] || 0, credit: i.credit, caption: i.caption, alt: altOf(e, i) });
+      });
+    });
+    return out;
+  }
+  /* the viewer asks for the sequence: the sheet as it is now, or (all = true) every picture */
+  function sheetKinds() { return SHEET_KINDS_BY_SECTION[state.section] || SHEET_KINDS; }
+  window.YKSheet = function (all) { return all ? pictureItems(ENTRIES.slice().sort(function (a, b) { return a.no < b.no ? 1 : -1; })) : pictureItems(sheetEntries(), sheetKinds()); };
+  function sheetScale() { return window.innerWidth <= PHONE_MAX ? SHEET_SCALE.phone : SHEET_SCALE.desk; }
+  function sheetColsNow() {
+    var sc = sheetScale();
+    if (sheetCols && sc.indexOf(sheetCols) > -1) return sheetCols;
+    if (sheetCols) return sc.reduce(function (a, b) { return Math.abs(b - sheetCols) < Math.abs(a - sheetCols) ? b : a; });
+    return sc === SHEET_SCALE.phone ? 4 : (window.innerWidth >= 1200 ? 12 : 8);
+  }
+  function applySheetCols() {
+    var ol = root.querySelector('.sheet'), sc = sheetScale(), c = sheetColsNow(), i = sc.indexOf(c);
+    if (ol) ol.style.setProperty('--cols', c);
+    var m = $('szm'), p = $('szp');
+    if (m) m.disabled = i <= 0;
+    if (p) p.disabled = i >= sc.length - 1;
+  }
+  function stepSheet(d) {
+    var sc = sheetScale(), i = sc.indexOf(sheetColsNow()) + d;
+    if (i < 0 || i > sc.length - 1) return;
+    sheetCols = sc[i];
+    try { sessionStorage.setItem('ykSheetCols', String(sheetCols)); } catch (err) { /* ignore */ }
+    applySheetCols();
+  }
+  function sheetCell(it) {
+    var label = it.total > 1 ? it.no + '.' + it.frame : it.no;
+    var name = it.no + ' ' + it.name + (it.total > 1 ? ', picture ' + it.frame + ' of ' + it.total : '');
+    var li = el('li', null);
+    li.appendChild(el('a', { href: '#p-' + it.no + '-' + it.frame, 'data-key': it.key, title: it.name, 'aria-label': name },
+      '<span class="sq"><img src="' + esc(it.src) + '" alt="" width="' + (it.w || 4) + '" height="' + (it.h || 3) +
+      '" loading="lazy" decoding="async"></span><span class="no">' + esc(label) + '</span>'));
+    return li;
+  }
+  function renderSheet() {
+    var items = pictureItems(sheetEntries(), sheetKinds());
+    var bar = el('div', { class: 'sheetbar' },
+      '<span class="size" role="group" aria-label="Picture size">' +
+      '<button type="button" id="szm" aria-label="Smaller pictures">&#8722;</button> ' +
+      '<button type="button" id="szp" aria-label="Larger pictures">+</button></span>');
+    var ol = el('ol', { class: 'sheet', 'aria-label': 'Archive pictures, contact sheet' });
+    root.appendChild(bar);
+    root.appendChild(ol);
+    $('szm').addEventListener('click', function () { stepSheet(-1); });
+    $('szp').addEventListener('click', function () { stepSheet(1); });
+    applySheetCols();
+    if (!items.length) { root.appendChild(el('p', { class: 'empty' }, 'Nothing in the archive matches that.')); return; }
+    var mine = renderToken, at = 0;
+    (function chunk() {
+      if (mine !== renderToken) return;
+      var frag = document.createDocumentFragment(), end = Math.min(at + 48, items.length);
+      for (; at < end; at++) frag.appendChild(sheetCell(items[at]));
+      ol.appendChild(frag);
+      Array.prototype.forEach.call(ol.querySelectorAll('img:not(.ok)'), function (im) { if (im.complete && im.naturalWidth) im.className = 'ok'; });
+      if (at < items.length) requestAnimationFrame(chunk);
+    })();
+  }
+
   function render() {
     hideThumb();
-    var list = filtered();
+    renderToken++;
     root.innerHTML = '';
-    root.className = state.view === 'image' ? 'imageview' : 'listview';
+    root.className = state.view === 'image' ? 'imageview' : (state.view === 'sheet' ? 'sheetview' : 'listview');
+    if (state.view === 'sheet') { renderSheet(); return; }
+    var list = filtered();
     if (state.view === 'image') renderImages(list); else renderList(list);
   }
 
@@ -303,14 +411,18 @@
   }
   // no hash: the stream. #works, #texts ...: the stream of that section. #list: the table.
   // #e-NNNN: the table, with that row open. #more: the biography.
-  function fromHash() {
+  // #sheet: the contact sheet. #p-NNNN-F: that picture in the viewer (viewer.js), over the sheet.
+  function fromHash(initial) {
     var h = decodeURIComponent(location.hash.slice(1));
+    // a hash that only describes what is already shown (Back from the viewer, say) changes nothing
+    if (!initial && ('#' + h === currentHash() || (!h && !currentHash()))) return;
+    if (/^p-\d{4}-\d+$/.test(h)) { if (state.view !== 'sheet') setView('sheet'); return; }
     if (h === 'more') { setView('image'); setSection('all', false); setMore(true); toAbout(); return; }
     if (/^e-\d{4}$/.test(h)) {
       state.open.add(h.slice(2)); setView('list'); setSection('all', false); toEntry(h);
       return;
     }
-    setView(h === 'list' ? 'list' : 'image');
+    setView(h === 'list' ? 'list' : (h === 'sheet' ? 'sheet' : 'image'));
     setSection(SECTIONS[h] ? h : 'all', false);
   }
 
@@ -320,6 +432,8 @@
     var t = ev.target;
     if (t && t.tagName === 'IMG') {
       if (t.id === 'thumb') { hideThumb(); return; }
+      var cell = t.closest('.sheet > li');
+      if (cell) { dead[cell.firstChild.getAttribute('data-key')] = 1; cell.parentNode.removeChild(cell); return; }
       var item = t.closest('.stream > li');
       if (item) { item.classList.remove('pic'); item.classList.add('noimg'); return; }
       var strip = t.closest('.strip a') || t;
@@ -328,8 +442,14 @@
   }, true);
 
   wireBar();
-  fromHash();
-  window.addEventListener('hashchange', function () { userMoved = true; fromHash(); });
+  fromHash(true);
+  window.addEventListener('hashchange', function () { userMoved = true; fromHash(false); });
+  window.addEventListener('resize', function () { if (state.view === 'sheet') applySheetCols(); });
+  // the sheet's pictures show the tint only until they have loaded
+  document.addEventListener('load', function (ev) {
+    var t = ev.target;
+    if (t && t.tagName === 'IMG' && t.closest && t.closest('.sheet')) t.className = 'ok';
+  }, true);
   // row heights settle when pictures in open rows load: place the reader on the row once more
   window.addEventListener('load', function () {
     var h = decodeURIComponent(location.hash.slice(1));
