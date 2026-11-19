@@ -277,9 +277,15 @@ header.bar .mark { margin-right: 0.7rem; }
 .filepage .row { cursor: default; }
 .filepage .row:hover .c-name { text-decoration: none; }
 .filepage h1.c-name { margin: 0; font: inherit; color: var(--ink); }
-.shots { padding: 1.8rem 0 0 var(--namex); max-width: calc(var(--namex) + 62rem); }
+/* the pictures run at the full width of the content, one under another, each at its own proportion and
+   never above its natural width (width and height attributes come from build.py); the press block under
+   them keeps its old place, hanging from the Name column */
+.shots { padding: 1.8rem 0 0; }
+.pressbox { padding-left: var(--namex); max-width: calc(var(--namex) + 62rem); }
+.entry + .pressbox { padding-top: 1.8rem; }
 figure.shot { margin: 0 0 1.4rem; }
-figure.shot img { display: block; width: 100%; height: auto; }
+figure.shot a.vw { display: block; width: fit-content; max-width: 100%; }
+figure.shot img { display: block; width: auto; max-width: 100%; height: auto; }
 figure.shot figcaption { color: var(--mute); font-size: 12px; letter-spacing: 0.02em; padding-top: 0.35rem; }
 .pressfor { margin-top: 2.4rem; }
 
@@ -294,7 +300,6 @@ figure.shot figcaption { color: var(--mute); font-size: 12px; letter-spacing: 0.
   header.bar nav { gap: 0.25rem 0.9rem; }
   .sitesearch { margin-left: 0; flex: 1 1 7rem; }
   .sitesearch input { width: 100%; max-width: none; }
-  .shots { padding-left: 0; }
 }
 /* printing stays black on white whatever the screen ground is */
 @media print {
@@ -330,3 +335,41 @@ figure.shot figcaption { color: var(--mute); font-size: 12px; letter-spacing: 0.
   .notice li:last-child::after { content: none; }
 }
 @media print { .notices { display: none; } }
+
+/* ------------------------------------------------------------ the contact sheet (view Sheet, #sheet)
+   Every picture of the entries that pass the filter, in equal square cells. The picture sits inside its cell,
+   never cropped or stretched, on the bottom edge; under it one line: entry number, and the frame number after
+   a dot when the entry has several pictures. The number of columns (--cols) is set in app.js and stepped by
+   the minus and plus at the right end of the first line. An unloaded picture shows the tint, a loaded one nothing. */
+.sheetbar { display: flex; justify-content: flex-end; padding: 0.7rem 0 0.9rem; }
+.sheetbar .size button { padding: 0.25rem 0.55em; }
+.sheetbar .size button:hover:not(:disabled) { text-decoration: underline; }
+.sheetbar .size button:disabled { color: var(--mute); cursor: default; }
+.sheet { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(var(--cols, 12), minmax(0, 1fr)); gap: 0.75rem; }
+.sheet li { min-width: 0; }
+.sheet a { display: block; color: var(--ink); text-decoration: none; }
+.sheet .sq { display: block; aspect-ratio: 1; }
+.sheet img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: 50% 100%; background: var(--tint); }
+.sheet img.ok { background: none; }
+.sheet .no { display: block; margin-top: 0.2rem; font-size: 11px; line-height: 1.2; color: var(--mute); }
+
+/* ------------------------------------------------------------ the viewer (viewer.js)
+   A dialog over the whole window on the ground: a top line (previous, n / total, next, and Close at the
+   right), the picture as large as the space allows, never above its natural width, and under it one line
+   with number and name, caption and credit. Text only, no animation but a 120ms fade. */
+html.vw-open { overflow: hidden; }
+dialog.vw { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0;
+  border: 0; background: var(--bg); color: var(--ink); overflow: hidden; font: inherit; }
+dialog.vw[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; animation: vwin 120ms linear; }
+dialog.vw::backdrop { background: var(--bg); }
+.vw-top { display: flex; justify-content: space-between; align-items: baseline; padding: 0.7rem var(--pad) 0.5rem; }
+.vw button { padding: 0.25rem 0.5em; }
+.vw button:hover:not(:disabled) { text-decoration: underline; }
+.vw button:disabled { color: var(--mute); cursor: default; }
+.vw-n { padding: 0 0.4em; }
+.vw-stage { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 0; overflow: hidden; }
+.vw-stage img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; }
+.vw-cap { margin: 0; padding: 0.5rem var(--pad) 0.8rem; font-size: 13px; line-height: 1.35; }
+.vw-text { color: var(--mute); }
+@keyframes vwin { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { dialog.vw[open] { animation: none; } }
