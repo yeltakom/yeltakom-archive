@@ -1,7 +1,8 @@
 /* yeltakom.info archive. Hand-written. Data comes from data.js (ARCHIVE).
-   The bar at the top is the section filter, the search and the Image / Sheet / List switch.
-   The home page opens on the stream (Image): projects and texts as one run of pictures on the
-   ground, captioned by kind, number and name. Sheet is the contact sheet: every picture, small,
+   The bar at the top is the section filter, the search and the Index / Image / Sheet / List switch.
+   The home page opens on the Index: the titles of the works, large, newest first, with the picture
+   of the title under the pointer beside them, then the latest texts and talks. Image is the stream:
+   projects and texts as one run of pictures on the ground, captioned by kind, number and name. Sheet is the contact sheet: every picture, small,
    numbered; a click opens it in the viewer (viewer.js). List is the table.
    The table sorts on its column headings, rows open in place, and a row that has
    a picture shows it at the cursor. */
@@ -46,7 +47,7 @@
   try { var kept = parseInt(sessionStorage.getItem('ykSheetCols'), 10); if (kept > 0) sheetCols = kept; } catch (err) { /* no storage: the variable still works */ }
   var renderToken = 0;      /* a new render cancels the chunks of the previous sheet */
   var dead = {};            /* pictures that failed to load, by key "no-frame" */
-  var state = { section: 'all', q: '', view: 'image', open: new Set(), sort: { key: 'no', dir: -1 } };
+  var state = { section: 'all', q: '', view: 'index', open: new Set(), sort: { key: 'no', dir: -1 } };
   var $ = function (id) { return document.getElementById(id); };
   var root = $('archive');
   var secLinks = document.querySelectorAll('header.bar a[data-sec]');
@@ -89,7 +90,7 @@
   /* the address that describes the present view and section; a hashchange to it needs no re-render */
   function currentHash() {
     if (state.section !== 'all') return '#' + state.section;
-    return state.view === 'list' ? '#list' : (state.view === 'sheet' ? '#sheet' : '');
+    return state.view === 'list' ? '#list' : (state.view === 'sheet' ? '#sheet' : (state.view === 'image' ? '#image' : ''));
   }
   /* a new filter replaces the content: if the reader is already down the page, start again at its top edge */
   function toTopOfContent() {
@@ -101,7 +102,8 @@
     $('vlist').setAttribute('aria-pressed', String(v === 'list'));
     $('vsheet').setAttribute('aria-pressed', String(v === 'sheet'));
     $('vimg').setAttribute('aria-pressed', String(v === 'image'));
-    // #list and #sheet address those views; the section hashes (#works ...) keep their own meaning
+    $('vidx').setAttribute('aria-pressed', String(v === 'index'));
+    // #list, #sheet and #image address those views; the section hashes (#works ...) keep their own meaning
     if (push && state.section === 'all') history.replaceState(null, '', currentHash() || location.pathname);
     render();
   }
@@ -124,6 +126,7 @@
     $('vlist').addEventListener('click', function () { setView('list', true); toTopOfContent(); });
     $('vsheet').addEventListener('click', function () { setView('sheet', true); toTopOfContent(); });
     $('vimg').addEventListener('click', function () { setView('image', true); toTopOfContent(); });
+    $('vidx').addEventListener('click', function () { setView('index', true); toTopOfContent(); });
   }
 
   /* ---------- More: the biography opens under the introduction ---------- */
@@ -307,6 +310,64 @@
     if (!list.length) root.appendChild(el('p', { class: 'empty' }, 'Nothing in the archive matches that.'));
   }
 
+  /* ---------- index view: the titles are the page ---------- */
+  /* THE INDEX (view "index", the home page). Under All: every work, newest first, its title set large
+     with its dates and first two kinds; the picture of the title under the pointer (or in keyboard
+     focus) stands in a frame beside the list. Only a picture of kind work, event or illustration is
+     shown there, never a poster, cover or portrait; a work without one shows the first sentence of its
+     description instead. Under the works, the latest INDEX_SIDE_N texts and talks as two short lists
+     (all of them when searching). Under a section chosen in the bar: that section's list alone. */
+  var INDEX_PICS = ['work', 'event', 'illustration'];
+  var INDEX_SIDE_N = 14;
+  var SECTION_NAME = { all: 'Works', works: 'Works', texts: 'Texts', talks: 'Talks', workshops: 'Workshops', networks: 'Networks' };
+  function yearOf(e) { var m = String(e.dates || '').match(/\d{4}/); return m ? +m[0] : 0; }
+  function datesOf(e) { return String(e.dates || '').replace(/-/g, '–'); }
+  function kindsOf(e) { return (e.types || []).filter(function (t) { return t !== 'Text'; }).slice(0, 2).join(', '); }
+  function firstSentence(s) { s = String(s || ''); var m = s.match(/^(.+?[.!?])(\s|$)/); return m ? m[1] : s; }
+  function indexPic(e) { var ims = images(e); for (var i = 0; i < ims.length; i++) if (INDEX_PICS.indexOf(ims[i].kind) > -1) return ims[i]; return null; }
+  function indexOf(sec) {
+    var test = SECTIONS[sec], words = norm(state.q).split(/\s+/).filter(Boolean);
+    return ENTRIES.filter(function (e) { return test(e) && words.every(function (w) { return e._hay.indexOf(w) > -1; }); })
+      .sort(function (a, b) { return yearOf(b) - yearOf(a) || (a.no < b.no ? 1 : -1); });
+  }
+  function indexHead(id, label, n, more) {
+    return '<h2 class="ix-h" id="' + id + '"><span>' + esc(label) + ' <span class="n">' + n + '</span></span>' + (more || '') + '</h2>';
+  }
+  function renderIndex() {
+    var sec = state.section, list = indexOf(sec === 'all' ? 'works' : sec);
+    var rows = list.map(function (e, i) {
+      return '<li><a class="ixr" href="' + esc(hrefOf(e)) + '" data-i="' + i + '"><span class="d">' + esc(datesOf(e)) +
+        '</span><span class="t">' + esc(e.name) + '</span><span class="k">' + esc(kindsOf(e)) + '</span></a></li>';
+    }).join('');
+    var html = '<div class="ix-top"><section aria-labelledby="ixh">' + indexHead('ixh', SECTION_NAME[sec] || 'Works', list.length) +
+      (list.length ? '<ol class="ix-list">' + rows + '</ol>' : '<p class="empty">Nothing in the archive matches that.</p>') + '</section>' +
+      '<aside class="ix-look" aria-hidden="true"><figure><div class="frame" id="ixf"></div><figcaption id="ixc"></figcaption></figure></aside></div>';
+    if (sec === 'all') {
+      html += '<div class="ix-rest">' + [['texts', 'Texts'], ['talks', 'Talks']].map(function (s) {
+        var all = indexOf(s[0]), part = state.q ? all : all.slice(0, INDEX_SIDE_N);
+        return '<section aria-labelledby="ixh-' + s[0] + '">' +
+          indexHead('ixh-' + s[0], s[1], all.length, all.length > part.length ? '<a href="#' + s[0] + '">All ' + s[1].toLowerCase() + '</a>' : '') +
+          '<ol class="ix-side">' + part.map(function (e) {
+            return '<li><a class="ixr" href="' + esc(hrefOf(e)) + '"><span class="d">' + (yearOf(e) || '') + '</span><span class="t">' + esc(e.name) + '</span></a></li>';
+          }).join('') + '</ol></section>';
+      }).join('') + '</div>';
+    }
+    root.innerHTML = html;
+    var frame = $('ixf'), cap = $('ixc'), look = root.querySelector('.ix-look');
+    look.style.top = (barHeight() + 16) + 'px';
+    function show(e) {
+      var p = indexPic(e);
+      frame.innerHTML = p ? '<img src="' + esc(p.url) + '" alt="">' : '<p class="none">' + esc(firstSentence(e.description)) + '</p>';
+      cap.innerHTML = '<b>' + esc(e.no + ' ' + e.name) + '</b>' + esc(datesOf(e)) + (kindsOf(e) ? ', ' + esc(kindsOf(e)) : '');
+    }
+    if (!list.length) { look.style.display = 'none'; return; }
+    show(list.filter(indexPic)[0] || list[0]);
+    function on(ev) { var a = ev.target.closest && ev.target.closest('a.ixr[data-i]'); if (a) show(list[+a.getAttribute('data-i')]); }
+    var ol = root.querySelector('.ix-list');
+    ol.addEventListener('mouseover', on);
+    ol.addEventListener('focusin', on);
+  }
+
   /* ---------- sheet view: every picture, small, numbered ---------- */
   /* Each cell is one link to the viewer (#p-<no>-<frame>). The label is the entry number, and
      a frame number after it when the entry has more than one picture: 2601 or 2601.3. */
@@ -390,8 +451,9 @@
     hideThumb();
     renderToken++;
     root.innerHTML = '';
-    root.className = state.view === 'image' ? 'imageview' : (state.view === 'sheet' ? 'sheetview' : 'listview');
+    root.className = state.view + 'view';
     if (state.view === 'sheet') { renderSheet(); return; }
+    if (state.view === 'index') { renderIndex(); return; }
     var list = filtered();
     if (state.view === 'image') renderImages(list); else renderList(list);
   }
@@ -409,7 +471,7 @@
     var a = document.querySelector('.about');
     if (a) window.scrollTo(0, a.getBoundingClientRect().top + window.pageYOffset - barHeight() - 8);
   }
-  // no hash: the stream. #works, #texts ...: the stream of that section. #list: the table.
+  // no hash: the index. #works, #texts ...: that section in the present view. #image: the stream. #list: the table.
   // #e-NNNN: the table, with that row open. #more: the biography.
   // #sheet: the contact sheet. #p-NNNN-F: that picture in the viewer (viewer.js), over the sheet.
   function fromHash(initial) {
@@ -417,12 +479,12 @@
     // a hash that only describes what is already shown (Back from the viewer, say) changes nothing
     if (!initial && ('#' + h === currentHash() || (!h && !currentHash()))) return;
     if (/^p-\d{4}-\d+$/.test(h)) { if (state.view !== 'sheet') setView('sheet'); return; }
-    if (h === 'more') { setView('image'); setSection('all', false); setMore(true); toAbout(); return; }
+    if (h === 'more') { setView('index'); setSection('all', false); setMore(true); toAbout(); return; }
     if (/^e-\d{4}$/.test(h)) {
       state.open.add(h.slice(2)); setView('list'); setSection('all', false); toEntry(h);
       return;
     }
-    setView(h === 'list' ? 'list' : (h === 'sheet' ? 'sheet' : 'image'));
+    setView({ list: 'list', sheet: 'sheet', image: 'image' }[h] || (state.view !== 'index' && SECTIONS[h] ? state.view : 'index'));
     setSection(SECTIONS[h] ? h : 'all', false);
   }
 
