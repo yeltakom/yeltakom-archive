@@ -373,3 +373,35 @@ dialog.vw::backdrop { background: var(--bg); }
 .vw-text { color: var(--mute); }
 @keyframes vwin { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { dialog.vw[open] { animation: none; } }
+
+/* index view (the home page): the titles of the works are the page, the picture of the one under the
+   pointer stands beside them; the latest texts and talks follow as two short lists */
+.ix-top { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 0 2.5rem; }
+.ix-h { font-size: 13px; font-weight: var(--em); letter-spacing: 0.04em; text-transform: uppercase; margin: 0; padding: 0.4rem 0;
+  border-bottom: 1px solid var(--ink); display: flex; justify-content: space-between; align-items: baseline; }
+.ix-h .n { color: var(--mute); }
+.ix-h a { text-transform: none; letter-spacing: 0; }
+.ix-list, .ix-side { list-style: none; margin: 0; padding: 0; }
+a.ixr { color: var(--ink); text-decoration: none; }
+a.ixr:hover .t, a.ixr:focus-visible .t { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+.ix-list a.ixr { display: grid; grid-template-columns: 6.4rem 1fr auto; gap: 0 1rem; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid var(--line); }
+.ix-list .t { font-size: clamp(19px, 2.1vw, 30px); line-height: 1.12; letter-spacing: -0.01em; }
+.ix-list .d { font-size: 14px; }
+.ix-list .k { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; text-align: right; color: var(--mute); }
+.ix-look { position: sticky; top: 5rem; align-self: start; padding-top: 2.1rem; }
+.ix-look figure { margin: 0; }
+.ix-look .frame { aspect-ratio: 4 / 3; background: var(--tint); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.ix-look img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.ix-look .none { font-size: 15px; line-height: 1.4; padding: 1.2rem; margin: 0; }
+.ix-look figcaption { font-size: 14px; line-height: 1.35; padding-top: 0.5rem; }
+.ix-look figcaption b { display: block; }
+.ix-rest { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; margin-top: 3.5rem; }
+.ix-side a.ixr { display: grid; grid-template-columns: 3.6rem 1fr; gap: 0 0.8rem; padding: 0.32rem 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.3; }
+@media (max-width: 800px) {
+  .ix-top, .ix-rest { grid-template-columns: 1fr; }
+  .ix-look { display: none; }
+  .ix-list a.ixr { grid-template-columns: 1fr; }
+  .ix-list .d { order: 2; }
+  .ix-list .k { display: none; }
+  .ix-rest > section + section { margin-top: 2.5rem; }
+}

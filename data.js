@@ -1146,12 +1146,6 @@ null,
 ],
 "status": "ongoing",
 "description": "Counter-mapping project on the Ilısu Dam, Hasankeyf and the Tigris with a mapping workshop and a counter-archive, commissioned by Against Catastrophe.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/lines"
-}
-],
 "section": "work",
 "page": "works/2308-lines-of-displacement-along-the-tigris.html",
 "imgs": [
@@ -1260,10 +1254,6 @@ null,
 "status": "realised",
 "description": "First solo exhibition in Istanbul, combining photography, video, sculpture and text into a speculative archaeological site on digital footprints, algorithmic divinities and power and technology.",
 "links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/all-familiar-all-foreign"
-},
 {
 "label": "press",
 "url": "https://www.hititseramik.com.tr/en/mod/art-discovery-of-the-month-her-sey-tanidik-her-sey-yabanci-all-familiar-all-foreign"
@@ -1525,12 +1515,6 @@ null,
 "place": "Berlin",
 "status": "realised",
 "description": "Talk at the Berlin University of the Arts, with a related text on his blog.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/spatial-investigations-in-blurry-lines"
-}
-],
 "section": "talk"
 },
 {
@@ -2043,12 +2027,6 @@ null,
 "place": "Berlin",
 "status": "realised",
 "description": "Discussion with Seçil Yersel on modes of inhabiting city space.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/cw15-i-discussion-with-seil-yersel-amp-yelta-km-witnessing-the-modes-of-inhabiting-city-space"
-}
-],
 "section": "talk",
 "imgs": [
 [
@@ -2196,18 +2174,12 @@ null,
 ],
 "status": "realised",
 "description": "Essay posted on his blog.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/hakikat-aras"
-}
-],
 "section": "text",
 "imgs": [
 [
 "assets/images/2111/01.webp",
 null,
-"Image accompanying \"Hakikat Arası\" on the old yeltakom.info",
+"Image accompanying \"Hakikat Arası\"",
 [
 1024,
 576
@@ -2243,12 +2215,6 @@ null,
 ],
 "status": "realised",
 "description": "Work combining archival Berlin city maps and speculative objects to examine how algorithms create visual regimes.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/eyes-on-eyes"
-}
-],
 "section": "work",
 "page": "works/2109-eyes-on-eyes.html",
 "imgs": [
@@ -2329,12 +2295,6 @@ null,
 "role": "moderator",
 "status": "realised",
 "description": "Panel moderated by him, with a related blog text Moods of Living.",
-"links": [
-{
-"label": "blog",
-"url": "https://www.yeltakom.info/blog/zlgb7da9lhx2op10josfy3s8cknjwf"
-}
-],
 "section": "talk",
 "imgs": [
 [
@@ -2444,12 +2404,6 @@ null,
 "place": "Istanbul",
 "status": "realised",
 "description": "Video installation on an LED screen and aluminium elements reflecting on how digital mapping and land records since the 1960s produce virtual images of the earth, using lead pouring to show fluidity in landforms.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/possibilistic-grounds"
-}
-],
 "shown": [
 {
 "dates": "18.04.–08.05.2021",
@@ -2574,12 +2528,6 @@ null,
 "place": "Istanbul",
 "status": "realised",
 "description": "Group show in an Istanbul apartment gallery.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/on-being-water-a-group-show-at-istanbul-apartment-gallery"
-}
-],
 "section": "work",
 "page": "works/2101-on-being-water.html",
 "imgs": [
@@ -2733,12 +2681,6 @@ null,
 ],
 "status": "realised",
 "description": "Presentation meeting of the digital theme of the Arkitera travel grant.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/20zupohyjz65cz0mts88djaxlbjp2d"
-}
-],
 "section": "talk",
 "imgs": [
 [
@@ -2780,7 +2722,7 @@ null,
 [
 "assets/images/2012/01.webp",
 null,
-"Image accompanying \"Gündeliğin Ferahlığı\" on the old yeltakom.info",
+"Image accompanying \"Gündeliğin Ferahlığı\"",
 [
 855,
 750
@@ -2824,7 +2766,7 @@ null,
 [
 "assets/images/2010/01.webp",
 null,
-"Image accompanying \"Berlin Notları #19\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #19\"",
 [
 1200,
 743
@@ -2849,7 +2791,7 @@ null,
 [
 "assets/images/2009/01.webp",
 null,
-"Image accompanying \"Berlin Notları #17: Pencereden Notlar*\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #17: Pencereden Notlar*\"",
 [
 1200,
 800
@@ -2874,7 +2816,7 @@ null,
 [
 "assets/images/2008/01.webp",
 null,
-"Image accompanying \"Berlin Notları #16: Yataklar\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #16: Yataklar\"",
 [
 1200,
 1600
@@ -2917,10 +2859,6 @@ null,
 "status": "realised",
 "description": "Project on how mapping technologies, digital image production and data collection shape urban surveillance, developed as a selected nominee of Forecast in the strand Dissecting Technocapitalism with mentor Evgeny Morozov and the starting point of the Urban Surveillance Bureau.",
 "links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/hide-seek"
-},
 {
 "label": "forecast",
 "url": "https://forecast-platform.com/yelta-koem/"
@@ -3130,12 +3068,6 @@ null,
 ],
 "status": "realised",
 "description": "Multimedia installation of narratives, images and object stories examining the spatial counterparts of location-based technologies.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/what-about-today"
-}
-],
 "section": "work",
 "page": "works/2005-fateful-serendipity.html",
 "imgs": [
@@ -3206,7 +3138,7 @@ null,
 [
 "assets/images/2003/01.webp",
 null,
-"Image accompanying \"Berlin Notları #20: Dijitalleşen Kent\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #20: Dijitalleşen Kent\"",
 [
 1890,
 1260
@@ -3256,7 +3188,7 @@ null,
 [
 "assets/images/2001/01.webp",
 null,
-"Image accompanying \"Berlin Notları #18: Ateş, Kül, Toprak\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #18: Ateş, Kül, Toprak\"",
 [
 1200,
 800
@@ -3403,12 +3335,6 @@ null,
 ],
 "status": "realised",
 "description": "Advice session by former grant holders.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/ez0gs68hrsh5w2wwv29v7nezrz6jku"
-}
-],
 "section": "talk"
 },
 {
@@ -3421,12 +3347,6 @@ null,
 "for": "Vbenzeri",
 "status": "realised",
 "description": "Essay asking whether it is possible not to destroy while searching for the new.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/fe1020fokv4e99zl2zys9hui2095nu"
-}
-],
 "section": "text"
 },
 {
@@ -3456,7 +3376,7 @@ null,
 [
 "assets/images/1914/01.webp",
 null,
-"Image accompanying \"Uykusuz Uykular\" on the old yeltakom.info",
+"Image accompanying \"Uykusuz Uykular\"",
 [
 1890,
 1417
@@ -3492,7 +3412,7 @@ null,
 [
 "assets/images/1912/01.webp",
 null,
-"Image accompanying \"İşgal İşleri Başkanlığı\" on the old yeltakom.info",
+"Image accompanying \"İşgal İşleri Başkanlığı\"",
 [
 600,
 800
@@ -3516,7 +3436,7 @@ null,
 [
 "assets/images/1911/01.webp",
 null,
-"Image accompanying \"Hey Gidi Koca Dünya\" on the old yeltakom.info",
+"Image accompanying \"Hey Gidi Koca Dünya\"",
 [
 1200,
 805
@@ -3540,7 +3460,7 @@ null,
 [
 "assets/images/1910/01.webp",
 null,
-"Image accompanying \"Bildiğimiz İnternetin Sonu mu Geldi?\" on the old yeltakom.info",
+"Image accompanying \"Bildiğimiz İnternetin Sonu mu Geldi?\"",
 [
 1200,
 900
@@ -3565,7 +3485,7 @@ null,
 [
 "assets/images/1909/01.webp",
 null,
-"Image accompanying \"Berlin Notları #15: Übergestern*\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #15: Übergestern*\"",
 [
 1200,
 794
@@ -3590,7 +3510,7 @@ null,
 [
 "assets/images/1908/01.webp",
 null,
-"Image accompanying \"Berlin Notları #14\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #14\"",
 [
 600,
 771
@@ -3636,12 +3556,6 @@ null,
 "for": "Herkes İçin Mimarlık / Architecture for All",
 "status": "realised",
 "description": "Broadcast report from the 3rd Chicago Architecture Biennial with the Architecture for All team.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/sub25ljygq7m8j9pjlwz5d7t75c9n9"
-}
-],
 "section": "talk"
 },
 {
@@ -3701,7 +3615,7 @@ null,
 [
 "assets/images/1904/02.webp",
 null,
-"Image accompanying \"MimarlığınPüf Noktası?\" on the old yeltakom.info",
+"Image accompanying \"MimarlığınPüf Noktası?\"",
 [
 1200,
 900
@@ -3732,7 +3646,7 @@ null,
 [
 "assets/images/1903/01.webp",
 null,
-"Image accompanying \"Berlin Notları #13\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #13\"",
 [
 1200,
 900
@@ -3751,12 +3665,6 @@ null,
 "for": "Arredamento Mimarlık",
 "status": "realised",
 "description": "Contribution to the April 2019 issue of Arredamento Mimarlık.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/jhbaiaojsaqg2ywc3nr4in5iare7py"
-}
-],
 "section": "text",
 "imgs": [
 [
@@ -3979,7 +3887,7 @@ null,
 [
 "assets/images/1811/01.webp",
 null,
-"Image accompanying \"Yaz Bitti\" on the old yeltakom.info",
+"Image accompanying \"Yaz Bitti\"",
 [
 1200,
 674
@@ -4003,7 +3911,7 @@ null,
 [
 "assets/images/1810/01.webp",
 null,
-"Image accompanying \"Yarın Daha İyi mi Olacak?*\" on the old yeltakom.info",
+"Image accompanying \"Yarın Daha İyi mi Olacak?*\"",
 [
 285,
 250
@@ -4040,7 +3948,7 @@ null,
 [
 "assets/images/1808/01.webp",
 null,
-"Image accompanying \"Senin Puanın Kaç?\" on the old yeltakom.info",
+"Image accompanying \"Senin Puanın Kaç?\"",
 [
 1890,
 946
@@ -4086,7 +3994,7 @@ null,
 [
 "assets/images/1806/01.webp",
 null,
-"Image accompanying \"Nereye GittiDijital Bedenin?\" on the old yeltakom.info",
+"Image accompanying \"Nereye GittiDijital Bedenin?\"",
 [
 1200,
 721
@@ -4132,7 +4040,7 @@ null,
 [
 "assets/images/1803/01.webp",
 null,
-"Image accompanying \"Konum Atsana!\" on the old yeltakom.info",
+"Image accompanying \"Konum Atsana!\"",
 [
 1200,
 899
@@ -4204,7 +4112,7 @@ null,
 [
 "assets/images/1802/05.webp",
 null,
-"Image accompanying \"Vardiya: Esnasında ve Sonrasında\" on the old yeltakom.info",
+"Image accompanying \"Vardiya: Esnasında ve Sonrasında\"",
 [
 1900,
 1267
@@ -4214,7 +4122,7 @@ null,
 [
 "assets/images/1802/06.webp",
 null,
-"Image accompanying \"Vardiya (the Shift)': The Turkish Pavilion at the 2018 Venice Biennale\" on the old yeltakom.info",
+"Image accompanying \"Vardiya (the Shift)': The Turkish Pavilion at the 2018 Venice Biennale\"",
 [
 1500,
 1000
@@ -4224,7 +4132,7 @@ null,
 [
 "assets/images/1802/07.webp",
 null,
-"Image accompanying \"Venedik'te 'Vardiya' başladı: Bir fikir sunduk, buralara kadar geldik\" on the old yeltakom.info",
+"Image accompanying \"Venedik'te 'Vardiya' başladı: Bir fikir sunduk, buralara kadar geldik\"",
 [
 1200,
 800
@@ -4234,7 +4142,7 @@ null,
 [
 "assets/images/1802/08.webp",
 null,
-"Image accompanying \"Venedik Bienali 16. Uluslararası Mimarlık Sergisi Türkiye Pavyonu VARDİYA Açıldı!\" on the old yeltakom.info",
+"Image accompanying \"Venedik Bienali 16. Uluslararası Mimarlık Sergisi Türkiye Pavyonu VARDİYA Açıldı!\"",
 [
 1024,
 683
@@ -4254,7 +4162,7 @@ null,
 [
 "assets/images/1802/11.webp",
 null,
-"Image accompanying \"Türkiye Pavyonu'nda Vardiya sona erdi\" on the old yeltakom.info",
+"Image accompanying \"Türkiye Pavyonu'nda Vardiya sona erdi\"",
 [
 1024,
 576
@@ -4264,7 +4172,7 @@ null,
 [
 "assets/images/1802/12.webp",
 null,
-"Image accompanying \"Hiç durmayan bir su; buluşma, karşılaşma, üretme ve mimarlık: Vardiya\" on the old yeltakom.info",
+"Image accompanying \"Hiç durmayan bir su; buluşma, karşılaşma, üretme ve mimarlık: Vardiya\"",
 [
 740,
 493
@@ -4274,7 +4182,7 @@ null,
 [
 "assets/images/1802/13.webp",
 null,
-"Image accompanying \"Venedik'te Türkiye Pavyonu açıldı\" on the old yeltakom.info",
+"Image accompanying \"Venedik'te Türkiye Pavyonu açıldı\"",
 [
 620,
 310
@@ -4353,7 +4261,7 @@ null,
 [
 "assets/images/1712/01.webp",
 null,
-"Image accompanying \"Berlin Notları #12: Final\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #12: Final\"",
 [
 1200,
 811
@@ -4378,7 +4286,7 @@ null,
 [
 "assets/images/1711/01.webp",
 null,
-"Image accompanying \"Berlin Notları #11: Boncuk\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #11: Boncuk\"",
 [
 600,
 800
@@ -4403,7 +4311,7 @@ null,
 [
 "assets/images/1710/01.webp",
 null,
-"Image accompanying \"Berlin Notları #10: O Ev Berlin!\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #10: O Ev Berlin!\"",
 [
 1200,
 1600
@@ -4428,7 +4336,7 @@ null,
 [
 "assets/images/1709/01.webp",
 null,
-"Image accompanying \"Berlin Notları #8\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #8\"",
 [
 1000,
 667
@@ -4453,7 +4361,7 @@ null,
 [
 "assets/images/1708/01.webp",
 null,
-"Image accompanying \"Berlin Notları #7: Kendime Notlar\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #7: Kendime Notlar\"",
 [
 600,
 871
@@ -4478,7 +4386,7 @@ null,
 [
 "assets/images/1707/01.webp",
 null,
-"Image accompanying \"Berlin Notları #6\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #6\"",
 [
 1126,
 634
@@ -4503,7 +4411,7 @@ null,
 [
 "assets/images/1706/01.webp",
 null,
-"Image accompanying \"Berlin Notları #5\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #5\"",
 [
 900,
 675
@@ -4528,7 +4436,7 @@ null,
 [
 "assets/images/1705/01.webp",
 null,
-"Image accompanying \"Berlin Notları #2\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #2\"",
 [
 600,
 860
@@ -4550,12 +4458,6 @@ null,
 "place": "Athens",
 "status": "realised",
 "description": "Artistic research on conflict areas producing drawings and collages that merge cartographic and aerial imagery of Kızıltepe and Nusaybin.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/state-of-territory"
-}
-],
 "shown": [
 {
 "dates": "2017",
@@ -4786,7 +4688,7 @@ null,
 [
 "assets/images/1703/01.webp",
 null,
-"Image accompanying \"Berlin Notları #9: Hong Kong\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #9: Hong Kong\"",
 [
 1000,
 561
@@ -4817,7 +4719,7 @@ null,
 [
 "assets/images/1702/01.webp",
 null,
-"Image accompanying \"Berlin Notları #4\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #4\"",
 [
 1080,
 1080
@@ -4848,7 +4750,7 @@ null,
 [
 "assets/images/1701/01.webp",
 null,
-"Image accompanying \"Berlin Notları #3\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #3\"",
 [
 1000,
 750
@@ -5132,12 +5034,6 @@ null,
 ],
 "status": "ongoing",
 "description": "Ongoing atlas of architecture as a site of resistance, started within the exhibition We Won't Leave.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/commoning-practices"
-}
-],
 "shown": [
 {
 "dates": "2016",
@@ -5214,7 +5110,7 @@ null,
 [
 "assets/images/1603/01.webp",
 null,
-"Image accompanying \"Berlin Notları #1\" on the old yeltakom.info",
+"Image accompanying \"Berlin Notları #1\"",
 [
 945,
 1386
@@ -5232,12 +5128,6 @@ null,
 ],
 "status": "realised",
 "description": "Event on a chronology of design in Türkiye, 12 November.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/1ahvqbkq5sabmmsdkl98ls0s5enouq"
-}
-],
 "section": "talk",
 "imgs": [
 [
@@ -5389,7 +5279,7 @@ null,
 [
 "assets/images/1515/02.webp",
 null,
-"Image accompanying \"Dikkat! Kaygan Zemin' Şimdi de Ankara’da\" on the old yeltakom.info",
+"Image accompanying \"Dikkat! Kaygan Zemin' Şimdi de Ankara’da\"",
 [
 920,
 613
@@ -5399,7 +5289,7 @@ null,
 [
 "assets/images/1515/03.webp",
 null,
-"Image accompanying \"Dikkat Zemin Kaygan!\" on the old yeltakom.info",
+"Image accompanying \"Dikkat Zemin Kaygan!\"",
 [
 620,
 413
@@ -5868,12 +5758,6 @@ null,
 ],
 "status": "realised",
 "description": "Presentation of the work of KOTUstudio.",
-"links": [
-{
-"label": "original",
-"url": "https://www.yeltakom.info/blog/is7r1tbfs3af6nta8z18n969oroaki"
-}
-],
 "section": "talk",
 "imgs": [
 [
@@ -6702,10 +6586,6 @@ null,
 "description": "Participatory public installation of sixteen hand-made six-metre flags with seating, each representing a space of urban destruction, during the 1st Istanbul Design Biennial.",
 "links": [
 {
-"label": "original",
-"url": "https://www.yeltakom.info/featured-projects/active-monument-to-urban-destruction"
-},
-{
 "label": "source",
 "url": "http://www.cohstra.org/?portfolio=monument-to-urban-destruction"
 }
@@ -6726,7 +6606,7 @@ null,
 [
 "assets/images/1201/02.webp",
 null,
-"Installation view (project page on the old yeltakom.info)",
+"Installation view",
 [
 1500,
 920
@@ -6736,7 +6616,7 @@ null,
 [
 "assets/images/1201/03.webp",
 null,
-"Installation view with printed photographs on a table (project page on the old yeltakom.info)",
+"Installation view with printed photographs on a table",
 [
 1350,
 900
@@ -8205,7 +8085,7 @@ null,
 "outlet": null,
 "title": "YELTA KÖM (interview)",
 "language": "TR",
-"url": "https://www.yeltakom.info/blog/5um5i0o7zgebacdjlrp43cis8vuba2",
+"url": null,
 "kind": "interview",
 "about": null,
 "summary": "Interview with him reposted on his blog."
